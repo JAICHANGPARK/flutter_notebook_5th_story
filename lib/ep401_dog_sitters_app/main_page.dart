@@ -30,16 +30,45 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
             flex: 5,
             child: Container(
               decoration: BoxDecoration(
-                  color: appColor,
-                  borderRadius: BorderRadius.only(bottomRight: Radius.circular(24), bottomLeft: Radius.circular(24))),
+                color: appColor,
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(24),
+                  bottomLeft: Radius.circular(24),
+                ),
+              ),
             ),
           ),
           Expanded(
             flex: 4,
-            child: Placeholder(),
+            child: Column(
+              children: <Widget>[
+                  Expanded(
+                    flex: 2,
+                    child: Placeholder(),
+                  ),
+                Expanded(
+                  flex: 8,
+                  child: Placeholder(),
+                )
+              ],
+            ),
           ),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(items: <BottomNavigationBarItem>[
+
+      ],),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
