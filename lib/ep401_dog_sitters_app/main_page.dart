@@ -24,51 +24,61 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          Expanded(
-            flex: 5,
-            child: Container(
-              decoration: BoxDecoration(
-                color: appColor,
-                borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(24),
-                  bottomLeft: Radius.circular(24),
+      body: SafeArea(
+        child: Column(
+          children: <Widget>[
+            Expanded(
+              flex: 6,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: appColor,
+                  borderRadius: BorderRadius.only(
+                    bottomRight: Radius.circular(24),
+                    bottomLeft: Radius.circular(24),
+                  ),
+                ),
+                child: Column(
+                  children: <Widget>[
+                    Expanded(
+                      flex: 2,
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      flex: 5,
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      flex: 5,
+                      child: Placeholder(),
+                    )
+                  ],
                 ),
               ),
             ),
-          ),
-          Expanded(
-            flex: 4,
-            child: Column(
-              children: <Widget>[
+            Expanded(
+              flex: 4,
+              child: Column(
+                children: <Widget>[
                   Expanded(
                     flex: 2,
                     child: Placeholder(),
                   ),
-                Expanded(
-                  flex: 8,
-                  child: Placeholder(),
-                )
-              ],
+                  Expanded(
+                    flex: 8,
+                    child: Placeholder(),
+                  )
+                ],
+              ),
             ),
-          ),
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("Home")),
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("Location")),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(items: <BottomNavigationBarItem>[
-
-      ],),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
