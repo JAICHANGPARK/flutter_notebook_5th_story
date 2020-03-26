@@ -52,10 +52,15 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                               width: 52,
                               decoration: BoxDecoration(
                                   color: Colors.yellow,
+                                  image: DecorationImage(
+                                    image: NetworkImage("https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074__340.jpg"),
+                                    fit: BoxFit.cover,
+                                  ),
                                   borderRadius: BorderRadius.circular(16),
                                   border: Border.all(
                                     color: Colors.white,
                                   )),
+
                             )
                           ],
                         ),
@@ -85,8 +90,12 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                                 letterSpacing: 2
                               ),
                             ),
-                            Container(
-
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                  height: 58,
+                                child: Placeholder(),
+                              ),
                             )
                           ],
                         ),
