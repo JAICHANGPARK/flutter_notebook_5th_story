@@ -91,10 +91,35 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.only(top: 8),
                               child: Container(
                                   height: 58,
-                                child: Placeholder(),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: <Widget>[
+                                    Expanded(
+                                      flex: 5,
+                                      child: Container(
+                                        margin: EdgeInsets.all(4),
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(8),
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      flex: 1,
+                                      child: Container(
+                                        margin: EdgeInsets.all(4),
+                                        decoration: BoxDecoration(
+                                          color: Colors.yellow,
+                                          borderRadius: BorderRadius.circular(12),
+                                        ),
+                                        child: Center(child: Icon(Icons.filter_list, color: Colors.white,)),
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             )
                           ],
