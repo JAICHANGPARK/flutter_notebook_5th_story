@@ -73,6 +73,7 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                               style: GoogleFonts.handlee().copyWith(
                                 color: Colors.yellow,
                                 fontSize: 28,
+                                fontWeight: FontWeight.bold
                               ),
                             ),
                             Text(
@@ -80,10 +81,12 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                               style: GoogleFonts.handlee().copyWith(
                                 color: Colors.white,
                                 fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 2
                               ),
                             ),
                             Container(
-                              
+
                             )
                           ],
                         ),
