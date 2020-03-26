@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DogSittersApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -38,18 +39,55 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                   ),
                 ),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Expanded(
                       flex: 2,
-                      child: Row(
-                        children: <Widget>[
-                          Spacer(),
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
+                        child: Row(
+                          children: <Widget>[
+                            Spacer(),
+                            Container(
+                              width: 52,
+                              decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  borderRadius: BorderRadius.circular(16),
+                                  border: Border.all(
+                                    color: Colors.white,
+                                  )),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     Expanded(
                       flex: 5,
-                      child: Placeholder(),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              "Hey, Dreamwalker",
+                              style: GoogleFonts.handlee().copyWith(
+                                color: Colors.yellow,
+                                fontSize: 28,
+                              ),
+                            ),
+                            Text(
+                              "Let's find you a dogsitter",
+                              style: GoogleFonts.handlee().copyWith(
+                                color: Colors.white,
+                                fontSize: 28,
+                              ),
+                            ),
+                            Container(
+                              
+                            )
+                          ],
+                        ),
+                      ),
                     ),
                     Expanded(
                       flex: 5,
