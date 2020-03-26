@@ -161,8 +161,18 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                                 return Container(
                                   width: 110,
                                   margin: EdgeInsets.only(right: 12),
-                                  color: Colors.red,
-                                  child: Column(),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: <Widget>[
+                                      CircleAvatar(
+                                        radius: 48,
+                                      ),
+                                      Text("Alex", style: TextStyle(
+                                        color: Colors.white,
+                                      ),)
+                                    ],
+                                  ),
                                 );
                               }),
                             ),
