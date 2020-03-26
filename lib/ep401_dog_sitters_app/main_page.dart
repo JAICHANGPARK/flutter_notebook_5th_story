@@ -128,7 +128,47 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                     ),
                     Expanded(
                       flex: 5,
-                      child: Placeholder(),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Expanded(
+                            flex: 1,
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: <Widget>[
+                                  Text("Top rated dogsitters", style: GoogleFonts.montserrat(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                    fontSize: 18
+                                  ),),
+                                  Text("View all",style: TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.yellow,
+                                  ),)
+                                ],
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 6,
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 16, bottom: 16, top: 8),
+                              child: ListView.builder(
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, idx){
+                                return Container(
+                                  width: 110,
+                                  margin: EdgeInsets.only(right: 12),
+                                  color: Colors.red,
+                                  child: Column(),
+                                );
+                              }),
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
