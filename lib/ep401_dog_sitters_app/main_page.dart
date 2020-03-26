@@ -41,7 +41,11 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                   children: <Widget>[
                     Expanded(
                       flex: 2,
-                      child: Placeholder(),
+                      child: Row(
+                        children: <Widget>[
+                          Spacer(),
+                        ],
+                      ),
                     ),
                     Expanded(
                       flex: 5,
