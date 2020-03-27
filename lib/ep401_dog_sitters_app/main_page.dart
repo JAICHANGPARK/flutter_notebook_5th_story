@@ -190,7 +190,26 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                 children: <Widget>[
                   Expanded(
                     flex: 2,
-                    child: Placeholder(),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Text("Explore activities near you"),
+                              Text("Emmalee Lock, New York"),
+                            ],
+                          ),
+                          Text("View all", style: TextStyle(
+                            color: appColor,
+                          ),)
+                        ],
+                      ),
+                    ),
                   ),
                   Expanded(
                     flex: 8,
