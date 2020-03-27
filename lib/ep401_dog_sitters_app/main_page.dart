@@ -229,7 +229,6 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                           itemBuilder: (context,index){
                         return Container(
                           width: 160,
-                          color: Colors.red,
                           margin: EdgeInsets.only(right: 8),
                           child: Column(
                             children: <Widget>[
@@ -247,7 +246,18 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                               ),
                               Expanded(
                                 flex: 1,
-                                child: Placeholder(),
+                                child: Container(
+                                  width: double.infinity,
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      Text("Meeting at park"),
+                                      Text("199 Quigley Avenue"),
+                                    ],
+                                  ),
+                                ),
                               )
                             ],
                           ),
