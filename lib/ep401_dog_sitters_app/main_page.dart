@@ -200,8 +200,15 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              Text("Explore activities near you"),
-                              Text("Emmalee Lock, New York"),
+                              Text("Explore activities near you",style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: appColor,
+                              ),),
+                              Text("Emmalee Lock, New York",style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.grey,
+                              ),),
                             ],
                           ),
                           Text("View all", style: TextStyle(
@@ -222,8 +229,11 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("Home")),
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("Location")),
+          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("Location")),
           BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("Location")),
         ],
       ),
