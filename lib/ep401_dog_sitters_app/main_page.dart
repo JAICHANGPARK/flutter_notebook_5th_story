@@ -228,7 +228,7 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                           scrollDirection: Axis.horizontal,
                           itemBuilder: (context,index){
                         return Container(
-                          width: 160,
+                          width: 140,
                           margin: EdgeInsets.only(right: 8),
                           child: Column(
                             children: <Widget>[
