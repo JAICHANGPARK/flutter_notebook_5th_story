@@ -167,6 +167,8 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                                     children: <Widget>[
                                       CircleAvatar(
                                         radius: 48,
+                                        backgroundImage: NetworkImage("https://cdn.pixabay.com/photo/2015/09/02/12/51/woman-918707_960_720.jpg"),
+
                                       ),
                                       Text("Alex", style: TextStyle(
                                         color: Colors.white,
