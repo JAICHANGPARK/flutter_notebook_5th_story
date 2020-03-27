@@ -253,8 +253,15 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: <Widget>[
-                                      Text("Meeting at park"),
-                                      Text("199 Quigley Avenue"),
+                                      Text("Meeting at park",style: TextStyle(
+                                        color: appColor,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14
+                                      ),),
+                                      Text("199 Quigley Avenue",style: TextStyle(
+                                          color: Colors.grey,
+                                          fontSize: 12
+                                      ),),
                                     ],
                                   ),
                                 ),
