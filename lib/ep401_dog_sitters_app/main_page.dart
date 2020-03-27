@@ -222,15 +222,38 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                   ),
                   Expanded(
                     flex: 8,
-                    child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context,index){
-                      return Container(
-                        width: 140,
-                        color: Colors.red,
-                        margin: EdgeInsets.only(right: 8),
-                      );
-                    }),
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 16,top: 8, bottom: 8),
+                      child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context,index){
+                        return Container(
+                          width: 160,
+                          color: Colors.red,
+                          margin: EdgeInsets.only(right: 8),
+                          child: Column(
+                            children: <Widget>[
+                              Expanded(
+                                flex: 3,
+                                child:Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(16),
+                                    image: DecorationImage(
+                                      image: NetworkImage("https://cdn.pixabay.com/photo/2017/06/20/22/14/men-2425121_960_720.jpg"),
+                                      fit: BoxFit.cover
+                                    )
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                flex: 1,
+                                child: Placeholder(),
+                              )
+                            ],
+                          ),
+                        );
+                      }),
+                    ),
                   )
                 ],
               ),
