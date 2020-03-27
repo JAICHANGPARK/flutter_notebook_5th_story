@@ -222,7 +222,15 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                   ),
                   Expanded(
                     flex: 8,
-                    child: Placeholder(),
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context,index){
+                      return Container(
+                        width: 140,
+                        color: Colors.red,
+                        margin: EdgeInsets.only(right: 8),
+                      );
+                    }),
                   )
                 ],
               ),
