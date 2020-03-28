@@ -18,10 +18,23 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          
-        ],
+      body: SafeArea(
+        child: Column(
+          children: <Widget>[
+            Expanded(
+              flex: 2,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 20,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 2,
+              child: Placeholder(),
+            )
+          ],
+        ),
       ),
     );
   }
