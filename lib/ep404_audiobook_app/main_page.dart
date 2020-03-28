@@ -23,22 +23,38 @@ class _MainPageState extends State<MainPage> {
           children: <Widget>[
             Expanded(
               flex: 2,
-              child: Row(
-                children: <Widget>[
-                  Container(
-                    width: 32,
-                    decoration: BoxDecoration(
-                      color: Colors.orange,
-                      shape: BoxShape.circle,
-                    ),
-                    child: Center(
-                      child: Icon(
-                        Icons.keyboard_arrow_left,
-                        color: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      width: 32,
+                      decoration: BoxDecoration(
+                        color: Colors.orange,
+                        shape: BoxShape.circle,
+                      ),
+                      child: Center(
+                        child: Icon(
+                          Icons.keyboard_arrow_left,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
-                  )
-                ],
+                    Spacer(),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(Icons.directions_car,color: Colors.grey,),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(Icons.access_time,color: Colors.grey),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(Icons.more_horiz,color: Colors.grey),
+                    )
+                  ],
+                ),
               )
             ),
             Expanded(
