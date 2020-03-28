@@ -82,32 +82,40 @@ class _MainPageState extends State<MainPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Icon(Icons.home),
-                        Text("Feed"),
+                        Icon(Icons.home, color: Colors.grey,),
+                        Text("Feed",style: TextStyle(
+                          fontSize: 12
+                        ),),
                       ],
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Icon(Icons.home),
-                        Text("Feed"),
+                        Icon(Icons.tune),
+                        Text("My Shelf",style: TextStyle(
+                            fontSize: 12
+                        ),),
                       ],
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Icon(Icons.home),
-                        Text("Feed"),
+                        Icon(Icons.play_arrow),
+                        Text("Play",style: TextStyle(
+                            fontSize: 12
+                        ),),
                       ],
                     )
                     , Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Icon(Icons.home),
-                        Text("Feed"),
+                        Icon(Icons.bookmark),
+                        Text("Notes",style: TextStyle(
+                            fontSize: 12
+                        ),),
                       ],
                     )
 
