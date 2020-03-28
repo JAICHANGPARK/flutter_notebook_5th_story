@@ -53,14 +53,14 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                               decoration: BoxDecoration(
                                   color: Colors.yellow,
                                   image: DecorationImage(
-                                    image: NetworkImage("https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074__340.jpg"),
+                                    image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074__340.jpg"),
                                     fit: BoxFit.cover,
                                   ),
                                   borderRadius: BorderRadius.circular(16),
                                   border: Border.all(
                                     color: Colors.white,
                                   )),
-
                             )
                           ],
                         ),
@@ -75,25 +75,18 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                           children: <Widget>[
                             Text(
                               "Hey, Dreamwalker",
-                              style: GoogleFonts.handlee().copyWith(
-                                color: Colors.yellow,
-                                fontSize: 28,
-                                fontWeight: FontWeight.bold
-                              ),
+                              style: GoogleFonts.handlee()
+                                  .copyWith(color: Colors.yellow, fontSize: 28, fontWeight: FontWeight.bold),
                             ),
                             Text(
                               "Let's find you a dogsitter",
                               style: GoogleFonts.handlee().copyWith(
-                                color: Colors.white,
-                                fontSize: 28,
-                                fontWeight: FontWeight.bold,
-                                letterSpacing: 2
-                              ),
+                                  color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold, letterSpacing: 2),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 8),
                               child: Container(
-                                  height: 58,
+                                height: 58,
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: <Widget>[
@@ -115,7 +108,11 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                                           color: Colors.yellow,
                                           borderRadius: BorderRadius.circular(12),
                                         ),
-                                        child: Center(child: Icon(Icons.filter_list, color: Colors.white,)),
+                                        child: Center(
+                                            child: Icon(
+                                          Icons.filter_list,
+                                          color: Colors.white,
+                                        )),
                                       ),
                                     )
                                   ],
@@ -138,15 +135,18 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
-                                  Text("Top rated dogsitters", style: GoogleFonts.montserrat(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 18
-                                  ),),
-                                  Text("View all",style: TextStyle(
-                                    fontSize: 12,
-                                    color: Colors.yellow,
-                                  ),)
+                                  Text(
+                                    "Top rated dogsitters",
+                                    style: GoogleFonts.montserrat(
+                                        fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                                  ),
+                                  Text(
+                                    "View all",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.yellow,
+                                    ),
+                                  )
                                 ],
                               ),
                             ),
@@ -157,26 +157,29 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                               padding: const EdgeInsets.only(left: 16, bottom: 16, top: 8),
                               child: ListView.builder(
                                   scrollDirection: Axis.horizontal,
-                                  itemBuilder: (context, idx){
-                                return Container(
-                                  width: 110,
-                                  margin: EdgeInsets.only(right: 12),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                    crossAxisAlignment: CrossAxisAlignment.center,
-                                    children: <Widget>[
-                                      CircleAvatar(
-                                        radius: 48,
-                                        backgroundImage: NetworkImage("https://cdn.pixabay.com/photo/2015/09/02/12/51/woman-918707_960_720.jpg"),
-
+                                  itemBuilder: (context, idx) {
+                                    return Container(
+                                      width: 110,
+                                      margin: EdgeInsets.only(right: 12),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: <Widget>[
+                                          CircleAvatar(
+                                            radius: 48,
+                                            backgroundImage: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2015/09/02/12/51/woman-918707_960_720.jpg"),
+                                          ),
+                                          Text(
+                                            "Alex",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          )
+                                        ],
                                       ),
-                                      Text("Alex", style: TextStyle(
-                                        color: Colors.white,
-                                      ),)
-                                    ],
-                                  ),
-                                );
-                              }),
+                                    );
+                                  }),
                             ),
                           )
                         ],
@@ -202,20 +205,29 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              Text("Explore activities near you",style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                color: appColor,
-                              ),),
-                              Text("Emmalee Lock, New York",style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.grey,
-                              ),),
+                              Text(
+                                "Explore activities near you",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: appColor,
+                                ),
+                              ),
+                              Text(
+                                "Emmalee Lock, New York",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
+                              ),
                             ],
                           ),
-                          Text("View all", style: TextStyle(
-                            color: appColor,
-                          ),)
+                          Text(
+                            "View all",
+                            style: TextStyle(
+                              color: appColor,
+                            ),
+                          )
                         ],
                       ),
                     ),
@@ -223,53 +235,52 @@ class _DogSitterMainPageState extends State<DogSitterMainPage> {
                   Expanded(
                     flex: 8,
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 16,top: 8, bottom: 8),
+                      padding: const EdgeInsets.only(left: 16, top: 8, bottom: 8),
                       child: ListView.builder(
                           scrollDirection: Axis.horizontal,
-                          itemBuilder: (context,index){
-                        return Container(
-                          width: 140,
-                          margin: EdgeInsets.only(right: 8),
-                          child: Column(
-                            children: <Widget>[
-                              Expanded(
-                                flex: 3,
-                                child:Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(16),
-                                    image: DecorationImage(
-                                      image: NetworkImage("https://cdn.pixabay.com/photo/2017/06/20/22/14/men-2425121_960_720.jpg"),
-                                      fit: BoxFit.cover
-                                    )
+                          itemBuilder: (context, index) {
+                            return Container(
+                              width: 140,
+                              margin: EdgeInsets.only(right: 8),
+                              child: Column(
+                                children: <Widget>[
+                                  Expanded(
+                                    flex: 3,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(16),
+                                          image: DecorationImage(
+                                              image: NetworkImage(
+                                                  "https://cdn.pixabay.com/photo/2017/06/20/22/14/men-2425121_960_720.jpg"),
+                                              fit: BoxFit.cover)),
+                                    ),
                                   ),
-                                ),
+                                  Expanded(
+                                    flex: 1,
+                                    child: Container(
+                                      width: double.infinity,
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          Text(
+                                            "Meeting at park",
+                                            style:
+                                                TextStyle(color: appColor, fontWeight: FontWeight.bold, fontSize: 14),
+                                          ),
+                                          Text(
+                                            "199 Quigley Avenue",
+                                            style: TextStyle(color: Colors.grey, fontSize: 12),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  )
+                                ],
                               ),
-                              Expanded(
-                                flex: 1,
-                                child: Container(
-                                  width: double.infinity,
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: <Widget>[
-                                      Text("Meeting at park",style: TextStyle(
-                                        color: appColor,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 14
-                                      ),),
-                                      Text("199 Quigley Avenue",style: TextStyle(
-                                          color: Colors.grey,
-                                          fontSize: 12
-                                      ),),
-                                    ],
-                                  ),
-                                ),
-                              )
-                            ],
-                          ),
-                        );
-                      }),
+                            );
+                          }),
                     ),
                   )
                 ],
