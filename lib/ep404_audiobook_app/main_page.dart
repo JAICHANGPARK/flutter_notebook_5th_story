@@ -23,7 +23,23 @@ class _MainPageState extends State<MainPage> {
           children: <Widget>[
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    width: 32,
+                    decoration: BoxDecoration(
+                      color: Colors.orange,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.keyboard_arrow_left,
+                        color: Colors.white,
+                      ),
+                    ),
+                  )
+                ],
+              )
             ),
             Expanded(
               flex: 20,
