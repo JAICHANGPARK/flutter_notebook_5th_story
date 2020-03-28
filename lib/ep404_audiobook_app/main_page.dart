@@ -92,7 +92,7 @@ class _MainPageState extends State<MainPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Icon(Icons.tune),
+                        Icon(Icons.tune,color: Colors.grey,),
                         Text("My Shelf",style: TextStyle(
                             fontSize: 12
                         ),),
@@ -102,7 +102,7 @@ class _MainPageState extends State<MainPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Icon(Icons.play_arrow),
+                        Icon(Icons.play_arrow,color: Colors.orange,),
                         Text("Play",style: TextStyle(
                             fontSize: 12
                         ),),
@@ -112,7 +112,7 @@ class _MainPageState extends State<MainPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Icon(Icons.bookmark),
+                        Icon(Icons.bookmark,color: Colors.grey,),
                         Text("Notes",style: TextStyle(
                             fontSize: 12
                         ),),
