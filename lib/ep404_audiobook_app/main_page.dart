@@ -111,6 +111,20 @@ class _MainPageState extends State<MainPage> {
                         Text("03:40:00"),
                       ],
                     ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Text("Chapter 2 out of 8"),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Text("-5m"),
+                      Text("-5m"),
+                      CircleAvatar(),
+                      Text("-5m"),
+                      Text("-5m"),
+                    ],
                   )
                 ],
               ),
