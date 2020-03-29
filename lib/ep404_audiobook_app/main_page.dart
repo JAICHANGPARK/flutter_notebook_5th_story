@@ -129,6 +129,33 @@ backgroundColor: Colors.orange,
                       Text("+30s"),
                       Text("+5m"),
                     ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Column(
+                          children: <Widget>[
+                            Text("1.0x"),
+                            Text("speed"),
+                          ],
+                        ),
+                        Column(
+                          children: <Widget>[
+                            Icon(Icons.book),
+                            Text("Bookmark"),
+                          ],
+                        ),
+                        Column(
+                          children: <Widget>[
+                            Icon(Icons.slideshow),
+                            Text("Show text"),
+                          ],
+                        )
+
+                      ],
+                    ),
                   )
                 ],
               ),
