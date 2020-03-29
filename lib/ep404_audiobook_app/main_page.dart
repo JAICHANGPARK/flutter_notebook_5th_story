@@ -73,7 +73,7 @@ class _MainPageState extends State<MainPage> {
                   ),
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 64, vertical: 16),
-                    height: MediaQuery.of(context).size.height / 3,
+                    height: MediaQuery.of(context).size.height / 2.8,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(24),
                         boxShadow: [
