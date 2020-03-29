@@ -61,11 +61,25 @@ class _MainPageState extends State<MainPage> {
             Expanded(
               flex: 20,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Row(children: <Widget>[
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: <Widget>[
                     Text("Shared library"),
                     Text("19 listening")
-                  ],)
+                  ],),
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 64, vertical: 16),
+                    height: MediaQuery.of(context).size.height / 3,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage("")
+                      )
+                    ),
+                    child: Placeholder(),
+                  )
                 ],
               ),
             ),
