@@ -60,7 +60,14 @@ class _MainPageState extends State<MainPage> {
             ),
             Expanded(
               flex: 20,
-              child: Placeholder(),
+              child: Column(
+                children: <Widget>[
+                  Row(children: <Widget>[
+                    Text("Shared library"),
+                    Text("Shared library")
+                  ],)
+                ],
+              ),
             ),
             Expanded(
               flex: 2,
@@ -118,7 +125,6 @@ class _MainPageState extends State<MainPage> {
                         ),),
                       ],
                     )
-
                   ],
                 ),
               ),
