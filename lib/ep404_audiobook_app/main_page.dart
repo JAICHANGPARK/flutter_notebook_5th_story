@@ -61,7 +61,7 @@ class _MainPageState extends State<MainPage> {
             Expanded(
               flex: 20,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
 
                   Row(
@@ -74,12 +74,23 @@ class _MainPageState extends State<MainPage> {
                     margin: EdgeInsets.symmetric(horizontal: 64, vertical: 16),
                     height: MediaQuery.of(context).size.height / 3,
                     decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(24),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey[400],
+                          blurRadius: 5,
+                          spreadRadius: 2,
+                          offset: Offset(1,2),
+                        )
+                      ],
                       image: DecorationImage(
-                        image: NetworkImage("")
+                        image: NetworkImage("https://cdn.pixabay.com/photo/2020/03/15/15/41/medical-4934010_960_720.jpg"),
+                        fit: BoxFit.cover,
                       )
                     ),
-                    child: Placeholder(),
-                  )
+                  ),
+                  
+
                 ],
               ),
             ),
