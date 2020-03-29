@@ -64,7 +64,7 @@ class _MainPageState extends State<MainPage> {
                 children: <Widget>[
                   Row(children: <Widget>[
                     Text("Shared library"),
-                    Text("Shared library")
+                    Text("19 listening")
                   ],)
                 ],
               ),
