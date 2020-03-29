@@ -131,7 +131,7 @@ backgroundColor: Colors.orange,
                     ],
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
@@ -141,12 +141,14 @@ backgroundColor: Colors.orange,
                             Text("speed"),
                           ],
                         ),
+
                         Column(
                           children: <Widget>[
                             Icon(Icons.book),
                             Text("Bookmark"),
                           ],
                         ),
+
                         Column(
                           children: <Widget>[
                             Icon(Icons.slideshow),
