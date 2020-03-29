@@ -120,10 +120,14 @@ class _MainPageState extends State<MainPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       Text("-5m"),
-                      Text("-5m"),
-                      CircleAvatar(),
-                      Text("-5m"),
-                      Text("-5m"),
+                      Text("-30s"),
+                      CircleAvatar(
+                        radius: 24,
+backgroundColor: Colors.orange,
+                        child: Icon(Icons.play_arrow, color: Colors.white, size: 38,),
+                      ),
+                      Text("+30s"),
+                      Text("+5m"),
                     ],
                   )
                 ],
