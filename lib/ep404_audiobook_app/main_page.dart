@@ -16,6 +16,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  double _sliderValue = 0.0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,7 +90,22 @@ class _MainPageState extends State<MainPage> {
                       )
                     ),
                   ),
-                  
+                  Text("The Art Of Making Memories"),
+                  Text("Meik Wiking"),
+                  Slider(
+                    activeColor: Colors.orange,
+                    inactiveColor: Colors.orange[100],
+                    onChanged: (double value) {
+                    setState(() {
+                      _sliderValue = value;
+                    });
+                  }, value: _sliderValue,
+                  ),
+Row(
+  children: <Widget>[
+    
+  ],
+)
 
                 ],
               ),
