@@ -33,23 +33,30 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                 image: NetworkImage("https://cdn.pixabay.com/photo/2015/05/15/14/31/amplifier-768536__340.jpg"),
                 fit: BoxFit.cover,
               )),
-              padding: EdgeInsets.all(24),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  IconButton(
-                    icon: Icon(Icons.arrow_back),
-                    onPressed: (){},
-                    color: Colors.white,
-                  ),
-                  Text("Living Room",style: GoogleFonts.montserrat(
-                    color: Colors.white
-                  ),),
-                  Text("Speaker",style: GoogleFonts.montserrat(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 24,
-                  ),)
-                ],
+              padding: EdgeInsets.all(16),
+              child: SafeArea(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    IconButton(
+                      alignment: Alignment.centerLeft,
+                      icon: Icon(Icons.arrow_back),
+                      onPressed: (){},
+                      iconSize: 32,
+                      color: Colors.white,
+                    ),
+                    Text("Living Room",style: GoogleFonts.montserrat(
+                      color: Colors.white,
+                      letterSpacing: 1
+                    ),),
+                    Text("Speaker",style: GoogleFonts.montserrat(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 32,
+                      letterSpacing: 2,
+                      color: Colors.white,
+                    ),)
+                  ],
+                ),
               ),
             ),
           ),
