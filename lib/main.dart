@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutternotebook5th/ep401_dog_sitters_app/main_page.dart';
-import 'package:flutternotebook5th/ep404_audiobook_app/main_page.dart';
+import 'package:flutternotebook5th/ep406_smart_home_app/smart_home_main.dart';
 
-void main() => runApp(AudioBookApp());
+void main() => runApp(SmartHomeApp());
