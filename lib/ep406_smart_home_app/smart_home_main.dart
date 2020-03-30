@@ -30,10 +30,39 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                 fit: BoxFit.cover,
               )
             ),),
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Container(
+              height: MediaQuery.of(context).size.height / 2 + 34,
+
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+            ),
           )
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
