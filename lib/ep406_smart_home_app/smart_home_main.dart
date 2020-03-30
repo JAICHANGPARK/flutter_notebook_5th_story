@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SmartHomeApp extends StatelessWidget {
@@ -37,9 +38,13 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
             bottom: 0,
             child: Container(
               height: MediaQuery.of(context).size.height / 2 + 34,
-
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Colors.blueGrey[50],
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(24),
+                  topLeft: Radius.circular(24),
+                )
+
               ),
             ),
           )
