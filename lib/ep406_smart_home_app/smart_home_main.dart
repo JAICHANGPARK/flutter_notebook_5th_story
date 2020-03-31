@@ -132,8 +132,16 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
 
                               Expanded(
                                 child: SliderTheme(
-                                  data: SliderThemeData(
-                                    trackHeight: 25,
+                                  data: SliderTheme.of(
+                                    context
+                                  ).copyWith(
+                                    trackHeight: 16,
+                                    activeTrackColor: Colors.orange,
+                                    inactiveTrackColor: Colors.grey,
+                                    thumbShape: RoundSliderThumbShape(
+                                      enabledThumbRadius: 16,
+                                    ),
+                                    thumbColor: Colors.white
                                   ),
                                   child: Slider(
                                     value: _value,
