@@ -108,38 +108,57 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                   ),
                   Expanded(
                     flex: 2,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          "Volume",
-                          style: GoogleFonts.montserrat(),
-                        ),
-                        Row(
-                          children: <Widget>[
-                            Container(
-                              height: 34,
-                              width: 34,
-                              decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, boxShadow: [
-                                BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 2, spreadRadius: 2)
-                              ]),
-                              child: Center(
-                                child: Icon(Icons.remove),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 24),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            "Volume",
+                            style: GoogleFonts.montserrat(),
+                          ),
+                          Row(
+                            children: <Widget>[
+                              Container(
+                                height: 34,
+                                width: 34,
+                                decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, boxShadow: [
+                                  BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 2, spreadRadius: 2)
+                                ]),
+                                child: Center(
+                                  child: Icon(Icons.remove),
+                                ),
                               ),
-                            ),
-                            Slider(
 
-                              value: _value,
-                              onChanged: (v) {
-                                setState(() {
-                                  _value = v;
-                                });
-                              },
-
-                            )
-                          ],
-                        )
-                      ],
+                              Expanded(
+                                child: SliderTheme(
+                                  data: SliderThemeData(
+                                    trackHeight: 25,
+                                  ),
+                                  child: Slider(
+                                    value: _value,
+                                    onChanged: (v) {
+                                      setState(() {
+                                        _value = v;
+                                      });
+                                    },
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                height: 34,
+                                width: 34,
+                                decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, boxShadow: [
+                                  BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 2, spreadRadius: 2)
+                                ]),
+                                child: Center(
+                                  child: Icon(Icons.add),
+                                ),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   Expanded(
