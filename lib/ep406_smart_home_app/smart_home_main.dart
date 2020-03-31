@@ -72,22 +72,48 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                     topRight: Radius.circular(24),
                     topLeft: Radius.circular(24),
                   )),
+
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Expanded(
-                    flex: 1,
+                    flex: 2,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 24),
+                      child: Container(
+                        margin: EdgeInsets.symmetric(vertical: 22),
+                        width: 72,
+                        decoration: BoxDecoration(
+                          color: Colors.orange,
+                          borderRadius: BorderRadius.circular(24)
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
+                        child: Row(
+                          children: <Widget>[
+                            Spacer(),
+                            Text("On",style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w300,
+                              fontSize: 20
+                            ),),
+                            Spacer(),
+                            CircleAvatar(radius: 13,
+                            backgroundColor: Colors.white,)
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 2,
                     child: Placeholder(),
                   ),
                   Expanded(
-                    flex: 1,
+                    flex: 3,
                     child: Placeholder(),
                   ),
                   Expanded(
-                    flex: 1,
-                    child: Placeholder(),
-                  ),
-                  Expanded(
-                    flex: 1,
+                    flex: 4,
                     child: Placeholder(),
                   )
                 ],
