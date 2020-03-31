@@ -30,7 +30,7 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
             child: Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                image: NetworkImage("https://cdn.pixabay.com/photo/2015/05/15/14/31/amplifier-768536__340.jpg"),
+                image: NetworkImage("https://cdn.pixabay.com/photo/2017/11/24/10/43/radio-2974649__340.jpg"),
                 fit: BoxFit.cover,
               )),
               padding: EdgeInsets.all(16),
