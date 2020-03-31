@@ -72,6 +72,26 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                     topRight: Radius.circular(24),
                     topLeft: Radius.circular(24),
                   )),
+              child: Column(
+                children: <Widget>[
+                  Expanded(
+                    flex: 1,
+                    child: Placeholder(),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Placeholder(),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Placeholder(),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Placeholder(),
+                  )
+                ],
+              ),
             ),
           )
         ],
