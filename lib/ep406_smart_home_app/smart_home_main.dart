@@ -17,6 +17,8 @@ class SmartHomeSpeaker extends StatefulWidget {
 }
 
 class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
+  double _value = 0.0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,20 +43,23 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                     IconButton(
                       alignment: Alignment.centerLeft,
                       icon: Icon(Icons.arrow_back),
-                      onPressed: (){},
+                      onPressed: () {},
                       iconSize: 32,
                       color: Colors.white,
                     ),
-                    Text("Living Room",style: GoogleFonts.montserrat(
-                      color: Colors.white,
-                      letterSpacing: 1
-                    ),),
-                    Text("Speaker",style: GoogleFonts.montserrat(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 32,
-                      letterSpacing: 2,
-                      color: Colors.white,
-                    ),)
+                    Text(
+                      "Living Room",
+                      style: GoogleFonts.montserrat(color: Colors.white, letterSpacing: 1),
+                    ),
+                    Text(
+                      "Speaker",
+                      style: GoogleFonts.montserrat(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 32,
+                        letterSpacing: 2,
+                        color: Colors.white,
+                      ),
+                    )
                   ],
                 ),
               ),
@@ -72,7 +77,6 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                     topRight: Radius.circular(24),
                     topLeft: Radius.circular(24),
                   )),
-
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -83,22 +87,20 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                       child: Container(
                         margin: EdgeInsets.symmetric(vertical: 22),
                         width: 72,
-                        decoration: BoxDecoration(
-                          color: Colors.orange,
-                          borderRadius: BorderRadius.circular(24)
-                        ),
+                        decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(24)),
                         padding: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
                         child: Row(
                           children: <Widget>[
                             Spacer(),
-                            Text("On",style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w300,
-                              fontSize: 20
-                            ),),
+                            Text(
+                              "On",
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.w300, fontSize: 20),
+                            ),
                             Spacer(),
-                            CircleAvatar(radius: 13,
-                            backgroundColor: Colors.white,)
+                            CircleAvatar(
+                              radius: 13,
+                              backgroundColor: Colors.white,
+                            )
                           ],
                         ),
                       ),
@@ -106,7 +108,39 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                   ),
                   Expanded(
                     flex: 2,
-                    child: Placeholder(),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          "Volume",
+                          style: GoogleFonts.montserrat(),
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              height: 34,
+                              width: 34,
+                              decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle, boxShadow: [
+                                BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 2, spreadRadius: 2)
+                              ]),
+                              child: Center(
+                                child: Icon(Icons.remove),
+                              ),
+                            ),
+                            Slider(
+
+                              value: _value,
+                              onChanged: (v) {
+                                setState(() {
+                                  _value = v;
+                                });
+                              },
+
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                   Expanded(
                     flex: 3,
