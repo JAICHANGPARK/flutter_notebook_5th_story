@@ -168,7 +168,18 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                   Divider(),
                   Expanded(
                     flex: 3,
-                    child: Placeholder(),
+                    child: Row(
+                      children: <Widget>[
+                        CircleAvatar(
+                          radius: 28,
+                          backgroundColor: Colors.orange[200],
+                          child: CircleAvatar(
+                            radius: 12,
+                            backgroundColor: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   Expanded(
                     flex: 4,
