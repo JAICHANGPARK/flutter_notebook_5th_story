@@ -187,15 +187,16 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
-                                Text("Daylight",style: GoogleFonts.montserrat(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13
-                                ),),
+                                Text(
+                                  "Daylight",
+                                  style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 13),
+                                ),
                                 Padding(
-                                  padding: const EdgeInsets.symmetric(vertical:4),
-                                  child: Text("Taylor Swift",style: GoogleFonts.montserrat(
-                                    fontSize: 11
-                                  ),),
+                                  padding: const EdgeInsets.symmetric(vertical: 4),
+                                  child: Text(
+                                    "Taylor Swift",
+                                    style: GoogleFonts.montserrat(fontSize: 11),
+                                  ),
                                 )
                               ],
                             ),
@@ -203,14 +204,14 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                           Spacer(),
                           IconButton(
                             icon: Icon(Icons.skip_previous),
-                            onPressed: (){},
+                            onPressed: () {},
                           ),
                           IconButton(
                             icon: Icon(Icons.play_arrow),
-                            onPressed: (){},
+                            onPressed: () {},
                           ),
                           IconButton(
-                            onPressed: (){},
+                            onPressed: () {},
                             icon: Icon(Icons.skip_next),
                           )
                         ],
@@ -221,36 +222,68 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                   Expanded(
                     flex: 4,
                     child: Padding(
-                      padding: const EdgeInsets.all(12.0),
+                      padding: const EdgeInsets.only(top: 12, left: 24, bottom: 12),
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: <Widget>[
                           Card(
                             elevation: 4,
                             child: SizedBox(
-
                               width: 120,
+                              child: Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Icon(Icons.highlight),
+                                    Text(
+                                      "Lights",
+                                      style: GoogleFonts.montserrat(fontSize: 12),
+                                    )
+                                  ],
+                                ),
+                              ),
                             ),
                           ),
-                          SizedBox(width: 8,),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Card(
+                            color: Colors.orange,
+                            elevation: 4,
+                            child: SizedBox(
+                              width: 120,
+                              child: Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Icon(Icons.speaker, color: Colors.white,),
+                                    Text(
+                                      "Speaker",
+                                      style: GoogleFonts.montserrat(fontSize: 12
+                                      , color: Colors.white),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
                           Card(
                             elevation: 4,
                             child: SizedBox(
-
                               width: 120,
                             ),
                           ),
-                          SizedBox(width: 8,),
-                          Card(
-                            child: SizedBox(
-                              width: 140,
-                            ),
-                          )
                         ],
                       ),
                     ),
                   )
-
                 ],
               ),
             ),
@@ -260,25 +293,3 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
