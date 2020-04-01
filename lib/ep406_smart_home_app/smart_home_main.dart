@@ -167,20 +167,57 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                   ),
                   Divider(),
                   Expanded(
-                    flex: 3,
-                    child: Row(
-                      children: <Widget>[
-                        CircleAvatar(
-                          radius: 28,
-                          backgroundColor: Colors.orange[200],
-                          child: CircleAvatar(
-                            radius: 12,
-                            backgroundColor: Colors.white,
+                    flex: 2,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 24),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          CircleAvatar(
+                            radius: 28,
+                            backgroundColor: Colors.orange[200],
+                            child: CircleAvatar(
+                              radius: 12,
+                              backgroundColor: Colors.white,
+                            ),
                           ),
-                        )
-                      ],
+                          Padding(
+                            padding: const EdgeInsets.only(left: 16),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Daylight",style: GoogleFonts.montserrat(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 13
+                                ),),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(vertical:4),
+                                  child: Text("Taylor Swift",style: GoogleFonts.montserrat(
+                                    fontSize: 11
+                                  ),),
+                                )
+                              ],
+                            ),
+                          ),
+                          Spacer(),
+                          IconButton(
+                            icon: Icon(Icons.skip_previous),
+                            onPressed: (){},
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.play_arrow),
+                            onPressed: (){},
+                          ),
+                          IconButton(
+                            onPressed: (){},
+                            icon: Icon(Icons.skip_next),
+                          )
+                        ],
+                      ),
                     ),
                   ),
+                  Divider(),
                   Expanded(
                     flex: 4,
                     child: Placeholder(),
