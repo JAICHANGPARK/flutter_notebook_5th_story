@@ -129,20 +129,16 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                                   child: Icon(Icons.remove),
                                 ),
                               ),
-
                               Expanded(
                                 child: SliderTheme(
-                                  data: SliderTheme.of(
-                                    context
-                                  ).copyWith(
-                                    trackHeight: 16,
-                                    activeTrackColor: Colors.orange,
-                                    inactiveTrackColor: Colors.grey,
-                                    thumbShape: RoundSliderThumbShape(
-                                      enabledThumbRadius: 16,
-                                    ),
-                                    thumbColor: Colors.white
-                                  ),
+                                  data: SliderTheme.of(context).copyWith(
+                                      trackHeight: 16,
+                                      activeTrackColor: Colors.orange,
+                                      inactiveTrackColor: Colors.grey,
+                                      thumbShape: RoundSliderThumbShape(
+                                        enabledThumbRadius: 16,
+                                      ),
+                                      thumbColor: Colors.white),
                                   child: Slider(
                                     value: _value,
                                     onChanged: (v) {
