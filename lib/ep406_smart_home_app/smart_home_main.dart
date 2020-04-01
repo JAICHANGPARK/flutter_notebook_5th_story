@@ -165,6 +165,7 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                       ),
                     ),
                   ),
+                  Divider(),
                   Expanded(
                     flex: 3,
                     child: Placeholder(),
