@@ -220,8 +220,37 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                   Divider(),
                   Expanded(
                     flex: 4,
-                    child: Placeholder(),
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: <Widget>[
+                          Card(
+                            elevation: 4,
+                            child: SizedBox(
+
+                              width: 120,
+                            ),
+                          ),
+                          SizedBox(width: 8,),
+                          Card(
+                            elevation: 4,
+                            child: SizedBox(
+
+                              width: 120,
+                            ),
+                          ),
+                          SizedBox(width: 8,),
+                          Card(
+                            child: SizedBox(
+                              width: 140,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                   )
+
                 ],
               ),
             ),
@@ -231,3 +260,25 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
