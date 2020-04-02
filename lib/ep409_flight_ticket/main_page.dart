@@ -50,6 +50,26 @@ class _TicketPageState extends State<TicketPage> {
                   color: Colors.blueAccent,
                   borderRadius: BorderRadius.circular(24),
                 ),
+                child: Column(
+                  children: <Widget>[
+                    Expanded(
+                      flex: 2,
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      flex: 24,
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      flex: 3,
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      flex: 3,
+                      child: Placeholder(),
+                    ),
+                  ],
+                ),
               ),
             ),
             Positioned(
