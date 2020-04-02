@@ -47,7 +47,8 @@ class _TicketPageState extends State<TicketPage> {
               top: 48,
               bottom: 0,
               child: Container(
-                decoration: BoxDecoration(color: Colors.blueAccent),
+                decoration: BoxDecoration(color: Colors.blueAccent,
+                borderRadius: BorderRadius.circular(24),),
               ),
             )
           ],
@@ -56,3 +57,18 @@ class _TicketPageState extends State<TicketPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
