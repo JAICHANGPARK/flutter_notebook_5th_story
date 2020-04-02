@@ -260,11 +260,13 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: <Widget>[
-                                    Icon(Icons.speaker, color: Colors.white,),
+                                    Icon(
+                                      Icons.speaker,
+                                      color: Colors.white,
+                                    ),
                                     Text(
                                       "Speaker",
-                                      style: GoogleFonts.montserrat(fontSize: 12
-                                      , color: Colors.white),
+                                      style: GoogleFonts.montserrat(fontSize: 12, color: Colors.white),
                                     )
                                   ],
                                 ),
@@ -287,13 +289,13 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                                     Icon(Icons.ac_unit),
                                     Text(
                                       "Nest Therm",
-                                      style: GoogleFonts.montserrat(fontSize: 12
-                                      ),
+                                      style: GoogleFonts.montserrat(fontSize: 12),
                                     )
                                   ],
                                 ),
                               ),
-                          ),)
+                            ),
+                          )
                         ],
                       ),
                     ),
