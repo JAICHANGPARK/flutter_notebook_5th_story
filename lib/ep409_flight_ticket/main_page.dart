@@ -34,9 +34,7 @@ class _TicketPageState extends State<TicketPage> {
                   Spacer(),
                   Text(
                     "Your Ticket",
-                    style: GoogleFonts.montserrat(
-                      fontSize: 20
-                    ),
+                    style: GoogleFonts.montserrat(fontSize: 20),
                   ),
                   Spacer(),
                 ],
@@ -48,8 +46,10 @@ class _TicketPageState extends State<TicketPage> {
               top: 48,
               bottom: 0,
               child: Container(
-                decoration: BoxDecoration(color: Colors.blueAccent,
-                borderRadius: BorderRadius.circular(24),),
+                decoration: BoxDecoration(
+                  color: Colors.blueAccent,
+                  borderRadius: BorderRadius.circular(24),
+                ),
               ),
             ),
             Positioned(
@@ -59,16 +59,13 @@ class _TicketPageState extends State<TicketPage> {
               child: Container(
                 height: 64,
                 decoration: BoxDecoration(
-                  color: Colors.grey[50],
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(24),
-                    topRight: Radius.circular(24),
-                  )
-                ),
+                    color: Colors.grey[50],
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(24),
+                      topRight: Radius.circular(24),
+                    )),
                 child: Row(
-                  children: <Widget>[
-
-                  ],
+                  children: <Widget>[],
                 ),
               ),
             )
@@ -78,18 +75,3 @@ class _TicketPageState extends State<TicketPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
