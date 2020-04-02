@@ -51,10 +51,17 @@ class _TicketPageState extends State<TicketPage> {
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Expanded(
                       flex: 2,
-                      child: Placeholder(),
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 24, top: 16),
+                        child: Text(
+                          "Select Seats",
+                          style: GoogleFonts.montserrat(color: Colors.white, fontWeight: FontWeight.w500, fontSize: 16),
+                        ),
+                      ),
                     ),
                     Expanded(
                       flex: 24,
@@ -62,11 +69,22 @@ class _TicketPageState extends State<TicketPage> {
                     ),
                     Expanded(
                       flex: 3,
-                      child: Placeholder(),
+                      child: Align(
+                        child: MaterialButton(onPressed: () {
+
+                        },
+                          child: Text("Confirm", style: GoogleFonts.montserrat(
+                            fontSize: 12,
+                            color: Colors.white,
+
+                          ),),
+
+                        ),
+                      ),
                     ),
                     Expanded(
                       flex: 3,
-                      child: Placeholder(),
+                      child: Placeholder()
                     ),
                   ],
                 ),
