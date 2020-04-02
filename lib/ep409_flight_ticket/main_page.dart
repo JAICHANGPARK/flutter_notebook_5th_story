@@ -64,28 +64,56 @@ class _TicketPageState extends State<TicketPage> {
                       ),
                     ),
                     Expanded(
-                      flex: 24,
+                      flex: 28,
                       child: Placeholder(),
                     ),
                     Expanded(
-                      flex: 3,
-                      child: Align(
-                        child: MaterialButton(onPressed: () {
-
-                        },
-                          child: Text("Confirm", style: GoogleFonts.montserrat(
-                            fontSize: 12,
-                            color: Colors.white,
-
-                          ),),
-
-                        ),
+                      flex: 4,
+                      child: Column(
+                        children: <Widget>[
+                          Expanded(
+                            child: Row(
+                              children: <Widget>[
+                                Container(
+                                  height: 24,
+                                  width: 24,
+                                  decoration: BoxDecoration(
+                                    color: Colors.indigoAccent,
+                                    borderRadius: BorderRadius.circular(6)
+                                  ),
+                                ),
+                                Text("Choosen",style: GoogleFonts.montserrat(
+                                  color: Colors.white,
+                                  fontSize: 11
+                                ),),
+                                Spacer(),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.only(right: 24, top: 8),
+                              child: Align(
+                                alignment: Alignment.centerRight,
+                                child: MaterialButton(
+                                  elevation: 8,
+                                  color: Colors.indigo,
+                                  onPressed: () {},
+                                  child: Text(
+                                    "Confirm",
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 12,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    Expanded(
-                      flex: 3,
-                      child: Placeholder()
-                    ),
+                    Expanded(flex: 4, child: Container()),
                   ],
                 ),
               ),
