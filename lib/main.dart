@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutternotebook5th/ep406_smart_home_app/smart_home_main.dart';
 
-void main() => runApp(SmartHomeApp());
+import 'package:flutternotebook5th/ep409_flight_ticket/main_page.dart';
+
+void main() => runApp(FlightTicketApp());
