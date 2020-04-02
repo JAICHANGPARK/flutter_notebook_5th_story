@@ -72,22 +72,54 @@ class _TicketPageState extends State<TicketPage> {
                       child: Column(
                         children: <Widget>[
                           Expanded(
-                            child: Row(
-                              children: <Widget>[
-                                Container(
-                                  height: 24,
-                                  width: 24,
-                                  decoration: BoxDecoration(
-                                    color: Colors.indigoAccent,
-                                    borderRadius: BorderRadius.circular(6)
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16),
+                              child: Row(
+                                children: <Widget>[
+                                  Container(
+                                    height: 24,
+                                    width: 24,
+                                    decoration: BoxDecoration(
+                                        color: Colors.indigoAccent, borderRadius: BorderRadius.circular(6)),
                                   ),
-                                ),
-                                Text("Choosen",style: GoogleFonts.montserrat(
-                                  color: Colors.white,
-                                  fontSize: 11
-                                ),),
-                                Spacer(),
-                              ],
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "Choosen",
+                                      style: GoogleFonts.montserrat(color: Colors.white, fontSize: 11),
+                                    ),
+                                  ),
+                                  Spacer(),
+                                  Container(
+                                    height: 24,
+                                    width: 24,
+                                    decoration: BoxDecoration(
+                                        border: Border.all(color: Colors.white),
+                                        borderRadius: BorderRadius.circular(6)),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "Available",
+                                      style: GoogleFonts.montserrat(color: Colors.white, fontSize: 11),
+                                    ),
+                                  ),
+                                  Spacer(),
+                                  Container(
+                                    height: 24,
+                                    width: 24,
+                                    decoration:
+                                        BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(6)),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "Blocked",
+                                      style: GoogleFonts.montserrat(color: Colors.white, fontSize: 11),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                           Expanded(
