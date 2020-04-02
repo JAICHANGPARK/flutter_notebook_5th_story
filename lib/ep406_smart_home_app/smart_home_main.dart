@@ -278,8 +278,22 @@ class _SmartHomeSpeakerState extends State<SmartHomeSpeaker> {
                             elevation: 4,
                             child: SizedBox(
                               width: 120,
-                            ),
-                          ),
+                              child: Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: <Widget>[
+                                    Icon(Icons.ac_unit),
+                                    Text(
+                                      "Nest Therm",
+                                      style: GoogleFonts.montserrat(fontSize: 12
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                          ),)
                         ],
                       ),
                     ),
