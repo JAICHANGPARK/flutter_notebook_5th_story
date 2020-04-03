@@ -132,7 +132,7 @@ class _TicketPageState extends State<TicketPage> {
                                 alignment: Alignment.centerRight,
                                 child: MaterialButton(
                                   elevation: 8,
-                                  color: Colors.indigo,
+                                  color: appColor,
                                   onPressed: () {},
                                   child: Text(
                                     "Confirm",
