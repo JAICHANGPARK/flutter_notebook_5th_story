@@ -23,7 +23,13 @@ class TicketPage extends StatefulWidget {
 
 class _TicketPageState extends State<TicketPage> {
   Color appColor = Color(0xff3959b4); // 57 89 180 dec to hex 39 59 b4
-
+  List<Seat> _item;
+  @override
+  void initState() {
+    // TODO: implement initState
+    _item= List.generate(10, (index) => );
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
