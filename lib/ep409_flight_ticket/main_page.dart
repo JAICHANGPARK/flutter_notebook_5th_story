@@ -2,6 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+class Seat{
+  final bool isAvailable;
+  Seat({this.isAvailable});
+}
+
 class FlightTicketApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -18,7 +23,6 @@ class TicketPage extends StatefulWidget {
 
 class _TicketPageState extends State<TicketPage> {
   Color appColor = Color(0xff3959b4); // 57 89 180 dec to hex 39 59 b4
-
 
   @override
   Widget build(BuildContext context) {
