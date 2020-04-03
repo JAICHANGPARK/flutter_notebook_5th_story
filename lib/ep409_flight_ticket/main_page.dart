@@ -1,9 +1,13 @@
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutternotebook5th/generated/i18n.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Seat{
+class Seat {
   final bool isAvailable;
+
   Seat({this.isAvailable});
 }
 
@@ -24,12 +28,163 @@ class TicketPage extends StatefulWidget {
 class _TicketPageState extends State<TicketPage> {
   Color appColor = Color(0xff3959b4); // 57 89 180 dec to hex 39 59 b4
   List<Seat> _item;
+  int _row = 10;
+  int _column = 14;
+
   @override
   void initState() {
     // TODO: implement initState
-    _item= List.generate(10, (index) => );
+    Random random = Random();
+    //TODO: One Dimension Array
+    _item = List<Seat>.generate(10, (index) => Seat(isAvailable: random.nextBool()));
+    _item.forEach((element) {
+      print(element.isAvailable);
+    });
+
+    //TODO : 2 Dimension Array
+    var _tmp =
+        List.generate(_column, (index) =>
+        List<Seat>.generate(_row, (index) =>
+            Seat(isAvailable: random.nextBool())));
+    _tmp.forEach((element) {
+      element.forEach((e) {
+        print(e.isAvailable);
+      });
+    });
+
     super.initState();
   }
+
+
+  List<Widget> _buildSeatTitle(){
+    return <Widget>[
+      Expanded(
+        child: Container(),
+      ),
+      Expanded(
+        child: Container(
+          child: Center(
+            child: Text("A",style:
+            GoogleFonts.montserrat(
+                fontSize: 12,
+                color: Colors.white
+            ),),
+          ),
+        ),
+      ),
+      Expanded(
+        child: Container(
+          child: Center(
+            child: Text("B",style:
+            GoogleFonts.montserrat(
+                fontSize: 12,
+                color: Colors.white
+            ),),
+          ),
+        ),
+      ),
+      Expanded(
+        child: Container(
+          child: Center(
+            child: Text("C",style:
+            GoogleFonts.montserrat(
+                fontSize: 12,
+                color: Colors.white
+            ),),
+          ),
+        ),
+      ),
+      Expanded(
+        child: Container(),
+      ),
+      Expanded(
+        child: Container(
+          child: Center(
+            child: Text("D",style:
+            GoogleFonts.montserrat(
+                fontSize: 12,
+                color: Colors.white
+            ),),
+          ),
+        ),
+      ),
+      Expanded(
+        child: Container(
+          child: Center(
+            child: Text("E",style:
+            GoogleFonts.montserrat(
+                fontSize: 12,
+                color: Colors.white
+            ),),
+          ),
+        ),
+      ),
+      Expanded(
+        child: Container(
+          child: Center(
+            child: Text("F",style:
+            GoogleFonts.montserrat(
+                fontSize: 12,
+                color: Colors.white
+            ),),
+          ),
+        ),
+      ),
+      Expanded(
+        child: Container(
+          child: Center(
+            child: Text("G",style:
+            GoogleFonts.montserrat(
+                fontSize: 12,
+                color: Colors.white
+            ),),
+          ),
+        ),
+      ),
+      Expanded(
+        child: Container(),
+      ),
+      Expanded(
+        child: Container(
+          child: Center(
+            child: Text("H",style:
+            GoogleFonts.montserrat(
+                fontSize: 12,
+                color: Colors.white
+            ),),
+          ),
+        ),
+      ),
+      Expanded(
+        child: Container(
+          child: Center(
+            child: Text("I",style:
+            GoogleFonts.montserrat(
+                fontSize: 12,
+                color: Colors.white
+            ),),
+          ),
+        ),
+      ),
+      Expanded(
+        child: Container(
+          child: Center(
+            child: Text("J",style:
+            GoogleFonts.montserrat(
+                fontSize: 12,
+                color: Colors.white
+            ),),
+          ),
+        ),
+      ),
+      Expanded(
+        child: Container(),
+      ),
+
+    ];
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,7 +233,20 @@ class _TicketPageState extends State<TicketPage> {
                     ),
                     Expanded(
                       flex: 28,
-                      child: Placeholder(),
+                      child: Column(
+                        children: <Widget>[
+                          Expanded(
+                            flex: 1,
+                            child: Row(
+                              children: _buildSeatTitle(),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 15,
+                            child: Placeholder(),
+                          )
+                        ],
+                      ),
                     ),
                     Expanded(
                       flex: 4,
@@ -181,21 +349,20 @@ class _TicketPageState extends State<TicketPage> {
                   children: <Widget>[
                     IconButton(
                       icon: Icon(Icons.home),
-                      onPressed: (){},
+                      onPressed: () {},
                     ),
                     IconButton(
                       icon: Icon(Icons.card_giftcard),
-                      onPressed: (){},
-                    )
-                    ,
+                      onPressed: () {},
+                    ),
                     IconButton(
                       icon: Icon(Icons.style),
                       color: Colors.indigoAccent,
-                      onPressed: (){},
+                      onPressed: () {},
                     ),
                     IconButton(
                       icon: Icon(Icons.person_outline),
-                      onPressed: (){},
+                      onPressed: () {},
                     )
                   ],
                 ),
@@ -207,23 +374,3 @@ class _TicketPageState extends State<TicketPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
