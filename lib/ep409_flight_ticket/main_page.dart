@@ -17,6 +17,9 @@ class TicketPage extends StatefulWidget {
 }
 
 class _TicketPageState extends State<TicketPage> {
+  Color appColor = Color(0xff3959b4); // 57 89 180 dec to hex 39 59 b4
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +50,7 @@ class _TicketPageState extends State<TicketPage> {
               bottom: 0,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.blueAccent,
+                  color: appColor,
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Column(
@@ -156,6 +159,7 @@ class _TicketPageState extends State<TicketPage> {
               left: 0,
               child: Container(
                 height: 64,
+                padding: EdgeInsets.symmetric(horizontal: 24),
                 decoration: BoxDecoration(
                     color: Colors.grey[50],
                     borderRadius: BorderRadius.only(
@@ -163,7 +167,27 @@ class _TicketPageState extends State<TicketPage> {
                       topRight: Radius.circular(24),
                     )),
                 child: Row(
-                  children: <Widget>[],
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    IconButton(
+                      icon: Icon(Icons.home),
+                      onPressed: (){},
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.card_giftcard),
+                      onPressed: (){},
+                    )
+                    ,
+                    IconButton(
+                      icon: Icon(Icons.style),
+                      color: Colors.indigoAccent,
+                      onPressed: (){},
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.person_outline),
+                      onPressed: (){},
+                    )
+                  ],
                 ),
               ),
             )
@@ -173,3 +197,23 @@ class _TicketPageState extends State<TicketPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
