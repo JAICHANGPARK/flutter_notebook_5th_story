@@ -43,9 +43,7 @@ class _TicketPageState extends State<TicketPage> {
 
     //TODO : 2 Dimension Array
     var _tmp =
-        List.generate(_column, (index) =>
-        List<Seat>.generate(_row, (index) =>
-            Seat(isAvailable: random.nextBool())));
+        List.generate(_column, (index) => List<Seat>.generate(_row, (index) => Seat(isAvailable: random.nextBool())));
     _tmp.forEach((element) {
       element.forEach((e) {
         print(e.isAvailable);
@@ -55,8 +53,7 @@ class _TicketPageState extends State<TicketPage> {
     super.initState();
   }
 
-
-  List<Widget> _buildSeatTitle(){
+  List<Widget> _buildSeatTitle() {
     return <Widget>[
       Expanded(
         child: Container(),
@@ -64,33 +61,30 @@ class _TicketPageState extends State<TicketPage> {
       Expanded(
         child: Container(
           child: Center(
-            child: Text("A",style:
-            GoogleFonts.montserrat(
-                fontSize: 12,
-                color: Colors.white
-            ),),
+            child: Text(
+              "A",
+              style: GoogleFonts.montserrat(fontSize: 12, color: Colors.white),
+            ),
           ),
         ),
       ),
       Expanded(
         child: Container(
           child: Center(
-            child: Text("B",style:
-            GoogleFonts.montserrat(
-                fontSize: 12,
-                color: Colors.white
-            ),),
+            child: Text(
+              "B",
+              style: GoogleFonts.montserrat(fontSize: 12, color: Colors.white),
+            ),
           ),
         ),
       ),
       Expanded(
         child: Container(
           child: Center(
-            child: Text("C",style:
-            GoogleFonts.montserrat(
-                fontSize: 12,
-                color: Colors.white
-            ),),
+            child: Text(
+              "C",
+              style: GoogleFonts.montserrat(fontSize: 12, color: Colors.white),
+            ),
           ),
         ),
       ),
@@ -100,44 +94,40 @@ class _TicketPageState extends State<TicketPage> {
       Expanded(
         child: Container(
           child: Center(
-            child: Text("D",style:
-            GoogleFonts.montserrat(
-                fontSize: 12,
-                color: Colors.white
-            ),),
+            child: Text(
+              "D",
+              style: GoogleFonts.montserrat(fontSize: 12, color: Colors.white),
+            ),
           ),
         ),
       ),
       Expanded(
         child: Container(
           child: Center(
-            child: Text("E",style:
-            GoogleFonts.montserrat(
-                fontSize: 12,
-                color: Colors.white
-            ),),
+            child: Text(
+              "E",
+              style: GoogleFonts.montserrat(fontSize: 12, color: Colors.white),
+            ),
           ),
         ),
       ),
       Expanded(
         child: Container(
           child: Center(
-            child: Text("F",style:
-            GoogleFonts.montserrat(
-                fontSize: 12,
-                color: Colors.white
-            ),),
+            child: Text(
+              "F",
+              style: GoogleFonts.montserrat(fontSize: 12, color: Colors.white),
+            ),
           ),
         ),
       ),
       Expanded(
         child: Container(
           child: Center(
-            child: Text("G",style:
-            GoogleFonts.montserrat(
-                fontSize: 12,
-                color: Colors.white
-            ),),
+            child: Text(
+              "G",
+              style: GoogleFonts.montserrat(fontSize: 12, color: Colors.white),
+            ),
           ),
         ),
       ),
@@ -147,42 +137,37 @@ class _TicketPageState extends State<TicketPage> {
       Expanded(
         child: Container(
           child: Center(
-            child: Text("H",style:
-            GoogleFonts.montserrat(
-                fontSize: 12,
-                color: Colors.white
-            ),),
+            child: Text(
+              "H",
+              style: GoogleFonts.montserrat(fontSize: 12, color: Colors.white),
+            ),
           ),
         ),
       ),
       Expanded(
         child: Container(
           child: Center(
-            child: Text("I",style:
-            GoogleFonts.montserrat(
-                fontSize: 12,
-                color: Colors.white
-            ),),
+            child: Text(
+              "I",
+              style: GoogleFonts.montserrat(fontSize: 12, color: Colors.white),
+            ),
           ),
         ),
       ),
       Expanded(
         child: Container(
           child: Center(
-            child: Text("J",style:
-            GoogleFonts.montserrat(
-                fontSize: 12,
-                color: Colors.white
-            ),),
+            child: Text(
+              "J",
+              style: GoogleFonts.montserrat(fontSize: 12, color: Colors.white),
+            ),
           ),
         ),
       ),
       Expanded(
         child: Container(),
       ),
-
     ];
-
   }
 
   @override
