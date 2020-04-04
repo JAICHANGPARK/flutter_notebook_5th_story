@@ -235,15 +235,204 @@ class _TicketPageState extends State<TicketPage> {
                                   List<Seat> _seatItems = _tmp[index];
                                   int idx = 30 + index;
                                   return Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(6.0),
                                     child: Row(
                                       children: <Widget>[
                                         Expanded(
-                                          child: Text(idx.toString(), style: TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 14
-                                          ),),
-                                        )
+                                            child: Text(
+                                          idx.toString(),
+                                          style: GoogleFonts.montserrat(fontSize: 12, color: Colors.white),
+                                        )),
+                                        Expanded(
+                                          child: _seatItems[0].isAvailable
+                                              ? Container(
+                                            margin: EdgeInsets.all(3),
+                                                  height: 24,
+                                                  width: 24,
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius: BorderRadius.circular(6),
+                                                  ),
+                                                )
+                                              : Container(
+                                                  height: 24,
+                                                  width: 24,
+                                                  decoration: BoxDecoration(
+                                                      border: Border.all(color: Colors.white),
+                                                      borderRadius: BorderRadius.circular(6)),
+                                                ),
+                                        ),
+                                        Expanded(
+                                          child: _seatItems[1].isAvailable
+                                              ? Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(6),
+                                            ),
+                                          )
+                                              : Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(6)),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: _seatItems[2].isAvailable
+                                              ? Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(6),
+                                            ),
+                                          )
+                                              : Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(6)),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(),
+                                        ),
+                                        Expanded(
+                                          child: _seatItems[3].isAvailable
+                                              ? Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(6),
+                                            ),
+                                          )
+                                              : Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(6)),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: _seatItems[4].isAvailable
+                                              ? Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(6),
+                                            ),
+                                          )
+                                              : Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(6)),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: _seatItems[5].isAvailable
+                                              ? Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(6),
+                                            ),
+                                          )
+                                              : Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(6)),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: _seatItems[6].isAvailable
+                                              ? Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(6),
+                                            ),
+                                          )
+                                              : Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(6)),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child:Container()
+                                        ),
+                                        Expanded(
+                                          child: _seatItems[7].isAvailable
+                                              ? Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(6),
+                                            ),
+                                          )
+                                              : Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(6)),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: _seatItems[8].isAvailable
+                                              ? Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(6),
+                                            ),
+                                          )
+                                              : Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(6)),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: _seatItems[9].isAvailable
+                                              ? Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(6),
+                                            ),
+                                          )
+                                              : Container(
+                                            height: 24,
+                                            width: 24,
+                                            decoration: BoxDecoration(
+                                                border: Border.all(color: Colors.white),
+                                                borderRadius: BorderRadius.circular(6)),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(),
+                                        ),
                                       ],
                                     ),
                                   );
