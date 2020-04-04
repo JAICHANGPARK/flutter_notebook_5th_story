@@ -264,7 +264,8 @@ class _TicketPageState extends State<TicketPage> {
                                         Expanded(
                                           child: _seatItems[1].isAvailable
                                               ? Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
@@ -272,7 +273,8 @@ class _TicketPageState extends State<TicketPage> {
                                                   ),
                                                 )
                                               : Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                       border: Border.all(color: Colors.white),
@@ -282,7 +284,8 @@ class _TicketPageState extends State<TicketPage> {
                                         Expanded(
                                           child: _seatItems[2].isAvailable
                                               ? Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
@@ -290,7 +293,8 @@ class _TicketPageState extends State<TicketPage> {
                                                   ),
                                                 )
                                               : Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                       border: Border.all(color: Colors.white),
@@ -303,7 +307,8 @@ class _TicketPageState extends State<TicketPage> {
                                         Expanded(
                                           child: _seatItems[3].isAvailable
                                               ? Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
@@ -311,7 +316,8 @@ class _TicketPageState extends State<TicketPage> {
                                                   ),
                                                 )
                                               : Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                       border: Border.all(color: Colors.white),
@@ -321,7 +327,8 @@ class _TicketPageState extends State<TicketPage> {
                                         Expanded(
                                           child: _seatItems[4].isAvailable
                                               ? Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
@@ -329,7 +336,8 @@ class _TicketPageState extends State<TicketPage> {
                                                   ),
                                                 )
                                               : Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                       border: Border.all(color: Colors.white),
@@ -339,7 +347,8 @@ class _TicketPageState extends State<TicketPage> {
                                         Expanded(
                                           child: _seatItems[5].isAvailable
                                               ? Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
@@ -347,7 +356,8 @@ class _TicketPageState extends State<TicketPage> {
                                                   ),
                                                 )
                                               : Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                       border: Border.all(color: Colors.white),
@@ -357,7 +367,8 @@ class _TicketPageState extends State<TicketPage> {
                                         Expanded(
                                           child: _seatItems[6].isAvailable
                                               ? Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
@@ -365,7 +376,8 @@ class _TicketPageState extends State<TicketPage> {
                                                   ),
                                                 )
                                               : Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                       border: Border.all(color: Colors.white),
@@ -376,7 +388,8 @@ class _TicketPageState extends State<TicketPage> {
                                         Expanded(
                                           child: _seatItems[7].isAvailable
                                               ? Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
@@ -384,7 +397,8 @@ class _TicketPageState extends State<TicketPage> {
                                                   ),
                                                 )
                                               : Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                       border: Border.all(color: Colors.white),
@@ -394,7 +408,8 @@ class _TicketPageState extends State<TicketPage> {
                                         Expanded(
                                           child: _seatItems[8].isAvailable
                                               ? Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
@@ -402,7 +417,8 @@ class _TicketPageState extends State<TicketPage> {
                                                   ),
                                                 )
                                               : Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                       border: Border.all(color: Colors.white),
@@ -412,7 +428,8 @@ class _TicketPageState extends State<TicketPage> {
                                         Expanded(
                                           child: _seatItems[9].isAvailable
                                               ? Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
@@ -420,7 +437,8 @@ class _TicketPageState extends State<TicketPage> {
                                                   ),
                                                 )
                                               : Container(
-                                                  height: 24,
+                                            margin: EdgeInsets.symmetric(horizontal: 3),
+                                            height: 20,
                                                   width: 24,
                                                   decoration: BoxDecoration(
                                                       border: Border.all(color: Colors.white),
