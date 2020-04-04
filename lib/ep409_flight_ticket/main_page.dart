@@ -30,7 +30,7 @@ class _TicketPageState extends State<TicketPage> {
   List<Seat> _item;
   int _row = 10;
   int _column = 14;
-
+  List<List<Seat>> _tmp;
   @override
   void initState() {
     // TODO: implement initState
@@ -42,7 +42,7 @@ class _TicketPageState extends State<TicketPage> {
     });
 
     //TODO : 2 Dimension Array
-    var _tmp =
+     _tmp =
         List.generate(_column, (index) => List<Seat>.generate(_row, (index) => Seat(isAvailable: random.nextBool())));
     _tmp.forEach((element) {
       element.forEach((e) {
@@ -228,7 +228,12 @@ class _TicketPageState extends State<TicketPage> {
                           ),
                           Expanded(
                             flex: 15,
-                            child: Placeholder(),
+                            child: ListView.builder(
+                                itemCount: _tmp.length,
+                                itemBuilder: (context, index){
+
+                              return ListView.builder(itemBuilder: (context, index){});
+                            }),
                           )
                         ],
                       ),
