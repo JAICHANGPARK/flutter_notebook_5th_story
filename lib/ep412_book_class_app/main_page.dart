@@ -12,17 +12,32 @@ class LoadBookingApp extends StatelessWidget {
     );
   }
 }
-
-
 class BookingMainPage extends StatefulWidget {
   @override
   _BookingMainPageState createState() => _BookingMainPageState();
 }
-
 class _BookingMainPageState extends State<BookingMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        title: Text("clases".toUpperCase(), style: TextStyle(
+          color: Colors.black
+        ),),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.add_shopping_cart),
+            onPressed: (){},
+          )
+        ],
+        elevation: 0,
+      ),
+      drawer: Drawer(),
+    );
   }
 }
 
