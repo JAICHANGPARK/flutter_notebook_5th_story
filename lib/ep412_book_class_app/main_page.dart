@@ -84,7 +84,7 @@ class _BookingMainPageState extends State<BookingMainPage> {
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 8),
                   decoration: BoxDecoration(
-                   
+
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(32),
                           topRight: Radius.circular(32)
@@ -96,7 +96,7 @@ class _BookingMainPageState extends State<BookingMainPage> {
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 8),
                   decoration: BoxDecoration(
-                      color: Colors.black,
+                    
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(32),
                           topRight: Radius.circular(32)
