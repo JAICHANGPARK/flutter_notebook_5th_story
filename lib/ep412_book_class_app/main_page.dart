@@ -81,14 +81,14 @@ class _BookingMainPageState extends State<BookingMainPage> {
                     children: <Widget>[
                       Icon(
                         Icons.calendar_today,
-                        color: Colors.white,
+                        color: Colors.black,
                         size: 16,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
                           "Clases",
-                          style: TextStyle(color: Colors.white, fontSize: 12),
+                          style: TextStyle(color: Colors.black, fontSize: 12),
                         ),
                       )
                     ],
@@ -105,14 +105,14 @@ class _BookingMainPageState extends State<BookingMainPage> {
                     children: <Widget>[
                       Icon(
                         Icons.calendar_today,
-                        color: Colors.white,
+                        color: Colors.black,
                         size: 16,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
                           "Clases",
-                          style: TextStyle(color: Colors.white, fontSize: 12),
+                          style: TextStyle(color: Colors.black, fontSize: 12),
                         ),
                       )
                     ],
@@ -129,14 +129,14 @@ class _BookingMainPageState extends State<BookingMainPage> {
                     children: <Widget>[
                       Icon(
                         Icons.calendar_today,
-                        color: Colors.white,
+                        color: Colors.black,
                         size: 16,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
                           "Clases",
-                          style: TextStyle(color: Colors.white, fontSize: 12),
+                          style: TextStyle(color: Colors.black, fontSize: 12),
                         ),
                       )
                     ],
@@ -153,14 +153,14 @@ class _BookingMainPageState extends State<BookingMainPage> {
                     children: <Widget>[
                       Icon(
                         Icons.calendar_today,
-                        color: Colors.white,
+                        color: Colors.black,
                         size: 16,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
                           "Clases",
-                          style: TextStyle(color: Colors.white, fontSize: 12),
+                          style: TextStyle(color: Colors.black, fontSize: 12),
                         ),
                       )
                     ],
