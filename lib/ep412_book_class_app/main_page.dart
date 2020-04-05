@@ -22,7 +22,7 @@ class BookingMainPage extends StatefulWidget {
 class _BookingMainPageState extends State<BookingMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
 

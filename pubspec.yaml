@@ -26,6 +26,8 @@ dependencies:
 #Utils
   google_fonts: ^0.3.10
 
+  calendar_strip: ^1.0.6
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
