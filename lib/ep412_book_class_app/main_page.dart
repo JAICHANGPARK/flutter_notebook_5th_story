@@ -1,3 +1,4 @@
+import 'package:calendar_strip/calendar_strip.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,49 @@ class BookingMainPage extends StatefulWidget {
 }
 
 class _BookingMainPageState extends State<BookingMainPage> {
+  getMarkedIndicatorWidget() {
+    return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Container(
+        margin: EdgeInsets.only(left: 1, right: 1),
+        width: 7,
+        height: 7,
+        decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.red),
+      ),
+      Container(
+        width: 7,
+        height: 7,
+        decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.blue),
+      )
+    ]);
+  }
+  dateTileBuilder(date, selectedDate, rowIndex, dayName, isDateMarked, isDateOutOfRange) {
+    bool isSelectedDate = date.compareTo(selectedDate) == 0;
+    Color fontColor = isDateOutOfRange ? Colors.white : Colors.black87;
+    TextStyle normalStyle = TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: fontColor);
+    TextStyle selectedStyle = TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: Colors.white);
+    TextStyle dayNameStyle = TextStyle(fontSize: 14.5, color: fontColor);
+    List<Widget> _children = [
+      Text(dayName, style: !isSelectedDate ? normalStyle : selectedStyle),
+      Text(date.day.toString(), style: !isSelectedDate ? normalStyle : selectedStyle),
+    ];
+
+    if (isDateMarked == true) {
+      _children.add(getMarkedIndicatorWidget());
+    }
+
+    return AnimatedContainer(
+      duration: Duration(milliseconds: 150),
+      alignment: Alignment.center,
+      padding: EdgeInsets.only(top: 8, left: 5, right: 5, bottom: 5),
+      decoration: BoxDecoration(
+        color: !isSelectedDate ? Colors.transparent : Colors.black,
+        borderRadius: BorderRadius.all(Radius.circular(60)),
+      ),
+      child: Column(
+        children: _children,
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -172,6 +216,64 @@ class _BookingMainPageState extends State<BookingMainPage> {
           ),
         ),
       ),
+
+      body: Column(
+        children: <Widget>[
+          Expanded(
+            flex: 2,
+            child: Container(
+              child: CalendarStrip(
+                dateTileBuilder:dateTileBuilder,
+                iconColor: Colors.black,
+                onDateSelected: (data){
+                  print(data);
+                },
+              ),
+              margin: EdgeInsets.only(bottom: 8),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.2),
+                    blurRadius: 2,
+                    spreadRadius: 2,
+                    offset: Offset(0, 2),
+                  )
+                ]
+              ),
+            ),
+          ),
+          Expanded(
+            flex: 8,
+            child: Container(),
+          )
+        ],
+      ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
