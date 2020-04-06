@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 class LoadBookingApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    print("build--MaterialApp------");
     return MaterialApp(
       initialRoute: "/",
       routes: {
@@ -80,14 +81,14 @@ class _BookingMainPageState extends State<BookingMainPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        Icons.calendar_today,
+                        Icons.person_outline,
                         color: Colors.black,
                         size: 16,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
-                          "Clases",
+                          "Perfil",
                           style: TextStyle(color: Colors.black, fontSize: 12),
                         ),
                       )
@@ -104,14 +105,14 @@ class _BookingMainPageState extends State<BookingMainPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        Icons.calendar_today,
+                        Icons.person_outline,
                         color: Colors.black,
                         size: 16,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
-                          "Clases",
+                          "Instructor",
                           style: TextStyle(color: Colors.black, fontSize: 12),
                         ),
                       )
@@ -128,14 +129,14 @@ class _BookingMainPageState extends State<BookingMainPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        Icons.calendar_today,
+                        Icons.notifications_active,
                         color: Colors.black,
                         size: 16,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
-                          "Clases",
+                          "Grab n' Go",
                           style: TextStyle(color: Colors.black, fontSize: 12),
                         ),
                       )
@@ -152,14 +153,14 @@ class _BookingMainPageState extends State<BookingMainPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        Icons.calendar_today,
+                        Icons.all_inclusive,
                         color: Colors.black,
                         size: 16,
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
-                          "Clases",
+                          "Compare",
                           style: TextStyle(color: Colors.black, fontSize: 12),
                         ),
                       )
