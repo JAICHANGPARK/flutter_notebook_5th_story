@@ -263,15 +263,17 @@ class _BookingMainPageState extends State<BookingMainPage> {
                 ),
                 Expanded(
                   flex: 15,
-                  child: ListView.builder(itemBuilder: (context, index){
+                  child: ListView.separated(itemBuilder: (context, index){
                     return Container(
                       height: 64,
                       decoration: BoxDecoration(
                         color: Colors.red,
                       ),
-                      margin: EdgeInsets.only(bottom: 16),
                     );
-                  }),
+                  }, itemCount: 10, separatorBuilder: (BuildContext context, int index) {
+                    return Divider();
+                  },
+                  ),
                 )
               ],
             ),
