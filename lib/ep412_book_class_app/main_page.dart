@@ -296,19 +296,50 @@ class _BookingMainPageState extends State<BookingMainPage> {
                 ),
                 Expanded(
                   flex: 15,
-                  child: ListView.separated(
-                    itemBuilder: (context, index) {
-                      return Container(
-                        height: 64,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                        ),
-                      );
-                    },
-                    itemCount: 10,
-                    separatorBuilder: (BuildContext context, int index) {
-                      return Divider();
-                    },
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 16),
+                    child: ListView.separated(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          height: 52,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                flex:2,
+                                child: Placeholder(),
+                              ),
+                              Expanded(
+                                flex: 6,
+                                child: Placeholder(),
+                              ),
+                              Expanded(
+                                flex: 3,
+                                child: Container(
+                                  margin: EdgeInsets.all(8),
+                                  decoration: BoxDecoration(
+                                    border: Border.all(color: Colors.grey),
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Workoutbar",
+                                      style: TextStyle(fontWeight: FontWeight.bold),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                      itemCount: 10,
+                      separatorBuilder: (BuildContext context, int index) {
+                        return Divider();
+                      },
+                    ),
                   ),
                 )
               ],
@@ -319,3 +350,19 @@ class _BookingMainPageState extends State<BookingMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
