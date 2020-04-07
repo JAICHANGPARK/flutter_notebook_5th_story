@@ -246,9 +246,23 @@ class _BookingMainPageState extends State<BookingMainPage> {
             child: Column(
               children: [
                 Expanded(
-                  child: Placeholder(),
+                  flex: 2,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Placeholder(),
+                      ),
+                      Expanded(
+                        child: Placeholder(),
+                      ),
+                      Expanded(
+                        child: Placeholder(),
+                      )
+                    ],
+                  ),
                 ),
                 Expanded(
+                  flex: 15,
                   child: Placeholder(),
                 )
               ],
@@ -259,23 +273,3 @@ class _BookingMainPageState extends State<BookingMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
