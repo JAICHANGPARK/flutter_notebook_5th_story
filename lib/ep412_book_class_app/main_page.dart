@@ -251,7 +251,7 @@ class _BookingMainPageState extends State<BookingMainPage> {
                     children: [
                       Expanded(
                         child: Container(
-                          margin: EdgeInsets.all(7),
+                          margin: EdgeInsets.all(8),
                           decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
                           child: Center(
                             child: Text(
@@ -263,9 +263,10 @@ class _BookingMainPageState extends State<BookingMainPage> {
                       ),
                       Expanded(
                         child: Container(
+                          margin: EdgeInsets.all(7),
                           decoration: BoxDecoration(
                             border: Border.all(color: Colors.grey),
-                            borderRadius: BorderRadius.circular(4)
+                            borderRadius: BorderRadius.circular(4),
                           ),
                         ),
                       ),
