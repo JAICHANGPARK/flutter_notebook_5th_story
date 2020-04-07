@@ -36,6 +36,7 @@ class _BookingMainPageState extends State<BookingMainPage> {
       )
     ]);
   }
+
   dateTileBuilder(date, selectedDate, rowIndex, dayName, isDateMarked, isDateOutOfRange) {
     bool isSelectedDate = date.compareTo(selectedDate) == 0;
     Color fontColor = isDateOutOfRange ? Colors.white : Colors.black87;
@@ -64,6 +65,7 @@ class _BookingMainPageState extends State<BookingMainPage> {
       ),
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -216,31 +218,27 @@ class _BookingMainPageState extends State<BookingMainPage> {
           ),
         ),
       ),
-
       body: Column(
         children: <Widget>[
           Expanded(
             flex: 2,
             child: Container(
               child: CalendarStrip(
-                dateTileBuilder:dateTileBuilder,
+                dateTileBuilder: dateTileBuilder,
                 iconColor: Colors.black,
-                onDateSelected: (data){
+                onDateSelected: (data) {
                   print(data);
                 },
               ),
               margin: EdgeInsets.only(bottom: 8),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.2),
-                    blurRadius: 2,
-                    spreadRadius: 2,
-                    offset: Offset(0, 2),
-                  )
-                ]
-              ),
+              decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.2),
+                  blurRadius: 2,
+                  spreadRadius: 2,
+                  offset: Offset(0, 2),
+                )
+              ]),
             ),
           ),
           Expanded(
@@ -252,28 +250,3 @@ class _BookingMainPageState extends State<BookingMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
