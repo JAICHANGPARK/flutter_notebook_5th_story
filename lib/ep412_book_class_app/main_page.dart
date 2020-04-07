@@ -243,10 +243,39 @@ class _BookingMainPageState extends State<BookingMainPage> {
           ),
           Expanded(
             flex: 8,
-            child: Container(),
+            child: Column(
+              children: [
+                Expanded(
+                  child: Placeholder(),
+                ),
+                Expanded(
+                  child: Placeholder(),
+                )
+              ],
+            ),
           )
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
