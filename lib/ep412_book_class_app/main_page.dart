@@ -250,7 +250,16 @@ class _BookingMainPageState extends State<BookingMainPage> {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Placeholder(),
+                        child: Container(
+                          margin: EdgeInsets.all(7),
+                          decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
+                          child: Center(
+                            child: Text(
+                              "Todos",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ),
                       ),
                       Expanded(
                         child: Placeholder(),
@@ -263,16 +272,19 @@ class _BookingMainPageState extends State<BookingMainPage> {
                 ),
                 Expanded(
                   flex: 15,
-                  child: ListView.separated(itemBuilder: (context, index){
-                    return Container(
-                      height: 64,
-                      decoration: BoxDecoration(
-                        color: Colors.red,
-                      ),
-                    );
-                  }, itemCount: 10, separatorBuilder: (BuildContext context, int index) {
-                    return Divider();
-                  },
+                  child: ListView.separated(
+                    itemBuilder: (context, index) {
+                      return Container(
+                        height: 64,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
+                      );
+                    },
+                    itemCount: 10,
+                    separatorBuilder: (BuildContext context, int index) {
+                      return Divider();
+                    },
                   ),
                 )
               ],
