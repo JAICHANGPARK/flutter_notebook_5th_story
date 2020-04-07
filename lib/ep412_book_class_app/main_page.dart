@@ -263,16 +263,34 @@ class _BookingMainPageState extends State<BookingMainPage> {
                       ),
                       Expanded(
                         child: Container(
-                          margin: EdgeInsets.all(7),
+                          margin: EdgeInsets.all(8),
                           decoration: BoxDecoration(
                             border: Border.all(color: Colors.grey),
                             borderRadius: BorderRadius.circular(4),
                           ),
+                          child: Center(
+                            child: Text(
+                              "Cycling",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ),
                         ),
                       ),
                       Expanded(
-                        child: Placeholder(),
-                      )
+                        child: Container(
+                          margin: EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Workoutbar",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
