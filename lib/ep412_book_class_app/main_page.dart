@@ -66,14 +66,15 @@ class _BookingMainPageState extends State<BookingMainPage> {
       ),
     );
   }
+
   List<AppClass> _items;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _items = [
-      AppClass()
-
+      AppClass(title: "CYCLING", subtitle: "con Mario", isReserved: false, time: "06:00", duration: "45min"),
     ];
   }
 
@@ -319,18 +320,20 @@ class _BookingMainPageState extends State<BookingMainPage> {
                           child: Row(
                             children: [
                               Expanded(
-                                flex:2,
+                                flex: 2,
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("06:00",style: TextStyle(
-                                      fontWeight: FontWeight.bold
-                                    ),),
+                                    Text(
+                                      "06:00",
+                                      style: TextStyle(fontWeight: FontWeight.bold),
+                                    ),
                                     Padding(
                                       padding: const EdgeInsets.all(4.0),
-                                      child: Text("45min",style: TextStyle(
-                                        fontSize: 10
-                                      ),),
+                                      child: Text(
+                                        "45min",
+                                        style: TextStyle(fontSize: 10),
+                                      ),
                                     )
                                   ],
                                 ),
@@ -343,16 +346,14 @@ class _BookingMainPageState extends State<BookingMainPage> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: <Widget>[
-                                      Text.rich(TextSpan(
-                                        children:[
-                                          TextSpan(text: "CYCLING", style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                          )),
-                                          TextSpan(text: "con Mario", style: TextStyle(
-                                            fontSize: 10
-                                          ))
-                                        ]
-                                      )),
+                                      Text.rich(TextSpan(children: [
+                                        TextSpan(
+                                            text: "CYCLING",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            )),
+                                        TextSpan(text: "con Mario", style: TextStyle(fontSize: 10))
+                                      ])),
                                       Spacer()
                                     ],
                                   ),
@@ -393,19 +394,3 @@ class _BookingMainPageState extends State<BookingMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
