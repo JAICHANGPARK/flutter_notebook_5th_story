@@ -325,13 +325,13 @@ class _BookingMainPageState extends State<BookingMainPage> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
-                                      "06:00",
+                                      "${_items[index].time}",
                                       style: TextStyle(fontWeight: FontWeight.bold),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.all(4.0),
                                       child: Text(
-                                        "45min",
+                                        _items[index].duration,
                                         style: TextStyle(fontSize: 10),
                                       ),
                                     )
@@ -379,7 +379,7 @@ class _BookingMainPageState extends State<BookingMainPage> {
                           ),
                         );
                       },
-                      itemCount: 10,
+                      itemCount: _items.length,
                       separatorBuilder: (BuildContext context, int index) {
                         return Divider();
                       },
