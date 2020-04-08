@@ -352,7 +352,7 @@ class _BookingMainPageState extends State<BookingMainPage> {
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                             )),
-                                        TextSpan(text: "con Mario", style: TextStyle(fontSize: 10))
+                                        TextSpan(text: _items[index].subtitle, style: TextStyle(fontSize: 10))
                                       ])),
                                       Spacer()
                                     ],
@@ -361,7 +361,16 @@ class _BookingMainPageState extends State<BookingMainPage> {
                               ),
                               Expanded(
                                 flex: 3,
-                                child: Container(
+                                child:
+                                _items[index].isReserved ?
+                                    Container(
+                                      margin: EdgeInsets.all(8),
+                                      decoration: BoxDecoration(
+                                       color: Colors.black,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                    ):
+                                Container(
                                   margin: EdgeInsets.all(8),
                                   decoration: BoxDecoration(
                                     border: Border.all(color: Colors.grey),
@@ -369,7 +378,7 @@ class _BookingMainPageState extends State<BookingMainPage> {
                                   ),
                                   child: Center(
                                     child: Text(
-                                      "Workoutbar",
+                                      "Agotado",
                                       style: TextStyle(fontWeight: FontWeight.bold),
                                     ),
                                   ),
