@@ -349,9 +349,13 @@ class _BookingMainPageState extends State<BookingMainPage> {
                                       Text.rich(TextSpan(children: [
                                         TextSpan(
                                             text: _items[index].title,
-                                            style: TextStyle(
+                                            style:
+                                            _items[index].isReserved ?
+                                            TextStyle(
                                               fontWeight: FontWeight.bold,
-                                            )),
+                                            ):TextStyle(
+                                              color: Colors.grey[500]
+                                            )) ,
                                         TextSpan(text: _items[index].subtitle, style: TextStyle(fontSize: 10))
                                       ])),
                                       Spacer()
@@ -368,6 +372,12 @@ class _BookingMainPageState extends State<BookingMainPage> {
                                       decoration: BoxDecoration(
                                        color: Colors.black,
                                         borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Center(
+                                        child: Text("Reservar", style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold
+                                        ),),
                                       ),
                                     ):
                                 Container(
