@@ -335,16 +335,17 @@ class _BookingMainPageState extends State<BookingMainPage> {
                                   children: [
                                     Text(
                                       "${_items[index].time}",
-                                      style: _items[index].isReserved ? TextStyle(fontWeight: FontWeight.bold):
-                                      TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                                      style: _items[index].isReserved
+                                          ? TextStyle(fontWeight: FontWeight.bold)
+                                          : TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.all(4.0),
                                       child: Text(
                                         _items[index].duration,
-                                        style: _items[index].isReserved ? TextStyle(fontWeight: FontWeight.bold,
-                                        fontSize: 10):
-                                        TextStyle(fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 10),
+                                        style: _items[index].isReserved
+                                            ? TextStyle(fontWeight: FontWeight.bold, fontSize: 10)
+                                            : TextStyle(fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 10),
                                       ),
                                     )
                                   ],
