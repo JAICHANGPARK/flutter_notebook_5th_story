@@ -1,6 +1,7 @@
 import 'package:calendar_strip/calendar_strip.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutternotebook5th/ep412_book_class_app/app_class.dart';
 
 class LoadBookingApp extends StatelessWidget {
   @override
@@ -64,6 +65,16 @@ class _BookingMainPageState extends State<BookingMainPage> {
         children: _children,
       ),
     );
+  }
+  List<AppClass> _items;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _items = [
+      AppClass()
+
+    ];
   }
 
   @override
