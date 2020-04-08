@@ -348,15 +348,18 @@ class _BookingMainPageState extends State<BookingMainPage> {
                                     children: <Widget>[
                                       Text.rich(TextSpan(children: [
                                         TextSpan(
-                                            text: _items[index].title,
-                                            style:
-                                            _items[index].isReserved ?
-                                            TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                            ):TextStyle(
-                                              color: Colors.grey[500]
-                                            )) ,
-                                        TextSpan(text: _items[index].subtitle, style: TextStyle(fontSize: 10))
+                                          text: _items[index].title,
+                                          style: _items[index].isReserved
+                                              ? TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                )
+                                              : TextStyle(color: Colors.grey[500]),
+                                        ),
+                                        TextSpan(
+                                            text: _items[index].subtitle,
+                                            style: _items[index].isReserved
+                                                ? TextStyle(fontSize: 10, color: Colors.grey)
+                                                : TextStyle(fontSize: 10))
                                       ])),
                                       Spacer()
                                     ],
@@ -365,34 +368,33 @@ class _BookingMainPageState extends State<BookingMainPage> {
                               ),
                               Expanded(
                                 flex: 3,
-                                child:
-                                _items[index].isReserved ?
-                                    Container(
-                                      margin: EdgeInsets.all(8),
-                                      decoration: BoxDecoration(
-                                       color: Colors.black,
-                                        borderRadius: BorderRadius.circular(4),
+                                child: _items[index].isReserved
+                                    ? Container(
+                                        margin: EdgeInsets.all(8),
+                                        decoration: BoxDecoration(
+                                          color: Colors.black,
+                                          borderRadius: BorderRadius.circular(4),
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            "Reservar",
+                                            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                      )
+                                    : Container(
+                                        margin: EdgeInsets.all(8),
+                                        decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey),
+                                          borderRadius: BorderRadius.circular(4),
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            "Agotado",
+                                            style: TextStyle(fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
                                       ),
-                                      child: Center(
-                                        child: Text("Reservar", style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold
-                                        ),),
-                                      ),
-                                    ):
-                                Container(
-                                  margin: EdgeInsets.all(8),
-                                  decoration: BoxDecoration(
-                                    border: Border.all(color: Colors.grey),
-                                    borderRadius: BorderRadius.circular(4),
-                                  ),
-                                  child: Center(
-                                    child: Text(
-                                      "Agotado",
-                                      style: TextStyle(fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                ),
                               ),
                             ],
                           ),
