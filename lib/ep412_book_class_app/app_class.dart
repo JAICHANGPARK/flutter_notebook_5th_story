@@ -7,7 +7,7 @@ class AppClass{
   final  String title;
   final String subtitle;
 
-  AppClass(this.isReserved, this.time, this.duration, this.title, this.subtitle);
+  AppClass({this.isReserved, this.time, this.duration, this.title, this.subtitle});
 
 
 }
