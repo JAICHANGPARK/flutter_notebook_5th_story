@@ -79,6 +79,11 @@ class _BookingMainPageState extends State<BookingMainPage> {
       AppClass(title: "WORKOUTBAR", subtitle: "con Edgar", isReserved: true, time: "09:15", duration: "1hr"),
       AppClass(title: "CYCLING", subtitle: "con Maria", isReserved: true, time: "09:15", duration: "1hr"),
       AppClass(title: "CYCLING", subtitle: "con Sofia", isReserved: true, time: "10:15", duration: "1hr"),
+      AppClass(title: "CYCLING", subtitle: "con Mario", isReserved: false, time: "06:00", duration: "45min"),
+      AppClass(title: "WORKOUTBAR", subtitle: "con Mario", isReserved: false, time: "06:00", duration: "45min"),
+      AppClass(title: "WORKOUTBAR", subtitle: "con Edgar", isReserved: true, time: "09:15", duration: "1hr"),
+      AppClass(title: "CYCLING", subtitle: "con Maria", isReserved: true, time: "09:15", duration: "1hr"),
+      AppClass(title: "CYCLING", subtitle: "con Sofia", isReserved: true, time: "10:15", duration: "1hr"),
     ];
   }
 
