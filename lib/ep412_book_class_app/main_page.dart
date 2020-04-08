@@ -348,7 +348,7 @@ class _BookingMainPageState extends State<BookingMainPage> {
                                     children: <Widget>[
                                       Text.rich(TextSpan(children: [
                                         TextSpan(
-                                            text: "CYCLING",
+                                            text: _items[index].title,
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                             )),
