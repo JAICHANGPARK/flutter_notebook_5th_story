@@ -34,6 +34,9 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                               "Track",
                               style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 45),
                             ),
+                            SizedBox(
+                              width: 16,
+                            ),
                             Icon(
                               Icons.inbox,
                               color: Colors.orange[100],
@@ -63,7 +66,15 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                         ),
                         Container(
                           height: 48,
+                          padding: EdgeInsets.symmetric(horizontal: 12),
                           decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              hintText: "Tracking Number",
+                              icon: Icon(Icons.search),
+                            ),
+                          ),
                         )
                       ],
                     ),
