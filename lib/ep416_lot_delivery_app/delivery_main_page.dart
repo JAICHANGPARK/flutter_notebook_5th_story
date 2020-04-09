@@ -20,26 +20,29 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
 //                title: Text("Hello"),
 //                centerTitle: true,
 //              ),
-              flexibleSpace: SafeArea(
-                child: Container(
-                  height: 200,
-                  padding: EdgeInsets.all(16),
-                  decoration: BoxDecoration(color: Colors.indigoAccent),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Text("Track",style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 45
-                          ),),
-                          Icon(Icons.inbox, color: Colors.orange[100],
-                          size: 48,)
-                        ],
-                      )
-                    ],
+              flexibleSpace: FlexibleSpaceBar(
+                background: SafeArea(
+                  child: Container(
+                    height: 200,
+                    padding: EdgeInsets.all(16),
+                    decoration: BoxDecoration(color: Colors.indigoAccent),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Text("Track",style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 45
+                            ),),
+                            Icon(Icons.inbox, color: Colors.orange[100],
+                              size: 48,)
+                          ],
+                        ),
+                        Text("")
+                      ],
+                    ),
                   ),
                 ),
               ),
