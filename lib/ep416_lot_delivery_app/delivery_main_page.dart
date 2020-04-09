@@ -9,6 +9,20 @@ class DeliveryMainPage extends StatefulWidget {
 class _DeliveryMainPageState extends State<DeliveryMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+           title: Text("Sliver AppBar"),
+            expandedHeight: 300,
+            flexibleSpace: Placeholder(),
+            floating: true,
+            snap: true,
+          ),
+          SliverList(delegate: null,)
+        ],
+
+      ),
+    );
   }
 }
