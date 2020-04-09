@@ -13,9 +13,15 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
         slivers: [
           SliverAppBar(
 //              title: Text("Sliver AppBar"),
-              expandedHeight: 150.0,
-              flexibleSpace: FlexibleSpaceBar(
-                title: Text("Hello"),
+              expandedHeight: 200.0,
+//              flexibleSpace: FlexibleSpaceBar(
+//                title: Text("Hello"),
+//                centerTitle: true,
+//              ),
+              flexibleSpace: Container(
+                height: 200,
+                decoration: BoxDecoration(color: Colors.red),
+                child: ,
               ),
               floating: false,
               pinned: true,
@@ -30,35 +36,14 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                 ),
               ]),
           SliverList(
-            delegate: SliverChildBuilderDelegate(
-                (context, builder){
-                  return ListTile(title: Text("Hello"),);
-                }
-                ,childCount: 10
-            ),
+            delegate: SliverChildBuilderDelegate((context, index) {
+              return ListTile(
+                title: Text("Hello $index"),
+              );
+            }, childCount: 30),
           )
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
