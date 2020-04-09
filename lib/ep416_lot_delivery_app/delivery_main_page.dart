@@ -13,8 +13,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            backgroundColor: Colors.indigoAccent,
-//              title: Text("Sliver AppBar"),
+              backgroundColor: Colors.indigoAccent,
               expandedHeight: 200.0,
 //              flexibleSpace: FlexibleSpaceBar(
 //                title: Text("Hello"),
@@ -31,24 +30,41 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                       children: [
                         Row(
                           children: [
-                            Text("Track",style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 45
-                            ),),
-                            Icon(Icons.inbox, color: Colors.orange[100],
-                              size: 48,)
+                            Text(
+                              "Track",
+                              style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 45),
+                            ),
+                            Icon(
+                              Icons.inbox,
+                              color: Colors.orange[100],
+                              size: 48,
+                            )
                           ],
                         ),
-                        SizedBox(height: 8,),
-                        Text("Enter a tracking number to start",style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                        ),),
-                        Text("tracking your package",style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                        ),)
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "Enter a tracking number to start",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          "tracking your package",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Container(
+                          height: 48,
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
+                        )
                       ],
                     ),
                   ),
