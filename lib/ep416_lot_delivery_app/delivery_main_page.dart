@@ -21,7 +21,19 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
               flexibleSpace: Container(
                 height: 200,
                 decoration: BoxDecoration(color: Colors.red),
-                child: ,
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text("Track",style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 32
+                        ),)
+                      ],
+                    )
+                  ],
+                ),
               ),
               floating: false,
               pinned: true,
