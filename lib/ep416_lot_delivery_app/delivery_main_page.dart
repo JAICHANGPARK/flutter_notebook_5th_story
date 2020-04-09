@@ -40,7 +40,8 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                               size: 48,)
                           ],
                         ),
-                        Text("")
+                        Text("Enter a tracking number to start"),
+                        Text("tracking your package")
                       ],
                     ),
                   ),
