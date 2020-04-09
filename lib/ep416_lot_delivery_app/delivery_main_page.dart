@@ -40,6 +40,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                               size: 48,)
                           ],
                         ),
+                        SizedBox(height: 8,),
                         Text("Enter a tracking number to start",style: TextStyle(
                           fontSize: 18,
                           color: Colors.white,
