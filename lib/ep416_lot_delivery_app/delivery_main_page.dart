@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DeliveryMainPage extends StatefulWidget {
@@ -12,27 +13,34 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
+            backgroundColor: Colors.indigoAccent,
 //              title: Text("Sliver AppBar"),
               expandedHeight: 200.0,
 //              flexibleSpace: FlexibleSpaceBar(
 //                title: Text("Hello"),
 //                centerTitle: true,
 //              ),
-              flexibleSpace: Container(
-                height: 200,
-                decoration: BoxDecoration(color: Colors.red),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Text("Track",style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 32
-                        ),)
-                      ],
-                    )
-                  ],
+              flexibleSpace: SafeArea(
+                child: Container(
+                  height: 200,
+                  padding: EdgeInsets.all(16),
+                  decoration: BoxDecoration(color: Colors.indigoAccent),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Text("Track",style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 45
+                          ),),
+                          Icon(Icons.inbox, color: Colors.orange[100],
+                          size: 48,)
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
               floating: false,
