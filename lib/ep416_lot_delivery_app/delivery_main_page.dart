@@ -10,120 +10,121 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[50],
+        backgroundColor: Colors.blueGrey[50],
         body: Column(
-      children: [
-        SafeArea(
-          child: Container(
-            height: 200,
-            padding: EdgeInsets.all(16),
-            decoration: BoxDecoration(color: Color(0xff0E2F41)),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
+          children: [
+            SafeArea(
+              child: Container(
+                height: 200,
+                padding: EdgeInsets.all(16),
+                decoration: BoxDecoration(color: Color(0xff0E2F41)),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    Row(
+                      children: [
+                        Text(
+                          "Track",
+                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 45),
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Icon(
+                          Icons.inbox,
+                          color: Colors.orange[100],
+                          size: 48,
+                        )
+                      ],
+                    ),
+                    SizedBox(height: 8),
                     Text(
-                      "Track",
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 45),
+                      "Enter a tracking number to start",
+                      style: TextStyle(fontSize: 18, color: Colors.white),
                     ),
-                    SizedBox(
-                      width: 16,
+                    Text(
+                      "tracking your package",
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white,
+                      ),
                     ),
-                    Icon(
-                      Icons.inbox,
-                      color: Colors.orange[100],
-                      size: 48,
+                    SizedBox(height: 16),
+                    Container(
+                      height: 48,
+                      padding: EdgeInsets.symmetric(horizontal: 12),
+                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Tracking Number",
+                          icon: Icon(Icons.search),
+                        ),
+                      ),
                     )
                   ],
                 ),
-                SizedBox(height: 8),
-                Text(
-                  "Enter a tracking number to start",
-                  style: TextStyle(fontSize: 18, color: Colors.white),
-                ),
-                Text(
-                  "tracking your package",
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.white,
-                  ),
-                ),
-                SizedBox(height: 16),
-                Container(
-                  height: 48,
-                  padding: EdgeInsets.symmetric(horizontal: 12),
-                  decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: "Tracking Number",
-                      icon: Icon(Icons.search),
-                    ),
-                  ),
-                )
-              ],
+              ),
             ),
-          ),
-        ),
-        Container(
-          height: MediaQuery.of(context).size.height / 1.45,
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: [
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: 8,vertical: 4),
-                height: 120,
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Container(
-                        margin: EdgeInsets.all(4),
-                        decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(4)),
-                      ),
+            Container(
+              height: MediaQuery.of(context).size.height / 1.45,
+              child: ListView(
+                padding: EdgeInsets.zero,
+                children: [
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    height: 120,
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            margin: EdgeInsets.all(4),
+                            decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(4)),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            margin: EdgeInsets.all(4),
+                            decoration: BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(4)),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            margin: EdgeInsets.all(4),
+                            decoration:
+                                BoxDecoration(color: Colors.blueGrey[200], borderRadius: BorderRadius.circular(4)),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            margin: EdgeInsets.all(4),
+                            decoration: BoxDecoration(color: Color(0xff0E2F41), borderRadius: BorderRadius.circular(4)),
+                          ),
+                        ),
+                      ],
                     ),
-                    Expanded(
-                      child: Container(
-                        margin: EdgeInsets.all(4),
-                        decoration: BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(4)),
-                      ),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height / 3,
+                    margin: EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    Expanded(
-                      child: Container(
-                        margin: EdgeInsets.all(4),
-                        decoration: BoxDecoration(color: Colors.blueGrey[200], borderRadius: BorderRadius.circular(4)),
-                      ),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height / 3,
+                    margin: EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    Expanded(
-                      child: Container(
-                        margin: EdgeInsets.all(4),
-                        decoration: BoxDecoration(color: Color(0xff0E2F41), borderRadius: BorderRadius.circular(4)),
-                      ),
-                    ),
-                  ],
-                ),
+                  )
+                ],
               ),
-              Container(
-                height: MediaQuery.of(context).size.height / 3,
-                margin: EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              ),
-              Container(
-                height: MediaQuery.of(context).size.height / 3,
-                margin: EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-              )
-            ],
-          ),
+            )
+          ],
         )
-      ],
-    )
 //      CustomScrollView(
 //        slivers: [
 //          SliverAppBar(
