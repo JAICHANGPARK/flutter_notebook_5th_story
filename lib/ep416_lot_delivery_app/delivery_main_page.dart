@@ -75,7 +75,13 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Placeholder(),
+                        child: Container(
+                          margin: EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            color: Colors.orange,
+                            borderRadius: BorderRadius.circular(4)
+                          ),
+                        ),
                       ),
                       Expanded(
                         child: Placeholder(),
