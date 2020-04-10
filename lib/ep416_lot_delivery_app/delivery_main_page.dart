@@ -44,15 +44,10 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                             )
                           ],
                         ),
-                        SizedBox(
-                          height: 8,
-                        ),
+                        SizedBox(height: 8),
                         Text(
                           "Enter a tracking number to start",
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white,
-                          ),
+                          style: TextStyle(fontSize: 18, color: Colors.white),
                         ),
                         Text(
                           "tracking your package",
@@ -61,9 +56,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                             color: Colors.white,
                           ),
                         ),
-                        SizedBox(
-                          height: 16,
-                        ),
+                        SizedBox(height: 16),
                         Container(
                           height: 48,
                           padding: EdgeInsets.symmetric(horizontal: 12),
