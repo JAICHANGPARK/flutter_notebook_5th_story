@@ -100,6 +100,12 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                     ),
                   ],
                 ),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height / 3,
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                ),
               )
             ],
           ),
