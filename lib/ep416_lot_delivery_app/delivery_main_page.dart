@@ -10,6 +10,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueGrey[50],
         body: Column(
       children: [
         SafeArea(
@@ -104,7 +105,15 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
-                margin: EdgeInsets.all(8),
+                margin: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+              Container(
+                height: MediaQuery.of(context).size.height / 3,
+                margin: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(8),
