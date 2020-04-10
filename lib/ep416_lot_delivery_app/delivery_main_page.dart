@@ -10,21 +10,20 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
+      body:
+      CustomScrollView(
         slivers: [
           SliverAppBar(
-              backgroundColor: Colors.indigoAccent,
+              backgroundColor: Color(0xff0E2F41),
               expandedHeight: 200.0,
-//              flexibleSpace: FlexibleSpaceBar(
-//                title: Text("Hello"),
-//                centerTitle: true,
-//              ),
               flexibleSpace: FlexibleSpaceBar(
                 background: SafeArea(
-                  child: Container(
+                  child:
+
+                  Container(
                     height: 200,
                     padding: EdgeInsets.all(16),
-                    decoration: BoxDecoration(color: Colors.indigoAccent),
+                    decoration: BoxDecoration(color: Color(0xff0E2F41)),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -86,13 +85,23 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                   },
                 ),
               ]),
-          SliverList(
-            delegate: SliverChildBuilderDelegate((context, index) {
-              return ListTile(
-                title: Text("Hello $index"),
-              );
-            }, childCount: 30),
-          )
+
+// 14 47 65
+//          SliverList(
+//            delegate: SliverChildBuilderDelegate((context, index) {
+//              return ListTile(
+//                title: Text("Hello $index"),
+//              );
+//            }, childCount: 30),
+//          )
+          Container(
+            height: MediaQuery.of(context).size.height / 2,
+            child: Placeholder(),
+          ),
+          Container(
+            height: MediaQuery.of(context).size.height / 2,
+            child: Placeholder(),
+          ),
         ],
       ),
     );
