@@ -71,6 +71,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
             padding: EdgeInsets.zero,
             children: [
               Container(
+                padding: EdgeInsets.symmetric(horizontal: 8,vertical: 4),
                 height: 120,
                 child: Row(
                   children: [
@@ -103,8 +104,10 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
+                margin: EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: Colors.red,
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(8),
                 ),
               )
             ],
