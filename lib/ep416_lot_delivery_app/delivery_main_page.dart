@@ -67,7 +67,20 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
           ),
           Container(
             height: MediaQuery.of(context).size.height / 1.45,
-            child: ListView(),
+            child: ListView(
+              children: [
+                Container(
+                  height: 160,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Placeholder(),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
           )
         ],
       )
