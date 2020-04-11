@@ -80,6 +80,11 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                           child: Container(
                             margin: EdgeInsets.all(4),
                             decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(4)),
+                            child: Column(
+                              children: [
+                                Icon(Icons.format_list_bulleted,)
+                              ],
+                            ),
                           ),
                         ),
                         Expanded(
