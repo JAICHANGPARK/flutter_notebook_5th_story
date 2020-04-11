@@ -195,13 +195,14 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Bookshelf", style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 24
-                                ),),
-                                Text("Arriving Today",style: TextStyle(
-                                  fontSize: 16
-                                ),),
+                                Text(
+                                  "Bookshelf",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                                ),
+                                Text(
+                                  "Arriving Today",
+                                  style: TextStyle(fontSize: 16),
+                                ),
                                 Divider(),
                                 Container(
                                   height: 68,
@@ -211,11 +212,13 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                         flex: 2,
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            color: Colors.blue[200],
-                                            borderRadius: BorderRadius.circular(8)
+                                              color: Colors.blue[200], borderRadius: BorderRadius.circular(8)),
+                                          child: Center(
+                                            child: Icon(
+                                              Icons.directions_boat,
+                                              color: Colors.white,
+                                            ),
                                           ),
-                                          child: Center(child: Icon(Icons.directions_boat,
-                                          color: Colors.white,),),
                                         ),
                                       ),
                                       Expanded(
@@ -297,19 +300,22 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                                   ],
                                                 ),
                                               )
-
                                             ],
                                           ),
                                         ),
                                       )
-
                                     ],
                                   ),
                                 ),
-                                SizedBox(height: 8,),
+                                SizedBox(
+                                  height: 8,
+                                ),
                                 Row(
                                   children: [
-                                    Icon(Icons.add_location,size: 20,),
+                                    Icon(
+                                      Icons.add_location,
+                                      size: 20,
+                                    ),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Text("Rockville, MD 20850"),
@@ -318,30 +324,46 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 ),
                                 Row(
                                   children: [
-                                    Icon(Icons.calendar_today, size: 20,),
+                                    Icon(
+                                      Icons.calendar_today,
+                                      size: 20,
+                                    ),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Text("Apr 9, 2020"),
                                     ),
-                                    SizedBox(width: 12,),
-                                    Icon(Icons.timer, size: 20,),
+                                    SizedBox(
+                                      width: 12,
+                                    ),
+                                    Icon(
+                                      Icons.timer,
+                                      size: 20,
+                                    ),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Text("7:33am"),
                                     ),
                                   ],
                                 ),
-                                Divider(height: 8,),
+                                Divider(
+                                  height: 8,
+                                ),
                                 Spacer(),
                                 Row(
                                   children: [
                                     Spacer(),
-                                    Text("Track Package", style: TextStyle(
-                                      color: Colors.black,
-                                    ),),
+                                    Text(
+                                      "Track Package",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                      ),
+                                    ),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: Icon(Icons.arrow_forward, size: 16,),
+                                      child: Icon(
+                                        Icons.arrow_forward,
+                                        size: 16,
+                                      ),
                                     )
                                   ],
                                 )
