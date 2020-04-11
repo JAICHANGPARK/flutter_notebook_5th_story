@@ -305,6 +305,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                     ],
                                   ),
                                 ),
+                                SizedBox(height: 8,),
                                 Row(
                                   children: [
                                     Icon(Icons.add_location,size: 20,),
