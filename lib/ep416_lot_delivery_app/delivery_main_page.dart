@@ -193,6 +193,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                           child: Container(
                             decoration: BoxDecoration(color: Colors.white),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("Bookshelf"),
                                 Text("Arriving Today"),
