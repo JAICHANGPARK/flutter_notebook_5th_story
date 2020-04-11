@@ -211,6 +211,12 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                     Icon(Icons.add_location),
                                     Text("Rockville, MD 20850"),
                                   ],
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(Icons.calendar_today),
+                                    Text("Apr 9, 2020"),
+                                  ],
                                 )
                               ],
                             ),
