@@ -83,15 +83,17 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Icon(Icons.format_list_bulleted,color: Colors.white, size: 18),
-                                Text("ORDERED", style: TextStyle(
-                                  color: Colors.white,
-                                ),),
-                                Text("1",style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 32,
-                                  color: Colors.white
-                                ),)
+                                Icon(Icons.format_list_bulleted, color: Colors.white, size: 18),
+                                Text(
+                                  "ORDERED",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                  "1",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32, color: Colors.white),
+                                )
                               ],
                             ),
                           ),
@@ -99,19 +101,21 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                         Expanded(
                           child: Container(
                             margin: EdgeInsets.all(4),
-                            decoration: BoxDecoration(color: Colors.blue[100], borderRadius: BorderRadius.circular(4)),
+                            decoration: BoxDecoration(color: Colors.blue[200], borderRadius: BorderRadius.circular(4)),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Icon(Icons.format_list_bulleted,color: Colors.white, size: 18),
-                                Text("ORDERED", style: TextStyle(
-                                  color: Colors.white,
-                                ),),
-                                Text("1",style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 32,
-                                    color: Colors.white
-                                ),)
+                                Icon(Icons.format_list_bulleted, color: Colors.white, size: 18),
+                                Text(
+                                  "SHIPPED",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                  "1",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32, color: Colors.white),
+                                )
                               ],
                             ),
                           ),
@@ -120,23 +124,23 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                           child: Container(
                             margin: EdgeInsets.all(4),
                             decoration:
-                                BoxDecoration(color: Colors.blueGrey[200], borderRadius: BorderRadius.circular(4)),
+                                BoxDecoration(color: Colors.blueGrey[300], borderRadius: BorderRadius.circular(4)),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Icon(Icons.format_list_bulleted,color: Colors.white, size: 18),
-                                Text("OUT FOR DELIVERY", style: TextStyle(
-                                  color: Colors.white,
-
+                                Icon(Icons.format_list_bulleted, color: Colors.white, size: 18),
+                                Text(
+                                  "OUT FOR DELIVERY",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                  textAlign: TextAlign.center,
                                 ),
-
-                                textAlign: TextAlign.center,),
-                                Text("2",style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 32,
-                                    color: Colors.white
-                                ),)
+                                Text(
+                                  "2",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32, color: Colors.white),
+                                )
                               ],
                             ),
                           ),
@@ -148,15 +152,17 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Icon(Icons.format_list_bulleted,color: Colors.white, size: 18),
-                                Text("DELIVERED", style: TextStyle(
-                                  color: Colors.white,
-                                ),),
-                                Text("3",style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 32,
-                                    color: Colors.white
-                                ),)
+                                Icon(Icons.format_list_bulleted, color: Colors.white, size: 18),
+                                Text(
+                                  "DELIVERED",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                  "3",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32, color: Colors.white),
+                                )
                               ],
                             ),
                           ),
@@ -165,11 +171,45 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                     ),
                   ),
                   Container(
-                    height: MediaQuery.of(context).size.height / 3,
+                    height: MediaQuery.of(context).size.height / 2.5,
                     margin: EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: Container(
+                            decoration: BoxDecoration(
+                                color: Colors.blue[300],
+                                borderRadius:
+                                    BorderRadius.only(topLeft: Radius.circular(16), bottomLeft: Radius.circular(16))),
+                          ),
+                        ),
+                        Expanded(
+                          flex: 20,
+                          child: Container(
+                            decoration: BoxDecoration(color: Colors.white),
+                            child: Column(
+                              children: [
+                                Text("Bookshelf"),
+                                Text("Arriving Today"),
+                                Container(
+                                  height: 80,
+                                  color: Colors.grey,
+                                  child: Row(
+                                    children: [
+
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
                     ),
                   ),
                   Container(
