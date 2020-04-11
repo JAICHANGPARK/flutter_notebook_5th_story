@@ -121,6 +121,20 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                             margin: EdgeInsets.all(4),
                             decoration:
                                 BoxDecoration(color: Colors.blueGrey[200], borderRadius: BorderRadius.circular(4)),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Icon(Icons.format_list_bulleted,color: Colors.white, size: 18),
+                                Text("ORDERED", style: TextStyle(
+                                  color: Colors.white,
+                                ),),
+                                Text("1",style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 32,
+                                    color: Colors.white
+                                ),)
+                              ],
+                            ),
                           ),
                         ),
                         Expanded(
