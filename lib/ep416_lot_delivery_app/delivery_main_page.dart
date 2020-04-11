@@ -236,7 +236,10 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 Row(
                                   children: [
                                     Spacer(),
-                                    Text("Track Package"),
+                                    Text("Track Package", style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 16
+                                    ),),
                                     IconButton(
                                       icon: Icon(Icons.arrow_forward),
                                       iconSize: 18,
