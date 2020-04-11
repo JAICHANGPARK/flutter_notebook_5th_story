@@ -205,6 +205,12 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
 
                                     ],
                                   ),
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(Icons.add_location),
+                                    Text("Rockville, MD 20850"),
+                                  ],
                                 )
                               ],
                             ),
