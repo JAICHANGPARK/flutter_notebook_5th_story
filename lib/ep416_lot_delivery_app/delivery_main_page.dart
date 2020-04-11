@@ -197,6 +197,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                               children: [
                                 Text("Bookshelf"),
                                 Text("Arriving Today"),
+                                Divider(),
                                 Container(
                                   height: 80,
                                   color: Colors.grey,
@@ -230,6 +231,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                     ),
                                   ],
                                 ),
+                                Divider(),
                                 Spacer(),
                               ],
                             ),
