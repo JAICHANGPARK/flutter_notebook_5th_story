@@ -209,13 +209,25 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 Row(
                                   children: [
                                     Icon(Icons.add_location),
-                                    Text("Rockville, MD 20850"),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text("Rockville, MD 20850"),
+                                    ),
                                   ],
                                 ),
                                 Row(
                                   children: [
                                     Icon(Icons.calendar_today),
-                                    Text("Apr 9, 2020"),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text("Apr 9, 2020"),
+                                    ),
+                                    SizedBox(width: 12,),
+                                    Icon(Icons.timer),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text("7:33am"),
+                                    ),
                                   ],
                                 )
                               ],
