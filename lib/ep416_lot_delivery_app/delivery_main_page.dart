@@ -214,7 +214,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 ),
                                 Row(
                                   children: [
-                                    Icon(Icons.add_location),
+                                    Icon(Icons.add_location,size: 20,),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Text("Rockville, MD 20850"),
@@ -223,31 +223,30 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 ),
                                 Row(
                                   children: [
-                                    Icon(Icons.calendar_today),
+                                    Icon(Icons.calendar_today, size: 20,),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Text("Apr 9, 2020"),
                                     ),
                                     SizedBox(width: 12,),
-                                    Icon(Icons.timer),
+                                    Icon(Icons.timer, size: 20,),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Text("7:33am"),
                                     ),
                                   ],
                                 ),
-                                Divider(),
+                                Divider(height: 8,),
+                                Spacer(),
                                 Row(
                                   children: [
                                     Spacer(),
                                     Text("Track Package", style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 16
                                     ),),
-                                    IconButton(
-                                      icon: Icon(Icons.arrow_forward),
-                                      iconSize: 18,
-                                      color: Colors.blue, onPressed: () {  },
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Icon(Icons.arrow_forward, size: 16,),
                                     )
                                   ],
                                 )
