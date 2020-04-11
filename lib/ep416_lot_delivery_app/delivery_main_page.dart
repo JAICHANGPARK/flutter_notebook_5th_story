@@ -214,6 +214,8 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                             color: Colors.blue[200],
                                             borderRadius: BorderRadius.circular(8)
                                           ),
+                                          child: Center(child: Icon(Icons.directions_boat,
+                                          color: Colors.white,),),
                                         ),
                                       ),
                                       Expanded(
@@ -235,7 +237,6 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                                         shape: BoxShape.circle,
                                                       ),
                                                     ),
-
                                                     Padding(
                                                       padding: const EdgeInsets.all(4.0),
                                                       child: Container(
