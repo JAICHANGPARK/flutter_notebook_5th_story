@@ -229,7 +229,8 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                       child: Text("7:33am"),
                                     ),
                                   ],
-                                )
+                                ),
+                                Spacer(),
                               ],
                             ),
                           ),
