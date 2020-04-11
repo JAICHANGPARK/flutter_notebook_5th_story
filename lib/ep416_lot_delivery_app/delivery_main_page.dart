@@ -229,11 +229,34 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                                 child: Row(
                                                   children: [
                                                     Container(
-                                                      height: 16,
-                                                      width: 16,
+                                                      height: 12,
+                                                      width: 12,
                                                       decoration: BoxDecoration(
                                                         color: Colors.blue,
                                                         shape: BoxShape.circle,
+                                                      ),
+                                                    ),
+                                                    Container(
+                                                      height: 18,
+                                                      width: 18,
+                                                      decoration: BoxDecoration(
+
+                                                      ),
+                                                      child: Container(
+                                                        height: 12,
+                                                        width: 12,
+                                                        decoration: BoxDecoration(
+                                                          color: Colors.blue,
+                                                          shape: BoxShape.circle,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.all(4.0),
+                                                      child: Container(
+                                                        height: 1,
+                                                        width: 28,
+                                                        color: Colors.blue,
                                                       ),
                                                     )
                                                   ],
