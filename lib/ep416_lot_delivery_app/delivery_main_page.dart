@@ -204,10 +204,27 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 ),),
                                 Divider(),
                                 Container(
-                                  height: 80,
+                                  height: 72,
                                   color: Colors.grey,
                                   child: Row(
                                     children: [
+                                      Expanded(
+                                        flex: 2,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue[200],
+                                            borderRadius: BorderRadius.circular(8)
+                                          ),
+                                        ),
+                                      ),
+                                      Expanded(
+                                        flex: 6,
+                                        child: Column(
+                                          children: [
+
+                                          ],
+                                        ),
+                                      )
 
                                     ],
                                   ),
