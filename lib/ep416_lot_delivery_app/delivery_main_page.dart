@@ -190,13 +190,18 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                         ),
                         Expanded(
                           flex: 20,
-                          child: Container(
-                            decoration: BoxDecoration(color: Colors.white),
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Bookshelf"),
-                                Text("Arriving Today"),
+                                Text("Bookshelf", style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24
+                                ),),
+                                Text("Arriving Today",style: TextStyle(
+                                  fontSize: 16
+                                ),),
                                 Divider(),
                                 Container(
                                   height: 80,
@@ -232,7 +237,6 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                   ],
                                 ),
                                 Divider(),
-                                Spacer(),
                                 Row(
                                   children: [
                                     Spacer(),
