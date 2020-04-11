@@ -219,10 +219,29 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                       ),
                                       Expanded(
                                         flex: 6,
-                                        child: Column(
-                                          children: [
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Expanded(child: Text("OUT FOR DELIVERY")),
+                                              Expanded(
+                                                child: Row(
+                                                  children: [
+                                                    Container(
+                                                      height: 16,
+                                                      width: 16,
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.blue,
+                                                        shape: BoxShape.circle,
+                                                      ),
+                                                    )
+                                                  ],
+                                                ),
+                                              )
 
-                                          ],
+                                            ],
+                                          ),
                                         ),
                                       )
 
