@@ -204,8 +204,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                 ),),
                                 Divider(),
                                 Container(
-                                  height: 72,
-                                  color: Colors.grey,
+                                  height: 68,
                                   child: Row(
                                     children: [
                                       Expanded(
@@ -218,7 +217,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                         ),
                                       ),
                                       Expanded(
-                                        flex: 6,
+                                        flex: 7,
                                         child: Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Column(
@@ -236,6 +235,15 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                                         shape: BoxShape.circle,
                                                       ),
                                                     ),
+
+                                                    Padding(
+                                                      padding: const EdgeInsets.all(4.0),
+                                                      child: Container(
+                                                        height: 1,
+                                                        width: 28,
+                                                        color: Colors.blue,
+                                                      ),
+                                                    ),
                                                     Container(
                                                       height: 18,
                                                       width: 18,
@@ -243,6 +251,7 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                                         border: Border.all(color: Colors.blue),
                                                         shape: BoxShape.circle,
                                                       ),
+                                                      padding: EdgeInsets.all(3),
                                                       child: Container(
                                                         height: 12,
                                                         width: 12,
@@ -259,7 +268,31 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                                                         width: 28,
                                                         color: Colors.blue,
                                                       ),
-                                                    )
+                                                    ),
+                                                    Container(
+                                                      height: 12,
+                                                      width: 12,
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.grey,
+                                                        shape: BoxShape.circle,
+                                                      ),
+                                                    ),
+                                                    Padding(
+                                                      padding: const EdgeInsets.all(4.0),
+                                                      child: Container(
+                                                        height: 1,
+                                                        width: 28,
+                                                        color: Colors.blue,
+                                                      ),
+                                                    ),
+                                                    Container(
+                                                      height: 12,
+                                                      width: 12,
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.grey,
+                                                        shape: BoxShape.circle,
+                                                      ),
+                                                    ),
                                                   ],
                                                 ),
                                               )
