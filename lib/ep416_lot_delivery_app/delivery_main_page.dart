@@ -122,13 +122,17 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                             decoration:
                                 BoxDecoration(color: Colors.blueGrey[200], borderRadius: BorderRadius.circular(4)),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Icon(Icons.format_list_bulleted,color: Colors.white, size: 18),
-                                Text("ORDERED", style: TextStyle(
+                                Text("OUT FOR DELIVERY", style: TextStyle(
                                   color: Colors.white,
-                                ),),
-                                Text("1",style: TextStyle(
+
+                                ),
+
+                                textAlign: TextAlign.center,),
+                                Text("2",style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 32,
                                     color: Colors.white
@@ -145,10 +149,10 @@ class _DeliveryMainPageState extends State<DeliveryMainPage> {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Icon(Icons.format_list_bulleted,color: Colors.white, size: 18),
-                                Text("ORDERED", style: TextStyle(
+                                Text("DELIVERED", style: TextStyle(
                                   color: Colors.white,
                                 ),),
-                                Text("1",style: TextStyle(
+                                Text("3",style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 32,
                                     color: Colors.white
