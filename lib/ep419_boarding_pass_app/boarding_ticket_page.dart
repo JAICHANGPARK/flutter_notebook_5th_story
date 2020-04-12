@@ -61,7 +61,7 @@ class BoardingTicketPage extends StatelessWidget {
                 ),
                 child: Center(
                   child: Text("ADD TO WALLET",
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                     color: Colors.pink[50],
                     fontWeight: FontWeight.bold,
                     fontSize: 24
