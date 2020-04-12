@@ -58,6 +58,9 @@ class BoardingTicketPage extends StatelessWidget {
                   color: Colors.teal,
                   borderRadius: BorderRadius.circular(16)
                 ),
+                child: Center(
+                  child: Text("ADD TO WALLET"),
+                ),
               ),
             )
           ],
