@@ -15,7 +15,12 @@ class BoardingTicketPage extends StatelessWidget {
                 children: [
                   Expanded(
                     flex: 1,
-                    child: Placeholder(),
+                    child: Row(
+                      children: [
+                        Spacer(),
+                        Icon(Icons.clear, color: Colors.teal,)
+                      ],
+                    ),
                   ),
                   Expanded(
                     flex: 1,
