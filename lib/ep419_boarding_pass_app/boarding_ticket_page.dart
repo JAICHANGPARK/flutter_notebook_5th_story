@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class BoardingTicketPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -22,8 +21,12 @@ class BoardingTicketPage extends StatelessWidget {
                         children: [
                           Spacer(),
                           IconButton(
-                            icon: Icon(Icons.clear, color: Colors.teal,
-                            size: 48,), onPressed: () {  },
+                            icon: Icon(
+                              Icons.clear,
+                              color: Colors.teal,
+                              size: 48,
+                            ),
+                            onPressed: () {},
                           )
                         ],
                       ),
