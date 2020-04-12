@@ -34,7 +34,8 @@ class BoardingTicketPage extends StatelessWidget {
                         "Boarding Pass",
                         style: TextStyle(
                           fontSize: 32,
-                          color: Colors.teal
+                          color: Colors.teal,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     )
