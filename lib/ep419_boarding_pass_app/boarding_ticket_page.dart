@@ -11,7 +11,7 @@ class BoardingTicketPage extends StatelessWidget {
             Expanded(
               flex: 1,
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -52,7 +52,13 @@ class BoardingTicketPage extends StatelessWidget {
             ),
             Expanded(
               flex: 1,
-              child: Placeholder(),
+              child: Container(
+                margin: EdgeInsets.all(24),
+                decoration: BoxDecoration(
+                  color: Colors.teal,
+                  borderRadius: BorderRadius.circular(16)
+                ),
+              ),
             )
           ],
         ),
@@ -60,3 +66,27 @@ class BoardingTicketPage extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
