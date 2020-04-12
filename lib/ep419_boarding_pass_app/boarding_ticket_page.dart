@@ -36,10 +36,10 @@ class BoardingTicketPage extends StatelessWidget {
                       flex: 1,
                       child: Text(
                         "Boarding Pass",
-                        style: GoogleFonts.p(
+                        style: GoogleFonts.poppins(
                           fontSize: 32,
                           color: Colors.teal,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
                     )
