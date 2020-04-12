@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class BoardingTicketPage extends StatelessWidget {
   @override
@@ -35,7 +36,7 @@ class BoardingTicketPage extends StatelessWidget {
                       flex: 1,
                       child: Text(
                         "Boarding Pass",
-                        style: TextStyle(
+                        style: GoogleFonts.p(
                           fontSize: 32,
                           color: Colors.teal,
                           fontWeight: FontWeight.bold,
@@ -59,9 +60,11 @@ class BoardingTicketPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(16)
                 ),
                 child: Center(
-                  child: Text("ADD TO WALLET", style: TextStyle(
+                  child: Text("ADD TO WALLET",
+                    style: TextStyle(
                     color: Colors.pink[50],
                     fontWeight: FontWeight.bold,
+                    fontSize: 24
                   ),),
                 ),
               ),
