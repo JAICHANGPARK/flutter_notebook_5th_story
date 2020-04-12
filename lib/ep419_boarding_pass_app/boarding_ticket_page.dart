@@ -18,8 +18,10 @@ class BoardingTicketPage extends StatelessWidget {
                     child: Row(
                       children: [
                         Spacer(),
-                        Icon(Icons.clear, color: Colors.teal,
-                        size: 48,)
+                        IconButton(
+                          icon: Icon(Icons.clear, color: Colors.teal,
+                          size: 48,), onPressed: () {  },
+                        )
                       ],
                     ),
                   ),
