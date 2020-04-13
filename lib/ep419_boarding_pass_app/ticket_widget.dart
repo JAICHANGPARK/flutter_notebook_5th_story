@@ -16,38 +16,9 @@ class TicketWidget extends StatelessWidget {
         height: height,
         child: child,
         decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: cornerRounded?BorderRadius.circular(24.0):
-              BorderRadius.circular(0)
-        ),
+            color: Colors.white, borderRadius: cornerRounded ? BorderRadius.circular(24.0) : BorderRadius.circular(0)),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
