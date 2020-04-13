@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook5th/ep419_boarding_pass_app/ticket_clipper.dart';
 
 class TicketWidget extends StatelessWidget {
   final double width;
@@ -11,6 +12,7 @@ class TicketWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipPath(
+      clipper: TicketClipper(),
       child: Container(
         width: width,
         height: height,
