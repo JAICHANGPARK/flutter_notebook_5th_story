@@ -7,6 +7,7 @@ class TicketClipper extends CustomClipper<Path>{
     Path path = Path();
     path.lineTo(0.0, size.height);
     path.lineTo(size.width, size.height);
+    path.lineTo(size.width, 0);
     return path;
   }
 
