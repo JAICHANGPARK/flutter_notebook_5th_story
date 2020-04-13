@@ -85,7 +85,7 @@ class BoardingTicketPage extends StatelessWidget {
                             )
                           ],
                         ),
-
+                        SizedBox(height: 32,),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -93,7 +93,9 @@ class BoardingTicketPage extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Frankfurt Am Main"),
+                                Text("Frankfurt Am Main", style: TextStyle(
+                                  fontSize: 10
+                                ),),
                                 Text("FRA", style: TextStyle(
                                   fontSize: 28
                                 ),)
