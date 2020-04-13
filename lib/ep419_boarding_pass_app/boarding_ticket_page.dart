@@ -94,13 +94,14 @@ class BoardingTicketPage extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("Frankfurt Am Main"),
-                                Text("FRA")
+                                Text("FRA", style: TextStyle(
+                                  fontSize: 28
+                                ),)
                               ],
                             ),
                             Icon(Icons.airplanemode_active),
                             Column(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Text("New York JFK"),
                                 Text("JFK")
