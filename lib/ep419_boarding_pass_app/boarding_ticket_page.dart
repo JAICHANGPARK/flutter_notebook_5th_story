@@ -55,12 +55,64 @@ class BoardingTicketPage extends StatelessWidget {
                 child: TicketWidget(
                   width: double.infinity,
                   height: double.infinity,
-                  child: Column(
-                    children: [
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 16, right: 16, left: 16),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              height: 48,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: NetworkImage("https://cdn.freebiesupply.com/images/large/2x/klm-logo-black-and-white.png")
+                                )
+                              ),
+                            ),
+                            Spacer(),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Text("Passenger's name",style: TextStyle(
+                                  fontSize: 12
+                                ),),
+                                Text("Dreamwalker", style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 21
+                                ),)
+                              ],
+                            )
+                          ],
+                        ),
+
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Frankfurt Am Main"),
+                                Text("FRA")
+                              ],
+                            ),
+                            Icon(Icons.airplanemode_active),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("New York JFK"),
+                                Text("JFK")
+                              ],
+                            ),
+                          ],
+                        )
+
+                      ],
+                    ),
                   ),
                   cornerRounded: true,
-
                 ),
               ),
             ),
