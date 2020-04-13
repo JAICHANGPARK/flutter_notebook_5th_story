@@ -101,7 +101,9 @@ class BoardingTicketPage extends StatelessWidget {
                                 ),)
                               ],
                             ),
-                            Icon(Icons.airplanemode_active),
+                            RotatedBox(
+                                quarterTurns: 1,
+                                child: Icon(Icons.airplanemode_active, size: 48,)),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
