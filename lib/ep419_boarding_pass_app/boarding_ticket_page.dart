@@ -51,6 +51,13 @@ class BoardingTicketPage extends StatelessWidget {
             Expanded(
               flex: 4,
               child: TicketWidget(
+                width: double.infinity,
+                height: double.infinity,
+                child: Column(
+                  children: [
+                  ],
+                ),
+                cornerRounded: true,
 
               ),
             ),
