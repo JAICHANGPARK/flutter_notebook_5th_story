@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook5th/ep419_boarding_pass_app/ticket_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BoardingTicketPage extends StatelessWidget {
@@ -49,7 +50,9 @@ class BoardingTicketPage extends StatelessWidget {
             ),
             Expanded(
               flex: 4,
-              child: Placeholder(),
+              child: TicketWidget(
+
+              ),
             ),
             Expanded(
               flex: 1,

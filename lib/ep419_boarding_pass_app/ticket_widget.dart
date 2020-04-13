@@ -7,7 +7,7 @@ class TicketWidget extends StatelessWidget {
   final Widget child;
   final bool cornerRounded;
 
-  TicketWidget(this.width, this.height, this.child, this.cornerRounded);
+  TicketWidget({this.width, this.height, this.child, this.cornerRounded});
 
   @override
   Widget build(BuildContext context) {
