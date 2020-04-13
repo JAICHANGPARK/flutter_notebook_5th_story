@@ -55,17 +55,12 @@ class BoardingTicketPage extends StatelessWidget {
               flex: 1,
               child: Container(
                 margin: EdgeInsets.all(24),
-                decoration: BoxDecoration(
-                  color: Colors.teal,
-                  borderRadius: BorderRadius.circular(16)
-                ),
+                decoration: BoxDecoration(color: Colors.teal, borderRadius: BorderRadius.circular(16)),
                 child: Center(
-                  child: Text("ADD TO WALLET",
-                    style: GoogleFonts.poppins(
-                    color: Colors.pink[50],
-                    fontWeight: FontWeight.w600,
-                    fontSize: 20
-                  ),),
+                  child: Text(
+                    "ADD TO WALLET",
+                    style: GoogleFonts.poppins(color: Colors.pink[50], fontWeight: FontWeight.w600, fontSize: 20),
+                  ),
                 ),
               ),
             )
@@ -75,27 +70,3 @@ class BoardingTicketPage extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
