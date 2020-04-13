@@ -10,6 +10,15 @@ class TicketWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return ClipPath(
+      child: Container(
+        width: width,
+        height: height,
+        child: child,
+        decoration: BoxDecoration(
+        ),
+      ),
+    );
   }
 }
+
