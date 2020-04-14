@@ -179,6 +179,7 @@ class BoardingTicketPage extends StatelessWidget {
                         Row(
                           children: [
                             Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("Flight Date"),
                                 Text("April 04 2017"),
