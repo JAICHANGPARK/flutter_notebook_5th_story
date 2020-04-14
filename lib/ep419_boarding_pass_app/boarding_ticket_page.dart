@@ -125,36 +125,74 @@ class BoardingTicketPage extends StatelessWidget {
                           ],
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(top: 24),
+                          padding: const EdgeInsets.only(top: 32),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [Text("Flight",style: TextStyle(
-                                  fontSize: 12
-                                ),), Text("Y4 858")],
+                                children: [
+                                  Text(
+                                    "Flight",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 4),
+                                    child: Text("Y4 858"),
+                                  )
+                                ],
                               ),
-                              Column(crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [Text("Seat",style: TextStyle(
-                                    fontSize: 12
-                                )), Text("8D")],
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Seat", style: TextStyle(fontSize: 12)),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 4),
+                                    child: Text("8D"),
+                                  )
+                                ],
                               ),
-                              Column(crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [Text("Class",style: TextStyle(
-                                    fontSize: 12
-                                )), Text("Business")],
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Class", style: TextStyle(fontSize: 12)),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 4),
+                                    child: Text("Business"),
+                                  )
+                                ],
                               ),
-                              Column(crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [Text("SEQ#",style: TextStyle(
-                                    fontSize: 12
-                                )), Text("81")],
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("SEQ#", style: TextStyle(fontSize: 12)),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 4),
+                                    child: Text("81"),
+                                  )
+                                ],
                               ),
-                              SizedBox(
-                                width: 16,
-                              )
+                              SizedBox(width: 16)
                             ],
                           ),
+                        ),
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text("Flight Date"),
+                                Text("April 04 2017"),
+                              ],
+                            ),
+                            Spacer(),
+                            Column(
+                              children: [
+                                Text("Flight Date"),
+                                Text("April 04 2017"),
+                              ],
+                            ),
+                            Spacer(),
+                          ],
                         )
                       ],
                     ),
