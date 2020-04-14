@@ -65,27 +65,29 @@ class BoardingTicketPage extends StatelessWidget {
                               height: 48,
                               width: 64,
                               decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: NetworkImage("https://cdn.freebiesupply.com/images/large/2x/klm-logo-black-and-white.png")
-                                )
-                              ),
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                          "https://cdn.freebiesupply.com/images/large/2x/klm-logo-black-and-white.png"))),
                             ),
                             Spacer(),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Text("Passenger's name",style: TextStyle(
-                                  fontSize: 12
-                                ),),
-                                Text("Dreamwalker", style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 21
-                                ),)
+                                Text(
+                                  "Passenger's name",
+                                  style: TextStyle(fontSize: 12),
+                                ),
+                                Text(
+                                  "Dreamwalker",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 21),
+                                )
                               ],
                             )
                           ],
                         ),
-                        SizedBox(height: 32,),
+                        SizedBox(
+                          height: 32,
+                        ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -93,31 +95,37 @@ class BoardingTicketPage extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Frankfurt Am Main", style: TextStyle(
-                                  fontSize: 10
-                                ),),
-                                Text("FRA", style: TextStyle(
-                                  fontSize: 28
-                                ),)
+                                Text(
+                                  "Frankfurt Am Main",
+                                  style: TextStyle(fontSize: 10),
+                                ),
+                                Text(
+                                  "FRA",
+                                  style: TextStyle(fontSize: 28),
+                                )
                               ],
                             ),
                             RotatedBox(
                                 quarterTurns: 1,
-                                child: Icon(Icons.airplanemode_active, size: 48,)),
+                                child: Icon(
+                                  Icons.airplanemode_active,
+                                  size: 48,
+                                )),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Text("New York JFK", style: TextStyle(
-                                    fontSize: 10
-                                ),),
-                                Text("JFK", style: TextStyle(
-                                    fontSize: 28
-                                ),)
+                                Text(
+                                  "New York JFK",
+                                  style: TextStyle(fontSize: 10),
+                                ),
+                                Text(
+                                  "JFK",
+                                  style: TextStyle(fontSize: 28),
+                                )
                               ],
                             ),
                           ],
                         )
-
                       ],
                     ),
                   ),
