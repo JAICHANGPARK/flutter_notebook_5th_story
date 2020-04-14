@@ -220,6 +220,7 @@ class BoardingTicketPage extends StatelessWidget {
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
                                       image: AssetImage(AppUtils.MY_QR_CODE),
+                                      fit: BoxFit.fitHeight
                                     )
                                   ),
                                 ),
