@@ -125,6 +125,16 @@ class BoardingTicketPage extends StatelessWidget {
                               ],
                             ),
                           ],
+                        ),
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text("Flight"),
+                                Text("Y4 858")
+                              ],
+                            )
+                          ],
                         )
                       ],
                     ),
