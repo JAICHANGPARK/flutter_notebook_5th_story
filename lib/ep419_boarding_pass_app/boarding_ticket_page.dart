@@ -207,6 +207,13 @@ class BoardingTicketPage extends StatelessWidget {
                           height: 14,
                         ),
                         Divider(),
+                        Row(
+                          children: [
+                            Expanded(
+                              child:,
+                            )
+                          ],
+                        )
                       ],
                     ),
                   ),
