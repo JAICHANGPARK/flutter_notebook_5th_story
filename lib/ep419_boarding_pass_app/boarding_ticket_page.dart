@@ -85,9 +85,7 @@ class BoardingTicketPage extends StatelessWidget {
                             )
                           ],
                         ),
-                        SizedBox(
-                          height: 32,
-                        ),
+                        SizedBox(height: 32),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -129,10 +127,16 @@ class BoardingTicketPage extends StatelessWidget {
                         Row(
                           children: [
                             Column(
-                              children: [
-                                Text("Flight"),
-                                Text("Y4 858")
-                              ],
+                              children: [Text("Flight"), Text("Y4 858")],
+                            ),
+                            Column(
+                              children: [Text("Flight"), Text("Y4 858")],
+                            ),
+                            Column(
+                              children: [Text("Flight"), Text("Y4 858")],
+                            ),
+                            Column(
+                              children: [Text("Flight"), Text("Y4 858")],
                             )
                           ],
                         )
