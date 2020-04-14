@@ -176,26 +176,32 @@ class BoardingTicketPage extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Row(
-                          children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Flight Date"),
-                                Text("April 04 2017"),
-                              ],
-                            ),
-                            Spacer(),
-                            Column(
-                              children: [
-                                Text("Flight Date"),
-                                Text("April 04 2017"),
-                              ],
-                            ),
-                            Spacer(),
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.only(top: 32),
+                          child: Row(
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Flight Date"),
+                                  Text("April 04 2017"),
+                                ],
+                              ),
+                              Spacer(),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Flight Date"),
+                                  Text("April 04 2017"),
+                                ],
+                              ),
+                              Spacer(),
+                            ],
+                          ),
                         ),
-                        SizedBox(height: 44,),
+                        SizedBox(
+                          height: 44,
+                        ),
                         Divider(),
                       ],
                     ),
