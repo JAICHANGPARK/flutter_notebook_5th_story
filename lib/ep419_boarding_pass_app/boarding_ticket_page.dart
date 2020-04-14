@@ -124,21 +124,29 @@ class BoardingTicketPage extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Row(
-                          children: [
-                            Column(
-                              children: [Text("Flight"), Text("Y4 858")],
-                            ),
-                            Column(
-                              children: [Text("Flight"), Text("Y4 858")],
-                            ),
-                            Column(
-                              children: [Text("Flight"), Text("Y4 858")],
-                            ),
-                            Column(
-                              children: [Text("Flight"), Text("Y4 858")],
-                            )
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.only(top: 24),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [Text("Flight"), Text("Y4 858")],
+                              ),
+                              Column(
+                                children: [Text("Seat"), Text("8D")],
+                              ),
+                              Column(
+                                children: [Text("Class"), Text("Business")],
+                              ),
+                              Column(
+                                children: [Text("SEQ#"), Text("81")],
+                              ),
+                              SizedBox(
+                                width: 16,
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
