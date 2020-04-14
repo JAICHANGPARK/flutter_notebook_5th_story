@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutternotebook5th/ep419_boarding_pass_app/app_utils.dart';
 import 'package:flutternotebook5th/ep419_boarding_pass_app/ticket_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -207,12 +208,24 @@ class BoardingTicketPage extends StatelessWidget {
                           height: 14,
                         ),
                         Divider(),
-                        Row(
-                          children: [
-                            Expanded(
-                              child:,
-                            )
-                          ],
+                        SizedBox(
+                          height: 128,
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Container(),
+                              ),
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage(AppUtils.MY_QR_CODE),
+                                    )
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
