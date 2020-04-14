@@ -133,13 +133,13 @@ class BoardingTicketPage extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [Text("Flight"), Text("Y4 858")],
                               ),
-                              Column(
+                              Column(crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [Text("Seat"), Text("8D")],
                               ),
-                              Column(
+                              Column(crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [Text("Class"), Text("Business")],
                               ),
-                              Column(
+                              Column(crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [Text("SEQ#"), Text("81")],
                               ),
                               SizedBox(
