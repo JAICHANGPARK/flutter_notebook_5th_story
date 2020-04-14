@@ -183,7 +183,9 @@ class BoardingTicketPage extends StatelessWidget {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Flight Date"),
+                                  Text("Flight Date", style: TextStyle(
+                                    fontSize: 12
+                                  ),),
                                   Text("April 04 2017"),
                                 ],
                               ),
@@ -191,8 +193,10 @@ class BoardingTicketPage extends StatelessWidget {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Flight Date"),
-                                  Text("April 04 2017"),
+                                  Text("Boarding Time", style: TextStyle(
+                                      fontSize: 12
+                                  ),),
+                                  Text("18:26 PM"),
                                 ],
                               ),
                               Spacer(),
@@ -200,7 +204,7 @@ class BoardingTicketPage extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          height: 44,
+                          height: 14,
                         ),
                         Divider(),
                       ],
