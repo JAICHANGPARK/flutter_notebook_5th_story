@@ -193,7 +193,9 @@ class BoardingTicketPage extends StatelessWidget {
                             ),
                             Spacer(),
                           ],
-                        )
+                        ),
+                        SizedBox(height: 64,),
+                        Divider(),
                       ],
                     ),
                   ),
