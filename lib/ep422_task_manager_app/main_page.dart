@@ -27,9 +27,7 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
               bottom: 0,
               child: Container(
                 height: 84,
-                decoration: BoxDecoration(
-                  color: Colors.grey
-                ),
+                decoration: BoxDecoration(color: Colors.grey),
               ),
             ),
             Positioned(
@@ -38,45 +36,25 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
               top: 0,
               child: Container(
                 height: MediaQuery.of(context).size.height / 3,
-                decoration: BoxDecoration(
-                    color: Colors.purple[100]
+                decoration: BoxDecoration(color: Colors.purple[100]),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          height: 64,
+                          width: 64,
+                          decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                        )
+                      ],
+                    )
+                  ],
                 ),
-
               ),
-            )
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
