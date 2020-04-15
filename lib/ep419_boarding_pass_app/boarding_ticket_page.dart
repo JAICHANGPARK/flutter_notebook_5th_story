@@ -184,9 +184,10 @@ class BoardingTicketPage extends StatelessWidget {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Flight Date", style: TextStyle(
-                                    fontSize: 12
-                                  ),),
+                                  Text(
+                                    "Flight Date",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
                                   Text("April 04 2017"),
                                 ],
                               ),
@@ -194,9 +195,10 @@ class BoardingTicketPage extends StatelessWidget {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Boarding Time", style: TextStyle(
-                                      fontSize: 12
-                                  ),),
+                                  Text(
+                                    "Boarding Time",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
                                   Text("18:26 PM"),
                                 ],
                               ),
@@ -218,11 +220,8 @@ class BoardingTicketPage extends StatelessWidget {
                               Expanded(
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                      image: AssetImage(AppUtils.MY_QR_CODE),
-                                      fit: BoxFit.fitHeight
-                                    )
-                                  ),
+                                      image: DecorationImage(
+                                          image: AssetImage(AppUtils.MY_QR_CODE), fit: BoxFit.fitHeight)),
                                 ),
                               )
                             ],
