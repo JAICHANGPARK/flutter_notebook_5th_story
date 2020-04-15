@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ep419_boarding_pass_app/main_page.dart';
+import 'package:flutternotebook5th/ep422_task_manager_app/main_page.dart';
 
-void main() => runApp(BoardingPassApp());
+void main() => runApp(TaskManagerApp());

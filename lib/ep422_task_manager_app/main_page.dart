@@ -17,7 +17,65 @@ class TaskManagerMainPage extends StatefulWidget {
 class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: Container(
+                height: 84,
+                decoration: BoxDecoration(
+                  color: Colors.grey
+                ),
+              ),
+            ),
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: Container(
+                height: 84,
+                decoration: BoxDecoration(
+                    color: Colors.grey
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
