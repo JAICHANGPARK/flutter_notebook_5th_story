@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TaskManagerApp extends StatelessWidget {
@@ -35,18 +36,28 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
               right: 0,
               top: 0,
               child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 32),
                 height: MediaQuery.of(context).size.height / 3,
                 decoration: BoxDecoration(color: Colors.purple[100]),
                 child: Column(
                   children: [
-                    Row(
-                      children: [
-                        Container(
-                          height: 64,
-                          width: 64,
-                          decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
-                        )
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.only(top: 32),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                          ),
+                          Container(
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
