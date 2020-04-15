@@ -35,12 +35,13 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
             Positioned(
               left: 0,
               right: 0,
-              bottom: 0,
+              top: 0,
               child: Container(
-                height: 84,
+                height: MediaQuery.of(context).size.height / 3,
                 decoration: BoxDecoration(
-                    color: Colors.grey
+                    color: Colors.purple[100]
                 ),
+
               ),
             )
           ],
