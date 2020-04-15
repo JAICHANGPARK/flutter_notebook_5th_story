@@ -40,6 +40,7 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                 height: MediaQuery.of(context).size.height / 3,
                 decoration: BoxDecoration(color: Colors.purple[100]),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 32),
@@ -58,7 +59,11 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                           )
                         ],
                       ),
-                    )
+                    ),
+                    SizedBox(height: 32,),
+                    Text("Hello, Sandy"),
+                    SizedBox(height: 16,),
+                    Text("You have 5 task today!"),
                   ],
                 ),
               ),
