@@ -50,7 +50,11 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                           Container(
                             height: 48,
                             width: 48,
-                            decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                            decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8),
+                            image: DecorationImage(
+                              image: NetworkImage('https://avatars0.githubusercontent.com/u/19484515?s=460&u=0ec7b31ff9129826cccc5cd971887a9dd0e0a538&v=4')
+                            )),
+
                           ),
                           Container(
                             height: 48,
