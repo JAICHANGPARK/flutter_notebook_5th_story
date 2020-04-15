@@ -55,7 +55,10 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                           Container(
                             height: 48,
                             width: 48,
-                            decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(8)),
+                            decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(8)),
+                            child: Center(
+                              child: Icon(Icons.calendar_today, color: Colors.white,),
+                            ),
                           )
                         ],
                       ),
@@ -68,7 +71,7 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                     SizedBox(height: 16,),
                     Text("You have 5 task today!",style: TextStyle(
                       fontSize: 18,
-                      
+
                     ),),
                   ],
                 ),
