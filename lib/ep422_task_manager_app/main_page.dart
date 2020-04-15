@@ -60,10 +60,16 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 32,),
-                    Text("Hello, Sandy"),
+                    SizedBox(height: 24,),
+                    Text("Hello, Sandy", style: TextStyle(
+                      fontSize: 38,
+                      fontWeight: FontWeight.bold
+                    ),),
                     SizedBox(height: 16,),
-                    Text("You have 5 task today!"),
+                    Text("You have 5 task today!",style: TextStyle(
+                      fontSize: 18,
+                      
+                    ),),
                   ],
                 ),
               ),
@@ -74,3 +80,23 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
