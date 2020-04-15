@@ -17,7 +17,7 @@ class TaskManagerMainPage extends StatefulWidget {
 class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
 
