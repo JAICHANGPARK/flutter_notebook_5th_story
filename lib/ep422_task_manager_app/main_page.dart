@@ -27,9 +27,9 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
               right: 0,
               bottom: 0,
               child: Container(
-                height: 84,
-                decoration: BoxDecoration(color: Colors.white),
+                height: 64,
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     IconButton(
                       icon: Icon(Icons.home),
@@ -40,11 +40,13 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                       icon: Icon(Icons.search),
                       onPressed: (){},
                       iconSize: 38,
+                      color: Colors.grey,
                     ),
                     IconButton(
-                      icon: Icon(Icons.home),
+                      icon: Icon(Icons.notifications_none),
                       onPressed: (){},
                       iconSize: 38,
+                      color: Colors.grey,
                     )
                   ],
                 )
