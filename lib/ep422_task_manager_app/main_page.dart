@@ -108,6 +108,11 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                       );
                     }),
               ),
+            ),
+            Positioned(
+              left: 24,
+              right: 24,
+              top: MediaQuery.of(context).size.height / 2,
             )
           ],
         ),
