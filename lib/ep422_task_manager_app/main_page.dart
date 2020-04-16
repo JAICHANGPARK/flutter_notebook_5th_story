@@ -97,20 +97,17 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
               top: MediaQuery.of(context).size.height / 3.7,
               child: Container(
                 height: 100,
-                decoration: BoxDecoration(
-                  border: Border.all()
-                ),
+                decoration: BoxDecoration(border: Border.all()),
                 child: ListView.builder(
                     scrollDirection: Axis.horizontal,
-                    itemBuilder: (context, index){
-                  return Container(
-                    width: 64,
-                    color: Colors.black,
-                    margin: EdgeInsets.only(right: 16),
-                  );
-                }),
+                    itemBuilder: (context, index) {
+                      return Container(
+                        width: 64,
+                        color: Colors.black,
+                        margin: EdgeInsets.only(right: 16),
+                      );
+                    }),
               ),
-
             )
           ],
         ),
@@ -118,26 +115,3 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
