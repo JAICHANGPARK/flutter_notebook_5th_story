@@ -27,30 +27,29 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
               right: 0,
               bottom: 0,
               child: Container(
-                height: 64,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    IconButton(
-                      icon: Icon(Icons.home),
-                      onPressed: (){},
-                      iconSize: 38,
-                    ),
-                    IconButton(
-                      icon: Icon(Icons.search),
-                      onPressed: (){},
-                      iconSize: 38,
-                      color: Colors.grey,
-                    ),
-                    IconButton(
-                      icon: Icon(Icons.notifications_none),
-                      onPressed: (){},
-                      iconSize: 38,
-                      color: Colors.grey,
-                    )
-                  ],
-                )
-              ),
+                  height: 64,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      IconButton(
+                        icon: Icon(Icons.home),
+                        onPressed: () {},
+                        iconSize: 38,
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.search),
+                        onPressed: () {},
+                        iconSize: 38,
+                        color: Colors.grey,
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.notifications_none),
+                        onPressed: () {},
+                        iconSize: 38,
+                        color: Colors.grey,
+                      )
+                    ],
+                  )),
             ),
             Positioned(
               left: 0,
@@ -152,12 +151,9 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                     Expanded(
                       flex: 7,
                       child: ListView(
-                        children: [
-
-                        ],
+                        children: [],
                       ),
                     )
-
                   ],
                 ),
               ),
@@ -168,14 +164,3 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
