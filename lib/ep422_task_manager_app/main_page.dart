@@ -135,7 +135,7 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
               top: MediaQuery.of(context).size.height / 2.4,
               bottom: 84,
               child: Container(
-                color: Colors.red,
+                
                 child: Column(
                   children: [
                     Expanded(
@@ -143,8 +143,14 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Tasks"),
-                          Text("April, 2020"),
+                          Text("Tasks", style: TextStyle(
+                            fontSize: 42,
+                            fontWeight: FontWeight.bold
+                          ),),
+                          Text("April, 2020",style: TextStyle(
+                            fontSize: 28,
+                            color: Colors.grey
+                          ),),
                         ],
                       ),
                     ),
