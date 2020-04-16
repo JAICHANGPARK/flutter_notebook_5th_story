@@ -28,7 +28,26 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
               bottom: 0,
               child: Container(
                 height: 84,
-                decoration: BoxDecoration(color: Colors.grey),
+                decoration: BoxDecoration(color: Colors.white),
+                child: Row(
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.home),
+                      onPressed: (){},
+                      iconSize: 38,
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.search),
+                      onPressed: (){},
+                      iconSize: 38,
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.home),
+                      onPressed: (){},
+                      iconSize: 38,
+                    )
+                  ],
+                )
               ),
             ),
             Positioned(
@@ -112,7 +131,34 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
             Positioned(
               left: 24,
               right: 24,
-              top: MediaQuery.of(context).size.height / 2,
+              top: MediaQuery.of(context).size.height / 2.4,
+              bottom: 84,
+              child: Container(
+                color: Colors.red,
+                child: Column(
+                  children: [
+                    Expanded(
+                      flex: 2,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("Tasks"),
+                          Text("April, 2020"),
+                        ],
+                      ),
+                    ),
+                    Expanded(
+                      flex: 7,
+                      child: ListView(
+                        children: [
+
+                        ],
+                      ),
+                    )
+
+                  ],
+                ),
+              ),
             )
           ],
         ),
@@ -120,3 +166,14 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
