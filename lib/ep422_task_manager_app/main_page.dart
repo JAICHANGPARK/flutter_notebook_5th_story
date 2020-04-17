@@ -159,20 +159,37 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                       child: ListView.builder(
                         itemBuilder: (context, index){
                           return Container(
-                            height: 100,
+                            height: 84,
                             margin: EdgeInsets.only(bottom: 16),
-                            decoration: BoxDecoration(
-                              color: Colors.grey,
-                            ),
                             child: Row(
                               children: [
                                 Expanded(
                                   flex: 2,
-                                  child: Placeholder(),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(16)
+                                    ),
+                                  ),
                                 ),
                                 Expanded(
-                                  flex: 4,
-                                  child: Placeholder(),
+                                  flex: 5,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text("Guests Event", style: TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                        ),),
+                                        Text("Home",style: TextStyle(
+                                          color: Colors.grey,
+                                        ),)
+                                      ],
+                                    ),
+                                  ),
                                 )
                               ],
                             ),
