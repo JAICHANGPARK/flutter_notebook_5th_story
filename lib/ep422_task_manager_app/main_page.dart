@@ -135,7 +135,7 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
               top: MediaQuery.of(context).size.height / 2.4,
               bottom: 84,
               child: Container(
-                
+
                 child: Column(
                   children: [
                     Expanded(
