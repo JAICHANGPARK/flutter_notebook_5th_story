@@ -123,8 +123,21 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                     itemBuilder: (context, index) {
                       return Container(
                         width: 64,
-                        color: Colors.black,
                         margin: EdgeInsets.only(right: 16),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("Wed"),
+                            Text("15", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 21
+                            ),)
+                          ],
+                        ),
                       );
                     }),
               ),
