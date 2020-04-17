@@ -173,7 +173,7 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                                   ),
                                 ),
                                 Expanded(
-                                  flex: 5,
+                                  flex: 6,
                                   child: Padding(
                                     padding: const EdgeInsets.all(16.0),
                                     child: Column(
