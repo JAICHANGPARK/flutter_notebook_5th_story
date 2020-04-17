@@ -156,8 +156,30 @@ class _TaskManagerMainPageState extends State<TaskManagerMainPage> {
                     ),
                     Expanded(
                       flex: 7,
-                      child: ListView(
-                        children: [],
+                      child: ListView.builder(
+                        itemBuilder: (context, index){
+                          return Container(
+                            height: 100,
+                            margin: EdgeInsets.only(bottom: 16),
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                            ),
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  flex: 2,
+                                  child: Placeholder(),
+                                ),
+                                Expanded(
+                                  flex: 4,
+                                  child: Placeholder(),
+                                )
+                              ],
+                            ),
+                          );
+                        },
+
+
                       ),
                     )
                   ],
