@@ -9,6 +9,7 @@ class DailyMainPage extends StatelessWidget {
       data: ThemeData(
         backgroundColor: Color(0xFF5E49C5),
         scaffoldBackgroundColor: Color(0xFF5E49C5),
+        accentColor: Color(0xFF5E49C5),
       ),
       child: Scaffold(
         body: SafeArea(
