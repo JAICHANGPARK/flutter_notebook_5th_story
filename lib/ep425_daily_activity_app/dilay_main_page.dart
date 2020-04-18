@@ -22,17 +22,30 @@ class DailyMainPage extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 16, top: 16, ),
+                          padding: const EdgeInsets.only(
+                            left: 16,
+                            top: 16,
+                          ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text("Good morning", style: GoogleFonts.montserrat(
-                                color: Colors.white,
-                                fontSize: 28,
-                                fontWeight: FontWeight.bold,
-                              ),),
-                              Text("Dreamwalker")
+                              Text(
+                                "Good morning",
+                                style: GoogleFonts.montserrat(
+                                  color: Colors.white,
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "Dreamwalker",
+                                style: GoogleFonts.montserrat(
+                                  color: Colors.white,
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
                             ],
                           ),
                         ),
@@ -53,10 +66,7 @@ class DailyMainPage extends StatelessWidget {
                     Container(
                       height: 24,
                       width: 48,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        border: Border.all(color: Colors.deepOrange)
-                      ),
+                      decoration: BoxDecoration(color: Colors.white, border: Border.all(color: Colors.deepOrange)),
                     ),
                   ],
                 ),
@@ -71,20 +81,3 @@ class DailyMainPage extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
