@@ -18,7 +18,14 @@ class DailyMainPage extends StatelessWidget {
             Row(
               children: [
                 Text("Today's activitys"),
-                Chip(label: Text("add"),
+                Container(
+                  height: 24,
+                  width: 48,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.deepOrange)
+                  ),
+
 
                 ),
               ],
