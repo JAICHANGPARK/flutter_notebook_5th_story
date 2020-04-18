@@ -7,6 +7,7 @@ class DailyMainPage extends StatelessWidget {
     return Theme(
       data: ThemeData(
         backgroundColor: Color(0xFF5E49C5),
+        scaffoldBackgroundColor: Color(0xFF5E49C5),
       ),
       child: Scaffold(
         body: SingleChildScrollView(
