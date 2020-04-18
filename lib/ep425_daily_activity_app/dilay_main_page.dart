@@ -29,7 +29,7 @@ class DailyMainPage extends StatelessWidget {
                             children: [
                               Text("Good morning", style: GoogleFonts.montserrat(
                                 color: Colors.white,
-                                fontSize: 19,
+                                fontSize: 28,
                                 fontWeight: FontWeight.bold,
                               ),),
                               Text("Dreamwalker")
