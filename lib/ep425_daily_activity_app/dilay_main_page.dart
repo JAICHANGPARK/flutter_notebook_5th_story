@@ -7,7 +7,10 @@ class DailyMainPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-                        
+            Container(
+              height: MediaQuery.of(context).size.height / 3,
+              child: Placeholder(),
+            )
           ],
         ),
       ),
