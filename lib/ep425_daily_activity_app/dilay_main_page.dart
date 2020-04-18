@@ -10,34 +10,56 @@ class DailyMainPage extends StatelessWidget {
         scaffoldBackgroundColor: Color(0xFF5E49C5),
       ),
       child: Scaffold(
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                height: MediaQuery.of(context).size.height / 3,
-                child: Placeholder(),
-              ),
-              Container(
-                height: MediaQuery.of(context).size.height / 3,
-                child: Placeholder(),
-              ),
-              Row(
-                children: [
-                  Text("Today's activitys"),
-                  Container(
-                    height: 24,
-                    width: 48,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(color: Colors.deepOrange)
-                    ),
+        body: SafeArea(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Container(
+                  height: MediaQuery.of(context).size.height / 3,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text("Good morning"),
+                              Text("Dreamwalker")
+                            ],
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Placeholder(),
+                      )
+                    ],
                   ),
-                ],
-              ),
-              Container(
-                height: MediaQuery.of(context).size.height / 2,
-              )
-            ],
+                ),
+                Container(
+                  height: MediaQuery.of(context).size.height / 3,
+                  child: Placeholder(),
+                ),
+                Row(
+                  children: [
+                    Text("Today's activitys"),
+                    Container(
+                      height: 24,
+                      width: 48,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(color: Colors.deepOrange)
+                      ),
+                    ),
+                  ],
+                ),
+                Container(
+                  height: MediaQuery.of(context).size.height / 2,
+                )
+              ],
+            ),
           ),
         ),
       ),
