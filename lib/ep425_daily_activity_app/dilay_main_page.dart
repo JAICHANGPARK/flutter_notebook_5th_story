@@ -10,6 +10,18 @@ class DailyMainPage extends StatelessWidget {
             Container(
               height: MediaQuery.of(context).size.height / 3,
               child: Placeholder(),
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height / 3,
+              child: Placeholder(),
+            ),
+            Row(
+              children: [
+                Text("Today's activitys"),
+                Chip(label: Text("add"),
+
+                ),
+              ],
             )
           ],
         ),
