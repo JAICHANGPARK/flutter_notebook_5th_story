@@ -25,10 +25,11 @@ class DailyMainPage extends StatelessWidget {
                     color: Colors.white,
                     border: Border.all(color: Colors.deepOrange)
                   ),
-
-
                 ),
               ],
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height / 2,
             )
           ],
         ),
@@ -36,5 +37,20 @@ class DailyMainPage extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
