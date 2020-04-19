@@ -107,8 +107,13 @@ class DailyMainPage extends StatelessWidget {
                     children: [
                       Expanded(
                         flex: 1,
-                        child: Placeholder(
-                        ),
+                        child: Column(
+                          children: [
+                            Text("Completion\nTracker",style: TextStyle(
+                              fon
+                            ),)
+                          ],
+                        )
                       ),
                       Expanded(
                         flex: 1,
