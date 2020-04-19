@@ -52,7 +52,14 @@ class DailyMainPage extends StatelessWidget {
                         ),
                       ),
                       Expanded(
-                        child: Placeholder(),
+                        child: Card(
+                          color: Theme.of(context).cardColor,
+                          child: Row(
+                            children: [
+
+                            ],
+                          ),
+                        ),
                       )
                     ],
                   ),
