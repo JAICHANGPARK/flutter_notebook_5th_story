@@ -61,12 +61,20 @@ class DailyMainPage extends StatelessWidget {
                                 Expanded(
                                   flex: 1,
                                   child: Icon(
-                                    Icons.thumb_up
+                                    Icons.thumb_up,
+                                    color: Colors.orange,
+                                    size: 42,
                                   ),
                                 ),
                                 Expanded(
                                   flex: 3,
-                                  child: Placeholder(),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("High-five!"),
+                                      Text("you can finishi over 80% of your activities eaxh day.")
+                                    ],
+                                  ),
                                 ),
                                 Expanded(
                                   flex: 1,
