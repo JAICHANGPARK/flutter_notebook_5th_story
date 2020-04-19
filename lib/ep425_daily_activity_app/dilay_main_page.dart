@@ -70,8 +70,11 @@ class DailyMainPage extends StatelessWidget {
                                   flex: 3,
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Text("High-five!"),
+                                      Text("High-five!",style: TextStyle(
+                                        fontWeight: FontWeight.bold
+                                      ),),
                                       Text("you can finishi over 80% of your activities eaxh day.")
                                     ],
                                   ),
