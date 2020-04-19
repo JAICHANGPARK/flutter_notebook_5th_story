@@ -123,7 +123,10 @@ class DailyMainPage extends StatelessWidget {
                                 TextSpan(
                                   children:[
                                     TextSpan(
-                                      text: "You completed "
+                                      text: "You completed ",
+                                      style: TextStyle(
+                                        
+                                      )
                                     ),
                                     TextSpan(
                                       text: "2"
