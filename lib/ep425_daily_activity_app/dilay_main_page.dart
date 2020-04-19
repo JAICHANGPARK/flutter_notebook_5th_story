@@ -75,13 +75,20 @@ class DailyMainPage extends StatelessWidget {
                                       Text("High-five!",style: TextStyle(
                                         fontWeight: FontWeight.bold
                                       ),),
-                                      Text("you can finishi over 80% of your activities eaxh day.")
+                                      Text("you can finishi over 80% of your activities eaxh day.",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                      ),)
                                     ],
                                   ),
                                 ),
                                 Expanded(
                                   flex: 1,
-                                  child: Placeholder(),
+                                  child: FloatingActionButton(
+                                    onPressed: (){},
+                                    child: Text("ok"),
+                                    backgroundColor: Colors.orange,
+                                  ),
                                 )
                               ],
                             ),
