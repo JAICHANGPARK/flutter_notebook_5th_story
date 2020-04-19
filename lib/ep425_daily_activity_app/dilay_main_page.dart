@@ -108,10 +108,34 @@ class DailyMainPage extends StatelessWidget {
                       Expanded(
                         flex: 1,
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Completion\nTracker",style: TextStyle(
-                              fon
-                            ),)
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),),
+                            Text.rich(
+                              TextSpan(
+                                children:[
+                                  TextSpan(
+                                    text: "You completed "
+                                  ),
+                                  TextSpan(
+                                    text: "2"
+                                  ),
+                                  TextSpan(
+                                    text: "of"
+                                  ),
+                                  TextSpan(
+                                    text: "4\n"
+                                  ),
+                                  TextSpan(
+                                    text: "activities so far!"
+                                  )
+                                ]
+                              )
+                            )
                           ],
                         )
                       ),
