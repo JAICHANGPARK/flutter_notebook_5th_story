@@ -85,7 +85,7 @@ class DailyMainPage extends StatelessWidget {
                                 Expanded(
                                   flex: 1,
                                   child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(12.0),
                                     child: FloatingActionButton(
                                       onPressed: (){},
                                       child: Text("ok"),
@@ -103,7 +103,19 @@ class DailyMainPage extends StatelessWidget {
                 ),
                 Container(
                   height: MediaQuery.of(context).size.height / 3,
-                  child: Placeholder(),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Placeholder(
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Placeholder(),
+                      )
+                    ],
+                  ),
                 ),
                 Row(
                   children: [
