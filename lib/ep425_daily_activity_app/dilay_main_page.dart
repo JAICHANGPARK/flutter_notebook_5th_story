@@ -84,10 +84,13 @@ class DailyMainPage extends StatelessWidget {
                                 ),
                                 Expanded(
                                   flex: 1,
-                                  child: FloatingActionButton(
-                                    onPressed: (){},
-                                    child: Text("ok"),
-                                    backgroundColor: Colors.orange,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: FloatingActionButton(
+                                      onPressed: (){},
+                                      child: Text("ok"),
+                                      backgroundColor: Colors.orange,
+                                    ),
                                   ),
                                 )
                               ],
