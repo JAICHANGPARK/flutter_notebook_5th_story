@@ -102,41 +102,46 @@ class DailyMainPage extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  height: MediaQuery.of(context).size.height / 3,
+                  height: MediaQuery.of(context).size.height / 3.4,
                   child: Row(
                     children: [
                       Expanded(
                         flex: 1,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Completion\nTracker",style: TextStyle(
-                              fontSize: 28,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),),
-                            Text.rich(
-                              TextSpan(
-                                children:[
-                                  TextSpan(
-                                    text: "You completed "
-                                  ),
-                                  TextSpan(
-                                    text: "2"
-                                  ),
-                                  TextSpan(
-                                    text: "of"
-                                  ),
-                                  TextSpan(
-                                    text: "4\n"
-                                  ),
-                                  TextSpan(
-                                    text: "activities so far!"
-                                  )
-                                ]
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text("Completion\nTracker",style: TextStyle(
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),),
+                              SizedBox(height: 16,),
+                              Text.rich(
+                                TextSpan(
+                                  children:[
+                                    TextSpan(
+                                      text: "You completed "
+                                    ),
+                                    TextSpan(
+                                      text: "2"
+                                    ),
+                                    TextSpan(
+                                      text: "of"
+                                    ),
+                                    TextSpan(
+                                      text: "4\n"
+                                    ),
+                                    TextSpan(
+                                      text: "activities so far!"
+                                    )
+                                  ]
+                                )
                               )
-                            )
-                          ],
+                            ],
+                          ),
                         )
                       ),
                       Expanded(
