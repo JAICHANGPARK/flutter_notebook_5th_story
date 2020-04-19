@@ -52,23 +52,28 @@ class DailyMainPage extends StatelessWidget {
                         ),
                       ),
                       Expanded(
-                        child: Card(
-                          color: Theme.of(context).cardColor,
-                          child: Row(
-                            children: [
-                              Expanded(
-                                flex: 1,
-                                child: Placeholder(),
-                              ),
-                              Expanded(
-                                flex: 2,
-                                child: Placeholder(),
-                              ),
-                              Expanded(
-                                flex: 1,
-                                child: Placeholder(),
-                              )
-                            ],
+                        child: Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Card(
+                            color: Theme.of(context).cardColor,
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  flex: 1,
+                                  child: Icon(
+                                    Icons.thumb_up
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 3,
+                                  child: Placeholder(),
+                                ),
+                                Expanded(
+                                  flex: 1,
+                                  child: Placeholder(),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       )
