@@ -56,7 +56,10 @@ class DailyMainPage extends StatelessWidget {
                           color: Theme.of(context).cardColor,
                           child: Row(
                             children: [
-
+                              Expanded(
+                                flex: 1,
+                                child: Placeholder(),
+                              ),
                             ],
                           ),
                         ),
