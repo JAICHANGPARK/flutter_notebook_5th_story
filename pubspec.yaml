@@ -27,6 +27,7 @@ dependencies:
   google_fonts: ^0.3.10
 
   calendar_strip: ^1.0.6
+  sleek_circular_slider: any
 
 dev_dependencies:
   flutter_test:

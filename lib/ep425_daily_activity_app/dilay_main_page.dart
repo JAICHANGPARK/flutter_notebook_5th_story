@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 
 class DailyMainPage extends StatelessWidget {
   @override
@@ -139,7 +140,11 @@ class DailyMainPage extends StatelessWidget {
                           )),
                       Expanded(
                         flex: 1,
-                        child: Placeholder(),
+                        child: SleekCircularSlider(
+                          appearance: CircularSliderAppearance(
+                            customWidths: CustomSliderWidths(progressBarWidth: 10),
+                          ),
+                        ),
                       )
                     ],
                   ),
