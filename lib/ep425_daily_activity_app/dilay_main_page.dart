@@ -131,28 +131,19 @@ class DailyMainPage extends StatelessWidget {
                                 ),
                                 Text.rich(TextSpan(children: [
                                   TextSpan(
-                                      text: "You completed ", style: TextStyle(color: Colors.white.withOpacity(0.7),
-                                  fontSize: 16)),
+                                      text: "You completed ",
+                                      style: TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 16)),
                                   TextSpan(
                                       text: "2",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                          fontSize: 16
-                                      )),
-                                  TextSpan(text: "of", style: TextStyle(color: Colors.white.withOpacity(0.7),
-                                      fontSize: 16)),
+                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
+                                  TextSpan(
+                                      text: "of", style: TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 16)),
                                   TextSpan(
                                       text: "4\n",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                          fontSize: 16
-                                      )),
+                                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
                                   TextSpan(
                                       text: "activities so far!",
-                                      style: TextStyle(color: Colors.white.withOpacity(0.7),
-                                          fontSize: 16))
+                                      style: TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 16))
                                 ]))
                               ],
                             ),
@@ -172,12 +163,22 @@ class DailyMainPage extends StatelessWidget {
                   ),
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Today's activitys"),
+                    Text("Today's activitys",),
                     Container(
                       height: 24,
                       width: 48,
-                      decoration: BoxDecoration(color: Colors.white, border: Border.all(color: Colors.deepOrange)),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.orange),
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "add",
+                          style: TextStyle(color: Colors.orange),
+                        ),
+                      ),
                     ),
                   ],
                 ),
