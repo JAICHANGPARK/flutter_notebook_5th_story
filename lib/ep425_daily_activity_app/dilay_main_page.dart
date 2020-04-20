@@ -108,6 +108,7 @@ class DailyMainPage extends StatelessWidget {
                 Container(
                   height: MediaQuery.of(context).size.height / 3.4,
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Expanded(
                           flex: 1,
@@ -129,13 +130,29 @@ class DailyMainPage extends StatelessWidget {
                                   height: 16,
                                 ),
                                 Text.rich(TextSpan(children: [
-                                  TextSpan(text: "You completed ", style: TextStyle(
-                                    color: Colors.white.withOpacity(0.7)
-                                  )),
-                                  TextSpan(text: "2"),
-                                  TextSpan(text: "of"),
-                                  TextSpan(text: "4\n"),
-                                  TextSpan(text: "activities so far!")
+                                  TextSpan(
+                                      text: "You completed ", style: TextStyle(color: Colors.white.withOpacity(0.7),
+                                  fontSize: 16)),
+                                  TextSpan(
+                                      text: "2",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                          fontSize: 16
+                                      )),
+                                  TextSpan(text: "of", style: TextStyle(color: Colors.white.withOpacity(0.7),
+                                      fontSize: 16)),
+                                  TextSpan(
+                                      text: "4\n",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                          fontSize: 16
+                                      )),
+                                  TextSpan(
+                                      text: "activities so far!",
+                                      style: TextStyle(color: Colors.white.withOpacity(0.7),
+                                          fontSize: 16))
                                 ]))
                               ],
                             ),
@@ -143,19 +160,12 @@ class DailyMainPage extends StatelessWidget {
                       Expanded(
                         flex: 1,
                         child: SleekCircularSlider(
-
                           appearance: CircularSliderAppearance(
                             infoProperties: InfoProperties(
-                              mainLabelStyle: TextStyle(
-                                color: Colors.white,
-                                fontSize: 28,
-                                fontWeight: FontWeight.bold
-                              )
-                            ),
-
+                                mainLabelStyle:
+                                    TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold)),
                             customWidths: CustomSliderWidths(progressBarWidth: 10),
                           ),
-
                         ),
                       )
                     ],
