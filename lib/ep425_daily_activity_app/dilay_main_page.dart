@@ -72,13 +72,16 @@ class DailyMainPage extends StatelessWidget {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Text("High-five!",style: TextStyle(
-                                        fontWeight: FontWeight.bold
-                                      ),),
-                                      Text("you can finishi over 80% of your activities eaxh day.",
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                      ),)
+                                      Text(
+                                        "High-five!",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ),
+                                      Text(
+                                        "you can finishi over 80% of your activities eaxh day.",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      )
                                     ],
                                   ),
                                 ),
@@ -87,7 +90,7 @@ class DailyMainPage extends StatelessWidget {
                                   child: Padding(
                                     padding: const EdgeInsets.all(12.0),
                                     child: FloatingActionButton(
-                                      onPressed: (){},
+                                      onPressed: () {},
                                       child: Text("ok"),
                                       backgroundColor: Colors.orange,
                                     ),
@@ -106,47 +109,34 @@ class DailyMainPage extends StatelessWidget {
                   child: Row(
                     children: [
                       Expanded(
-                        flex: 1,
-                        child: Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text("Completion\nTracker",style: TextStyle(
-                                fontSize: 28,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),),
-                              SizedBox(height: 16,),
-                              Text.rich(
-                                TextSpan(
-                                  children:[
-                                    TextSpan(
-                                      text: "You completed ",
-                                      style: TextStyle(
-
-                                      )
-                                    ),
-                                    TextSpan(
-                                      text: "2"
-                                    ),
-                                    TextSpan(
-                                      text: "of"
-                                    ),
-                                    TextSpan(
-                                      text: "4\n"
-                                    ),
-                                    TextSpan(
-                                      text: "activities so far!"
-                                    )
-                                  ]
-                                )
-                              )
-                            ],
-                          ),
-                        )
-                      ),
+                          flex: 1,
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Completion\nTracker",
+                                  style: TextStyle(
+                                    fontSize: 28,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Text.rich(TextSpan(children: [
+                                  TextSpan(text: "You completed ", style: TextStyle()),
+                                  TextSpan(text: "2"),
+                                  TextSpan(text: "of"),
+                                  TextSpan(text: "4\n"),
+                                  TextSpan(text: "activities so far!")
+                                ]))
+                              ],
+                            ),
+                          )),
                       Expanded(
                         flex: 1,
                         child: Placeholder(),
