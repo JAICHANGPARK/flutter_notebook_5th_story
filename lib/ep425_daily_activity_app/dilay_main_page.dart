@@ -129,7 +129,9 @@ class DailyMainPage extends StatelessWidget {
                                   height: 16,
                                 ),
                                 Text.rich(TextSpan(children: [
-                                  TextSpan(text: "You completed ", style: TextStyle()),
+                                  TextSpan(text: "You completed ", style: TextStyle(
+                                    color: Colors.white.withOpacity(0.7)
+                                  )),
                                   TextSpan(text: "2"),
                                   TextSpan(text: "of"),
                                   TextSpan(text: "4\n"),
@@ -141,9 +143,19 @@ class DailyMainPage extends StatelessWidget {
                       Expanded(
                         flex: 1,
                         child: SleekCircularSlider(
+
                           appearance: CircularSliderAppearance(
+                            infoProperties: InfoProperties(
+                              mainLabelStyle: TextStyle(
+                                color: Colors.white,
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold
+                              )
+                            ),
+
                             customWidths: CustomSliderWidths(progressBarWidth: 10),
                           ),
+
                         ),
                       )
                     ],
