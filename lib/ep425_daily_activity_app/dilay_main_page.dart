@@ -250,7 +250,23 @@ class DailyMainPage extends StatelessWidget {
                       ),
                       Expanded(
                         flex: 8,
-                        child: Placeholder(),
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 68,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("8:00 am"),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text("Meditate for 10mins with Calm app before breakfast."),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
