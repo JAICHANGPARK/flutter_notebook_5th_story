@@ -188,7 +188,9 @@ class DailyMainPage extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 16,),
+                padding: EdgeInsets.symmetric(
+                  horizontal: 16,
+                ),
                 height: MediaQuery.of(context).size.height / 2,
                 child: Padding(
                   padding: const EdgeInsets.only(top: 16),
@@ -202,47 +204,53 @@ class DailyMainPage extends StatelessWidget {
                               CircleAvatar(
                                 radius: 10,
                                 backgroundColor: Colors.greenAccent,
-                                child: Icon(Icons.check,color: Colors.white,
-                                size: 14,),
+                                child: Icon(
+                                  Icons.check,
+                                  color: Colors.white,
+                                  size: 14,
+                                ),
                               ),
                               Container(
                                 height: 100,
                                 width: 3,
-                                decoration: BoxDecoration(
-                                  color: Colors.greenAccent
-                                ),
+                                decoration: BoxDecoration(color: Colors.greenAccent),
                               ),
                               CircleAvatar(
                                 radius: 10,
                                 backgroundColor: Colors.greenAccent,
-                                child: Icon(Icons.check,color: Colors.white,
-                                  size: 14,),
+                                child: Icon(
+                                  Icons.check,
+                                  color: Colors.white,
+                                  size: 14,
+                                ),
                               ),
                               Container(
                                 height: 100,
                                 width: 3,
-                                decoration: BoxDecoration(
-                                    color: Colors.white
-                                ),
+                                decoration: BoxDecoration(color: Colors.white),
                               ),
                               CircleAvatar(
                                 radius: 10,
                                 backgroundColor: Colors.white,
-                                child: Icon(Icons.check,color: Colors.white,
-                                  size: 14,),
+                                child: Icon(
+                                  Icons.check,
+                                  color: Colors.white,
+                                  size: 14,
+                                ),
                               ),
                               Container(
                                 height: 100,
                                 width: 3,
-                                decoration: BoxDecoration(
-                                    color: Colors.white
-                                ),
+                                decoration: BoxDecoration(color: Colors.white),
                               ),
                               CircleAvatar(
                                 radius: 10,
                                 backgroundColor: Colors.white,
-                                child: Icon(Icons.check,color: Colors.white,
-                                  size: 14,),
+                                child: Icon(
+                                  Icons.check,
+                                  color: Colors.white,
+                                  size: 14,
+                                ),
                               ),
                             ],
                           ),
@@ -253,17 +261,39 @@ class DailyMainPage extends StatelessWidget {
                         child: Column(
                           children: [
                             Container(
-                              height: 68,
+                              height: 120,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("8:00 am",style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white
-                                  ),),
+                                  Text(
+                                    "8:00 am",
+                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                                  ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 16),
-                                    child: Text("Meditate for 10mins with Calm app before breakfast."),
+                                    child: Text(
+                                      "Meditate for 10mins with Calm app before breakfast.",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            Container(
+                              height: 120,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "10:15 am",
+                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 16),
+                                    child: Text(
+                                      "Meditate for 10mins with Calm app before breakfast.",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
                                   )
                                 ],
                               ),
@@ -282,17 +312,3 @@ class DailyMainPage extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
