@@ -259,7 +259,7 @@ class DailyMainPage extends StatelessWidget {
                                 children: [
                                   Text("8:00 am"),
                                   Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.only(top: 16),
                                     child: Text("Meditate for 10mins with Calm app before breakfast."),
                                   )
                                 ],
