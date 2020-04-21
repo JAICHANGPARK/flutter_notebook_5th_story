@@ -258,66 +258,68 @@ class DailyMainPage extends StatelessWidget {
                       ),
                       Expanded(
                         flex: 8,
-                        child: Column(
-                          children: [
-                            Container(
-                              height: 120,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "8:00 am",
-                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 16),
-                                    child: Text(
-                                      "Meditate for 10mins with Calm app before breakfast.",
-                                      style: TextStyle(color: Colors.white),
+                        child: SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 120,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "8:00 am",
+                                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                                     ),
-                                  )
-                                ],
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 16),
+                                      child: Text(
+                                        "Meditate for 10mins with Calm app before breakfast.",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
-                            ),
-                            Container(
-                              height: 120,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "10:15 am",
-                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 16),
-                                    child: Text(
-                                      "Team meeting on research deck for the X project due this Friday",
-                                      style: TextStyle(color: Colors.white),
+                              Container(
+                                height: 120,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "10:15 am",
+                                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                                     ),
-                                  )
-                                ],
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 16),
+                                      child: Text(
+                                        "Team meeting on research deck for the X project due this Friday",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
-                            ),
-                            Container(
-                              height: 120,
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "10:15 am",
-                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 16),
-                                    child: Text(
-                                      "Team meeting on research deck for the X project due this Friday",
-                                      style: TextStyle(color: Colors.white),
+                              Container(
+                                height: 120,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "10:15 am",
+                                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                                     ),
-                                  )
-                                ],
-                              ),
-                            )
-                          ],
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 16),
+                                      child: Text(
+                                        "Team meeting on research deck for the X project due this Friday",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
