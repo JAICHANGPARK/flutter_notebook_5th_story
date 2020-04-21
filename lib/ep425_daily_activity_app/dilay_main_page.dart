@@ -259,6 +259,7 @@ class DailyMainPage extends StatelessWidget {
                       Expanded(
                         flex: 8,
                         child: SingleChildScrollView(
+                          padding: EdgeInsets.zero,
                           child: Column(
                             children: [
                               Container(
