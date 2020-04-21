@@ -297,6 +297,25 @@ class DailyMainPage extends StatelessWidget {
                                   )
                                 ],
                               ),
+                            ),
+                            Container(
+                              height: 120,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "10:15 am",
+                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 16),
+                                    child: Text(
+                                      "Team meeting on research deck for the X project due this Friday",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         ),
