@@ -261,6 +261,7 @@ class DailyMainPage extends StatelessWidget {
                         child: SingleChildScrollView(
                           padding: EdgeInsets.zero,
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
                                 height: 120,
@@ -312,7 +313,7 @@ class DailyMainPage extends StatelessWidget {
                                     Padding(
                                       padding: const EdgeInsets.only(top: 16),
                                       child: Text(
-                                        "Team meeting on research deck for the X project due this Friday",
+                                        "Send reminder to team about the UI",
                                         style: TextStyle(color: Colors.white),
                                       ),
                                     )
