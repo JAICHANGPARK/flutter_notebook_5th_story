@@ -257,7 +257,10 @@ class DailyMainPage extends StatelessWidget {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("8:00 am"),
+                                  Text("8:00 am",style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white
+                                  ),),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 16),
                                     child: Text("Meditate for 10mins with Calm app before breakfast."),
