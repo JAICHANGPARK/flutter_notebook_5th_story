@@ -201,6 +201,8 @@ class DailyMainPage extends StatelessWidget {
                             CircleAvatar(
                               radius: 10,
                               backgroundColor: Colors.tealAccent,
+                              child: Icon(Icons.check,color: Colors.white,
+                              size: 14,),
                             ),
                             Container(
                               height: 100,
@@ -208,7 +210,20 @@ class DailyMainPage extends StatelessWidget {
                               decoration: BoxDecoration(
                                 color: Colors.tealAccent
                               ),
-                            )
+                            ),
+                            CircleAvatar(
+                              radius: 10,
+                              backgroundColor: Colors.tealAccent,
+                              child: Icon(Icons.check,color: Colors.white,
+                                size: 14,),
+                            ),
+                            Container(
+                              height: 100,
+                              width: 3,
+                              decoration: BoxDecoration(
+                                  color: Colors.white
+                              ),
+                            ),
                           ],
                         ),
                       ),
