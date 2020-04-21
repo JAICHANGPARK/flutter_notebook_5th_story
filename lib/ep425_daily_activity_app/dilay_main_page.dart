@@ -193,7 +193,7 @@ class DailyMainPage extends StatelessWidget {
                 ),
                 height: MediaQuery.of(context).size.height / 2,
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 16),
+                  padding: const EdgeInsets.only(top: 24),
                   child: Row(
                     children: [
                       Expanded(
