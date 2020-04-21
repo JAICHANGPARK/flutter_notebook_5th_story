@@ -306,7 +306,7 @@ class DailyMainPage extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "10:15 am",
+                                      "2:00 pm",
                                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                                     ),
                                     Padding(
