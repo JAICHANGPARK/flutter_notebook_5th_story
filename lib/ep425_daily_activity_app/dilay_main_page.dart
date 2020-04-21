@@ -188,16 +188,36 @@ class DailyMainPage extends StatelessWidget {
                 ),
               ),
               Container(
+                padding: EdgeInsets.symmetric(horizontal: 16,),
                 height: MediaQuery.of(context).size.height / 2,
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Placeholder(),
-                    ),
-                    Expanded(
-                      child: Placeholder(),
-                    )
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.only(8.0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 2,
+                        child: Column(
+                          children: [
+                            CircleAvatar(
+                              radius: 10,
+                              backgroundColor: Colors.tealAccent,
+                            ),
+                            Container(
+                              height: 100,
+                              width: 3,
+                              decoration: BoxDecoration(
+                                color: Colors.tealAccent
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        flex: 8,
+                        child: Placeholder(),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ]),
@@ -207,11 +227,6 @@ class DailyMainPage extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
 
 
 
