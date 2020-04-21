@@ -291,7 +291,7 @@ class DailyMainPage extends StatelessWidget {
                                   Padding(
                                     padding: const EdgeInsets.only(top: 16),
                                     child: Text(
-                                      "Meditate for 10mins with Calm app before breakfast.",
+                                      "Team meeting on research deck for the X project due this Friday",
                                       style: TextStyle(color: Colors.white),
                                     ),
                                   )
