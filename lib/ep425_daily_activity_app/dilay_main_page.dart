@@ -196,35 +196,56 @@ class DailyMainPage extends StatelessWidget {
                     children: [
                       Expanded(
                         flex: 2,
-                        child: Column(
-                          children: [
-                            CircleAvatar(
-                              radius: 10,
-                              backgroundColor: Colors.greenAccent,
-                              child: Icon(Icons.check,color: Colors.white,
-                              size: 14,),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 3,
-                              decoration: BoxDecoration(
-                                color: Colors.greenAccent
-                              ),
-                            ),
-                            CircleAvatar(
-                              radius: 10,
-                              backgroundColor: Colors.greenAccent,
-                              child: Icon(Icons.check,color: Colors.white,
+                        child: SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              CircleAvatar(
+                                radius: 10,
+                                backgroundColor: Colors.greenAccent,
+                                child: Icon(Icons.check,color: Colors.white,
                                 size: 14,),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 3,
-                              decoration: BoxDecoration(
-                                  color: Colors.white
                               ),
-                            ),
-                          ],
+                              Container(
+                                height: 100,
+                                width: 3,
+                                decoration: BoxDecoration(
+                                  color: Colors.greenAccent
+                                ),
+                              ),
+                              CircleAvatar(
+                                radius: 10,
+                                backgroundColor: Colors.greenAccent,
+                                child: Icon(Icons.check,color: Colors.white,
+                                  size: 14,),
+                              ),
+                              Container(
+                                height: 100,
+                                width: 3,
+                                decoration: BoxDecoration(
+                                    color: Colors.white
+                                ),
+                              ),
+                              CircleAvatar(
+                                radius: 10,
+                                backgroundColor: Colors.white,
+                                child: Icon(Icons.check,color: Colors.white,
+                                  size: 14,),
+                              ),
+                              Container(
+                                height: 100,
+                                width: 3,
+                                decoration: BoxDecoration(
+                                    color: Colors.white
+                                ),
+                              ),
+                              CircleAvatar(
+                                radius: 10,
+                                backgroundColor: Colors.white,
+                                child: Icon(Icons.check,color: Colors.white,
+                                  size: 14,),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       Expanded(
