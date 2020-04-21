@@ -187,6 +187,7 @@ class DailyMainPage extends StatelessWidget {
                   ],
                 ),
               ),
+              // TODO: EP428
               Container(
                 padding: EdgeInsets.symmetric(
                   horizontal: 16,
