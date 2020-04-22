@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FashionStoreApp extends StatelessWidget {
@@ -19,11 +20,16 @@ class _FasionMainPageState extends State<FashionMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
+        scrollDirection: Axis.vertical,
         children: [
-            Container(
-              height: MediaQuery.of(context).size.height,
-              decoration: BoxDecoration(
-                color: Colors.red,
+            SafeArea(
+              child: Container(
+                height: MediaQuery.of(context).size.height,
+                child: Column(
+                  children: [
+                    
+                  ],
+                ),
               ),
             ),
           Container(
