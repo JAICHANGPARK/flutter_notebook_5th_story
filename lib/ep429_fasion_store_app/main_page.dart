@@ -41,6 +41,13 @@ class _FasionMainPageState extends State<FashionMainPage> {
                           margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                           decoration: BoxDecoration(
                             color: Colors.white,
+                            borderRadius: BorderRadius.circular(24),
+                            border: Border.all(color: Colors.grey[300])
+                          ),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              icon: Icon(Icons.search)
+                            ),
                           ),
                         ),
                       )
