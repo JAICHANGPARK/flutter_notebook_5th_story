@@ -22,14 +22,14 @@ class _FasionMainPageState extends State<FashionMainPage> {
       body: PageView(
         scrollDirection: Axis.vertical,
         children: [
-            SafeArea(
-              child: Container(
-                height: MediaQuery.of(context).size.height,
-                child: Column(
-                  children: [
-                    
-                  ],
-                ),
+            Container(
+              height: MediaQuery.of(context).size.height,
+              child: Column(
+                children: [
+                  Expanded(flex: 3,child: Placeholder(),),
+                  Expanded(flex: 4,child: Placeholder(),),
+                  Expanded(flex: 4,child: Placeholder(),),
+                ],
               ),
             ),
           Container(
