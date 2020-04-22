@@ -23,6 +23,19 @@ class _FasionMainPageState extends State<FashionMainPage> {
 
         ],
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+
+          height: 84,
+          decoration: BoxDecoration(
+              color: Colors.white,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(24),
+              topRight: Radius.circular(24)
+            )
+          ),
+        ),
+      ),
     );
   }
 }
