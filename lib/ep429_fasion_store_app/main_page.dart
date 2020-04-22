@@ -20,7 +20,18 @@ class _FasionMainPageState extends State<FashionMainPage> {
     return Scaffold(
       body: PageView(
         children: [
-
+            Container(
+              height: MediaQuery.of(context).size.height,
+              decoration: BoxDecoration(
+                color: Colors.red,
+              ),
+            ),
+          Container(
+            height: MediaQuery.of(context).size.height,
+            decoration: BoxDecoration(
+              color: Colors.green,
+            ),
+          )
         ],
       ),
       bottomNavigationBar: BottomAppBar(
