@@ -44,9 +44,12 @@ class _FasionMainPageState extends State<FashionMainPage> {
                             borderRadius: BorderRadius.circular(24),
                             border: Border.all(color: Colors.grey[300])
                           ),
+                          padding: EdgeInsets.only(left: 8),
                           child: TextField(
                             decoration: InputDecoration(
-                              icon: Icon(Icons.search)
+                              icon: Icon(Icons.search),
+                              border: InputBorder.none,
+                              hintText: "Search"
                             ),
                           ),
                         ),
