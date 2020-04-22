@@ -36,6 +36,7 @@ class _FasionMainPageState extends State<FashionMainPage> {
                         ),),),
                       ),
                       Expanded(
+                        flex: 1,
                         child: Container(
                           margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                           decoration: BoxDecoration(
@@ -45,8 +46,8 @@ class _FasionMainPageState extends State<FashionMainPage> {
                       )
                     ],
                   )),
-                  Expanded(flex: 4,child: Placeholder(),),
-                  Expanded(flex: 4,child: Placeholder(),),
+                  Expanded(flex: 5,child: Placeholder(),),
+                  Expanded(flex: 5,child: Placeholder(),),
                 ],
               ),
             ),
