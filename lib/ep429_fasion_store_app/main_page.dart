@@ -20,10 +20,42 @@ class _FasionMainPageState extends State<FashionMainPage> {
     return Scaffold(
       body: PageView(
         children: [
-          
+
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
