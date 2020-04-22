@@ -25,7 +25,6 @@ class _FasionMainPageState extends State<FashionMainPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
-
           height: 84,
           decoration: BoxDecoration(
               color: Colors.white,
@@ -33,6 +32,18 @@ class _FasionMainPageState extends State<FashionMainPage> {
               topLeft: Radius.circular(24),
               topRight: Radius.circular(24)
             )
+          ),
+          child: Row(
+            children: [
+              Text("FG"),
+              IconButton(icon: Icon(Icons.favorite_border),
+              onPressed: (){},),
+              IconButton(icon: Icon(Icons.card_travel),
+                onPressed: (){},),
+              IconButton(icon: Icon(Icons.favorite_border),
+                onPressed: (){},),
+
+            ],
           ),
         ),
       ),
