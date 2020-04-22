@@ -30,7 +30,18 @@ class _FasionMainPageState extends State<FashionMainPage> {
                     children: [
                       Expanded(
                         flex: 1,
-                        child: Center(child: Text(""),),
+                        child: Center(child: Text("FEAR OF GOD",style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold,
+                        ),),),
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                        ),
                       )
                     ],
                   )),
