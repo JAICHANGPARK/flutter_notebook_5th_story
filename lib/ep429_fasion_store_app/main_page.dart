@@ -26,7 +26,14 @@ class _FasionMainPageState extends State<FashionMainPage> {
               height: MediaQuery.of(context).size.height,
               child: Column(
                 children: [
-                  Expanded(flex: 3,child: Placeholder(),),
+                  Expanded(flex: 3,child:Column(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Center(child: Text(""),),
+                      )
+                    ],
+                  )),
                   Expanded(flex: 4,child: Placeholder(),),
                   Expanded(flex: 4,child: Placeholder(),),
                 ],
