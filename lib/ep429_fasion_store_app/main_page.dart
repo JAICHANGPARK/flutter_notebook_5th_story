@@ -22,45 +22,54 @@ class _FasionMainPageState extends State<FashionMainPage> {
       body: PageView(
         scrollDirection: Axis.vertical,
         children: [
-            Container(
-              height: MediaQuery.of(context).size.height,
-              child: Column(
-                children: [
-                  Expanded(flex: 3,child:Column(
-                    children: [
-                      Expanded(
-                        flex: 1,
-                        child: Center(child: Text("FEAR OF GOD",style: TextStyle(
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
-                        ),),),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(24),
-                            border: Border.all(color: Colors.grey[300])
-                          ),
-                          padding: EdgeInsets.only(left: 8),
-                          child: TextField(
-                            decoration: InputDecoration(
-                              icon: Icon(Icons.search),
-                              border: InputBorder.none,
-                              hintText: "Search"
+          Container(
+            height: MediaQuery.of(context).size.height,
+            child: Column(
+              children: [
+                Expanded(
+                    flex: 3,
+                    child: Column(
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: Center(
+                            child: Text(
+                              "FEAR OF GOD",
+                              style: TextStyle(
+                                fontSize: 32,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
                         ),
-                      )
-                    ],
-                  )),
-                  Expanded(flex: 5,child: Placeholder(),),
-                  Expanded(flex: 5,child: Placeholder(),),
-                ],
-              ),
+                        Expanded(
+                          flex: 1,
+                          child: Container(
+                            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(24),
+                                border: Border.all(color: Colors.grey[300])),
+                            padding: EdgeInsets.only(left: 8),
+                            child: TextField(
+                              decoration: InputDecoration(
+                                  icon: Icon(Icons.search), border: InputBorder.none, hintText: "Search"),
+                            ),
+                          ),
+                        )
+                      ],
+                    )),
+                Expanded(
+                  flex: 5,
+                  child: Placeholder(),
+                ),
+                Expanded(
+                  flex: 5,
+                  child: Placeholder(),
+                ),
+              ],
             ),
+          ),
           Container(
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
@@ -74,26 +83,27 @@ class _FasionMainPageState extends State<FashionMainPage> {
           height: 84,
           decoration: BoxDecoration(
               color: Colors.white,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(24),
-              topRight: Radius.circular(24)
-            )
-          ),
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(24), topRight: Radius.circular(24))),
           padding: EdgeInsets.symmetric(horizontal: 24),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("FG", style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 20
-              ),),
-              IconButton(icon: Icon(Icons.favorite_border),
-              onPressed: (){},),
-              IconButton(icon: Icon(Icons.card_travel),
-                onPressed: (){},),
-              IconButton(icon: Icon(Icons.person_outline),
-                onPressed: (){},),
-
+              Text(
+                "FG",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              ),
+              IconButton(
+                icon: Icon(Icons.favorite_border),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(Icons.card_travel),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(Icons.person_outline),
+                onPressed: () {},
+              ),
             ],
           ),
         ),
@@ -101,36 +111,3 @@ class _FasionMainPageState extends State<FashionMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
