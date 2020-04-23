@@ -63,10 +63,17 @@ class _FirstPageState extends State<FirstPage> {
           Expanded(
             flex: 5,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
                   flex: 1,
-                  child: Placeholder(),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Text("OUTERWEAR", style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22,
+                    ),),
+                  ),
                 ),
                 Expanded(
                   flex: 5,
