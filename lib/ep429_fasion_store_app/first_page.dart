@@ -89,6 +89,24 @@ class _FirstPageState extends State<FirstPage> {
                             decoration: BoxDecoration(
                               color: Colors.red,
                             ),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  flex: 4,
+                                  child: Container(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 1,
+                                  child: Text(""),
+                                ),
+                                Expanded(
+                                  flex: 1,
+                                  child: Placeholder(),
+                                ),
+                              ],
+                            ),
                           );
                         }),
                   ),
