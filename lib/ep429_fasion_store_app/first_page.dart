@@ -95,7 +95,12 @@ class _FirstPageState extends State<FirstPage> {
                                   flex: 4,
                                   child: Container(
                                     margin: EdgeInsets.only(left: 16),
-                                    color: Colors.grey,
+                                    decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                        image: NetworkImage("https://cdn.pixabay.com/photo/2018/09/12/12/37/cloth-3672088_960_720.jpg"),
+                                        fit: BoxFit.cover
+                                      )
+                                    ),
                                   ),
                                 ),
                                 Expanded(
