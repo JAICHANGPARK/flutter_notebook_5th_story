@@ -90,6 +90,7 @@ class _FirstPageState extends State<FirstPage> {
                               color: Colors.red,
                             ),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Expanded(
                                   flex: 4,
