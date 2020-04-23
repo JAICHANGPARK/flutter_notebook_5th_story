@@ -69,7 +69,7 @@ class _FirstPageState extends State<FirstPage> {
                   child: Placeholder(),
                 ),
                 Expanded(
-                  flex: 1,
+                  flex: 5,
                   child: Placeholder(),
                 )
               ],
