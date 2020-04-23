@@ -108,7 +108,7 @@ class _FirstPageState extends State<FirstPage> {
                                 Expanded(
                                   flex: 1,
                                   child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.symmetric(vertical: 8),
                                     child: Text("\$1,180.00"),
                                   ),
                                 ),
