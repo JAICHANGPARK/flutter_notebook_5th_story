@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutternotebook5th/ep429_fasion_store_app/first_page.dart';
 
 class FashionStoreApp extends StatelessWidget {
   @override
@@ -22,54 +23,7 @@ class _FasionMainPageState extends State<FashionMainPage> {
       body: PageView(
         scrollDirection: Axis.vertical,
         children: [
-          Container(
-            height: MediaQuery.of(context).size.height,
-            child: Column(
-              children: [
-                Expanded(
-                    flex: 3,
-                    child: Column(
-                      children: [
-                        Expanded(
-                          flex: 1,
-                          child: Center(
-                            child: Text(
-                              "FEAR OF GOD",
-                              style: TextStyle(
-                                fontSize: 32,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          flex: 1,
-                          child: Container(
-                            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(24),
-                                border: Border.all(color: Colors.grey[300])),
-                            padding: EdgeInsets.only(left: 8),
-                            child: TextField(
-                              decoration: InputDecoration(
-                                  icon: Icon(Icons.search), border: InputBorder.none, hintText: "Search"),
-                            ),
-                          ),
-                        )
-                      ],
-                    )),
-                Expanded(
-                  flex: 5,
-                  child: Placeholder(),
-                ),
-                Expanded(
-                  flex: 5,
-                  child: Placeholder(),
-                ),
-              ],
-            ),
-          ),
+          FirstPage(),
           Container(
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
