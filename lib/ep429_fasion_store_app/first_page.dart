@@ -86,9 +86,7 @@ class _FirstPageState extends State<FirstPage> {
                           return Container(
                             margin: EdgeInsets.only(right: 16),
                             width: 180,
-                            decoration: BoxDecoration(
-                              color: Colors.red,
-                            ),
+
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
