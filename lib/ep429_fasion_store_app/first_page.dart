@@ -71,13 +71,27 @@ class _FirstPageState extends State<FirstPage> {
                     padding: const EdgeInsets.only(left: 16),
                     child: Text("OUTERWEAR", style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 22,
+                      fontSize: 20,
                     ),),
                   ),
                 ),
                 Expanded(
                   flex: 5,
-                  child: Placeholder(),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ListView.builder(
+                        itemCount: 10,
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index){
+                            return Container(
+                              margin: EdgeInsets.only(right: 16),
+                              width: 180,
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                              ),
+                            );
+                    }),
+                  ),
                 )
               ],
             ),
