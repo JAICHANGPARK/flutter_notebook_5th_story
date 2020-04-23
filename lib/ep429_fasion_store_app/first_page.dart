@@ -48,8 +48,9 @@ class _FirstPageState extends State<FirstPage> {
           Expanded(
             flex: 5,
             child: Container(
-              margin: EdgeInsets.all(8),
+              margin: EdgeInsets.all(16),
               color: Colors.brown,
+              de
             ),
           ),
           Expanded(
