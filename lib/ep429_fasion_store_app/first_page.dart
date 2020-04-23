@@ -62,7 +62,18 @@ class _FirstPageState extends State<FirstPage> {
           ),
           Expanded(
             flex: 5,
-            child: Placeholder(),
+            child: Column(
+              children: [
+                Expanded(
+                  flex: 1,
+                  child: Placeholder(),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: Placeholder(),
+                )
+              ],
+            ),
           ),
         ],
       ),
