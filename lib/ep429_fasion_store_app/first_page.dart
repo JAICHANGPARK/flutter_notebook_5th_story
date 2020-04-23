@@ -8,7 +8,7 @@ class FirstPage extends StatefulWidget {
 class _FirstPageState extends State<FirstPage> {
   @override
   Widget build(BuildContext context) {
-   return  Container(
+    return Container(
       height: MediaQuery.of(context).size.height,
       child: Column(
         children: [
@@ -38,8 +38,8 @@ class _FirstPageState extends State<FirstPage> {
                           border: Border.all(color: Colors.grey[300])),
                       padding: EdgeInsets.only(left: 8),
                       child: TextField(
-                        decoration: InputDecoration(
-                            icon: Icon(Icons.search), border: InputBorder.none, hintText: "Search"),
+                        decoration:
+                            InputDecoration(icon: Icon(Icons.search), border: InputBorder.none, hintText: "Search"),
                       ),
                     ),
                   )
@@ -49,15 +49,12 @@ class _FirstPageState extends State<FirstPage> {
             flex: 5,
             child: Container(
               margin: EdgeInsets.all(16),
-
               decoration: BoxDecoration(
                   color: Colors.brown,
-                borderRadius: BorderRadius.circular(16),
-                image: DecorationImage(
-                  image: NetworkImage("https://cdn.pixabay.com/photo/2017/08/06/15/13/woman-2593366_960_720.jpg"),
-                  fit: BoxFit.cover
-                )
-              ),
+                  borderRadius: BorderRadius.circular(16),
+                  image: DecorationImage(
+                      image: NetworkImage("https://cdn.pixabay.com/photo/2017/08/06/15/13/woman-2593366_960_720.jpg"),
+                      fit: BoxFit.cover)),
             ),
           ),
           Expanded(
@@ -69,28 +66,31 @@ class _FirstPageState extends State<FirstPage> {
                   flex: 1,
                   child: Padding(
                     padding: const EdgeInsets.only(left: 16),
-                    child: Text("OUTERWEAR", style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),),
+                    child: Text(
+                      "OUTERWEAR",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
                   ),
                 ),
                 Expanded(
                   flex: 5,
                   child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.only(left: 16),
                     child: ListView.builder(
                         itemCount: 10,
                         scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index){
-                            return Container(
-                              margin: EdgeInsets.only(right: 16),
-                              width: 180,
-                              decoration: BoxDecoration(
-                                color: Colors.red,
-                              ),
-                            );
-                    }),
+                        itemBuilder: (context, index) {
+                          return Container(
+                            margin: EdgeInsets.only(right: 16),
+                            width: 180,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          );
+                        }),
                   ),
                 )
               ],
@@ -101,21 +101,3 @@ class _FirstPageState extends State<FirstPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
