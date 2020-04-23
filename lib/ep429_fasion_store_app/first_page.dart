@@ -99,7 +99,7 @@ class _FirstPageState extends State<FirstPage> {
                                 ),
                                 Expanded(
                                   flex: 1,
-                                  child: Text(""),
+                                  child: Text("NYLON FULL ZIP HOODIE"),
                                 ),
                                 Expanded(
                                   flex: 1,
