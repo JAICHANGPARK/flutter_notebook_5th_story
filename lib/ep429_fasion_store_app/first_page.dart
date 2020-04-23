@@ -104,7 +104,7 @@ class _FirstPageState extends State<FirstPage> {
                                 ),
                                 Expanded(
                                   flex: 1,
-                                  child: Placeholder(),
+                                  child: Text("\$1,180.00"),
                                 ),
                               ],
                             ),
