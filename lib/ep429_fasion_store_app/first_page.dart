@@ -100,10 +100,10 @@ class _FirstPageState extends State<FirstPage> {
                                 ),
                                 Expanded(
                                   flex: 1,
-                                  child: Text("NYLON FULL ZIP HOODIE",style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16
-                                  ),),
+                                  child: Text(
+                                    "NYLON FULL ZIP HOODIE",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                  ),
                                 ),
                                 Expanded(
                                   flex: 1,
