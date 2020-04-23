@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FirstPage extends StatefulWidget {
@@ -93,6 +94,7 @@ class _FirstPageState extends State<FirstPage> {
                                 Expanded(
                                   flex: 4,
                                   child: Container(
+                                    margin: EdgeInsets.only(left: 16),
                                     color: Colors.grey,
                                   ),
                                 ),
