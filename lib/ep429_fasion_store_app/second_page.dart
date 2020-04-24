@@ -29,7 +29,8 @@ class SecondPage extends StatelessWidget {
                     );
                   }),
             ),
-            Text("Looks", style: TextStyle(
+            SizedBox(height: 16,),
+            Text("FOOTWEAR", style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
             ),),
