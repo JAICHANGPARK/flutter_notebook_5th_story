@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatelessWidget {
@@ -15,7 +16,10 @@ class SecondPage extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.red,
             ),
-            child: ListView.builder(itemBuilder: (context, index){
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index){
+
               return Container(
                 width: MediaQuery.of(context).size.width / 3,
                 decoration: BoxDecoration(
