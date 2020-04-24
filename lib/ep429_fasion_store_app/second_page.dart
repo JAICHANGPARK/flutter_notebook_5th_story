@@ -70,11 +70,14 @@ class SecondPage extends StatelessWidget {
                             flex: 2,
                             child: Text(
                               "BLACK SKATE\nMID SNEAKER",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
                           Expanded(
                             flex: 1,
-                            child: Placeholder(),
+                            child: Text,
                           )
                         ],
                       ),
