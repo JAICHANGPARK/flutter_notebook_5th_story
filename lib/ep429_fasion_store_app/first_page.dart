@@ -87,7 +87,6 @@ class _FirstPageState extends State<FirstPage> {
                           return Container(
                             margin: EdgeInsets.only(right: 16),
                             width: 180,
-
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -96,11 +95,10 @@ class _FirstPageState extends State<FirstPage> {
                                   child: Container(
                                     margin: EdgeInsets.only(left: 16),
                                     decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                        image: NetworkImage("https://cdn.pixabay.com/photo/2018/09/12/12/37/cloth-3672088_960_720.jpg"),
-                                        fit: BoxFit.cover
-                                      )
-                                    ),
+                                        image: DecorationImage(
+                                            image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2018/09/12/12/37/cloth-3672088_960_720.jpg"),
+                                            fit: BoxFit.cover)),
                                   ),
                                 ),
                                 Expanded(
