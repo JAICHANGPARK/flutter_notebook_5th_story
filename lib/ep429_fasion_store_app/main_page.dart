@@ -24,12 +24,7 @@ class _FasionMainPageState extends State<FashionMainPage> {
         scrollDirection: Axis.vertical,
         children: [
           FirstPage(),
-          Container(
-            height: MediaQuery.of(context).size.height,
-            decoration: BoxDecoration(
-              color: Colors.green,
-            ),
-          )
+         
         ],
       ),
       bottomNavigationBar: BottomAppBar(
