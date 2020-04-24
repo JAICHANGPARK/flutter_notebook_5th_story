@@ -28,7 +28,11 @@ class SecondPage extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Container(
                       width: MediaQuery.of(context).size.width / 2.8,
-                      decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(16)),
+                      decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(16),
+                      image: DecorationImage(
+                        image: NetworkImage("https://cdn.pixabay.com/photo/2020/04/22/06/47/hydrangea-5076212_960_720.jpg"),
+                        fit: BoxFit.cover
+                      )),
                       margin: EdgeInsets.only(right: 16),
                     );
                   }),
