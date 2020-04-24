@@ -34,6 +34,19 @@ class SecondPage extends StatelessWidget {
               fontSize: 18,
               fontWeight: FontWeight.bold,
             ),),
+            Container(
+              height: MediaQuery.of(context).size.height / 4,
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: MediaQuery.of(context).size.width / 2.5,
+                      decoration: BoxDecoration(color: Colors.blue,
+                          borderRadius: BorderRadius.circular(16)),
+                      margin: EdgeInsets.only(right: 16),
+                    );
+                  }),
+            ),
           ],
         ),
       ),
