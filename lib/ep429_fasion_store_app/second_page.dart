@@ -53,7 +53,7 @@ class SecondPage extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Container(
                       width: MediaQuery.of(context).size.width / 2.5,
-                      decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(16)),
+                      decoration: BoxDecoration( borderRadius: BorderRadius.circular(16)),
                       margin: EdgeInsets.only(right: 16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
