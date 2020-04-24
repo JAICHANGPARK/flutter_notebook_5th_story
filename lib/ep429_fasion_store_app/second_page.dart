@@ -11,11 +11,16 @@ class SecondPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Looks", style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),),
-            SizedBox(height: 8,),
+            Text(
+              "Looks",
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 8,
+            ),
             Container(
               height: MediaQuery.of(context).size.height / 3,
               child: ListView.builder(
@@ -23,18 +28,24 @@ class SecondPage extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Container(
                       width: MediaQuery.of(context).size.width / 2.8,
-                      decoration: BoxDecoration(color: Colors.blue,
-                      borderRadius: BorderRadius.circular(16)),
+                      decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(16)),
                       margin: EdgeInsets.only(right: 16),
                     );
                   }),
             ),
-            SizedBox(height: 16,),
-            Text("FOOTWEAR", style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
+            Text(
+              "FOOTWEAR",
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 16,
+            ),
             Container(
               height: MediaQuery.of(context).size.height / 4,
               child: ListView.builder(
@@ -42,14 +53,18 @@ class SecondPage extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Container(
                       width: MediaQuery.of(context).size.width / 2.5,
-                      decoration: BoxDecoration(color: Colors.blue,
-                          borderRadius: BorderRadius.circular(16)),
+                      decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(16)),
                       margin: EdgeInsets.only(right: 16),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
-                            flex: 3,
-                            child: Placeholder(),
+                            flex: 4,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                              ),
+                            ),
                           ),
                           Expanded(
                             flex: 2,
@@ -70,25 +85,3 @@ class SecondPage extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
