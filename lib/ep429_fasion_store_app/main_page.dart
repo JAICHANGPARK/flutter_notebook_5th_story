@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutternotebook5th/ep429_fasion_store_app/first_page.dart';
+import 'package:flutternotebook5th/ep429_fasion_store_app/second_page.dart';
 
 class FashionStoreApp extends StatelessWidget {
   @override
@@ -24,7 +25,7 @@ class _FasionMainPageState extends State<FashionMainPage> {
         scrollDirection: Axis.vertical,
         children: [
           FirstPage(),
-         
+          SecondPage(),
         ],
       ),
       bottomNavigationBar: BottomAppBar(
