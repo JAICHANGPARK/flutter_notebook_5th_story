@@ -8,6 +8,16 @@ class SecondPage extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.green,
       ),
+      child: Column(
+        children: [
+          Container(
+            height: MediaQuery.of(context).size.height / 3,
+            decoration: BoxDecoration(
+              color: Colors.red,
+            ),
+          )
+        ],
+      ),
     );
   }
 }
