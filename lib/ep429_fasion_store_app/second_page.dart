@@ -18,15 +18,12 @@ class SecondPage extends StatelessWidget {
             ),
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index){
-
-              return Container(
-                width: MediaQuery.of(context).size.width / 3,
-                decoration: BoxDecoration(
-                  color: Colors.blue
-                ),
-              );
-            }),
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: MediaQuery.of(context).size.width / 3,
+                    decoration: BoxDecoration(color: Colors.blue),
+                  );
+                }),
           )
         ],
       ),
