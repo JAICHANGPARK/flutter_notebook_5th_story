@@ -47,7 +47,7 @@ class SecondPage extends StatelessWidget {
               height: 16,
             ),
             Container(
-              height: MediaQuery.of(context).size.height / 4,
+              height: MediaQuery.of(context).size.height / 3.5,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
