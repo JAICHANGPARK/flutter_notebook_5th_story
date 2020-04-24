@@ -10,7 +10,12 @@ class SecondPage extends StatelessWidget {
         color: Colors.green,
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Text("Looks", style: TextStyle(
+            fontSize: 18,
+
+          ),),
           Container(
             height: MediaQuery.of(context).size.height / 3,
             decoration: BoxDecoration(
@@ -22,6 +27,7 @@ class SecondPage extends StatelessWidget {
                   return Container(
                     width: MediaQuery.of(context).size.width / 3,
                     decoration: BoxDecoration(color: Colors.blue),
+                    margin: EdgeInsets.only(right: 16),
                   );
                 }),
           )
@@ -30,3 +36,25 @@ class SecondPage extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
