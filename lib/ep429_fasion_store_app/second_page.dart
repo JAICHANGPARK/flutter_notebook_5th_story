@@ -61,6 +61,7 @@ class SecondPage extends StatelessWidget {
                           Expanded(
                             flex: 4,
                             child: Container(
+                              margin: EdgeInsets.only(bottom: 4),
                               decoration: BoxDecoration(
                                 color: Colors.red,
                               ),
@@ -77,7 +78,7 @@ class SecondPage extends StatelessWidget {
                           ),
                           Expanded(
                             flex: 1,
-                            child: Text,
+                            child: Text("\$634.00"),
                           )
                         ],
                       ),
