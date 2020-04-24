@@ -34,6 +34,7 @@ class SecondPage extends StatelessWidget {
               fontSize: 18,
               fontWeight: FontWeight.bold,
             ),),
+            SizedBox(height: 16,),
             Container(
               height: MediaQuery.of(context).size.height / 4,
               child: ListView.builder(
@@ -44,6 +45,22 @@ class SecondPage extends StatelessWidget {
                       decoration: BoxDecoration(color: Colors.blue,
                           borderRadius: BorderRadius.circular(16)),
                       margin: EdgeInsets.only(right: 16),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            flex: 3,
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            flex: 2,
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            flex: 1,
+                            child: Placeholder(),
+                          )
+                        ],
+                      ),
                     );
                   }),
             ),
