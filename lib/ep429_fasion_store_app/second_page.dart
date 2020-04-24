@@ -15,6 +15,14 @@ class SecondPage extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.red,
             ),
+            child: ListView.builder(itemBuilder: (context, index){
+              return Container(
+                width: MediaQuery.of(context).size.width / 3,
+                decoration: BoxDecoration(
+                  color: Colors.blue
+                ),
+              );
+            }),
           )
         ],
       ),
