@@ -22,9 +22,21 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                 decoration: BoxDecoration(
                   color: Colors.brown,
                   borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(32)
+                    bottomLeft: Radius.circular(32),
+                    bottomRight: Radius.circular(32),
                   )
                 ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 240,
+            left: 16,
+            right: 0,
+            child: Container(
+              height: 240,
+              decoration: BoxDecoration(
+                color: Colors.blue
               ),
             ),
           )
