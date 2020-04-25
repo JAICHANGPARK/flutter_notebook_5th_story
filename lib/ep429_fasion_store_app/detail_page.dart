@@ -47,7 +47,8 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                   Expanded(
                     flex: 1,
                     child: Text("LOOKS", style: TextStyle(
-                      color: Colors.white
+                      color: Colors.white,
+                      fontSize: 18
                     ),),
                   ),
                   Expanded(
