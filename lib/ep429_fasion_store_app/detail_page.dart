@@ -39,7 +39,7 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
             child: Container(
               height: 240,
               decoration: BoxDecoration(
-                color: Colors.blue
+//                color: Colors.blue
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
