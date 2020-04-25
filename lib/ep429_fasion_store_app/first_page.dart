@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutternotebook5th/ep429_fasion_store_app/detail_page.dart';
 
 class FirstPage extends StatefulWidget {
   @override
@@ -50,7 +51,9 @@ class _FirstPageState extends State<FirstPage> {
             flex: 5,
             child: GestureDetector(
               onTap: (){
-
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ShopDetailPage())
+                );
               },
               child: Container(
                 margin: EdgeInsets.all(16),
