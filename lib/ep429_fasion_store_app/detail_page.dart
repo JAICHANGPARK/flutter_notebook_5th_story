@@ -52,8 +52,13 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                   ),
                   Expanded(
                     flex: 10,
-                    child: ListView.builder(itemBuilder: (context, index){
-                      return Container();
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index){
+                      return Container(
+                        margin: EdgeInsets.only(right: 16),
+
+                      );
                     })
                   )
                 ],
