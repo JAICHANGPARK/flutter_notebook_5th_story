@@ -48,14 +48,19 @@ class _FirstPageState extends State<FirstPage> {
               )),
           Expanded(
             flex: 5,
-            child: Container(
-              margin: EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                  color: Colors.brown,
-                  borderRadius: BorderRadius.circular(16),
-                  image: DecorationImage(
-                      image: NetworkImage("https://cdn.pixabay.com/photo/2017/08/06/15/13/woman-2593366_960_720.jpg"),
-                      fit: BoxFit.cover)),
+            child: GestureDetector(
+              onTap: (){
+
+              },
+              child: Container(
+                margin: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                    color: Colors.brown,
+                    borderRadius: BorderRadius.circular(16),
+                    image: DecorationImage(
+                        image: NetworkImage("https://cdn.pixabay.com/photo/2017/08/06/15/13/woman-2593366_960_720.jpg"),
+                        fit: BoxFit.cover)),
+              ),
             ),
           ),
           Expanded(
