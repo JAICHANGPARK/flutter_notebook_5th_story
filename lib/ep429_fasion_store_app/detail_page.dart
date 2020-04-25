@@ -38,7 +38,8 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                           color: Colors.white,
                           onPressed: () => Navigator.of(context).pop(),),
                           Text("SIXTH COLLECTIONS", style: TextStyle(
-                            fontWeight: FontWeight.bold
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white
                           ),),
                           IconButton(icon: Icon(Icons.file_upload),
                             color: Colors.white,
