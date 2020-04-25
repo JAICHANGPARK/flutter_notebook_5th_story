@@ -36,7 +36,10 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                         children: [
                           IconButton(icon: Icon(Icons.arrow_back),
                           color: Colors.white,
-                          onPressed: () => Navigator.of(context).pop(),)
+                          onPressed: () => Navigator.of(context).pop(),),
+                          Text("SIXTH COLLECTIONS", style: TextStyle(
+                            fontWeight: FontWeight.bold
+                          ),)
                         ],
                       )
                     ],
