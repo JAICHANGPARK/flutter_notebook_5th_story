@@ -24,7 +24,10 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(32),
                     bottomRight: Radius.circular(32),
-                  )
+                  ),
+                    image: DecorationImage(
+                        image: NetworkImage("https://cdn.pixabay.com/photo/2017/08/06/15/13/woman-2593366_960_720.jpg"),
+                        fit: BoxFit.cover)
                 ),
               ),
             ),
