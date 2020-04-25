@@ -59,7 +59,8 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                         margin: EdgeInsets.only(right: 16),
                         width: 120,
                         decoration: BoxDecoration(
-                          color: Colors.red
+                          color: Colors.red,
+                          borderRadius: BorderRadius.circular(16)
                         ),
 
                       );
