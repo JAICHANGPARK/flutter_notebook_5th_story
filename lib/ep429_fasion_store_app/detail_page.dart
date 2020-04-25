@@ -33,13 +33,15 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                   child: Column(
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           IconButton(icon: Icon(Icons.arrow_back),
                           color: Colors.white,
                           onPressed: () => Navigator.of(context).pop(),),
                           Text("SIXTH COLLECTIONS", style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            color: Colors.white
+                            color: Colors.white,
+
                           ),),
                           IconButton(icon: Icon(Icons.file_upload),
                             color: Colors.white,
