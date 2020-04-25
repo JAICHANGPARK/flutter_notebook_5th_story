@@ -42,12 +42,19 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                 color: Colors.blue
               ),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
                     flex: 1,
                     child: Text("LOOKS", style: TextStyle(
                       color: Colors.white
                     ),),
+                  ),
+                  Expanded(
+                    flex: 10,
+                    child: ListView.builder(itemBuilder: (context, index){
+                      return Container();
+                    })
                   )
                 ],
               ),
