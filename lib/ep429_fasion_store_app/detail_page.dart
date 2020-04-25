@@ -29,16 +29,18 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                         image: NetworkImage("https://cdn.pixabay.com/photo/2017/08/06/15/13/woman-2593366_960_720.jpg"),
                         fit: BoxFit.cover)
                 ),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        IconButton(icon: Icon(Icons.arrow_back),
-                        color: Colors.white,
-                        onPressed: () => Navigator.of(context).pop(),)
-                      ],
-                    )
-                  ],
+                child: SafeArea(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          IconButton(icon: Icon(Icons.arrow_back),
+                          color: Colors.white,
+                          onPressed: () => Navigator.of(context).pop(),)
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
