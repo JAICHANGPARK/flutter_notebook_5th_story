@@ -57,6 +57,10 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                         itemBuilder: (context, index){
                       return Container(
                         margin: EdgeInsets.only(right: 16),
+                        width: 120,
+                        decoration: BoxDecoration(
+                          color: Colors.red
+                        ),
 
                       );
                     })
