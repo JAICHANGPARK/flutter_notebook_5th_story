@@ -41,6 +41,16 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
               decoration: BoxDecoration(
                 color: Colors.blue
               ),
+              child: Column(
+                children: [
+                  Expanded(
+                    flex: 1,
+                    child: Text("LOOKS", style: TextStyle(
+                      color: Colors.white
+                    ),),
+                  )
+                ],
+              ),
             ),
           )
         ],
