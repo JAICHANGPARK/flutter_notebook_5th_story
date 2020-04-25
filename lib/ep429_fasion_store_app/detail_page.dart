@@ -30,25 +30,32 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                         fit: BoxFit.cover)
                 ),
                 child: SafeArea(
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          IconButton(icon: Icon(Icons.arrow_back),
-                          color: Colors.white,
-                          onPressed: () => Navigator.of(context).pop(),),
-                          Text("SIXTH COLLECTIONS", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 48,
+                          width: double.infinity,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              IconButton(icon: Icon(Icons.arrow_back),
+                              color: Colors.white,
+                              onPressed: () => Navigator.of(context).pop(),),
+                              Text("SIXTH COLLECTIONS", style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
 
-                          ),),
-                          IconButton(icon: Icon(Icons.file_upload),
-                            color: Colors.white,
-                            onPressed: () {},),
-                        ],
-                      )
-                    ],
+                              ),),
+                              IconButton(icon: Icon(Icons.file_upload),
+                                color: Colors.white,
+                                onPressed: () {},),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
