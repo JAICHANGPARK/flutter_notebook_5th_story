@@ -20,7 +20,10 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
               child: Container(
                 height: MediaQuery.of(context).size.height / 2,
                 decoration: BoxDecoration(
-                  color: Colors.brown
+                  color: Colors.brown,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(32)
+                  )
                 ),
               ),
             ),
@@ -60,3 +63,18 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
