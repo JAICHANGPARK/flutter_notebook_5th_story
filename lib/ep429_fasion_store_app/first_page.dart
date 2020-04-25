@@ -50,11 +50,7 @@ class _FirstPageState extends State<FirstPage> {
           Expanded(
             flex: 5,
             child: GestureDetector(
-              onTap: (){
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => ShopDetailPage())
-                );
-              },
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => ShopDetailPage())),
               child: Container(
                 margin: EdgeInsets.all(16),
                 decoration: BoxDecoration(
