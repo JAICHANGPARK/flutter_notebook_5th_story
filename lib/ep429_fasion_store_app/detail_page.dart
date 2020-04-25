@@ -15,10 +15,13 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
             left: 0,
             top: 0,
             right: 0,
-            child: Container(
-              height: MediaQuery.of(context).size.height / 2,
-              decoration: BoxDecoration(
-                color: Colors.brown
+            child: Hero(
+              tag: "home",
+              child: Container(
+                height: MediaQuery.of(context).size.height / 2,
+                decoration: BoxDecoration(
+                  color: Colors.brown
+                ),
               ),
             ),
           )
