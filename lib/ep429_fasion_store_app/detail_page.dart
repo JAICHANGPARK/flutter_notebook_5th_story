@@ -61,7 +61,11 @@ class _ShopDetailPageState extends State<ShopDetailPage> {
                         width: 120,
                         decoration: BoxDecoration(
                           color: Colors.red,
-                          borderRadius: BorderRadius.circular(16)
+                          borderRadius: BorderRadius.circular(16),
+                          image: DecorationImage(
+                            image: NetworkImage("https://cdn.pixabay.com/photo/2020/03/01/17/50/monalisa-4893660_960_720.jpg"),
+                            fit: BoxFit.cover
+                          )
                         ),
 
                       );
