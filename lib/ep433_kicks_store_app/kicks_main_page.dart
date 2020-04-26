@@ -66,6 +66,9 @@ class _KicksMainPageState extends State<KicksMainPage> {
     super.initState();
 
   }
+  void _cancelAuthentication(){
+    auth.stopAuthentication();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -85,6 +88,10 @@ class _KicksMainPageState extends State<KicksMainPage> {
             onPressed: _getAvailableBiometrics,
           ),
           Text("Auth State $_isAuth"),
+          RaisedButton(
+            child: Text(_isAuth ? "Cancel" : "Auth Completed"),
+            onPressed: _isAuth ? _cancelAuthentication : _authenticate,
+          )
         ],
       ),
     );
