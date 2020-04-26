@@ -12,7 +12,7 @@ class _KicksMainPageState extends State<KicksMainPage> {
   bool _canCheckBiometrics;
   List<BiometricType> _availableBiometrics;
   bool _isAuth = false;
-
+  String _authText ="Not Auth";
   Future<void> checkAvailable() async {
     bool canCheckBiometrics;
     try {
@@ -31,6 +31,7 @@ class _KicksMainPageState extends State<KicksMainPage> {
     try {
       setState(() {
         _isAuth = true;
+        _authText = "Authenticating";
       });
       authenticated = await auth.authenticateWithBiometrics(
         localizedReason: "Scan your Fingerprint",
@@ -39,6 +40,7 @@ class _KicksMainPageState extends State<KicksMainPage> {
       );
       setState(() {
         _isAuth = false;
+        _authText = "Authenticating";
       });
     } on PlatformException catch (e) {
       print(e);
