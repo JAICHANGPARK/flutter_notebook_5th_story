@@ -83,7 +83,8 @@ class _KicksMainPageState extends State<KicksMainPage> {
           RaisedButton(
             child: Text("get biometrics type"),
             onPressed: _getAvailableBiometrics,
-          )
+          ),
+          Text("Auth State $_isAuth"),
         ],
       ),
     );
