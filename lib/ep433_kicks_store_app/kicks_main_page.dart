@@ -51,11 +51,41 @@ class _KicksMainPageState extends State<KicksMainPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    checkAvailable();
+
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text("check biometric $_canCheckBiometrics"),
+          RaisedButton(
+            child: Text("Check biometrics"),
+            onPressed: checkAvailable,
+          )
+        ],
+      ),
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
