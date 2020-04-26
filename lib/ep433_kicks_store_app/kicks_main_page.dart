@@ -9,7 +9,7 @@ class _KicksMainPageState extends State<KicksMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
   }
 }
