@@ -29,6 +29,8 @@ dependencies:
   calendar_strip: ^1.0.6
   sleek_circular_slider: any
 
+  local_auth: ^0.6.2+1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
