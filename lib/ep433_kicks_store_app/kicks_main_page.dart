@@ -47,6 +47,10 @@ class _KicksMainPageState extends State<KicksMainPage> {
     }
     if (!mounted) return;
     print("auth : $authenticated");
+    final String message = authenticated ? 'Authorized':'Not Authorized';
+    setState(() {
+      _authText = message;
+    });
   }
 
   Future<void> _getAvailableBiometrics() async{
@@ -89,7 +93,7 @@ class _KicksMainPageState extends State<KicksMainPage> {
             child: Text("get biometrics type"),
             onPressed: _getAvailableBiometrics,
           ),
-          Text("Auth State $_isAuth"),
+          Text("Auth State $_authText"),
           RaisedButton(
             child: Text(_isAuth ? "Cancel" : "Auth Completed"),
             onPressed: _isAuth ? _cancelAuthentication : _authenticate,
