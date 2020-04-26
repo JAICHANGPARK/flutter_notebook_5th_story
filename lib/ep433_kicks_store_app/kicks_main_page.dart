@@ -54,6 +54,10 @@ class _KicksMainPageState extends State<KicksMainPage> {
     }on PlatformException catch(e){
       print(e);
     }
+    if(!mounted) return;
+    setState(() {
+      _availableBiometrics = availableTypes;
+    });
   }
 
   @override
@@ -74,6 +78,11 @@ class _KicksMainPageState extends State<KicksMainPage> {
           RaisedButton(
             child: Text("Check biometrics"),
             onPressed: checkAvailable,
+          ),
+          Text("Available biometrics : $_availableBiometrics"),
+          RaisedButton(
+            child: Text("get biometrics type"),
+            onPressed: _getAvailableBiometrics,
           )
         ],
       ),
