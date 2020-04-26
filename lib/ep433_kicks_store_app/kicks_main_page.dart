@@ -25,23 +25,28 @@ class _KicksMainPageState extends State<KicksMainPage> {
       _canCheckBiometrics = canCheckBiometrics;
     });
   }
-  Future<void> _authenticate() async{
+
+  Future<void> _authenticate() async {
     bool authenticated = false;
-    try{
+    try {
       setState(() {
         _isAuth = true;
       });
-      authenticated = await auth.authenticateWithBiometrics(localizedReason: "Scan your Fingerprint",
-      useErrorDialogs: true,
-      stickyAuth: true,
+      authenticated = await auth.authenticateWithBiometrics(
+        localizedReason: "Scan your Fingerprint",
+        useErrorDialogs: true,
+        stickyAuth: true,
       );
       setState(() {
         _isAuth = false;
       });
-
+    } on PlatformException catch (e) {
+      print(e);
     }
-
+    if (!mounted) return;
+    print("auth : $authenticated");
   }
+
   @override
   void initState() {
     // TODO: implement initState
