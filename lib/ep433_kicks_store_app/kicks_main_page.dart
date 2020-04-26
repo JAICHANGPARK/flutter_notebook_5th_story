@@ -47,6 +47,15 @@ class _KicksMainPageState extends State<KicksMainPage> {
     print("auth : $authenticated");
   }
 
+  Future<void> _getAvailableBiometrics() async{
+    List<BiometricType> availableTypes;
+    try{
+      availableTypes = await auth.getAvailableBiometrics();
+    }on PlatformException catch(e){
+      print(e);
+    }
+  }
+
   @override
   void initState() {
     // TODO: implement initState
