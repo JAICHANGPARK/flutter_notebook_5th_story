@@ -75,70 +75,62 @@ class _KicksMainPageState extends State<KicksMainPage> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-          appBar: AppBar(
-            leading: IconButton(
-              icon: Icon(Icons.clear),
-              onPressed: (){},
+            appBar: AppBar(
+              leading: IconButton(
+                icon: Icon(Icons.clear),
+                onPressed: () {},
+              ),
+              title: Text(
+                "Cart",
+                style: TextStyle(color: Colors.black),
+              ),
+              centerTitle: true,
+              backgroundColor: Colors.white,
+              elevation: 0,
+              iconTheme: IconThemeData(color: Colors.black),
             ),
-            title: Text("Cart", style: TextStyle(
-              color: Colors.black
-            ),),
-            centerTitle: true,
-            backgroundColor: Colors.white,
-            elevation: 0,
-            iconTheme: IconThemeData(color: Colors.black),
-          ),
             body: Column(
-      children: [
-
-        Expanded(
-          flex: 10,
-          child: Placeholder(),
-        ),
-        Expanded(
-          flex: 3,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text("Total"),
-                  SizedBox(width: 12,),
-                  Text("\$348"),
-                ],
-              ),
-              SizedBox(height: 12,),
-              Container(
-                height: 46,
-                width: MediaQuery.of(context).size.width - 36,
-                decoration: BoxDecoration(
-                  color: Colors.black,
+              children: [
+                Expanded(
+                  flex: 10,
+                  child: Placeholder(),
                 ),
-
-              ),
-              SizedBox(height: 12,),
-            ],
-          ),
-        )
-      ],
-    )));
+                Expanded(
+                  flex: 3,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text("Total"),
+                          SizedBox(
+                            width: 12,
+                          ),
+                          Text("\$348"),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 12,
+                      ),
+                      Container(
+                        height: 46,
+                        child: Center(child: Text("PAY NOW", style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),),),
+                        width: MediaQuery.of(context).size.width - 36,
+                        decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
+                      ),
+                      SizedBox(
+                        height: 12,
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            )));
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
