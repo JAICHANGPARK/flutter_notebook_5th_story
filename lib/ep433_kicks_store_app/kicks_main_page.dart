@@ -79,7 +79,9 @@ class _KicksMainPageState extends State<KicksMainPage> {
               icon: Icon(Icons.clear),
               onPressed: (){},
             ),
-            title: Text("Cart"),
+            title: Text("Cart", style: TextStyle(
+              color: Colors.black
+            ),),
             centerTitle: true,
             backgroundColor: Colors.white,
             elevation: 0,
