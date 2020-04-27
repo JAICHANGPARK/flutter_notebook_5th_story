@@ -77,25 +77,29 @@ class _KicksMainPageState extends State<KicksMainPage> {
       appBar: AppBar(
         title: const Text('Plugin example app'),
       ),
-      body: ConstrainedBox(
-          constraints: const BoxConstraints.expand(),
-          child: Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: <Widget>[
-            Text('Can check biometrics: $_canCheckBiometrics\n'),
-            RaisedButton(
-              child: const Text('Check biometrics'),
-              onPressed: _checkBiometrics,
-            ),
-            Text('Available biometrics: $_availableBiometrics\n'),
-            RaisedButton(
-              child: const Text('Get available biometrics'),
-              onPressed: _getAvailableBiometrics,
-            ),
-            Text('Current State: $_authorized\n'),
-            RaisedButton(
-              child: Text(_isAuthenticating ? 'Cancel' : 'Authenticate'),
-              onPressed: _isAuthenticating ? _cancelAuthentication : _authenticate,
-            )
-          ])),
+      body:Column(
+        children: [
+
+        ],
+      )
     ));
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
