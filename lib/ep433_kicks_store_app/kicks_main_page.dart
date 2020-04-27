@@ -97,7 +97,11 @@ class _KicksMainPageState extends State<KicksMainPage> {
                     children: [
                       Expanded(
                         flex: 1,
-                        child: Placeholder(),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.blue[50]
+                          ),
+                        ),
                       ),
                       Expanded(
                         flex: 1,
