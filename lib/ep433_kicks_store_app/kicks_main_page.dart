@@ -133,7 +133,10 @@ class _KicksMainPageState extends State<KicksMainPage> {
                         flex: 1,
                         child:  Container(
                           decoration: BoxDecoration(
-                              color: Colors.white
+                              color: Colors.white,
+                            gradient: LinearGradient(colors: [
+                              
+                            ])
                           ),
                         ),
                       )
