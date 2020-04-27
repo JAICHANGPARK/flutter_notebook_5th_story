@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:local_auth/local_auth.dart';
@@ -96,7 +97,25 @@ class _KicksMainPageState extends State<KicksMainPage> {
         ),
         Expanded(
           flex: 3,
-          child: Placeholder(),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Total"),
+                  Text("\$348"),
+                ],
+              ),
+              Container(
+                height: 46,
+                width: MediaQuery.of(context).size.width ,
+                color: Colors.black,
+              )
+            ],
+          ),
         )
       ],
     )));
