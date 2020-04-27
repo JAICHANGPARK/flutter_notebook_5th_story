@@ -74,43 +74,21 @@ class _KicksMainPageState extends State<KicksMainPage> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      appBar: AppBar(
-        title: const Text('Plugin example app'),
-      ),
-      body:Column(
-        children: [
-          Expanded(
-            flex: 2,
-            child: Placeholder(),
-          ),
-          Expanded(
-            flex: 2,
-            child: Placeholder(),
-          ),
-          Expanded(
-            flex: 2,
-            child: Placeholder(),
-          )
-        ],
-      )
-    ));
+            body: Column(
+      children: [
+        Expanded(
+          flex: 2,
+          child: Placeholder(),
+        ),
+        Expanded(
+          flex: 10,
+          child: Placeholder(),
+        ),
+        Expanded(
+          flex: 3,
+          child: Placeholder(),
+        )
+      ],
+    )));
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
