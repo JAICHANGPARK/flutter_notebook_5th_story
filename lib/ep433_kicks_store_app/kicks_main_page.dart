@@ -11,9 +11,10 @@ class _KicksMainPageState extends State<KicksMainPage> {
   final LocalAuthentication auth = LocalAuthentication();
   bool _canCheckBiometrics;
   List<BiometricType> _availableBiometrics;
-  bool _isAuth = false;
-  String _authText ="Not Auth";
-  Future<void> checkAvailable() async {
+  String _authorized = 'Not Authorized';
+  bool _isAuthenticating = false;
+
+  Future<void> _checkBiometrics() async {
     bool canCheckBiometrics;
     try {
       canCheckBiometrics = await auth.canCheckBiometrics;
@@ -21,8 +22,23 @@ class _KicksMainPageState extends State<KicksMainPage> {
       print(e);
     }
     if (!mounted) return;
+
     setState(() {
       _canCheckBiometrics = canCheckBiometrics;
+    });
+  }
+
+  Future<void> _getAvailableBiometrics() async {
+    List<BiometricType> availableBiometrics;
+    try {
+      availableBiometrics = await auth.getAvailableBiometrics();
+    } on PlatformException catch (e) {
+      print(e);
+    }
+    if (!mounted) return;
+
+    setState(() {
+      _availableBiometrics = availableBiometrics;
     });
   }
 
@@ -30,77 +46,62 @@ class _KicksMainPageState extends State<KicksMainPage> {
     bool authenticated = false;
     try {
       setState(() {
-        _isAuth = true;
-        _authText = "Authenticating";
+        _isAuthenticating = true;
+        _authorized = 'Authenticating';
       });
       authenticated = await auth.authenticateWithBiometrics(
-        localizedReason: "Scan your Fingerprint",
-        useErrorDialogs: true,
-        stickyAuth: true,
-      );
+          localizedReason: 'Scan your fingerprint to authenticate',
+          useErrorDialogs: true,
+          stickyAuth: true);
       setState(() {
-        _isAuth = false;
-        _authText = "Authenticating";
+        _isAuthenticating = false;
+        _authorized = 'Authenticating';
       });
     } on PlatformException catch (e) {
       print(e);
     }
     if (!mounted) return;
-    print("auth : $authenticated");
-    final String message = authenticated ? 'Authorized':'Not Authorized';
+
+    final String message = authenticated ? 'Authorized' : 'Not Authorized';
     setState(() {
-      _authText = message;
+      _authorized = message;
     });
   }
 
-  Future<void> _getAvailableBiometrics() async{
-    List<BiometricType> availableTypes;
-    try{
-      availableTypes = await auth.getAvailableBiometrics();
-    }on PlatformException catch(e){
-      print(e);
-    }
-    if(!mounted) return;
-    setState(() {
-      _availableBiometrics = availableTypes;
-    });
-  }
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-
-  }
-  void _cancelAuthentication(){
+  void _cancelAuthentication() {
     auth.stopAuthentication();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text("check biometric $_canCheckBiometrics"),
-          RaisedButton(
-            child: Text("Check biometrics"),
-            onPressed: checkAvailable,
+    return MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            title: const Text('Plugin example app'),
           ),
-          Text("Available biometrics : $_availableBiometrics"),
-          RaisedButton(
-            child: Text("get biometrics type"),
-            onPressed: _getAvailableBiometrics,
-          ),
-          Text("Auth State $_authText"),
-          RaisedButton(
-            child: Text(_isAuth ? "Cancel" : "Auth Completed"),
-            onPressed: _isAuth ? _cancelAuthentication : _authenticate,
-          )
-        ],
-      ),
-    );
+          body: ConstrainedBox(
+              constraints: const BoxConstraints.expand(),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    Text('Can check biometrics: $_canCheckBiometrics\n'),
+                    RaisedButton(
+                      child: const Text('Check biometrics'),
+                      onPressed: _checkBiometrics,
+                    ),
+                    Text('Available biometrics: $_availableBiometrics\n'),
+                    RaisedButton(
+                      child: const Text('Get available biometrics'),
+                      onPressed: _getAvailableBiometrics,
+                    ),
+                    Text('Current State: $_authorized\n'),
+                    RaisedButton(
+                      child: Text(_isAuthenticating ? 'Cancel' : 'Authenticate'),
+                      onPressed:
+                      _isAuthenticating ? _cancelAuthentication : _authenticate,
+                    )
+                  ])),
+        ));
   }
 }
 
