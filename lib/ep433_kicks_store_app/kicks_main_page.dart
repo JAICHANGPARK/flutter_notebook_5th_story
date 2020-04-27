@@ -121,7 +121,7 @@ class _KicksMainPageState extends State<KicksMainPage> {
                         flex: 1,
                         child: Container(
                           decoration: BoxDecoration(
-                              color: Colors.orange[50]
+                              color: Colors.white
                           ),
                         ),
                       ),
