@@ -79,30 +79,15 @@ class _KicksMainPageState extends State<KicksMainPage> {
               icon: Icon(Icons.clear),
               onPressed: (){},
             ),
+            title: Text("Cart"),
+            centerTitle: true,
+            backgroundColor: Colors.white,
+            elevation: 0,
+            iconTheme: IconThemeData(color: Colors.black),
           ),
             body: Column(
       children: [
-        Expanded(
-          flex: 2,
-          child: Padding(
-            padding: const EdgeInsets.only(left: 16, right: 32),
-            child: Row(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.clear),
-                  onPressed: (){},
-                ),
-                Spacer(),
-                Text("Cart", style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),),
-                Spacer(),
 
-              ],
-            ),
-          ),
-        ),
         Expanded(
           flex: 10,
           child: Placeholder(),
