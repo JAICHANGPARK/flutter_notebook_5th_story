@@ -113,9 +113,9 @@ class _KicksMainPageState extends State<KicksMainPage> {
                 height: 46,
                 width: MediaQuery.of(context).size.width - 36,
                 decoration: BoxDecoration(
-
+                  color: Colors.black,
                 ),
-                color: Colors.black,
+
               )
             ],
           ),
