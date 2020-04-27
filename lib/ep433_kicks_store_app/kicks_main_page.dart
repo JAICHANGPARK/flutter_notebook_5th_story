@@ -106,9 +106,11 @@ class _KicksMainPageState extends State<KicksMainPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text("Total"),
+                  SizedBox(width: 12,),
                   Text("\$348"),
                 ],
               ),
+              SizedBox(height: 12,),
               Container(
                 height: 46,
                 width: MediaQuery.of(context).size.width - 36,
@@ -116,7 +118,8 @@ class _KicksMainPageState extends State<KicksMainPage> {
                   color: Colors.black,
                 ),
 
-              )
+              ),
+              SizedBox(height: 12,),
             ],
           ),
         )
