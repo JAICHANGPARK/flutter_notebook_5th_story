@@ -92,11 +92,18 @@ class _KicksMainPageState extends State<KicksMainPage> {
             body: Column(
               children: [
                 Expanded(
-                  flex: 10,
-                  child: Placeholder(),
+                  flex: 8,
+                  child: Column(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Placeholder(),
+                      )
+                    ],
+                  ),
                 ),
                 Expanded(
-                  flex: 3,
+                  flex: 2,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
