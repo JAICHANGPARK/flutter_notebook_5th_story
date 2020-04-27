@@ -78,7 +78,20 @@ class _KicksMainPageState extends State<KicksMainPage> {
       children: [
         Expanded(
           flex: 2,
-          child: Placeholder(),
+          child: Row(
+            children: [
+              IconButton(
+                icon: Icon(Icons.clear),
+                onPressed: (){},
+              ),
+              Spacer(),
+              Text("Cart", style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),),
+              Spacer(),
+            ],
+          ),
         ),
         Expanded(
           flex: 10,
@@ -92,3 +105,18 @@ class _KicksMainPageState extends State<KicksMainPage> {
     )));
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
