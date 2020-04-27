@@ -79,7 +79,18 @@ class _KicksMainPageState extends State<KicksMainPage> {
       ),
       body:Column(
         children: [
-
+          Expanded(
+            flex: 2,
+            child: Placeholder(),
+          ),
+          Expanded(
+            flex: 2,
+            child: Placeholder(),
+          ),
+          Expanded(
+            flex: 2,
+            child: Placeholder(),
+          )
         ],
       )
     ));
