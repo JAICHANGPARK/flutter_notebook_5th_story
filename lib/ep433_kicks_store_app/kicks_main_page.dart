@@ -102,18 +102,40 @@ class _KicksMainPageState extends State<KicksMainPage> {
                             color: Colors.blue[50]
                           ),
                         ),
+                      ),Divider(
+                        height: 0,
+                        thickness: 1.2,
                       ),
                       Expanded(
                         flex: 1,
-                        child: Placeholder(),
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: Colors.orange[50]
+                          ),
+                        ),
+                      ),Divider(
+                        height: 0,
+                        thickness: 1.2,
                       ),
                       Expanded(
                         flex: 1,
-                        child: Placeholder(),
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: Colors.orange[50]
+                          ),
+                        ),
+                      ),
+                      Divider(
+                        height: 0,
+                        thickness: 1.2,
                       ),
                       Expanded(
                         flex: 1,
-                        child: Placeholder(),
+                        child:  Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white
+                          ),
+                        ),
                       )
                     ],
                   ),
