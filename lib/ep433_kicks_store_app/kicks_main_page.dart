@@ -195,6 +195,31 @@ class _KicksMainPageState extends State<KicksMainPage> {
                         flex: 1,
                         child: Container(
                           decoration: BoxDecoration(color: Colors.white),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 8,
+                                top: 16,
+                                bottom: 0,
+                                child: Column(
+                                  children: [
+                                    Text("Shipping address"),
+                                    Row(
+                                      children: [
+                                        Icon(Icons.card_giftcard),
+                                        Column(
+                                          children: [
+                                            Text("Wajskowa 6"),
+                                            Text("60-792 Poznan")
+                                          ],
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Divider(
