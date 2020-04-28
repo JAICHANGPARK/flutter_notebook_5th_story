@@ -262,6 +262,11 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                     border: Border.all(color: Colors.grey),
                                     borderRadius: BorderRadius.circular(24)
                                   ),
+                                  child: Center(
+                                    child: Text("CHANGE",style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),),
+                                  ),
                                 ),
                               )
                             ],
