@@ -110,6 +110,18 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                   fontWeight: FontWeight.bold,
                                   color: Colors.blue[100]
                                 ),),
+                              ),
+                              Positioned(
+                                right: 16,
+                                top: 24,
+                                bottom: 24,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("AIR MAX 98"),
+                                    Text("\"Blue neon\""),
+                                  ],
+                                ),
                               )
                             ],
                           ),
