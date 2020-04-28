@@ -234,9 +234,12 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                 bottom: 24,
                                 child: Column(
                                   children: [
-                                    Text("Shipping address",style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                    ),),
+                                    Text(
+                                      "Shipping address",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                     Spacer(),
                                     Row(
                                       children: [
