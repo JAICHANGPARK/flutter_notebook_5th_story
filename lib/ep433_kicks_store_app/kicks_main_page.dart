@@ -123,6 +123,20 @@ class _KicksMainPageState extends State<KicksMainPage> {
                         flex: 1,
                         child: Container(
                           decoration: BoxDecoration(color: Colors.orange[50]),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: -24,
+                                top: 0,
+                                bottom: 0,
+                                child: Text("270",style: TextStyle(
+                                  fontSize: 140,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.orange[100]
+                                ),),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Divider(
