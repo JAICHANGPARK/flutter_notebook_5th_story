@@ -99,6 +99,20 @@ class _KicksMainPageState extends State<KicksMainPage> {
                         flex: 1,
                         child: Container(
                           decoration: BoxDecoration(color: Colors.blue[50]),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 0,
+                                top: 0,
+                                bottom: 0,
+                                child: Text("98", style: TextStyle(
+                                  fontSize: 140,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.blue[100]
+                                ),),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       Divider(
