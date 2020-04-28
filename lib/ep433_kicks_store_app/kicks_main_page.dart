@@ -118,8 +118,12 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("AIR MAX 98"),
-                                    Text("\"Blue neon\""),
+                                    Text("AIR MAX 98",style: TextStyle(
+                                      fontWeight: FontWeight.w300,
+                                    ),),
+                                    Text("\"Blue neon\"",style: TextStyle(
+                                      fontWeight: FontWeight.w300,
+                                    ),),
                                     SizedBox(height: 16,),
                                     Row(children: [
                                       Text("US 7",style: TextStyle(),),
