@@ -14,6 +14,7 @@ class _KickShopHomePageState extends State<KickShopHomePage> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 64,
+          padding: EdgeInsets.symmetric(horizontal: 24),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
