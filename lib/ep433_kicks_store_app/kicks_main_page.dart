@@ -158,6 +158,30 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                   fontWeight: FontWeight.bold,
                                   color: Colors.orange[100]
                                 ),),
+                              ),
+                              Positioned(
+                                right: 24,
+                                top: 36,
+                                bottom: 24,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("AIR MAX 270",style: TextStyle(
+                                      fontWeight: FontWeight.w300,
+                                    ),),
+                                    Text("\"Gold\"",style: TextStyle(
+                                      fontWeight: FontWeight.w300,
+                                    ),),
+                                    SizedBox(height: 16,),
+                                    Row(children: [
+                                      Text("US 7",style: TextStyle(),),
+                                      SizedBox(width: 12,),
+                                      Text("\$199",style: TextStyle(
+                                          fontWeight: FontWeight.bold
+                                      ),)
+                                    ],)
+                                  ],
+                                ),
                               )
                             ],
                           ),
