@@ -204,17 +204,20 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                 child: Column(
                                   children: [
                                     Text("Shipping address"),
+                                    Spacer(),
                                     Row(
                                       children: [
                                         Icon(Icons.card_giftcard),
                                         Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text("Wajskowa 6"),
                                             Text("60-792 Poznan")
                                           ],
                                         )
                                       ],
-                                    )
+                                    ),
+                                    Spacer()
                                   ],
                                 ),
                               )
