@@ -98,31 +98,7 @@ class _KicksMainPageState extends State<KicksMainPage> {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.blue[50]
-                          ),
-                        ),
-                      ),Divider(
-                        height: 0,
-                        thickness: 1.2,
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          decoration: BoxDecoration(
-                              color: Colors.orange[50]
-                          ),
-                        ),
-                      ),Divider(
-                        height: 0,
-                        thickness: 1.2,
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          decoration: BoxDecoration(
-                              color: Colors.white
-                          ),
+                          decoration: BoxDecoration(color: Colors.blue[50]),
                         ),
                       ),
                       Divider(
@@ -131,13 +107,28 @@ class _KicksMainPageState extends State<KicksMainPage> {
                       ),
                       Expanded(
                         flex: 1,
-                        child:  Container(
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                            gradient: LinearGradient(colors: [
-
-                            ])
-                          ),
+                        child: Container(
+                          decoration: BoxDecoration(color: Colors.orange[50]),
+                        ),
+                      ),
+                      Divider(
+                        height: 0,
+                        thickness: 1.2,
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          decoration: BoxDecoration(color: Colors.white),
+                        ),
+                      ),
+                      Divider(
+                        height: 0,
+                        thickness: 1.2,
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          decoration: BoxDecoration(color: Colors.white, gradient: LinearGradient(colors: [])),
                         ),
                       )
                     ],
@@ -165,10 +156,15 @@ class _KicksMainPageState extends State<KicksMainPage> {
                       ),
                       Container(
                         height: 46,
-                        child: Center(child: Text("PAY NOW", style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),),),
+                        child: Center(
+                          child: Text(
+                            "PAY NOW",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
                         width: MediaQuery.of(context).size.width - 36,
                         decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
                       ),
