@@ -221,6 +221,21 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                     Spacer()
                                   ],
                                 ),
+                              ),
+                              Positioned(
+                                right: 16,
+                                top: 42,
+                                bottom: 42,
+                                child: Container(
+                                  height: 32,
+                                  width: 100,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                    ),
+                                    
+                                  ),
+                                ),
                               )
                             ],
                           ),
