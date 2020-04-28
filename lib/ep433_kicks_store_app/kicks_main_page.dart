@@ -135,7 +135,7 @@ class _KicksMainPageState extends State<KicksMainPage> {
                           decoration: BoxDecoration(
                               color: Colors.white,
                             gradient: LinearGradient(colors: [
-                              
+
                             ])
                           ),
                         ),
