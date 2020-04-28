@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
@@ -14,6 +15,7 @@ class _KickShopHomePageState extends State<KickShopHomePage> {
         child: Container(
           height: 64,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(
                 icon: Icon(Icons.home), onPressed: () {},
@@ -25,11 +27,9 @@ class _KickShopHomePageState extends State<KickShopHomePage> {
                 icon: Icon(Icons.favorite_border), onPressed: () {},
               ),
               IconButton(
-                icon: Icon(Icons.shop), onPressed: () {},
+                icon: Icon(Icons.shopping_basket), onPressed: () {},
               ),
-              IconButton(
-                icon: Icon(Icons.home), onPressed: () {},
-              ),
+              CircleAvatar()
 
             ],
           ),
