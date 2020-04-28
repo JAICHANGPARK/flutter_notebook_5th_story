@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutternotebook5th/ep433_kicks_store_app/kicks_main_page.dart';
 import 'package:page_transition/page_transition.dart';
 
-
 class KickShopHomePage extends StatefulWidget {
   @override
   _KickShopHomePageState createState() => _KickShopHomePageState();
@@ -21,23 +20,27 @@ class _KickShopHomePageState extends State<KickShopHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(
-                icon: Icon(Icons.home), onPressed: () {},
+                icon: Icon(Icons.home),
+                onPressed: () {},
               ),
               IconButton(
-                icon: Icon(Icons.search), onPressed: () {},
+                icon: Icon(Icons.search),
+                onPressed: () {},
               ),
               IconButton(
-                icon: Icon(Icons.favorite_border), onPressed: () {},
+                icon: Icon(Icons.favorite_border),
+                onPressed: () {},
               ),
               IconButton(
-                icon: Icon(Icons.shopping_basket), onPressed: () {
+                icon: Icon(Icons.shopping_basket),
+                onPressed: () {
                   Navigator.of(context).push(PageTransition(
-                    child: KicksMainPage(), type: PageTransitionType.downToUp,
+                    child: KicksMainPage(),
+                    type: PageTransitionType.downToUp,
                   ));
-              },
+                },
               ),
               CircleAvatar()
-
             ],
           ),
         ),
