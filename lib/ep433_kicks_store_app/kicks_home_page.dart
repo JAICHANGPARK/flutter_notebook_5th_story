@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutternotebook5th/ep433_kicks_store_app/kicks_main_page.dart';
+import 'package:page_transition/page_transition.dart';
 
 
 class KickShopHomePage extends StatefulWidget {
@@ -28,7 +30,11 @@ class _KickShopHomePageState extends State<KickShopHomePage> {
                 icon: Icon(Icons.favorite_border), onPressed: () {},
               ),
               IconButton(
-                icon: Icon(Icons.shopping_basket), onPressed: () {},
+                icon: Icon(Icons.shopping_basket), onPressed: () {
+                  Navigator.of(context).push(PageTransition(
+                    child: KicksMainPage(), type: PageTransitionType.downToUp,
+                  ));
+              },
               ),
               CircleAvatar()
 
