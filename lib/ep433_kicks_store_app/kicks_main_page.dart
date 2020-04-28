@@ -105,11 +105,10 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                 left: 0,
                                 top: 0,
                                 bottom: 0,
-                                child: Text("98", style: TextStyle(
-                                  fontSize: 140,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.blue[100]
-                                ),),
+                                child: Text(
+                                  "98",
+                                  style: TextStyle(fontSize: 140, fontWeight: FontWeight.bold, color: Colors.blue[100]),
+                                ),
                               ),
                               Positioned(
                                 right: 24,
@@ -118,20 +117,36 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("AIR MAX 98",style: TextStyle(
-                                      fontWeight: FontWeight.w300,
-                                    ),),
-                                    Text("\"Blue neon\"",style: TextStyle(
-                                      fontWeight: FontWeight.w300,
-                                    ),),
-                                    SizedBox(height: 16,),
-                                    Row(children: [
-                                      Text("US 7",style: TextStyle(),),
-                                      SizedBox(width: 12,),
-                                      Text("\$149",style: TextStyle(
-                                        fontWeight: FontWeight.bold
-                                      ),)
-                                    ],)
+                                    Text(
+                                      "AIR MAX 98",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w300,
+                                      ),
+                                    ),
+                                    Text(
+                                      "\"Blue neon\"",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w300,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 16,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          "US 7",
+                                          style: TextStyle(),
+                                        ),
+                                        SizedBox(
+                                          width: 12,
+                                        ),
+                                        Text(
+                                          "\$149",
+                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                        )
+                                      ],
+                                    )
                                   ],
                                 ),
                               )
@@ -153,11 +168,11 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                 left: -24,
                                 top: 0,
                                 bottom: 0,
-                                child: Text("270",style: TextStyle(
-                                  fontSize: 140,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.orange[100]
-                                ),),
+                                child: Text(
+                                  "270",
+                                  style:
+                                      TextStyle(fontSize: 140, fontWeight: FontWeight.bold, color: Colors.orange[100]),
+                                ),
                               ),
                               Positioned(
                                 right: 24,
@@ -166,20 +181,36 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("AIR MAX 270",style: TextStyle(
-                                      fontWeight: FontWeight.w300,
-                                    ),),
-                                    Text("\"Gold\"",style: TextStyle(
-                                      fontWeight: FontWeight.w300,
-                                    ),),
-                                    SizedBox(height: 16,),
-                                    Row(children: [
-                                      Text("US 7",style: TextStyle(),),
-                                      SizedBox(width: 12,),
-                                      Text("\$199",style: TextStyle(
-                                          fontWeight: FontWeight.bold
-                                      ),)
-                                    ],)
+                                    Text(
+                                      "AIR MAX 270",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w300,
+                                      ),
+                                    ),
+                                    Text(
+                                      "\"Gold\"",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w300,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 16,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          "US 7",
+                                          style: TextStyle(),
+                                        ),
+                                        SizedBox(
+                                          width: 12,
+                                        ),
+                                        Text(
+                                          "\$199",
+                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                        )
+                                      ],
+                                    )
                                   ],
                                 ),
                               )
@@ -208,13 +239,12 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                     Row(
                                       children: [
                                         Icon(Icons.card_giftcard),
-                                        SizedBox(width: 12,),
+                                        SizedBox(
+                                          width: 12,
+                                        ),
                                         Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text("Wajskowa 6"),
-                                            Text("60-792 Poznan")
-                                          ],
+                                          children: [Text("Wajskowa 6"), Text("60-792 Poznan")],
                                         )
                                       ],
                                     ),
@@ -224,16 +254,13 @@ class _KicksMainPageState extends State<KicksMainPage> {
                               ),
                               Positioned(
                                 right: 16,
-                                top: 42,
-                                bottom: 42,
+                                top: 44,
+                                bottom: 44,
                                 child: Container(
-                                  height: 32,
                                   width: 100,
                                   decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                    ),
-                                    
+                                    border: Border.all(color: Colors.grey),
+                                    borderRadius: BorderRadius.circular(24)
                                   ),
                                 ),
                               )
