@@ -200,7 +200,7 @@ class _KicksMainPageState extends State<KicksMainPage> {
                               Positioned(
                                 left: 8,
                                 top: 16,
-                                bottom: 0,
+                                bottom: 24,
                                 child: Column(
                                   children: [
                                     Text("Shipping address"),
@@ -208,6 +208,7 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                     Row(
                                       children: [
                                         Icon(Icons.card_giftcard),
+                                        SizedBox(width: 12,),
                                         Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
