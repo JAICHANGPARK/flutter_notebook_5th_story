@@ -120,6 +120,14 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                   children: [
                                     Text("AIR MAX 98"),
                                     Text("\"Blue neon\""),
+                                    SizedBox(height: 16,),
+                                    Row(children: [
+                                      Text("US 7",style: TextStyle(),),
+                                      SizedBox(width: 12,),
+                                      Text("\$149",style: TextStyle(
+                                        fontWeight: FontWeight.bold
+                                      ),)
+                                    ],)
                                   ],
                                 ),
                               )
