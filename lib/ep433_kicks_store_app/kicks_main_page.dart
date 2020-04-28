@@ -112,8 +112,8 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                 ),),
                               ),
                               Positioned(
-                                right: 16,
-                                top: 24,
+                                right: 24,
+                                top: 36,
                                 bottom: 24,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
