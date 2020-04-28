@@ -244,7 +244,11 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                         ),
                                         Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [Text("Wajskowa 6"), Text("60-792 Poznan")],
+                                          children: [Text("Wajskowa 6",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 12
+                                          ),), Text("60-792 Poznan")],
                                         )
                                       ],
                                     ),
