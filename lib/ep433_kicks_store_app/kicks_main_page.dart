@@ -244,11 +244,16 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                         ),
                                         Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [Text("Wajskowa 6",
-                                          style: TextStyle(
-                                            color: Colors.grey,
-                                            fontSize: 12
-                                          ),), Text("60-792 Poznan")],
+                                          children: [
+                                            Text(
+                                              "Wajskowa 6",
+                                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                                            ),
+                                            Text(
+                                              "60-792 Poznan",
+                                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                                            )
+                                          ],
                                         )
                                       ],
                                     ),
@@ -263,13 +268,14 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                 child: Container(
                                   width: 100,
                                   decoration: BoxDecoration(
-                                    border: Border.all(color: Colors.grey),
-                                    borderRadius: BorderRadius.circular(24)
-                                  ),
+                                      border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(24)),
                                   child: Center(
-                                    child: Text("CHANGE",style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                    ),),
+                                    child: Text(
+                                      "CHANGE",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ),
                                 ),
                               )
