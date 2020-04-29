@@ -295,12 +295,74 @@ class _KicksMainPageState extends State<KicksMainPage> {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          decoration: BoxDecoration(color: Colors.white, gradient: LinearGradient(colors: [
-                            Colors.grey[50],
-                            Colors.grey[200],
-                            Colors.grey[400]
-                          ])),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              gradient: LinearGradient(
+                                  colors: [Colors.grey[50], Colors.grey[200], Colors.grey[300]],
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter)),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 8,
+                                top: 16,
+                                bottom: 24,
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      "Shipping address",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Row(
+                                      children: [
+                                        Icon(Icons.card_giftcard),
+                                        SizedBox(
+                                          width: 12,
+                                        ),
+                                        Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              "Wajskowa 6",
+                                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                                            ),
+                                            Text(
+                                              "60-792 Poznan",
+                                              style: TextStyle(color: Colors.grey, fontSize: 12),
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                    Spacer()
+                                  ],
+                                ),
+                              ),
+                              Positioned(
+                                right: 16,
+                                top: 44,
+                                bottom: 44,
+                                child: Container(
+                                  width: 100,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(24)),
+                                  child: Center(
+                                    child: Text(
+                                      "CHANGE",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
+
                       )
                     ],
                   ),
