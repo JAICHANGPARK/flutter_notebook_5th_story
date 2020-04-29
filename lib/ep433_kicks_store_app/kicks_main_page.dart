@@ -8,12 +8,15 @@ class KicksMainPage extends StatefulWidget {
   _KicksMainPageState createState() => _KicksMainPageState();
 }
 
-class _KicksMainPageState extends State<KicksMainPage> {
+class _KicksMainPageState extends State<KicksMainPage> with SingleTickerProviderStateMixin{
   final LocalAuthentication auth = LocalAuthentication();
   bool _canCheckBiometrics;
   List<BiometricType> _availableBiometrics;
   String _authorized = 'Not Authorized';
   bool _isAuthenticating = false;
+
+  Animation<double> _animation;
+  AnimationController _animationController;
 
   Future<void> _checkBiometrics() async {
     bool canCheckBiometrics;
