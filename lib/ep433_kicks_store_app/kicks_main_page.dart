@@ -295,7 +295,11 @@ class _KicksMainPageState extends State<KicksMainPage> {
                       Expanded(
                         flex: 1,
                         child: Container(
-                          decoration: BoxDecoration(color: Colors.white, gradient: LinearGradient(colors: [])),
+                          decoration: BoxDecoration(color: Colors.white, gradient: LinearGradient(colors: [
+                            Colors.grey[50],
+                            Colors.grey[200],
+                            Colors.grey[400]
+                          ])),
                         ),
                       )
                     ],
