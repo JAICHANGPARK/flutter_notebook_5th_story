@@ -17,7 +17,7 @@ class _KicksMainPageState extends State<KicksMainPage> with SingleTickerProvider
 
   Animation<double> _animation;
   AnimationController _animationController;
-
+  double containerWidth = 0;
   Future<void> _checkBiometrics() async {
     bool canCheckBiometrics;
     try {
@@ -74,6 +74,18 @@ class _KicksMainPageState extends State<KicksMainPage> with SingleTickerProvider
     auth.stopAuthentication();
   }
 
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    _animationController = AnimationController(vsync: this, duration: Duration(seconds:  1));
+    Future.delayed(Duration(seconds: 1), (){
+      setState(() {
+        containerWidth = 240;
+      });
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -402,7 +414,7 @@ class _KicksMainPageState extends State<KicksMainPage> with SingleTickerProvider
                             ),
                           ),
                         ),
-                        width: MediaQuery.of(context).size.width - 36,
+                        width: containerWidth,
                         decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
                         duration: Duration(seconds: 1),
                       ),
