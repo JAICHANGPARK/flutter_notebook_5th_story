@@ -12,14 +12,42 @@ class _KickShopHomePageState extends State<KickShopHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.white,),
+      appBar: AppBar(backgroundColor: Colors.white,
+      elevation: 0,),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              height: MediaQuery.of(context).size.height / 3,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
               child: Card(
                 elevation: 2,
+                color: Theme.of(context).cardColor,
+                child: Container(
+                  height: 260,
+
+                )
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                  elevation: 2,
+                  color: Theme.of(context).cardColor,
+                  child: Container(
+                    height: 260,
+
+                  )
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                  elevation: 2,
+                  color: Theme.of(context).cardColor,
+                  child: Container(
+                    height: 260,
+
+                  )
               ),
             )
           ],
