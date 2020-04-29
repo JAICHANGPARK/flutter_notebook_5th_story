@@ -35,7 +35,6 @@ class _KickShopHomePageState extends State<KickShopHomePage> {
                   color: Theme.of(context).cardColor,
                   child: Container(
                     height: 260,
-
                   )
               ),
             ),
