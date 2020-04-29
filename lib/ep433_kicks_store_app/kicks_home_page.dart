@@ -17,7 +17,10 @@ class _KickShopHomePageState extends State<KickShopHomePage> {
         child: Column(
           children: [
             Container(
-
+              height: MediaQuery.of(context).size.height / 3,
+              child: Card(
+                elevation: 2,
+              ),
             )
           ],
         ),
