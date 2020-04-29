@@ -12,6 +12,11 @@ class _KickShopHomePageState extends State<KickShopHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 64,
