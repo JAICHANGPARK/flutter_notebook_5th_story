@@ -310,15 +310,20 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                 child: Column(
                                   children: [
                                     Text(
-                                      "Shipping address",
+                                      "Payment method",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                     Spacer(),
                                     Row(
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+
                                       children: [
-                                        Icon(Icons.card_giftcard),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Icon(Icons.card_giftcard),
+                                        ),
                                         SizedBox(
                                           width: 12,
                                         ),
@@ -326,13 +331,9 @@ class _KicksMainPageState extends State<KicksMainPage> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              "Wajskowa 6",
+                                              "**** **** **** 3128",
                                               style: TextStyle(color: Colors.grey, fontSize: 12),
                                             ),
-                                            Text(
-                                              "60-792 Poznan",
-                                              style: TextStyle(color: Colors.grey, fontSize: 12),
-                                            )
                                           ],
                                         )
                                       ],
@@ -387,7 +388,7 @@ class _KicksMainPageState extends State<KicksMainPage> {
                       SizedBox(
                         height: 12,
                       ),
-                      Container(
+                      AnimatedContainer(
                         height: 46,
                         child: Center(
                           child: Text(
@@ -400,6 +401,7 @@ class _KicksMainPageState extends State<KicksMainPage> {
                         ),
                         width: MediaQuery.of(context).size.width - 36,
                         decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
+                        duration: Duration(seconds: 1),
                       ),
                       SizedBox(
                         height: 12,
