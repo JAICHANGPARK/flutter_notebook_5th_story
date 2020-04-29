@@ -82,7 +82,7 @@ class _KicksMainPageState extends State<KicksMainPage> with SingleTickerProvider
     _animationController = AnimationController(vsync: this, duration: Duration(seconds:  1));
     Future.delayed(Duration(seconds: 1), (){
       setState(() {
-        containerWidth = 240;
+        containerWidth = 360;
       });
     });
   }
