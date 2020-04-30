@@ -13,7 +13,7 @@ class SurveyApp extends StatelessWidget {
 class SurveyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
 
