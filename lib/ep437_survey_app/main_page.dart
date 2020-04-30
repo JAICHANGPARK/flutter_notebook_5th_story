@@ -20,9 +20,21 @@ class SurveyHomePage extends StatelessWidget {
           title: Text("Daily")
         ),
         BottomNavigationBarItem(
-            icon: Icon(Icons.calendar_today),
-            title: Text("Daily")
+            icon: Icon(Icons.payment),
+            title: Text("Cash Back")
+        ),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.check),
+            title: Text("Earn")
+        ),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.payment),
+            title: Text("Cash Out")
+        ),BottomNavigationBarItem(
+            icon: Icon(Icons.apps),
+            title: Text("more")
         )
+
       ]),
     );
   }
