@@ -17,6 +17,11 @@ class SurveyHomePage extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBar(items: [
         BottomNavigationBarItem(
           icon: Icon(Icons.calendar_today),
+          title: Text("Daily")
+        ),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.calendar_today),
+            title: Text("Daily")
         )
       ]),
     );
