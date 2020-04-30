@@ -40,12 +40,16 @@ class SurveyHomePage extends StatelessWidget {
                 child: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Card(
+                        elevation: 0.5,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(16)
+                        ),
                         child: SizedBox(
                           height: 240,
                           child: Container(
-                            color: Colors.blueGrey,
+
                           ),
                         ),
                       ),
