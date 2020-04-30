@@ -30,14 +30,12 @@ class SurveyHomePage extends StatelessWidget {
             top: MediaQuery.of(context).size.height / 3 - 64,
             bottom: 0,
             child: Container(
-             
               decoration: BoxDecoration(
                   color: Colors.blueGrey[50],
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(24),
-                  topLeft: Radius.circular(24),
-                )
-              ),
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(24),
+                    topLeft: Radius.circular(24),
+                  )),
             ),
           )
         ],
