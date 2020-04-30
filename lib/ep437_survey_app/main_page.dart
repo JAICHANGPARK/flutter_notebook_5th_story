@@ -36,6 +36,23 @@ class SurveyHomePage extends StatelessWidget {
                     topRight: Radius.circular(24),
                     topLeft: Radius.circular(24),
                   )),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Card(
+                        child: SizedBox(
+                          height: 240,
+                          child: Container(
+                            color: Colors.blueGrey,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ),
           )
         ],
