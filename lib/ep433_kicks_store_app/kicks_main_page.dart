@@ -8,7 +8,7 @@ class KicksMainPage extends StatefulWidget {
   _KicksMainPageState createState() => _KicksMainPageState();
 }
 
-class _KicksMainPageState extends State<KicksMainPage> with SingleTickerProviderStateMixin{
+class _KicksMainPageState extends State<KicksMainPage> with SingleTickerProviderStateMixin {
   final LocalAuthentication auth = LocalAuthentication();
   bool _canCheckBiometrics;
   List<BiometricType> _availableBiometrics;
@@ -18,6 +18,7 @@ class _KicksMainPageState extends State<KicksMainPage> with SingleTickerProvider
   Animation<double> _animation;
   AnimationController _animationController;
   double containerWidth = 0;
+
   Future<void> _checkBiometrics() async {
     bool canCheckBiometrics;
     try {
@@ -79,13 +80,14 @@ class _KicksMainPageState extends State<KicksMainPage> with SingleTickerProvider
     // TODO: implement initState
     super.initState();
 
-    _animationController = AnimationController(vsync: this, duration: Duration(seconds:  1));
-    Future.delayed(Duration(seconds: 1), (){
+    _animationController = AnimationController(vsync: this, duration: Duration(seconds: 1));
+    Future.delayed(Duration(seconds: 1), () {
       setState(() {
         containerWidth = 360;
       });
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -333,7 +335,6 @@ class _KicksMainPageState extends State<KicksMainPage> with SingleTickerProvider
                                     Spacer(),
                                     Row(
                                       crossAxisAlignment: CrossAxisAlignment.center,
-
                                       children: [
                                         Padding(
                                           padding: const EdgeInsets.all(8.0),
@@ -378,7 +379,6 @@ class _KicksMainPageState extends State<KicksMainPage> with SingleTickerProvider
                             ],
                           ),
                         ),
-
                       )
                     ],
                   ),
