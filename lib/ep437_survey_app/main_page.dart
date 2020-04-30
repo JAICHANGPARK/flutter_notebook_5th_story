@@ -23,6 +23,16 @@ class SurveyHomePage extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 3,
               color: Colors.tealAccent,
             ),
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            top: MediaQuery.of(context).size.height / 3 - 64,
+            bottom: 0,
+            child: Container(
+              color: Colors.blueGrey[50],
+              decoration: BoxDecoration,
+            ),
           )
         ],
       ),
