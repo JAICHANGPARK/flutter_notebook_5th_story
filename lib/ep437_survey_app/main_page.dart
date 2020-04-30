@@ -14,7 +14,10 @@ class SurveyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(items: [
+      bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+
+          items: [
         BottomNavigationBarItem(
           icon: Icon(Icons.calendar_today),
           title: Text("Daily")
@@ -38,5 +41,31 @@ class SurveyHomePage extends StatelessWidget {
       ]),
     );
   }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
