@@ -127,6 +127,18 @@ class SurveyHomePage extends StatelessWidget {
                                         color: Colors.blueGrey[700],
                                         borderRadius: BorderRadius.circular(8)
                                     ),
+                                    child: Column(
+                                      children: [
+                                        Text(
+                                          "Day",
+                                          style: TextStyle(fontSize: 15),
+                                        ),
+                                        Text(
+                                          "2",
+                                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
