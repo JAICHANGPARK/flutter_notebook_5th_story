@@ -131,11 +131,12 @@ class SurveyHomePage extends StatelessWidget {
                                       children: [
                                         Text(
                                           "Day",
-                                          style: TextStyle(fontSize: 15),
+                                          style: TextStyle(fontSize: 15, color: Colors.white),
                                         ),
                                         Text(
-                                          "2",
-                                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                          "3+",
+                                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,
+                                          color: Colors.white),
                                         )
                                       ],
                                     ),
