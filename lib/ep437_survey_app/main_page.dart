@@ -66,13 +66,14 @@ class SurveyHomePage extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Text("Day",style: TextStyle(
-                                    fontSize: 15
-                                  ),),
-                                  Text("1",style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20
-                                  ),)
+                                  Text(
+                                    "Day",
+                                    style: TextStyle(fontSize: 15),
+                                  ),
+                                  Text(
+                                    "1",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                  )
                                 ],
                               ),
                             ),
@@ -82,19 +83,21 @@ class SurveyHomePage extends StatelessWidget {
                             child: Container(
                               height: 64,
                               decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                              margin: EdgeInsets.all(8), child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text("Day",style: TextStyle(
-                                    fontSize: 15
-                                ),),
-                                Text("1",style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 20
-                                ),)
-                              ],
-                            ),
+                              margin: EdgeInsets.all(8),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "Day",
+                                    style: TextStyle(fontSize: 15),
+                                  ),
+                                  Text(
+                                    "1",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                           Expanded(
