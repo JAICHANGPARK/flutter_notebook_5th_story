@@ -54,9 +54,9 @@ class SurveyHomePage extends StatelessWidget {
                         Expanded(
                           flex: 2,
                           child: Container(
-                            height: 48,
+                            height: 52,
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                            margin: EdgeInsets.all(8),
+                            margin: EdgeInsets.symmetric(horizontal: 12,),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
