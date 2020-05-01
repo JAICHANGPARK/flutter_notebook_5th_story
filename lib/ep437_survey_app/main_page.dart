@@ -25,7 +25,7 @@ class SurveyHomePage extends StatelessWidget {
                 color: Colors.greenAccent[400],
                 padding: EdgeInsets.all(16),
                 child: Padding(
-                  padding: const EdgeInsets.only(bottom: 72),
+                  padding: const EdgeInsets.only(bottom: 64),
                   child: Column(
                     children: [
                       Row(
