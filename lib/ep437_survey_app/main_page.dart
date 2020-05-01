@@ -128,6 +128,8 @@ class SurveyHomePage extends StatelessWidget {
                                         borderRadius: BorderRadius.circular(8)
                                     ),
                                     child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         Text(
                                           "Day",
