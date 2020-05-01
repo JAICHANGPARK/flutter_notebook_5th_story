@@ -29,7 +29,7 @@ class SurveyHomePage extends StatelessWidget {
                     Row(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(12.0),
                           child: Text(
                             "zap",
                             style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white),
@@ -49,6 +49,7 @@ class SurveyHomePage extends StatelessWidget {
                         ),
                       ],
                     ),
+                    SizedBox(height: 16,),
                     Row(
                       children: [
                         Expanded(
@@ -76,7 +77,7 @@ class SurveyHomePage extends StatelessWidget {
                         Expanded(
                           flex: 2,
                           child: Container(
-                            height: 64,
+                            height: 52,
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                             margin: EdgeInsets.symmetric(horizontal: 12,),
                             child: Column(
@@ -98,7 +99,7 @@ class SurveyHomePage extends StatelessWidget {
                         Expanded(
                           flex: 5,
                           child: Container(
-                            height: 64,
+                            height: 52,
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                             margin: EdgeInsets.symmetric(horizontal: 12,),
                           ),
