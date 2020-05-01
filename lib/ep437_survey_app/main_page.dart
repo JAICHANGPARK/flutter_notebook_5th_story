@@ -47,6 +47,7 @@ class SurveyHomePage extends StatelessWidget {
                           Icon(Icons.monetization_on, color: Colors.white,),
                         ],
                       ),
+                      SizedBox(height: 16,),
                       Row(
                         children: [
                           Expanded(
@@ -54,7 +55,7 @@ class SurveyHomePage extends StatelessWidget {
                             child: Container(
                               height: 64,
                               color: Colors.white,
-                              margin: EdgeInsets.all(8),
+                              margin: EdgeInsets.only(right: 8, top: 8 ,bottom: 8),
                             ),
                           ),
                           Expanded(
