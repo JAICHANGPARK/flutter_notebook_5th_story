@@ -49,13 +49,12 @@ class SurveyHomePage extends StatelessWidget {
                         ),
                       ],
                     ),
-
                     Row(
                       children: [
                         Expanded(
                           flex: 2,
                           child: Container(
-                            height: 64,
+                            height: 48,
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                             margin: EdgeInsets.all(8),
                             child: Column(
@@ -110,37 +109,37 @@ class SurveyHomePage extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
-              left: 0,
-              right: 0,
-              top: MediaQuery.of(context).size.height / 3 - 120,
-              bottom: 0,
-              child: Container(
-                decoration: BoxDecoration(
-                    color: Colors.blueGrey[50],
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(24),
-                      topLeft: Radius.circular(24),
-                    )),
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Card(
-                          elevation: 0.5,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                          child: SizedBox(
-                            height: 240,
-                            child: Container(),
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-            )
+//            Positioned(
+//              left: 0,
+//              right: 0,
+//              top: MediaQuery.of(context).size.height / 3 - 120,
+//              bottom: 0,
+//              child: Container(
+//                decoration: BoxDecoration(
+//                    color: Colors.blueGrey[50],
+//                    borderRadius: BorderRadius.only(
+//                      topRight: Radius.circular(24),
+//                      topLeft: Radius.circular(24),
+//                    )),
+//                child: SingleChildScrollView(
+//                  child: Column(
+//                    children: [
+//                      Padding(
+//                        padding: const EdgeInsets.all(16.0),
+//                        child: Card(
+//                          elevation: 0.5,
+//                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+//                          child: SizedBox(
+//                            height: 240,
+//                            child: Container(),
+//                          ),
+//                        ),
+//                      )
+//                    ],
+//                  ),
+//                ),
+//              ),
+//            )
           ],
         ),
       ),
