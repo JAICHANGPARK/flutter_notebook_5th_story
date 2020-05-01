@@ -28,7 +28,11 @@ class SurveyHomePage extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Text("zap"),
+                        Text("zap", style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white
+                        ),),
                         Spacer(),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
