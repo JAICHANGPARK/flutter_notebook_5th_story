@@ -32,36 +32,35 @@ class SurveyHomePage extends StatelessWidget {
                         children: [
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text("zap", style: TextStyle(
-                              fontSize: 28,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white
-                            ),),
+                            child: Text(
+                              "zap",
+                              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white),
+                            ),
                           ),
                           Spacer(),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text("255.90",style: TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white
-                            ),),
+                            child: Text(
+                              "255.90",
+                              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+                            ),
                           ),
-                          Icon(Icons.monetization_on, color: Colors.white,),
+                          Icon(
+                            Icons.monetization_on,
+                            color: Colors.white,
+                          ),
                         ],
                       ),
-                      SizedBox(height: 16,),
+                      SizedBox(
+                        height: 16,
+                      ),
                       Row(
                         children: [
                           Expanded(
                             flex: 2,
                             child: Container(
                               height: 64,
-
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(8)
-                              ),
+                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                               margin: EdgeInsets.all(8),
                             ),
                           ),
@@ -69,7 +68,7 @@ class SurveyHomePage extends StatelessWidget {
                             flex: 2,
                             child: Container(
                               height: 64,
-                              color: Colors.white,
+                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                               margin: EdgeInsets.all(8),
                             ),
                           ),
@@ -77,7 +76,7 @@ class SurveyHomePage extends StatelessWidget {
                             flex: 5,
                             child: Container(
                               height: 64,
-                              color: Colors.white,
+                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                               margin: EdgeInsets.all(8),
                             ),
                           ),
@@ -107,14 +106,10 @@ class SurveyHomePage extends StatelessWidget {
                         padding: const EdgeInsets.all(16.0),
                         child: Card(
                           elevation: 0.5,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(16)
-                          ),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                           child: SizedBox(
                             height: 240,
-                            child: Container(
-
-                            ),
+                            child: Container(),
                           ),
                         ),
                       )
