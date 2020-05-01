@@ -53,11 +53,11 @@ class SurveyHomePage extends StatelessWidget {
                     Row(
                       children: [
                         Expanded(
-                          flex: 2,
+                          flex: 3,
                           child: Container(
                             height: 52,
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                            margin: EdgeInsets.symmetric(horizontal: 12,),
+                            margin: EdgeInsets.symmetric(horizontal: 14,),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -75,11 +75,11 @@ class SurveyHomePage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          flex: 2,
+                          flex: 3,
                           child: Container(
                             height: 52,
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                            margin: EdgeInsets.symmetric(horizontal: 12,),
+                            margin: EdgeInsets.symmetric(horizontal: 14,),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -97,7 +97,7 @@ class SurveyHomePage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          flex: 5,
+                          flex: 7,
                           child: Container(
                             height: 64,
                             decoration: BoxDecoration(color: Colors.transparent, borderRadius: BorderRadius.circular(8)),
@@ -122,8 +122,12 @@ class SurveyHomePage extends StatelessWidget {
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
-                                          Text("Tap Days 3+"),
-                                          Text("to Claim \$0.03 instantly"),
+                                          Text("Tap Days 3+",style: TextStyle(
+                                            fontSize: 12
+                                          ),),
+                                          Text("to Claim \$0.03 instantly", style: TextStyle(
+                                            fontSize: 12
+                                          ),),
                                         ],
                                       ),
                                     ),
