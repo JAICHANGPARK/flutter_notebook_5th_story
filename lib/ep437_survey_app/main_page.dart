@@ -74,7 +74,7 @@ class SurveyHomePage extends StatelessWidget {
                             ),
                           ),
                           Expanded(
-                            flex: 4,
+                            flex: 5,
                             child: Container(
                               height: 64,
                               color: Colors.white,
