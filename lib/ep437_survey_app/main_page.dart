@@ -116,11 +116,16 @@ class SurveyHomePage extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(8)
 
                                     ),
-                                    child: Column(
-                                      children: [
-                                        Text("Tap Days 3+"),
-                                        Text("to Claim \$0.03 instantly"),
-                                      ],
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(left: 58),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text("Tap Days 3+"),
+                                          Text("to Claim \$0.03 instantly"),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
