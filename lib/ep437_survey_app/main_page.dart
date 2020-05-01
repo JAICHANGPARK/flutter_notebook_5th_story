@@ -100,7 +100,7 @@ class SurveyHomePage extends StatelessWidget {
                           flex: 5,
                           child: Container(
                             height: 64,
-                            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                            decoration: BoxDecoration(color: Colors.transparent, borderRadius: BorderRadius.circular(8)),
                             margin: EdgeInsets.symmetric(horizontal: 12,),
                             child: Stack(
                               children: [
@@ -108,7 +108,23 @@ class SurveyHomePage extends StatelessWidget {
                                   left: 0,
                                   top: 0,
                                   bottom: 0,
-                                  child: Container(),
+                                  child: Container(
+                                    width: 52,
+                                    decoration: BoxDecoration(
+                                      color: Colors.blueGrey[700]
+                                    ),
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 0,
+                                  top: 4,
+                                  bottom: 4,
+                                  right: 0,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white
+                                    ),
+                                  ),
                                 )
                               ],
                             ),
