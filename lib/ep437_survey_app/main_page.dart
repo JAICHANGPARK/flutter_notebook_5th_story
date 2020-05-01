@@ -24,24 +24,47 @@ class SurveyHomePage extends StatelessWidget {
                 height: MediaQuery.of(context).size.height / 3,
                 color: Colors.greenAccent[400],
                 padding: EdgeInsets.all(16),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Text("zap", style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white
-                        ),),
-                        Spacer(),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text("255.90"),
-                        ),
-                        Icon(Icons.monetization_on, color: Colors.white,),
-                      ],
-                    )
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 72),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text("zap", style: TextStyle(
+                            fontSize: 28,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white
+                          ),),
+                          Spacer(),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text("255.90",style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white
+                            ),),
+                          ),
+                          Icon(Icons.monetization_on, color: Colors.white,),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Expanded(
+                            flex: 1,
+                            child: Container(
+                              color: Colors.white,
+                            ),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
