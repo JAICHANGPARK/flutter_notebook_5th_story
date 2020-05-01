@@ -22,7 +22,7 @@ class SurveyHomePage extends StatelessWidget {
               top: 0,
               child: Container(
                 height: MediaQuery.of(context).size.height / 3,
-                color: Colors.tealAccent,
+                color: Colors.greenAccent[400],
                 padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
