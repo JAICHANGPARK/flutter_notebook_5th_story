@@ -49,7 +49,9 @@ class SurveyHomePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 8,),
+                    SizedBox(
+                      height: 8,
+                    ),
                     Row(
                       children: [
                         Expanded(
@@ -57,7 +59,9 @@ class SurveyHomePage extends StatelessWidget {
                           child: Container(
                             height: 52,
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                            margin: EdgeInsets.symmetric(horizontal: 14,),
+                            margin: EdgeInsets.symmetric(
+                              horizontal: 14,
+                            ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -79,7 +83,9 @@ class SurveyHomePage extends StatelessWidget {
                           child: Container(
                             height: 52,
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                            margin: EdgeInsets.symmetric(horizontal: 14,),
+                            margin: EdgeInsets.symmetric(
+                              horizontal: 14,
+                            ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -100,34 +106,35 @@ class SurveyHomePage extends StatelessWidget {
                           flex: 7,
                           child: Container(
                             height: 64,
-                            decoration: BoxDecoration(color: Colors.transparent, borderRadius: BorderRadius.circular(8)),
-                            margin: EdgeInsets.symmetric(horizontal: 0,),
+                            decoration:
+                                BoxDecoration(color: Colors.transparent, borderRadius: BorderRadius.circular(8)),
+                            margin: EdgeInsets.symmetric(
+                              horizontal: 0,
+                            ),
                             child: Stack(
                               children: [
-
                                 Positioned(
                                   left: 0,
                                   top: 4,
                                   bottom: 4,
                                   right: 0,
                                   child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(8)
-
-                                    ),
+                                    decoration:
+                                        BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                                     child: Padding(
                                       padding: const EdgeInsets.only(left: 58),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
-                                          Text("Tap Days 3+",style: TextStyle(
-                                            fontSize: 12
-                                          ),),
-                                          Text("to Claim \$0.03 instantly", style: TextStyle(
-                                            fontSize: 12
-                                          ),),
+                                          Text(
+                                            "Tap Days 3+",
+                                            style: TextStyle(fontSize: 12),
+                                          ),
+                                          Text(
+                                            "to Claim \$0.03 instantly",
+                                            style: TextStyle(fontSize: 12),
+                                          ),
                                         ],
                                       ),
                                     ),
@@ -140,9 +147,7 @@ class SurveyHomePage extends StatelessWidget {
                                   child: Container(
                                     width: 52,
                                     decoration: BoxDecoration(
-                                        color: Colors.blueGrey[700],
-                                        borderRadius: BorderRadius.circular(8)
-                                    ),
+                                        color: Colors.blueGrey[700], borderRadius: BorderRadius.circular(8)),
                                     child: Column(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -153,8 +158,8 @@ class SurveyHomePage extends StatelessWidget {
                                         ),
                                         Text(
                                           "3+",
-                                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,
-                                          color: Colors.white),
+                                          style:
+                                              TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
                                         )
                                       ],
                                     ),
