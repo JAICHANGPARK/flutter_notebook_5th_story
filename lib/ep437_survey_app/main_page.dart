@@ -78,7 +78,7 @@ class SurveyHomePage extends StatelessWidget {
                           child: Container(
                             height: 64,
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                            margin: EdgeInsets.all(8),
+                            margin: EdgeInsets.symmetric(horizontal: 12,),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -100,7 +100,7 @@ class SurveyHomePage extends StatelessWidget {
                           child: Container(
                             height: 64,
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                            margin: EdgeInsets.all(8),
+                            margin: EdgeInsets.symmetric(horizontal: 12,),
                           ),
                         ),
                       ],
