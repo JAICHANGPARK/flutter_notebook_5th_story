@@ -118,7 +118,8 @@ class SurveyHomePage extends StatelessWidget {
                                     ),
                                     child: Column(
                                       children: [
-                                        
+                                        Text("Tap Days 3+"),
+                                        Text("to Claim \$0.03 instantly"),
                                       ],
                                     ),
                                   ),
