@@ -21,97 +21,92 @@ class SurveyHomePage extends StatelessWidget {
               right: 0,
               top: 0,
               child: Container(
-                height: MediaQuery.of(context).size.height / 3,
+                height: MediaQuery.of(context).size.height / 4,
                 color: Colors.greenAccent[400],
                 padding: EdgeInsets.all(16),
-                child: Padding(
-                  padding: const EdgeInsets.only(bottom: 64),
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              "zap",
-                              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            "zap",
+                            style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white),
+                          ),
+                        ),
+                        Spacer(),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            "255.90",
+                            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+                          ),
+                        ),
+                        Icon(
+                          Icons.monetization_on,
+                          color: Colors.white,
+                        ),
+                      ],
+                    ),
+
+                    Row(
+                      children: [
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+                            height: 64,
+                            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                            margin: EdgeInsets.all(8),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Day",
+                                  style: TextStyle(fontSize: 15),
+                                ),
+                                Text(
+                                  "1",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                )
+                              ],
                             ),
                           ),
-                          Spacer(),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              "255.90",
-                              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+                        ),
+                        Expanded(
+                          flex: 2,
+                          child: Container(
+                            height: 64,
+                            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                            margin: EdgeInsets.all(8),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Day",
+                                  style: TextStyle(fontSize: 15),
+                                ),
+                                Text(
+                                  "2",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                                )
+                              ],
                             ),
                           ),
-                          Icon(
-                            Icons.monetization_on,
-                            color: Colors.white,
+                        ),
+                        Expanded(
+                          flex: 5,
+                          child: Container(
+                            height: 64,
+                            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                            margin: EdgeInsets.all(8),
                           ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 16,
-                      ),
-                      Row(
-                        children: [
-                          Expanded(
-                            flex: 2,
-                            child: Container(
-                              height: 64,
-                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                              margin: EdgeInsets.all(8),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    "Day",
-                                    style: TextStyle(fontSize: 15),
-                                  ),
-                                  Text(
-                                    "1",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 2,
-                            child: Container(
-                              height: 64,
-                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                              margin: EdgeInsets.all(8),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    "Day",
-                                    style: TextStyle(fontSize: 15),
-                                  ),
-                                  Text(
-                                    "2",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 5,
-                            child: Container(
-                              height: 64,
-                              decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
-                              margin: EdgeInsets.all(8),
-                            ),
-                          ),
-                        ],
-                      )
-                    ],
-                  ),
+                        ),
+                      ],
+                    )
+                  ],
                 ),
               ),
             ),
