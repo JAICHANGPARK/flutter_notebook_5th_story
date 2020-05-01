@@ -63,6 +63,8 @@ class SurveyHomePage extends StatelessWidget {
                               decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                               margin: EdgeInsets.all(8),
                               child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text("Day"),
                                   Text("1",style: TextStyle(
