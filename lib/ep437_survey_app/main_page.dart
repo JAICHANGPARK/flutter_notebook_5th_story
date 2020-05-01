@@ -49,7 +49,7 @@ class SurveyHomePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 16,),
+                    SizedBox(height: 8,),
                     Row(
                       children: [
                         Expanded(
@@ -99,9 +99,19 @@ class SurveyHomePage extends StatelessWidget {
                         Expanded(
                           flex: 5,
                           child: Container(
-                            height: 52,
+                            height: 64,
                             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                             margin: EdgeInsets.symmetric(horizontal: 12,),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  left: 0,
+                                  top: 0,
+                                  bottom: 0,
+                                  child: Container(),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ],
