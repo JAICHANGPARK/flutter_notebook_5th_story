@@ -93,7 +93,7 @@ class SurveyHomePage extends StatelessWidget {
                                     style: TextStyle(fontSize: 15),
                                   ),
                                   Text(
-                                    "1",
+                                    "2",
                                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                   )
                                 ],
@@ -118,7 +118,7 @@ class SurveyHomePage extends StatelessWidget {
             Positioned(
               left: 0,
               right: 0,
-              top: MediaQuery.of(context).size.height / 3 - 64,
+              top: MediaQuery.of(context).size.height / 3 - 120,
               bottom: 0,
               child: Container(
                 decoration: BoxDecoration(
