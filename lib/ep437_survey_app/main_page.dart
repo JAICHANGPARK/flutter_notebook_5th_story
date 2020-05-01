@@ -104,17 +104,7 @@ class SurveyHomePage extends StatelessWidget {
                             margin: EdgeInsets.symmetric(horizontal: 12,),
                             child: Stack(
                               children: [
-                                Positioned(
-                                  left: 0,
-                                  top: 0,
-                                  bottom: 0,
-                                  child: Container(
-                                    width: 52,
-                                    decoration: BoxDecoration(
-                                      color: Colors.blueGrey[700]
-                                    ),
-                                  ),
-                                ),
+
                                 Positioned(
                                   left: 0,
                                   top: 4,
@@ -122,10 +112,22 @@ class SurveyHomePage extends StatelessWidget {
                                   right: 0,
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.white
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(8)
                                     ),
                                   ),
-                                )
+                                ),
+                                Positioned(
+                                  left: 0,
+                                  top: 0,
+                                  bottom: 0,
+                                  child: Container(
+                                    width: 52,
+                                    decoration: BoxDecoration(
+                                        color: Colors.blueGrey[700]
+                                    ),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
