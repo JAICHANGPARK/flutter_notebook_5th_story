@@ -50,7 +50,7 @@ class SurveyHomePage extends StatelessWidget {
                       Row(
                         children: [
                           Expanded(
-                            flex: 1,
+                            flex: 2,
                             child: Container(
                               height: 64,
                               color: Colors.white,
@@ -58,10 +58,11 @@ class SurveyHomePage extends StatelessWidget {
                             ),
                           ),
                           Expanded(
-                            flex: 1,
+                            flex: 2,
                             child: Container(
                               height: 64,
                               color: Colors.white,
+                              margin: EdgeInsets.all(8),
                             ),
                           ),
                           Expanded(
@@ -69,6 +70,7 @@ class SurveyHomePage extends StatelessWidget {
                             child: Container(
                               height: 64,
                               color: Colors.white,
+                              margin: EdgeInsets.all(8),
                             ),
                           ),
                         ],
