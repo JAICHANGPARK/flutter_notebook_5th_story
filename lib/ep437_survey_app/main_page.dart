@@ -66,7 +66,9 @@ class SurveyHomePage extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Text("Day"),
+                                  Text("Day",style: TextStyle(
+                                    fontSize: 15
+                                  ),),
                                   Text("1",style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20
