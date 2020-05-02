@@ -247,10 +247,16 @@ class SurveyHomePage extends StatelessWidget {
                                           bottomLeft: Radius.circular(16),
                                         )
                                       ),
-                                      child: Stack(
+                                      child:Row(
                                         children: [
+                                          Column(
+                                            children: [
+                                              Text("Hight Value"),
+                                              Text("Serveys that give the best mix of \ntime & money")],
+                                          ),
+
                                         ],
-                                      ),
+                                      )
                                     ),
                                   )
                                 ],
