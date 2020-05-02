@@ -231,7 +231,7 @@ class SurveyHomePage extends StatelessWidget {
                                           Icon(
                                             Icons.apps,
                                             size: 48,
-                                            color: Colors.greenAccent,
+                                            color: surveyGreenColor,
                                           ),
                                         ],
                                       ),
@@ -246,6 +246,10 @@ class SurveyHomePage extends StatelessWidget {
                                           bottomRight: Radius.circular(16),
                                           bottomLeft: Radius.circular(16),
                                         )
+                                      ),
+                                      child: Stack(
+                                        children: [
+                                        ],
                                       ),
                                     ),
                                   )
