@@ -247,19 +247,23 @@ class SurveyHomePage extends StatelessWidget {
                                           bottomLeft: Radius.circular(16),
                                         )
                                       ),
-                                      child:Row(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            mainAxisAlignment: MainAxisAlignment.center,
-                                            children: [
-                                              Text("Hight Value"),
-                                              Text("Serveys that give the best mix of \ntime & money")],
-                                          ),
-                                          Icon(Icons.adjust, color: Colors.greenAccent,),
+                                      child:Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 24,
+                                        vertical: 24),
+                                        child: Row(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.center,
+                                              children: [
+                                                Text("Hight Value"),
+                                                Text("Serveys that give the best mix of \ntime & money")],
+                                            ),
+                                            Icon(Icons.adjust, color: Colors.greenAccent,),
 
-                                        ],
+                                          ],
+                                        ),
                                       )
                                     ),
                                   )
