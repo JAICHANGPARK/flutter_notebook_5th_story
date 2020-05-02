@@ -202,20 +202,27 @@ class SurveyHomePage extends StatelessWidget {
                                 children: [
                                   Expanded(
                                     flex: 2,
-                                    child: Row(
-                                      children: [
-                                        Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          children: [
-                                            Text("Best Match"),
-                                            Text("Most likely quanlify surveys"),
-                                          ],
-                                        ),
-                                        Spacer(),
-                                        Icon(Icons.apps, size: 48,
-                                        color: Colors.greenAccent,),
-                                      ],
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 24),
+                                      child: Row(
+                                        children: [
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Text("Best Match",style: TextStyle(
+                                                fontSize: 24
+                                              ),),
+                                              Text("Most likely quanlify surveys",style: TextStyle(
+                                                
+                                              ),),
+                                            ],
+                                          ),
+                                          Spacer(),
+                                          Icon(Icons.apps, size: 48,
+                                          color: Colors.greenAccent,),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                   Expanded(
