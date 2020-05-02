@@ -210,17 +210,22 @@ class SurveyHomePage extends StatelessWidget {
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
-                                              Text("Best Match",style: TextStyle(
-                                                fontSize: 24
-                                              ),),
-                                              Text("Most likely quanlify surveys",style: TextStyle(
-                                                fontSize: 12
-                                              ),),
+                                              Text(
+                                                "Best Match",
+                                                style: TextStyle(fontSize: 24),
+                                              ),
+                                              Text(
+                                                "Most likely quanlify surveys",
+                                                style: TextStyle(fontSize: 12),
+                                              ),
                                             ],
                                           ),
                                           Spacer(),
-                                          Icon(Icons.apps, size: 48,
-                                          color: Colors.greenAccent,),
+                                          Icon(
+                                            Icons.apps,
+                                            size: 48,
+                                            color: Colors.greenAccent,
+                                          ),
                                         ],
                                       ),
                                     ),
@@ -231,7 +236,6 @@ class SurveyHomePage extends StatelessWidget {
                                   )
                                 ],
                               ),
-
                             ),
                           ),
                         ),
