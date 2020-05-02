@@ -196,8 +196,10 @@ class SurveyHomePage extends StatelessWidget {
                           elevation: 0.5,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                           child: SizedBox(
-                            height: 240,
-                            child: Container(),
+                            height: 220,
+                            child: Container(
+
+                            ),
                           ),
                         ),
                       )
