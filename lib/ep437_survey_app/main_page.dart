@@ -240,35 +240,42 @@ class SurveyHomePage extends StatelessWidget {
                                   Expanded(
                                     flex: 3,
                                     child: Container(
-                                      decoration: BoxDecoration(
-                                        color: surveySecondColor,
-                                        borderRadius: BorderRadius.only(
-                                          bottomRight: Radius.circular(16),
-                                          bottomLeft: Radius.circular(16),
-                                        )
-                                      ),
-                                      child:Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: 24,
-                                        vertical: 24),
-                                        child: Row(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.center,
-                                              children: [
-                                                Text("Hight Value",style: TextStyle(
-                                                  color: Colors.white
-                                                ),),
-                                                Text("Serveys that give the best mix of \ntime & money")],
-                                            ),
-                                            Spacer(),
-                                            Icon(Icons.adjust, color: Colors.greenAccent,),
-
-                                          ],
-                                        ),
-                                      )
-                                    ),
+                                        decoration: BoxDecoration(
+                                            color: surveySecondColor,
+                                            borderRadius: BorderRadius.only(
+                                              bottomRight: Radius.circular(16),
+                                              bottomLeft: Radius.circular(16),
+                                            )),
+                                        child: Padding(
+                                          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
+                                          child: Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                children: [
+                                                  Text(
+                                                    "Hight Value",
+                                                    style: TextStyle(color: Colors.white,
+                                                    fontSize: 24),
+                                                  ),
+                                                  SizedBox(height: 12,),
+                                                  Text(
+                                                    "Serveys that give the best mix of \ntime & money",
+                                                    style: TextStyle(color: Colors.white,
+                                                    fontSize: 12),
+                                                  )
+                                                ],
+                                              ),
+                                              Spacer(),
+                                              Icon(
+                                                Icons.adjust,
+                                                color: Colors.greenAccent,
+                                              ),
+                                            ],
+                                          ),
+                                        )),
                                   )
                                 ],
                               ),
