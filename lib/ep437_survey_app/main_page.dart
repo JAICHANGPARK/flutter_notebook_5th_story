@@ -201,11 +201,19 @@ class SurveyHomePage extends StatelessWidget {
                               child: Column(
                                 children: [
                                   Expanded(
-                                    flex: 1,
-                                    child: Placeholder(),
+                                    flex: 2,
+                                    child: Row(
+                                      children: [
+                                        Column(
+                                          children: [
+                                            Text("Best Match")
+                                          ],
+                                        )
+                                      ],
+                                    ),
                                   ),
                                   Expanded(
-                                    flex: 1,
+                                    flex: 3,
                                     child: Placeholder(),
                                   )
                                 ],
