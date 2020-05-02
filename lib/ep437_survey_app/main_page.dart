@@ -211,7 +211,8 @@ class SurveyHomePage extends StatelessWidget {
                                             Text("Best Match"),
                                             Text("Most likely quanlify surveys"),
                                           ],
-                                        )
+                                        ),
+                                        Icon(Icons.apps, size: 48,),
                                       ],
                                     ),
                                   ),
