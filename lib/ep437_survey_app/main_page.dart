@@ -198,6 +198,14 @@ class SurveyHomePage extends StatelessWidget {
                           child: SizedBox(
                             height: 220,
                             child: Container(
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    flex: 1,
+                                    child: Placeholder(),
+                                  )
+                                ],
+                              ),
 
                             ),
                           ),
