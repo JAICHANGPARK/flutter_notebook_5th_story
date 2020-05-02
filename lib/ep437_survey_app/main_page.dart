@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 ///
 
 Color surveyGreenColor = Color(0xff2FCF87);
+Color surveySecondColor = Color(0xFF273D4B);
 class SurveyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -28,7 +29,7 @@ class SurveyHomePage extends StatelessWidget {
               top: 0,
               child: Container(
                 height: MediaQuery.of(context).size.height / 4,
-                color: Colors.greenAccent[400],
+                color: surveyGreenColor,
                 padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
@@ -153,7 +154,7 @@ class SurveyHomePage extends StatelessWidget {
                                   child: Container(
                                     width: 52,
                                     decoration: BoxDecoration(
-                                        color: Colors.blueGrey[700], borderRadius: BorderRadius.circular(8)),
+                                        color: surveySecondColor, borderRadius: BorderRadius.circular(8)),
                                     child: Column(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       crossAxisAlignment: CrossAxisAlignment.center,
