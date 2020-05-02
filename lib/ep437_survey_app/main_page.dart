@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
+
+/// 47 207 135 2f cf 87
+/// 39 61 75   27 3d 4b
+///
+
+Color surveyGreenColor = Color(0xff2FCF87);
 class SurveyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -233,10 +239,9 @@ class SurveyHomePage extends StatelessWidget {
                                   Expanded(
                                     flex: 3,
                                     child: Container(
-                                      /// 47 207 135 2f cf 87
-                                      /// 39 61 75   27 3d 4b
+
                                       decoration: BoxDecoration(
-                                        
+
                                       ),
 
                                     ),
