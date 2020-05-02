@@ -260,6 +260,7 @@ class SurveyHomePage extends StatelessWidget {
                                                 Text("Hight Value"),
                                                 Text("Serveys that give the best mix of \ntime & money")],
                                             ),
+                                            Spacer(),
                                             Icon(Icons.adjust, color: Colors.greenAccent,),
 
                                           ],
