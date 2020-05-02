@@ -205,8 +205,11 @@ class SurveyHomePage extends StatelessWidget {
                                     child: Row(
                                       children: [
                                         Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
-                                            Text("Best Match")
+                                            Text("Best Match"),
+                                            Text("Most likely quanlify surveys"),
                                           ],
                                         )
                                       ],
