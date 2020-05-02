@@ -214,7 +214,7 @@ class SurveyHomePage extends StatelessWidget {
                                                 fontSize: 24
                                               ),),
                                               Text("Most likely quanlify surveys",style: TextStyle(
-                                                
+                                                fontSize: 12
                                               ),),
                                             ],
                                           ),
