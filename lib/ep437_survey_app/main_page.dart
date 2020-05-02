@@ -257,7 +257,9 @@ class SurveyHomePage extends StatelessWidget {
                                               crossAxisAlignment: CrossAxisAlignment.start,
                                               mainAxisAlignment: MainAxisAlignment.center,
                                               children: [
-                                                Text("Hight Value"),
+                                                Text("Hight Value",style: TextStyle(
+                                                  color: Colors.white
+                                                ),),
                                                 Text("Serveys that give the best mix of \ntime & money")],
                                             ),
                                             Spacer(),
