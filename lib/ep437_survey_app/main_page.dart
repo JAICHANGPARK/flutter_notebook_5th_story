@@ -242,6 +242,10 @@ class SurveyHomePage extends StatelessWidget {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: surveySecondColor,
+                                        borderRadius: BorderRadius.only(
+                                          bottomRight: Radius.circular(16),
+                                          bottomLeft: Radius.circular(16),
+                                        )
                                       ),
                                     ),
                                   )
