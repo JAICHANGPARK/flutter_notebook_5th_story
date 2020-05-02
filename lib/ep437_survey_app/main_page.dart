@@ -232,7 +232,14 @@ class SurveyHomePage extends StatelessWidget {
                                   ),
                                   Expanded(
                                     flex: 3,
-                                    child: Placeholder(),
+                                    child: Container(
+                                      /// 47 207 135 2f cf 87
+                                      /// 39 61 75   27 3d 4b
+                                      decoration: BoxDecoration(
+                                        
+                                      ),
+
+                                    ),
                                   )
                                 ],
                               ),
