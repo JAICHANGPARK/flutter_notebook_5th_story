@@ -248,6 +248,7 @@ class SurveyHomePage extends StatelessWidget {
                                         )
                                       ),
                                       child:Row(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -256,6 +257,7 @@ class SurveyHomePage extends StatelessWidget {
                                               Text("Hight Value"),
                                               Text("Serveys that give the best mix of \ntime & money")],
                                           ),
+                                          Icon(Icons.adjust, color: Colors.greenAccent,),
 
                                         ],
                                       )
