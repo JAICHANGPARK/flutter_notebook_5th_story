@@ -400,8 +400,19 @@ class SurveyHomePage extends StatelessWidget {
                       SizedBox(height: 16,),
                       Container(
                         height: 280,
+                        width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.greenAccent
+                        ),
+                        child: Column(
+                          children: [
+                            Text("Scan for cash rewards",style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blueGrey
+                            ),),
+
+                          ],
                         ),
                       )
                     ],
