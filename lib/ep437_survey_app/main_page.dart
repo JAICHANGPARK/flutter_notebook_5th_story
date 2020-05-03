@@ -317,17 +317,23 @@ class SurveyHomePage extends StatelessWidget {
                       ),
                       SizedBox(height: 16,),
                       Container(
-                        height: 140,
+                        height: 120,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(
                                 flex: 1,
                                 child: Padding(
-                                  padding: const EdgeInsets.only(left: 24),
-                                  child: Text(
-                                    "Partners",
-                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                  padding: const EdgeInsets.only(left: 24, right: 24),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        "Partners",
+                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                      ),
+                                      Text("See all")
+                                    ],
                                   ),
                                 )),
                             Expanded(
