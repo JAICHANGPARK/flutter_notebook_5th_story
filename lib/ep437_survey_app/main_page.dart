@@ -397,6 +397,13 @@ class SurveyHomePage extends StatelessWidget {
                           ],
                         ),
                       ),
+                      SizedBox(height: 16,),
+                      Container(
+                        height: 280,
+                        decoration: BoxDecoration(
+                          color: Colors.greenAccent
+                        ),
+                      )
                     ],
                   ),
                 ),
