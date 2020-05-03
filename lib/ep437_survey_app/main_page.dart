@@ -257,14 +257,14 @@ class SurveyHomePage extends StatelessWidget {
                                                 children: [
                                                   Text(
                                                     "Hight Value",
-                                                    style: TextStyle(color: Colors.white,
-                                                    fontSize: 24),
+                                                    style: TextStyle(color: Colors.white, fontSize: 24),
                                                   ),
-                                                  SizedBox(height: 12,),
+                                                  SizedBox(
+                                                    height: 12,
+                                                  ),
                                                   Text(
                                                     "Serveys that give the best mix of \ntime & money",
-                                                    style: TextStyle(color: Colors.white,
-                                                    fontSize: 12),
+                                                    style: TextStyle(color: Colors.white, fontSize: 12),
                                                   )
                                                 ],
                                               ),
