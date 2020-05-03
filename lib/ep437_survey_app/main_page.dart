@@ -296,7 +296,9 @@ class SurveyHomePage extends StatelessWidget {
                                 child: Text("Partners")),
                             Expanded(
                               flex:3,
-                              child: Placeholder(),)
+                              child: ListView.builder(itemBuilder: (context, idx){
+                                return Container();
+                              }),)
 
                           ],
                         ),
