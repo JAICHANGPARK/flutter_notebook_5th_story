@@ -442,7 +442,14 @@ class SurveyHomePage extends StatelessWidget {
                             ),
                           Expanded(
                             flex: 9,
-                            child: Placeholder(),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all()
+                              ),
+                              child: Center(
+                                child: Text("Place your maps"),
+                              ),
+                            ),
                           )
                           ],
                         ),
