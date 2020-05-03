@@ -286,7 +286,13 @@ class SurveyHomePage extends StatelessWidget {
 
                       Container(
                         height: 160,
-                        child: Placeholder(),
+                        child: Column(
+                          children: [
+                            Expanded(child: Text("Partners")),
+                            Expanded(child: Placeholder(),)
+
+                          ],
+                        ),
                       ),
                       Container(
                         height: 200,
