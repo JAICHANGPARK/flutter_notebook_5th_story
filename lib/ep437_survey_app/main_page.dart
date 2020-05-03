@@ -284,37 +284,33 @@ class SurveyHomePage extends StatelessWidget {
                           ),
                         ),
                       ),
-
                       Container(
-
                         height: 100,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(
-                                flex:1,
+                                flex: 1,
                                 child: Padding(
                                   padding: const EdgeInsets.only(left: 24),
-                                  child: Text("Partners", style: TextStyle(
-                                    fontWeight: FontWeight.bold
-                                  ),),
+                                  child: Text(
+                                    "Partners",
+                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                  ),
                                 )),
                             Expanded(
-                              flex:3,
+                              flex: 3,
                               child: ListView.builder(
-
                                   itemCount: 10,
                                   scrollDirection: Axis.horizontal,
-                                  itemBuilder: (context, idx){
-                                return Container(
-                                  width: 120,
-                                  margin: EdgeInsets.all(8),
-                                  decoration: BoxDecoration(
-                                    color: Colors.green
-                                  ),
-                                );
-                              }),)
-
+                                  itemBuilder: (context, idx) {
+                                    return Container(
+                                      width: 120,
+                                      margin: EdgeInsets.all(8),
+                                      decoration: BoxDecoration(color: Colors.green),
+                                    );
+                                  }),
+                            )
                           ],
                         ),
                       ),
@@ -322,9 +318,6 @@ class SurveyHomePage extends StatelessWidget {
                         height: 200,
                         child: Placeholder(),
                       ),
-
-
-
                     ],
                   ),
                 ),
