@@ -405,12 +405,23 @@ class SurveyHomePage extends StatelessWidget {
                           color: Colors.greenAccent
                         ),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Scan for cash rewards",style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                               color: Colors.blueGrey
                             ),),
+                            Row(
+                              children: [
+                                Text("Location surveys"),
+                                Text("ACTIVE"),
+                                CircleAvatar(
+                                  radius: 6,
+                                  backgroundColor: surveyGreenColor,
+                                )
+                              ],
+                            )
 
                           ],
                         ),
