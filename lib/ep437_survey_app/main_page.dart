@@ -351,11 +351,21 @@ class SurveyHomePage extends StatelessWidget {
                                     return Container(
                                       width: 120,
                                       margin: EdgeInsets.all(8),
-                                      decoration: BoxDecoration(color: Colors.green,
+                                      decoration: BoxDecoration(color: Colors.white,
                                           borderRadius: BorderRadius.circular(8)),
                                       child: Column(
                                         children: [
-                                          
+                                        Expanded(
+                                          flex: 2,
+                                          child: Container(),
+                                        ),
+                                          Expanded(
+                                            child: Text("0.5%", style: TextStyle(
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.bold,
+                                              color: surveyGreenColor
+                                            ),),
+                                          )
                                         ],
                                       ),
                                     );
