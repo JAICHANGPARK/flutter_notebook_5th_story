@@ -309,7 +309,6 @@ class SurveyHomePage extends StatelessWidget {
                                       margin: EdgeInsets.all(8),
                                       decoration: BoxDecoration(color: Colors.green,
                                       borderRadius: BorderRadius.circular(8)),
-                                      
                                     );
                                   }),
                             )
@@ -317,7 +316,7 @@ class SurveyHomePage extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        height: 200,
+                        height: 160,
                         child: Placeholder(),
                       ),
                     ],
