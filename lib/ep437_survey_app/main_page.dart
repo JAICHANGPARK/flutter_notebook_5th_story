@@ -356,10 +356,13 @@ class SurveyHomePage extends StatelessWidget {
                                       child: Column(
                                         children: [
                                         Expanded(
-                                          flex: 2,
-                                          child: Container(),
+                                          flex: 3,
+                                          child: Container(
+                                            color: Colors.black,
+                                          ),
                                         ),
                                           Expanded(
+                                            flex: 2,
                                             child: Text("0.5%", style: TextStyle(
                                               fontSize: 18,
                                               fontWeight: FontWeight.bold,
