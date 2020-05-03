@@ -287,13 +287,16 @@ class SurveyHomePage extends StatelessWidget {
 
                       Container(
 
-                        height: 120,
+                        height: 100,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(
                                 flex:1,
-                                child: Text("Partners")),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text("Partners"),
+                                )),
                             Expanded(
                               flex:3,
                               child: ListView.builder(
