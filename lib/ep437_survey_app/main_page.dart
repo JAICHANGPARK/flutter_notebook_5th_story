@@ -402,44 +402,48 @@ class SurveyHomePage extends StatelessWidget {
                         height: 280,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.greenAccent
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Padding(
-                              padding: const EdgeInsets.only(left: 23),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Scan for cash rewards",style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.blueGrey
-                                  ),),
-                                  SizedBox(height: 7,),
-                                  Row(
-                                    children: [
-                                      Text("Location surveys",style: TextStyle(
-                                          fontSize: 12,
-                                          color: Colors.blueGrey
-                                      ),),
-                                      Text("ACTIVE",style: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.bold,
-                                        color: surveyGreenColor,
-                                      ),),
-                                      CircleAvatar(
-                                        radius: 6,
-                                        backgroundColor: surveyGreenColor,
-                                      )
-                                    ],
-                                  )
-
-                                ],
+                            Expanded(
+                              flex: 2,
+                              child: Padding(
+                                padding: const EdgeInsets.only(left: 23),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Scan for cash rewards",style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.blueGrey
+                                    ),),
+                                    SizedBox(height: 7,),
+                                    Row(
+                                      children: [
+                                        Text("Location surveys",style: TextStyle(
+                                            fontSize: 12,
+                                            color: Colors.blueGrey
+                                        ),),
+                                        Text("ACTIVE",style: TextStyle(
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.bold,
+                                          color: surveyGreenColor,
+                                        ),),
+                                        CircleAvatar(
+                                          radius: 6,
+                                          backgroundColor: surveyGreenColor,
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
-
+                          Expanded(
+                            flex: 9,
+                            child: Placeholder(),
+                          )
                           ],
                         ),
                       )
