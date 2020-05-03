@@ -364,8 +364,21 @@ class SurveyHomePage extends StatelessWidget {
                                               borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(8),
                                                   topRight: Radius.circular(8),
+
                                               )
                                             ),
+                                            child: Center(child: Text.rich(
+                                              TextSpan(
+                                                children: [
+                                                  TextSpan(
+                                                    text: "Uber",
+                                                    style: TextStyle(
+                                                      color: Colors.white
+                                                    )
+                                                  )
+                                                ]
+                                              )
+                                            ),),
                                           ),
                                         ),
                                           Expanded(
