@@ -315,9 +315,37 @@ class SurveyHomePage extends StatelessWidget {
                           ],
                         ),
                       ),
+                      SizedBox(height: 16,),
                       Container(
-                        height: 160,
-                        child: Placeholder(),
+                        height: 140,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Expanded(
+                                flex: 1,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(left: 24),
+                                  child: Text(
+                                    "Partners",
+                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                  ),
+                                )),
+                            Expanded(
+                              flex: 3,
+                              child: ListView.builder(
+                                  itemCount: 10,
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, idx) {
+                                    return Container(
+                                      width: 120,
+                                      margin: EdgeInsets.all(8),
+                                      decoration: BoxDecoration(color: Colors.green,
+                                          borderRadius: BorderRadius.circular(8)),
+                                    );
+                                  }),
+                            )
+                          ],
+                        ),
                       ),
                     ],
                   ),
