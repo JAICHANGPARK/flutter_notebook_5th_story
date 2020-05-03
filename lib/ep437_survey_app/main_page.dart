@@ -334,7 +334,11 @@ class SurveyHomePage extends StatelessWidget {
                                         style: TextStyle(fontWeight: FontWeight.bold,
                                         fontSize: 16),
                                       ),
-                                      Text("See all")
+                                      Text("See all",style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16,
+                                        color: Colors.greenAccent
+                                      ),)
                                     ],
                                   ),
                                 )),
@@ -349,6 +353,11 @@ class SurveyHomePage extends StatelessWidget {
                                       margin: EdgeInsets.all(8),
                                       decoration: BoxDecoration(color: Colors.green,
                                           borderRadius: BorderRadius.circular(8)),
+                                      child: Column(
+                                        children: [
+                                          
+                                        ],
+                                      ),
                                     );
                                   }),
                             )
