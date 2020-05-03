@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 /// 47 207 135 2f cf 87
@@ -285,11 +286,17 @@ class SurveyHomePage extends StatelessWidget {
                       ),
 
                       Container(
-                        height: 160,
+
+                        height: 120,
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Expanded(child: Text("Partners")),
-                            Expanded(child: Placeholder(),)
+                            Expanded(
+                                flex:1,
+                                child: Text("Partners")),
+                            Expanded(
+                              flex:3,
+                              child: Placeholder(),)
 
                           ],
                         ),
