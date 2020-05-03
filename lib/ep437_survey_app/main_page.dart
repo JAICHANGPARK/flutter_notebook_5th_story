@@ -296,8 +296,18 @@ class SurveyHomePage extends StatelessWidget {
                                 child: Text("Partners")),
                             Expanded(
                               flex:3,
-                              child: ListView.builder(itemBuilder: (context, idx){
-                                return Container();
+                              child: ListView.builder(
+
+                                  itemCount: 10,
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, idx){
+                                return Container(
+                                  width: 120,
+                                  margin: EdgeInsets.all(8),
+                                  decoration: BoxDecoration(
+                                    color: Colors.green
+                                  ),
+                                );
                               }),)
 
                           ],
