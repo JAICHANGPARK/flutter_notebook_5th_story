@@ -295,7 +295,8 @@ class SurveyHomePage extends StatelessWidget {
                                   padding: const EdgeInsets.only(left: 24),
                                   child: Text(
                                     "Partners",
-                                    style: TextStyle(fontWeight: FontWeight.bold),
+                                    style: TextStyle(fontWeight: FontWeight.bold,
+                                        fontSize: 16),
                                   ),
                                 )),
                             Expanded(
@@ -329,8 +330,9 @@ class SurveyHomePage extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        "Partners",
-                                        style: TextStyle(fontWeight: FontWeight.bold),
+                                        "CashBack Brands",
+                                        style: TextStyle(fontWeight: FontWeight.bold,
+                                        fontSize: 16),
                                       ),
                                       Text("See all")
                                     ],
