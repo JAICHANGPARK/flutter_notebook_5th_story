@@ -295,7 +295,9 @@ class SurveyHomePage extends StatelessWidget {
                                 flex:1,
                                 child: Padding(
                                   padding: const EdgeInsets.only(left: 24),
-                                  child: Text("Partners"),
+                                  child: Text("Partners", style: TextStyle(
+                                    fontWeight: FontWeight.bold
+                                  ),),
                                 )),
                             Expanded(
                               flex:3,
