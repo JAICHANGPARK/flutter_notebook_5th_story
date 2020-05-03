@@ -291,7 +291,8 @@ class SurveyHomePage extends StatelessWidget {
                       Container(
                         height: 200,
                         child: Placeholder(),
-                      )
+                      ),
+
 
 
                     ],
