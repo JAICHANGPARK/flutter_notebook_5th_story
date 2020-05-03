@@ -307,7 +307,9 @@ class SurveyHomePage extends StatelessWidget {
                                     return Container(
                                       width: 120,
                                       margin: EdgeInsets.all(8),
-                                      decoration: BoxDecoration(color: Colors.green),
+                                      decoration: BoxDecoration(color: Colors.green,
+                                      borderRadius: BorderRadius.circular(8)),
+                                      
                                     );
                                   }),
                             )
