@@ -12,7 +12,13 @@ class ELearningHomePage extends StatelessWidget {
             top: 0,
             child: Column(
               children: [
-                
+                Container(
+                  height: 64,
+                  width: 64,
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                  ),
+                )
               ],
             ),
           )
