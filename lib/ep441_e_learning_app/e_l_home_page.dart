@@ -63,6 +63,13 @@ class ELearningHomePage extends StatelessWidget {
                             "https://assets-ouch.icons8.com/thumb/208/447d3cc2-398c-4b4f-ba74-952639825135.png"),
                         fit: BoxFit.cover)),
               ),
+            ),
+            Positioned(
+              left: 0,
+              bottom: 0,
+              right: 0,
+              top: 140,
+              child: Placeholder(),
             )
           ],
         ),
@@ -70,3 +77,23 @@ class ELearningHomePage extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
