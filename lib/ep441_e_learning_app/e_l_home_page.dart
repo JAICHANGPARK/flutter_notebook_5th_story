@@ -16,11 +16,16 @@ class ELearningHomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    height: 64,
-                    width: 64,
+                    height: 54,
+                    width: 54,
                     decoration: BoxDecoration(
-                      border: Border.all(),
+                      border: Border.all(
+                        color: Colors.grey
+                      ),
                       borderRadius: BorderRadius.circular(16)
+                    ),
+                    child: Center(
+                      child: Icon(Icons.keyboard_arrow_left),
                     ),
                   ),
                   Padding(
