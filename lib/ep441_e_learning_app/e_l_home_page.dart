@@ -68,7 +68,7 @@ class ELearningHomePage extends StatelessWidget {
               left: 0,
               bottom: 0,
               right: 0,
-              top: 140,
+              top: 240,
               child: Placeholder(),
             )
           ],
