@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ELearningHomePage extends StatelessWidget {
   @override
@@ -8,9 +9,9 @@ class ELearningHomePage extends StatelessWidget {
         child: Stack(
           children: [
             Positioned(
-              left: 0,
+              left: 24,
               right: 0,
-              top: 0,
+              top: 24,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -21,7 +22,10 @@ class ELearningHomePage extends StatelessWidget {
                       border: Border.all(),
                     ),
                   ),
-                  Text("Select a"),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Text("Select a", style: GoogleFonts.montserrat(),),
+                  ),
                   Text("Plan To Learn"),
 
                   SizedBox(
