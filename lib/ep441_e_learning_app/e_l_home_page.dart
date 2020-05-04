@@ -20,6 +20,7 @@ class ELearningHomePage extends StatelessWidget {
                     width: 64,
                     decoration: BoxDecoration(
                       border: Border.all(),
+                      borderRadius: BorderRadius.circular(16)
                     ),
                   ),
                   Padding(
