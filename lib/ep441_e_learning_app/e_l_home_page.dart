@@ -18,7 +18,13 @@ class ELearningHomePage extends StatelessWidget {
                   decoration: BoxDecoration(
                     border: Border.all(),
                   ),
-                )
+                ),
+                Text("Select a"),
+                Text("Plan To Learn"),
+
+                SizedBox(
+                    width: MediaQuery.of(context).size.width / 1.5,
+                    child: Text('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'))
               ],
             ),
           )
