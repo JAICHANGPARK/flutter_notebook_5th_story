@@ -6,7 +6,11 @@ class ELearningHomePage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-
+          Positioned(
+            left: 0,
+            right: 0,
+            
+          )
         ],
       ),
     );
