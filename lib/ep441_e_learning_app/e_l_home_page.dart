@@ -36,12 +36,17 @@ class ELearningHomePage extends StatelessWidget {
                   ),
                   Text("Plan To Learn",style: GoogleFonts.montserrat(
                     fontWeight: FontWeight.bold,
-                    fontSize: 22
+                    fontSize: 22,
                   ),),
-
+                  
                   SizedBox(
-                      width: MediaQuery.of(context).size.width / 1.5,
-                      child: Text('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'))
+
+                      width: MediaQuery.of(context).size.width / 1.2,
+                      child: Text('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                      style: GoogleFonts.montserrat(
+                        fontSize: 12,
+                        color: Colors.grey
+                      ),))
                 ],
               ),
             )
