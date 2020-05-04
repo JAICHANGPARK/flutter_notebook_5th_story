@@ -18,35 +18,36 @@ class ELearningHomePage extends StatelessWidget {
                   Container(
                     height: 54,
                     width: 54,
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey
-                      ),
-                      borderRadius: BorderRadius.circular(16)
-                    ),
+                    decoration:
+                        BoxDecoration(border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(16)),
                     child: Center(
                       child: Icon(Icons.keyboard_arrow_left),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 16,bottom: 3),
-                    child: Text("Select a", style: GoogleFonts.montserrat(
-                      fontSize: 22
-                    ),),
+                    padding: const EdgeInsets.only(top: 16, bottom: 3),
+                    child: Text(
+                      "Select a",
+                      style: GoogleFonts.montserrat(fontSize: 22),
+                    ),
                   ),
-                  Text("Plan To Learn",style: GoogleFonts.montserrat(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 22,
-                  ),),
-                  
+                  Text(
+                    "Plan To Learn",
+                    style: GoogleFonts.montserrat(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22,
+                    ),
+                  ),
                   SizedBox(
-
+                    height: 12,
+                  ),
+                  SizedBox(
                       width: MediaQuery.of(context).size.width / 1.2,
-                      child: Text('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                      style: GoogleFonts.montserrat(
-                        fontSize: 12,
-                        color: Colors.grey
-                      ),))
+                      child: Text(
+                        'Lorem ipsum dolor sit amet, consectetur adipisicing elit,'
+                            ' sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                        style: GoogleFonts.montserrat(fontSize: 12, color: Colors.grey),
+                      ))
                 ],
               ),
             )
