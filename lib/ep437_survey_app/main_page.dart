@@ -295,8 +295,7 @@ class SurveyHomePage extends StatelessWidget {
                                   padding: const EdgeInsets.only(left: 24),
                                   child: Text(
                                     "Partners",
-                                    style: TextStyle(fontWeight: FontWeight.bold,
-                                        fontSize: 16),
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                   ),
                                 )),
                             Expanded(
@@ -308,15 +307,17 @@ class SurveyHomePage extends StatelessWidget {
                                     return Container(
                                       width: 120,
                                       margin: EdgeInsets.all(8),
-                                      decoration: BoxDecoration(color: Colors.green,
-                                      borderRadius: BorderRadius.circular(8)),
+                                      decoration:
+                                          BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(8)),
                                     );
                                   }),
                             )
                           ],
                         ),
                       ),
-                      SizedBox(height: 16,),
+                      SizedBox(
+                        height: 16,
+                      ),
                       Container(
                         height: 120,
                         child: Column(
@@ -331,14 +332,13 @@ class SurveyHomePage extends StatelessWidget {
                                     children: [
                                       Text(
                                         "CashBack Brands",
-                                        style: TextStyle(fontWeight: FontWeight.bold,
-                                        fontSize: 16),
+                                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                       ),
-                                      Text("See all",style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 16,
-                                        color: Colors.greenAccent
-                                      ),)
+                                      Text(
+                                        "See all",
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold, fontSize: 16, color: Colors.greenAccent),
+                                      )
                                     ],
                                   ),
                                 )),
@@ -351,43 +351,33 @@ class SurveyHomePage extends StatelessWidget {
                                     return Container(
                                       width: 120,
                                       margin: EdgeInsets.all(8),
-                                      decoration: BoxDecoration(color: Colors.white,
-                                          borderRadius: BorderRadius.circular(8)),
+                                      decoration:
+                                          BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                                       child: Column(
                                         children: [
-                                        Expanded(
-                                          flex: 3,
-                                          child: Container(
-
-                                            decoration: BoxDecoration(
-                                              color: Colors.black,
-                                              borderRadius: BorderRadius.only(
-                                                topLeft: Radius.circular(8),
-                                                  topRight: Radius.circular(8),
-
-                                              )
+                                          Expanded(
+                                            flex: 3,
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                  color: Colors.black,
+                                                  borderRadius: BorderRadius.only(
+                                                    topLeft: Radius.circular(8),
+                                                    topRight: Radius.circular(8),
+                                                  )),
+                                              child: Center(
+                                                child: Text.rich(TextSpan(children: [
+                                                  TextSpan(text: "Uber", style: TextStyle(color: Colors.white))
+                                                ])),
+                                              ),
                                             ),
-                                            child: Center(child: Text.rich(
-                                              TextSpan(
-                                                children: [
-                                                  TextSpan(
-                                                    text: "Uber",
-                                                    style: TextStyle(
-                                                      color: Colors.white
-                                                    )
-                                                  )
-                                                ]
-                                              )
-                                            ),),
                                           ),
-                                        ),
                                           Expanded(
                                             flex: 2,
-                                            child: Text("0.5%", style: TextStyle(
-                                              fontSize: 18,
-                                              fontWeight: FontWeight.bold,
-                                              color: surveyGreenColor
-                                            ),),
+                                            child: Text(
+                                              "0.5%",
+                                              style: TextStyle(
+                                                  fontSize: 18, fontWeight: FontWeight.bold, color: surveyGreenColor),
+                                            ),
                                           )
                                         ],
                                       ),
@@ -397,12 +387,13 @@ class SurveyHomePage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(height: 16,),
+                      SizedBox(
+                        height: 16,
+                      ),
                       Container(
                         height: 280,
                         width: double.infinity,
-                        decoration: BoxDecoration(
-                        ),
+                        decoration: BoxDecoration(),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -413,23 +404,28 @@ class SurveyHomePage extends StatelessWidget {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("Scan for cash rewards",style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blueGrey
-                                    ),),
-                                    SizedBox(height: 7,),
+                                    Text(
+                                      "Scan for cash rewards",
+                                      style:
+                                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.blueGrey),
+                                    ),
+                                    SizedBox(
+                                      height: 7,
+                                    ),
                                     Row(
                                       children: [
-                                        Text("Location surveys",style: TextStyle(
-                                            fontSize: 12,
-                                            color: Colors.blueGrey
-                                        ),),
-                                        Text("ACTIVE",style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.bold,
-                                          color: surveyGreenColor,
-                                        ),),
+                                        Text(
+                                          "Location surveys",
+                                          style: TextStyle(fontSize: 12, color: Colors.blueGrey),
+                                        ),
+                                        Text(
+                                          "ACTIVE",
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.bold,
+                                            color: surveyGreenColor,
+                                          ),
+                                        ),
                                         CircleAvatar(
                                           radius: 6,
                                           backgroundColor: surveyGreenColor,
@@ -440,17 +436,15 @@ class SurveyHomePage extends StatelessWidget {
                                 ),
                               ),
                             ),
-                          Expanded(
-                            flex: 9,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                border: Border.all()
+                            Expanded(
+                              flex: 9,
+                              child: Container(
+                                decoration: BoxDecoration(border: Border.all()),
+                                child: Center(
+                                  child: Text("Place your maps"),
+                                ),
                               ),
-                              child: Center(
-                                child: Text("Place your maps"),
-                              ),
-                            ),
-                          )
+                            )
                           ],
                         ),
                       )
