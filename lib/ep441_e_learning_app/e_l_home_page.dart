@@ -29,10 +29,15 @@ class ELearningHomePage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    child: Text("Select a", style: GoogleFonts.montserrat(),),
+                    padding: const EdgeInsets.only(top: 16,bottom: 3),
+                    child: Text("Select a", style: GoogleFonts.montserrat(
+                      fontSize: 22
+                    ),),
                   ),
-                  Text("Plan To Learn"),
+                  Text("Plan To Learn",style: GoogleFonts.montserrat(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 22
+                  ),),
 
                   SizedBox(
                       width: MediaQuery.of(context).size.width / 1.5,
