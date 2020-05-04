@@ -50,6 +50,21 @@ class ELearningHomePage extends StatelessWidget {
                       ))
                 ],
               ),
+            ),
+            Positioned(
+              right: -24,
+              top: 0,
+              child: Container(
+                height: 120,
+                width: 180,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage("https://assets-ouch.icons8.com/thumb/208/447d3cc2-398c-4b4f-ba74-952639825135.png"),
+                    fit: BoxFit.cover
+                  )
+                ),
+              ),
+
             )
           ],
         ),
@@ -57,3 +72,25 @@ class ELearningHomePage extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
