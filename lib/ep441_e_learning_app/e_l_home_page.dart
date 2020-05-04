@@ -45,7 +45,7 @@ class ELearningHomePage extends StatelessWidget {
                       width: MediaQuery.of(context).size.width / 1.2,
                       child: Text(
                         'Lorem ipsum dolor sit amet, consectetur adipisicing elit,'
-                            ' sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                        ' sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                         style: GoogleFonts.montserrat(fontSize: 12, color: Colors.grey),
                       ))
                 ],
@@ -58,13 +58,11 @@ class ELearningHomePage extends StatelessWidget {
                 height: 120,
                 width: 180,
                 decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage("https://assets-ouch.icons8.com/thumb/208/447d3cc2-398c-4b4f-ba74-952639825135.png"),
-                    fit: BoxFit.cover
-                  )
-                ),
+                    image: DecorationImage(
+                        image: NetworkImage(
+                            "https://assets-ouch.icons8.com/thumb/208/447d3cc2-398c-4b4f-ba74-952639825135.png"),
+                        fit: BoxFit.cover)),
               ),
-
             )
           ],
         ),
@@ -72,25 +70,3 @@ class ELearningHomePage extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
