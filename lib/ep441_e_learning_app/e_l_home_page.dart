@@ -125,7 +125,54 @@ class ELearningHomePage extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          child: Placeholder(),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 8,
+                                right: 8,
+                                bottom: 4,
+                                top: 0,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.purple[400],
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(160),
+                                        topRight: Radius.circular(24),
+                                        bottomRight: Radius.circular(24),
+                                        bottomLeft:  Radius.circular(24),
+                                      )
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                left: 8,
+                                top: 16,
+                                bottom: 8,
+                                right: 8,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Expanded(
+                                      flex: 4,
+                                      child: Image.network("https://assets-ouch.icons8.com/thumb/742/18be8202-4db4-4fd8-bcf2-8db2deb63c63.png"),
+                                    ),
+                                    Expanded(
+                                      flex: 1,
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(top: 8),
+                                        child: Text("Conversation".toUpperCase(),style:
+                                        GoogleFonts.montserrat(
+                                            color: Colors.white,
+                                            fontSize: 12
+                                        ),),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
+
+                            ],
+                          ),
                         ),
                       ],
                     ),
