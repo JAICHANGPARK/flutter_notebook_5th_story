@@ -8,6 +8,7 @@ class HomeCardItem extends StatelessWidget {
   final String img;
   final List<double> topPosition; // left right top bottom
   final List<double> bottomPosition;
+  final bool posSetting;
 
   HomeCardItem(
       {@required this.cardColor,
@@ -15,7 +16,8 @@ class HomeCardItem extends StatelessWidget {
       @required this.title,
       @required this.img,
       @required this.topPosition,
-      @required this.bottomPosition});
+      @required this.bottomPosition,
+      this.posSetting = false});
 
   @override
   Widget build(BuildContext context) {
@@ -37,22 +39,39 @@ class HomeCardItem extends StatelessWidget {
           bottom: bottomPosition[3] ?? 0,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Expanded(
-                flex: 1,
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 8),
-                  child: Text(
-                    title.toUpperCase(),
-                    style: GoogleFonts.montserrat(color: Colors.white, fontSize: 12),
-                  ),
-                ),
-              ),
-              Expanded(
-                flex: 4,
-                child: Image.network(img),
-              ),
-            ],
+            children: posSetting
+                ? [
+                    Expanded(
+                      flex: 4,
+                      child: Image.network(img),
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 8),
+                        child: Text(
+                          title.toUpperCase(),
+                          style: GoogleFonts.montserrat(color: Colors.white, fontSize: 12),
+                        ),
+                      ),
+                    ),
+                  ]
+                : [
+                    Expanded(
+                      flex: 1,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 8),
+                        child: Text(
+                          title.toUpperCase(),
+                          style: GoogleFonts.montserrat(color: Colors.white, fontSize: 12),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 4,
+                      child: Image.network(img),
+                    ),
+                  ],
           ),
         )
       ],
