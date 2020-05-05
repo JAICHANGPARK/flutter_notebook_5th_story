@@ -202,7 +202,7 @@ class ELearningHomePage extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                left: 8,
+                                left: 16,
                                 top: 16,
                                 bottom: 8,
                                 right: 8,
@@ -213,7 +213,7 @@ class ELearningHomePage extends StatelessWidget {
                                       flex: 1,
                                       child: Padding(
                                         padding: const EdgeInsets.only(top: 8),
-                                        child: Text("Conversation".toUpperCase(),style:
+                                        child: Text("Listening".toUpperCase(),style:
                                         GoogleFonts.montserrat(
                                             color: Colors.white,
                                             fontSize: 12
@@ -222,18 +222,36 @@ class ELearningHomePage extends StatelessWidget {
                                     ),
                                     Expanded(
                                       flex: 4,
-                                      child: Image.network("https://assets-ouch.icons8.com/thumb/742/18be8202-4db4-4fd8-bcf2-8db2deb63c63.png"),
+                                      child: Image.network("https://assets-ouch.icons8.com/thumb/276/af616f49-a851-4014-ad85-9ae9f25ae1bd.png"),
                                     ),
-
                                   ],
                                 ),
                               )
-
                             ],
                           ),
                         ),
                         Expanded(
-                          child: Placeholder(),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 8,
+                                right: 8,
+                                bottom: 4,
+                                top: 0,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.teal[400],
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(24),
+                                        topRight: Radius.circular(24),
+                                        bottomRight: Radius.circular(24),
+                                        bottomLeft:  Radius.circular(160),
+                                      )
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
 
                       ],
