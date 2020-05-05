@@ -86,7 +86,7 @@ class ELearningHomePage extends StatelessWidget {
                                   decoration: BoxDecoration(
                                     color: Colors.purple[400],
                                     borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(120),
+                                    topLeft: Radius.circular(160),
                                       topRight: Radius.circular(24),
                                       bottomRight: Radius.circular(24),
                                       bottomLeft:  Radius.circular(24),
@@ -95,10 +95,10 @@ class ELearningHomePage extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                left: 0,
-                                top: 0,
+                                left: 8,
+                                top: 16,
                                 bottom: 8,
-                                right: 0,
+                                right: 8,
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
@@ -108,10 +108,14 @@ class ELearningHomePage extends StatelessWidget {
                                     ),
                                     Expanded(
                                       flex: 1,
-                                      child: Text("Conversation".toUpperCase(),style:
-                                        GoogleFonts.montserrat(
-                                          color: Colors.white
-                                        ),),
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(top: 8),
+                                        child: Text("Conversation".toUpperCase(),style:
+                                          GoogleFonts.montserrat(
+                                            color: Colors.white,
+                                            fontSize: 12
+                                          ),),
+                                      ),
                                     )
                                   ],
                                 ),
