@@ -78,9 +78,9 @@ class ELearningHomePage extends StatelessWidget {
                           child: Stack(
                             children: [
                               Positioned(
-                                left: 0,
-                                right: 0,
-                                bottom: 0,
+                                left: 8,
+                                right: 8,
+                                bottom: 4,
                                 top: 0,
                                 child: Container(
                                   decoration: BoxDecoration(
