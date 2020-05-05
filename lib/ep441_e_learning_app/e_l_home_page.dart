@@ -84,7 +84,7 @@ class ELearningHomePage extends StatelessWidget {
                                 top: 0,
                                 child: Container(
                                   decoration: BoxDecoration(
-                                    color: Colors.purple[100],
+                                    color: Colors.purple[400],
                                     borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(120),
                                       topRight: Radius.circular(24),
