@@ -251,7 +251,7 @@ class ELearningHomePage extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
-                                left: 16,
+                                left: 0,
                                 top: 16,
                                 bottom: 8,
                                 right: 8,
@@ -271,7 +271,7 @@ class ELearningHomePage extends StatelessWidget {
                                     ),
                                     Expanded(
                                       flex: 4,
-                                      child: Image.network("https://assets-ouch.icons8.com/thumb/276/af616f49-a851-4014-ad85-9ae9f25ae1bd.png"),
+                                      child: Image.network("https://assets-ouch.icons8.com/thumb/853/0f654408-ed3c-4fea-812f-35185d116b98.png"),
                                     ),
                                   ],
                                 ),
