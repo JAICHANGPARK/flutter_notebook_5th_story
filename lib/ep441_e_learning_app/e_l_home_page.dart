@@ -86,7 +86,15 @@ class ELearningHomePage extends StatelessWidget {
 
                   Expanded(
                     child: Row(
-                      children: [],
+                      children: [
+                        Expanded(
+                          child: Placeholder(),
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                        ),
+
+                      ],
                     ),
                   ),
                 ],
