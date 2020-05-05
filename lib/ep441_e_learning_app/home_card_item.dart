@@ -6,23 +6,26 @@ class HomeCardItem extends StatelessWidget {
   final BorderRadiusGeometry borderRadiusGeometry;
   final String title;
   final String img;
-  final List<double> topPosition;  // left right top bottom
+  final List<double> topPosition; // left right top bottom
   final List<double> bottomPosition;
 
-  HomeCardItem({@required this.cardColor,
-    @required this.borderRadiusGeometry,
-    @required this.title,
-    @required this.img});
+  HomeCardItem(
+      {@required this.cardColor,
+      @required this.borderRadiusGeometry,
+      @required this.title,
+      @required this.img,
+      @required this.topPosition,
+      @required this.bottomPosition});
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         Positioned(
-          left: 8,
-          right: 8,
-          top: 8,
-          bottom: 0,
+          left: topPosition[0] ?? 0,
+          right: topPosition[1] ?? 0,
+          top: topPosition[2] ?? 0,
+          bottom: topPosition[3] ?? 0,
           child: Container(
             decoration: BoxDecoration(color: cardColor, borderRadius: borderRadiusGeometry),
           ),
