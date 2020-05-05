@@ -7,7 +7,10 @@ class HomeCardItem extends StatelessWidget {
   final String title;
   final String img;
 
-  HomeCardItem({this.cardColor, this.borderRadiusGeometry, this.title, this.img});
+  HomeCardItem({@required this.cardColor,
+    @required this.borderRadiusGeometry,
+    @required this.title,
+    @required this.img});
 
   @override
   Widget build(BuildContext context) {
