@@ -6,6 +6,8 @@ class HomeCardItem extends StatelessWidget {
   final BorderRadiusGeometry borderRadiusGeometry;
   final String title;
   final String img;
+  final List<double> topPosition;  // left right top bottom
+  final List<double> bottomPosition;
 
   HomeCardItem({@required this.cardColor,
     @required this.borderRadiusGeometry,
@@ -19,8 +21,8 @@ class HomeCardItem extends StatelessWidget {
         Positioned(
           left: 8,
           right: 8,
-          bottom: 0,
           top: 8,
+          bottom: 0,
           child: Container(
             decoration: BoxDecoration(color: cardColor, borderRadius: borderRadiusGeometry),
           ),
