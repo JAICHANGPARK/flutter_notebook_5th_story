@@ -31,10 +31,10 @@ class HomeCardItem extends StatelessWidget {
           ),
         ),
         Positioned(
-          left: 0,
-          top: 16,
-          bottom: 8,
-          right: 8,
+          left: bottomPosition[0] ?? 0,
+          right: bottomPosition[1] ?? 0,
+          top: bottomPosition[2] ?? 0,
+          bottom: bottomPosition[3] ?? 0,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
