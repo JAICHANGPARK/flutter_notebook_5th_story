@@ -125,6 +125,7 @@ class ELearningHomePage extends StatelessWidget {
                         ),
                         Expanded(
                           child: HomeCardItem(
+                            posSetting: true,
                             title: "special topics",
                             borderRadiusGeometry: BorderRadius.only(
                               topLeft: Radius.circular(24),
@@ -134,55 +135,9 @@ class ELearningHomePage extends StatelessWidget {
                             ),
                             cardColor: Colors.red[400],
                             img: "https://assets-ouch.icons8.com/thumb/631/32d26368-cc36-4f6f-bc6c-1309f8727bec.png",
-                            topPosition: [8, 8, 8, 0],
+                            topPosition: [8, 8, 0, 4],
                             bottomPosition: [16, 8, 16, 8],
                           ),
-//                          child: Stack(
-//                            children: [
-//                              Positioned(
-//                                left: 8,
-//                                right: 8,
-//                                bottom: 4,
-//                                top: 0,
-//                                child: Container(
-//                                  decoration: BoxDecoration(
-//                                      color: Colors.red[400],
-//                                      borderRadius: BorderRadius.only(
-//                                        topLeft: Radius.circular(24),
-//                                        topRight: Radius.circular(160),
-//                                        bottomRight: Radius.circular(24),
-//                                        bottomLeft: Radius.circular(24),
-//                                      )),
-//                                ),
-//                              ),
-//                              Positioned(
-//                                left: 16,
-//                                top: 16,
-//                                bottom: 8,
-//                                right: 8,
-//                                child: Column(
-//                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                                  children: [
-//                                    Expanded(
-//                                      flex: 4,
-//                                      child: Image.network(
-//                                          "https://assets-ouch.icons8.com/thumb/631/32d26368-cc36-4f6f-bc6c-1309f8727bec.png"),
-//                                    ),
-//                                    Expanded(
-//                                      flex: 1,
-//                                      child: Padding(
-//                                        padding: const EdgeInsets.only(top: 8),
-//                                        child: Text(
-//                                          "special topics".toUpperCase(),
-//                                          style: GoogleFonts.montserrat(color: Colors.white, fontSize: 12),
-//                                        ),
-//                                      ),
-//                                    )
-//                                  ],
-//                                ),
-//                              )
-//                            ],
-//                          ),
                         ),
                       ],
                     ),
