@@ -178,51 +178,18 @@ class ELearningHomePage extends StatelessWidget {
                     child: Row(
                       children: [
                         Expanded(
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 8,
-                                right: 8,
-                                bottom: 0,
-                                top: 8,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      color: Colors.teal[400],
-                                      borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(24),
-                                        topRight: Radius.circular(24),
-                                        bottomRight: Radius.circular(24),
-                                        bottomLeft: Radius.circular(160),
-                                      )),
-                                ),
-                              ),
-                              Positioned(
-                                left: 16,
-                                top: 16,
-                                bottom: 8,
-                                right: 8,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Expanded(
-                                      flex: 1,
-                                      child: Padding(
-                                        padding: const EdgeInsets.only(top: 8),
-                                        child: Text(
-                                          "Listening".toUpperCase(),
-                                          style: GoogleFonts.montserrat(color: Colors.white, fontSize: 12),
-                                        ),
-                                      ),
-                                    ),
-                                    Expanded(
-                                      flex: 4,
-                                      child: Image.network(
-                                          "https://assets-ouch.icons8.com/thumb/276/af616f49-a851-4014-ad85-9ae9f25ae1bd.png"),
-                                    ),
-                                  ],
-                                ),
-                              )
-                            ],
+                          child: HomeCardItem(
+                            title: "Listening",
+                            borderRadiusGeometry: BorderRadius.only(
+                              topLeft: Radius.circular(24),
+                              topRight: Radius.circular(24),
+                              bottomRight: Radius.circular(24),
+                              bottomLeft: Radius.circular(160),
+                            ),
+                            cardColor: Colors.teal[400],
+                            img: "https://assets-ouch.icons8.com/thumb/276/af616f49-a851-4014-ad85-9ae9f25ae1bd.png",
+                            topPosition: [8, 8, 8, 0],
+                            bottomPosition: [16, 8, 16, 8],
                           ),
                         ),
                         Expanded(
