@@ -100,6 +100,7 @@ class ELearningHomePage extends StatelessWidget {
                                 bottom: 8,
                                 right: 0,
                                 child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Expanded(
                                       flex: 4,
@@ -107,6 +108,10 @@ class ELearningHomePage extends StatelessWidget {
                                     ),
                                     Expanded(
                                       flex: 1,
+                                      child: Text("Conversation".toUpperCase(),style:
+                                        GoogleFonts.montserrat(
+                                          color: Colors.white
+                                        ),),
                                     )
                                   ],
                                 ),
