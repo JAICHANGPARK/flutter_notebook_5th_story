@@ -227,7 +227,17 @@ class ELearningHomePage extends StatelessWidget {
                         ),
                         Expanded(
                           child: HomeCardItem(
-
+                            title: "IELTS",
+                            borderRadiusGeometry: BorderRadius.only(
+                              topLeft: Radius.circular(24),
+                              topRight: Radius.circular(24),
+                              bottomRight: Radius.circular(160),
+                              bottomLeft: Radius.circular(24),
+                            ),
+                            cardColor: Colors.orange[200],
+                            img: "https://assets-ouch.icons8.com/thumb/853/0f654408-ed3c-4fea-812f-35185d116b98.png",
+                            topPosition: [8, 8, 8, 0],
+                            bottomPosition: [0, 8, 16, 8],
                           ),
 //                          child: Stack(
 //                            children: [
