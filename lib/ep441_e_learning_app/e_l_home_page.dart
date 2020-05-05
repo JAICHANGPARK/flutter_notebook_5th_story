@@ -236,16 +236,16 @@ class ELearningHomePage extends StatelessWidget {
                               Positioned(
                                 left: 8,
                                 right: 8,
-                                bottom: 4,
-                                top: 0,
+                                bottom: 0,
+                                top: 8,
                                 child: Container(
                                   decoration: BoxDecoration(
-                                      color: Colors.teal[400],
+                                      color: Colors.yellow[400],
                                       borderRadius: BorderRadius.only(
                                         topLeft: Radius.circular(24),
                                         topRight: Radius.circular(24),
-                                        bottomRight: Radius.circular(24),
-                                        bottomLeft:  Radius.circular(160),
+                                        bottomRight: Radius.circular(160),
+                                        bottomLeft:  Radius.circular(24),
                                       )
                                   ),
                                 ),
