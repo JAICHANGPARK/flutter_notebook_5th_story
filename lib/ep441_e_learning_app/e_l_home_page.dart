@@ -69,7 +69,15 @@ class ELearningHomePage extends StatelessWidget {
               bottom: 0,
               right: 0,
               top: 240,
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  Expanded(
+                    child: Row(
+                      children: [],
+                    ),
+                  ),
+                ],
+              ),
             )
           ],
         ),
@@ -77,3 +85,18 @@ class ELearningHomePage extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
