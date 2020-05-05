@@ -93,7 +93,25 @@ class ELearningHomePage extends StatelessWidget {
                                     )
                                   ),
                                 ),
+                              ),
+                              Positioned(
+                                left: 0,
+                                top: 0,
+                                bottom: 8,
+                                right: 0,
+                                child: Column(
+                                  children: [
+                                    Expanded(
+                                      flex: 4,
+                                      child: Image.network("https://assets-ouch.icons8.com/thumb/742/18be8202-4db4-4fd8-bcf2-8db2deb63c63.png"),
+                                    ),
+                                    Expanded(
+                                      flex: 1,
+                                    )
+                                  ],
+                                ),
                               )
+                              
                             ],
                           ),
                         ),
