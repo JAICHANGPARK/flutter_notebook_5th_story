@@ -49,6 +49,26 @@ class _HabitMainPageState extends State<HabitMainPage> {
                                 color: Colors.white,
                                 border: Border.all(color: Colors.black),
                               ),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    flex: 3,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all()
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 8,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all()
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             );
                           }),
                     ),
