@@ -49,7 +49,7 @@ class _HabitMainPageState extends State<HabitMainPage> {
                               width: MediaQuery.of(context).size.width / 1.5,
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                border: Border.all(color: Colors.black,width: 1),
+                                border: Border.all(color: Colors.black,width: 0.5),
                               ),
                               child: Row(
                                 children: [
@@ -57,7 +57,7 @@ class _HabitMainPageState extends State<HabitMainPage> {
                                     flex: 4,
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        border: Border.all()
+                                        border: Border.all(color: Colors.black, width: 0.5)
                                       ),
                                     ),
                                   ),
@@ -65,7 +65,7 @@ class _HabitMainPageState extends State<HabitMainPage> {
                                     flex: 8,
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        border: Border.all()
+                                          border: Border.all(color: Colors.black, width: 0.5)
                                       ),
                                     ),
                                   )
