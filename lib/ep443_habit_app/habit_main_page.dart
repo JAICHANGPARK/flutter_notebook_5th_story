@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HabitMainPage extends StatefulWidget {
   @override
@@ -19,12 +21,32 @@ class _HabitMainPageState extends State<HabitMainPage> {
                 children: [
                   Expanded(
                     flex: 2,
-                    child: Text("Popular habits"),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("Popular habits", style: GoogleFonts.montserrat(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16
+                          ),),
+                          Text("Settings")
+                        ],
+                      ),
+                    ),
                   ),
                   Expanded(
                     flex: 6,
-                    child: ListView.builder(itemBuilder: (context, idx){
-
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, idx){
+                            return Container(
+                              width: MediaQuery.of(context).size.width / 1.5,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                border: Border.all(color: Colors.black),
+                              ),
+                            );
                     }),
                   )
                 ],
