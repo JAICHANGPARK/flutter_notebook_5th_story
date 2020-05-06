@@ -23,7 +23,9 @@ class _HabitMainPageState extends State<HabitMainPage> {
                   ),
                   Expanded(
                     flex: 6,
-                    child: Placeholder(),
+                    child: ListView.builder(itemBuilder: (context, idx){
+
+                    }),
                   )
                 ],
               ),
