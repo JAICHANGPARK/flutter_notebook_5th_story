@@ -30,7 +30,9 @@ class _HabitMainPageState extends State<HabitMainPage> {
                             "Popular habits",
                             style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
-                          Text("Settings")
+                          Text("Settings", style: GoogleFonts.montserrat(
+                            fontSize: 16
+                          ),)
                         ],
                       ),
                     ),
