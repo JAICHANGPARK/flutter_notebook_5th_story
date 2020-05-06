@@ -28,7 +28,7 @@ class _HabitMainPageState extends State<HabitMainPage> {
                         children: [
                           Text(
                             "Popular habits",
-                            style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 16),
+                            style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
                           Text("Settings")
                         ],
@@ -36,7 +36,7 @@ class _HabitMainPageState extends State<HabitMainPage> {
                     ),
                   ),
                   Expanded(
-                    flex: 6,
+                    flex: 4,
                     child: Padding(
                       padding: const EdgeInsets.only(left: 16),
                       child: ListView.builder(
@@ -52,7 +52,7 @@ class _HabitMainPageState extends State<HabitMainPage> {
                               child: Row(
                                 children: [
                                   Expanded(
-                                    flex: 3,
+                                    flex: 4,
                                     child: Container(
                                       decoration: BoxDecoration(
                                         border: Border.all()
