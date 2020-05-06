@@ -26,10 +26,10 @@ class _HabitMainPageState extends State<HabitMainPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Popular habits", style: GoogleFonts.montserrat(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16
-                          ),),
+                          Text(
+                            "Popular habits",
+                            style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 16),
+                          ),
                           Text("Settings")
                         ],
                       ),
@@ -39,15 +39,15 @@ class _HabitMainPageState extends State<HabitMainPage> {
                     flex: 6,
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, idx){
-                            return Container(
-                              width: MediaQuery.of(context).size.width / 1.5,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                border: Border.all(color: Colors.black),
-                              ),
-                            );
-                    }),
+                        itemBuilder: (context, idx) {
+                          return Container(
+                            width: MediaQuery.of(context).size.width / 1.5,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(color: Colors.black),
+                            ),
+                          );
+                        }),
                   )
                 ],
               ),
