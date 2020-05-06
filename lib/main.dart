@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'ep441_e_learning_app/elearning_main_page.dart';
+import 'ep443_habit_app/ep443_habit_app.dart';
 
-void main(){
-  runApp(ELearningApp());
-}
+void main() => runApp(HabitApp());
