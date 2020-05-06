@@ -15,11 +15,14 @@ class _HabitMainPageState extends State<HabitMainPage> {
             Expanded(
               flex: 3,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Expanded(flex: 2,
-                  child: Placeholder(),),
                   Expanded(
-                    flex: 8,
+                    flex: 2,
+                    child: Text("Popular habits"),
+                  ),
+                  Expanded(
+                    flex: 6,
                     child: Placeholder(),
                   )
                 ],
