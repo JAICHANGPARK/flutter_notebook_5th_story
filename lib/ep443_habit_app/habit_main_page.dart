@@ -37,17 +37,21 @@ class _HabitMainPageState extends State<HabitMainPage> {
                   ),
                   Expanded(
                     flex: 6,
-                    child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, idx) {
-                          return Container(
-                            width: MediaQuery.of(context).size.width / 1.5,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              border: Border.all(color: Colors.black),
-                            ),
-                          );
-                        }),
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemBuilder: (context, idx) {
+                            return Container(
+                              margin: EdgeInsets.all(8),
+                              width: MediaQuery.of(context).size.width / 1.5,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                border: Border.all(color: Colors.black),
+                              ),
+                            );
+                          }),
+                    ),
                   )
                 ],
               ),
