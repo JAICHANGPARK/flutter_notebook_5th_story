@@ -83,7 +83,17 @@ class _HabitMainPageState extends State<HabitMainPage> {
                     decoration: BoxDecoration(
                       color: Colors.red
                     ),
-                    
+
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.green
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: Colors.blue
+                    ),
                   )
                 ],
               ),
