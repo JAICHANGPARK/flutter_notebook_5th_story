@@ -9,15 +9,18 @@ class HabitMainPage extends StatefulWidget {
 
 class _HabitMainPageState extends State<HabitMainPage> {
   PageController _pageController;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     _pageController = PageController();
   }
+
   @override
   void dispose() {
     // TODO: implement dispose
+    _pageController.dispose();
     super.dispose();
   }
 
@@ -91,23 +94,16 @@ class _HabitMainPageState extends State<HabitMainPage> {
             Expanded(
               flex: 10,
               child: PageView(
-
+                controller: _pageController,
                 children: [
                   Container(
-                    decoration: BoxDecoration(
-                      color: Colors.red
-                    ),
-
+                    decoration: BoxDecoration(color: Colors.red),
                   ),
                   Container(
-                    decoration: BoxDecoration(
-                        color: Colors.green
-                    ),
+                    decoration: BoxDecoration(color: Colors.green),
                   ),
                   Container(
-                    decoration: BoxDecoration(
-                        color: Colors.blue
-                    ),
+                    decoration: BoxDecoration(color: Colors.blue),
                   )
                 ],
               ),
@@ -118,26 +114,3 @@ class _HabitMainPageState extends State<HabitMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
