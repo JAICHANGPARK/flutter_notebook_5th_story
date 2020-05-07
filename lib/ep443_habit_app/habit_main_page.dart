@@ -95,6 +95,9 @@ class _HabitMainPageState extends State<HabitMainPage> {
               flex: 10,
               child: PageView(
                 controller: _pageController,
+                onPageChanged: (i){
+                  print("onPageChanged : $i");
+                },
                 children: [
                   Container(
                     decoration: BoxDecoration(color: Colors.red),
