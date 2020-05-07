@@ -10,11 +10,18 @@ class HabitMainPage extends StatefulWidget {
 class _HabitMainPageState extends State<HabitMainPage> {
   PageController _pageController;
 
+  void _listener(){
+    print(_pageController.position.toString());
+  }
   @override
   void initState() {
     // TODO: implement initState
+
+    _pageController = PageController(
+      viewportFraction: 0.0,
+      initialPage: 0,
+    )..addListener(_listener);
     super.initState();
-    _pageController = PageController();
   }
 
   @override
@@ -94,10 +101,12 @@ class _HabitMainPageState extends State<HabitMainPage> {
             Expanded(
               flex: 10,
               child: PageView(
+                scrollDirection: Axis.horizontal,
                 controller: _pageController,
-                onPageChanged: (i){
-                  print("onPageChanged : $i");
-                },
+//                onPageChanged: (i){
+//                  print("onPageChanged : $i");
+//                },
+
                 children: [
                   Container(
                     decoration: BoxDecoration(color: Colors.red),
