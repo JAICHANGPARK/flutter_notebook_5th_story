@@ -9,7 +9,18 @@ class HabitMainPage extends StatefulWidget {
 
 class _HabitMainPageState extends State<HabitMainPage> {
   PageController _pageController;
-  
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController();
+  }
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
