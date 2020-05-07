@@ -30,9 +30,10 @@ class _HabitMainPageState extends State<HabitMainPage> {
                             "Popular habits",
                             style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
-                          Text("Settings", style: GoogleFonts.montserrat(
-                            fontSize: 16
-                          ),)
+                          Text(
+                            "Settings",
+                            style: GoogleFonts.montserrat(fontSize: 16),
+                          )
                         ],
                       ),
                     ),
@@ -49,24 +50,20 @@ class _HabitMainPageState extends State<HabitMainPage> {
                               width: MediaQuery.of(context).size.width / 1.5,
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                border: Border.all(color: Colors.black,width: 0.5),
+                                border: Border.all(color: Colors.black, width: 0.5),
                               ),
                               child: Row(
                                 children: [
                                   Expanded(
                                     flex: 4,
                                     child: Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(color: Colors.black, width: 0.5)
-                                      ),
+                                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 0.5)),
                                     ),
                                   ),
                                   Expanded(
                                     flex: 8,
                                     child: Container(
-                                      decoration: BoxDecoration(
-                                          border: Border.all(color: Colors.black, width: 0.5)
-                                      ),
+                                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 0.5)),
                                     ),
                                   )
                                 ],
