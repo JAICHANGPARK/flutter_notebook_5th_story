@@ -10,7 +10,7 @@ class HabitMainPage extends StatefulWidget {
 class _HabitMainPageState extends State<HabitMainPage> {
   PageController _pageController = PageController();
 
-  
+
 
   void _listener(){
     print(_pageController.page.toString());
@@ -21,9 +21,9 @@ class _HabitMainPageState extends State<HabitMainPage> {
 
     super.initState();
 
-    _pageController.addListener(() {
-      print(_pageController.page);
-    });
+//    _pageController.addListener(() {
+////      print(_pageController.page);
+//    });
   }
 
   @override
@@ -83,12 +83,25 @@ class _HabitMainPageState extends State<HabitMainPage> {
                                     flex: 4,
                                     child: Container(
                                       decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 0.5)),
+                                      child: Center(
+                                        child: IconButton(
+                                          icon: Icon(Icons.add),
+                                          iconSize: 48,
+                                          onPressed: (){},
+                                        ),
+                                      ),
                                     ),
                                   ),
                                   Expanded(
                                     flex: 8,
                                     child: Container(
                                       decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 0.5)),
+                                      child: Center(
+                                        child: Text("Wash hands",style: GoogleFonts.montserrat(
+                                          letterSpacing: 2,
+                                          fontSize: 16
+                                        ),),
+                                      ),
                                     ),
                                   )
                                 ],
