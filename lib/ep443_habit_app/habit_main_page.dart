@@ -128,9 +128,18 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                       Expanded(
                         flex: 1,
                         child: TabBar(
+                          controller: _tabController,
                           tabs: [
                             Tab(
-
+                              text: "Mon",
+                            ),
+                            Tab(
+                              text: "Mon",
+                            ),
+                            Tab(
+                              text: "Mon",
+                            ),
+                            Tab(
                               text: "Mon",
                             )
                           ],
