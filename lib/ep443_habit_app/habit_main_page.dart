@@ -8,6 +8,8 @@ class HabitMainPage extends StatefulWidget {
 }
 
 class _HabitMainPageState extends State<HabitMainPage> {
+  PageController _pageController;
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,6 +80,7 @@ class _HabitMainPageState extends State<HabitMainPage> {
             Expanded(
               flex: 10,
               child: PageView(
+
                 children: [
                   Container(
                     decoration: BoxDecoration(
