@@ -9,7 +9,7 @@ class HabitMainPage extends StatefulWidget {
 
 class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateMixin{
   PageController _pageController = PageController();
-  TabController _tabController = TabController();
+  TabController _tabController ;
 
   void _listener() {
     print(_pageController.page.toString());
@@ -20,7 +20,7 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
     // TODO: implement initState
 
     super.initState();
-
+    _tabController = TabController(vsync: this, length: 7,);
 //    _pageController.addListener(() {
 ////      print(_pageController.page);
 //    });
