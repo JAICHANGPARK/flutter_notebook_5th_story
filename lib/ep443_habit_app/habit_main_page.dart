@@ -78,7 +78,14 @@ class _HabitMainPageState extends State<HabitMainPage> {
             Expanded(
               flex: 10,
               child: PageView(
-                children: [],
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.red
+                    ),
+                    
+                  )
+                ],
               ),
             )
           ],
