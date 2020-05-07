@@ -8,20 +8,22 @@ class HabitMainPage extends StatefulWidget {
 }
 
 class _HabitMainPageState extends State<HabitMainPage> {
-  PageController _pageController;
+  PageController _pageController = PageController();
+
+  
 
   void _listener(){
-    print(_pageController.position.toString());
+    print(_pageController.page.toString());
   }
   @override
   void initState() {
     // TODO: implement initState
 
-    _pageController = PageController(
-      viewportFraction: 0.0,
-      initialPage: 0,
-    )..addListener(_listener);
     super.initState();
+
+    _pageController.addListener(() {
+      print(_pageController.page);
+    });
   }
 
   @override
