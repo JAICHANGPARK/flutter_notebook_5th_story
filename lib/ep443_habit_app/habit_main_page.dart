@@ -77,7 +77,9 @@ class _HabitMainPageState extends State<HabitMainPage> {
             ),
             Expanded(
               flex: 10,
-              child: Placeholder(),
+              child: PageView(
+                children: [],
+              ),
             )
           ],
         ),
@@ -85,3 +87,26 @@ class _HabitMainPageState extends State<HabitMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
