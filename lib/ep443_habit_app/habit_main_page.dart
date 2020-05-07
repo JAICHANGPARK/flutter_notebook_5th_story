@@ -7,14 +7,14 @@ class HabitMainPage extends StatefulWidget {
   _HabitMainPageState createState() => _HabitMainPageState();
 }
 
-class _HabitMainPageState extends State<HabitMainPage> {
+class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateMixin{
   PageController _pageController = PageController();
+  TabController _tabController = TabController();
 
-
-
-  void _listener(){
+  void _listener() {
     print(_pageController.page.toString());
   }
+
   @override
   void initState() {
     // TODO: implement initState
@@ -87,7 +87,7 @@ class _HabitMainPageState extends State<HabitMainPage> {
                                         child: IconButton(
                                           icon: Icon(Icons.add),
                                           iconSize: 48,
-                                          onPressed: (){},
+                                          onPressed: () {},
                                         ),
                                       ),
                                     ),
@@ -97,10 +97,10 @@ class _HabitMainPageState extends State<HabitMainPage> {
                                     child: Container(
                                       decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 0.5)),
                                       child: Center(
-                                        child: Text("Wash hands",style: GoogleFonts.montserrat(
-                                          letterSpacing: 2,
-                                          fontSize: 16
-                                        ),),
+                                        child: Text(
+                                          "Wash hands",
+                                          style: GoogleFonts.montserrat(letterSpacing: 2, fontSize: 16),
+                                        ),
                                       ),
                                     ),
                                   )
@@ -114,27 +114,54 @@ class _HabitMainPageState extends State<HabitMainPage> {
               ),
             ),
             Expanded(
-              flex: 10,
-              child: PageView(
-                scrollDirection: Axis.horizontal,
-                controller: _pageController,
-//                onPageChanged: (i){
-//                  print("onPageChanged : $i");
-//                },
+                flex: 10,
+                child: Container(
+                  decoration: BoxDecoration(color: Colors.red[600], border: Border.all()),
+                  child: Column(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Row(
+                          children: [Text("Your week"), Text("Edit")],
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: TabBar(
+                          tabs: [
+                            Tab(
 
-                children: [
-                  Container(
-                    decoration: BoxDecoration(color: Colors.red),
+                              text: "Mon",
+                            )
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        flex: 8,
+                        child: Placeholder(),
+                      ),
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Add a new habit"),
+                              IconButton(
+                                icon: Icon(Icons.add),
+                                onPressed: (){},
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Placeholder(),
+                      )
+                    ],
                   ),
-                  Container(
-                    decoration: BoxDecoration(color: Colors.green),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(color: Colors.blue),
-                  )
-                ],
-              ),
-            )
+                ))
           ],
         ),
       ),
