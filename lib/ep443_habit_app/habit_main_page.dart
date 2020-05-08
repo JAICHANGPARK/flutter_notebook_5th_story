@@ -7,9 +7,9 @@ class HabitMainPage extends StatefulWidget {
   _HabitMainPageState createState() => _HabitMainPageState();
 }
 
-class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateMixin{
+class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateMixin {
   PageController _pageController = PageController();
-  TabController _tabController ;
+  TabController _tabController;
 
   void _listener() {
     print(_pageController.page.toString());
@@ -20,7 +20,10 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
     // TODO: implement initState
 
     super.initState();
-    _tabController = TabController(vsync: this, length: 7,);
+    _tabController = TabController(
+      vsync: this,
+      length: 7,
+    );
 //    _pageController.addListener(() {
 ////      print(_pageController.page);
 //    });
@@ -161,39 +164,41 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                           controller: _tabController,
                           children: [
                             Container(
-                              decoration: BoxDecoration(
-                                border: Border.all()
-                              ),
+                              decoration: BoxDecoration(border: Border.all()),
                             )
                           ],
                         ),
                       ),
-                      Divider(thickness: 2,
-                        color: Colors.black,),
+                      Divider(
+                        thickness: 2,
+                        color: Colors.black,
+                      ),
                       Expanded(
                         flex: 2,
                         child: Container(
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 16
-                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("Add a new habit",style: TextStyle(
-                                fontSize: 19,
-
-                              ),),
+                              Text(
+                                "Add a new habit",
+                                style: TextStyle(
+                                  fontSize: 19,
+                                ),
+                              ),
                               IconButton(
                                 icon: Icon(Icons.add),
-                                onPressed: (){},
+                                onPressed: () {},
                                 iconSize: 38,
                               )
                             ],
                           ),
                         ),
                       ),
-                      Divider(thickness: 2,
-                      color: Colors.black,),
+                      Divider(
+                        thickness: 2,
+                        color: Colors.black,
+                      ),
                       Expanded(
                         flex: 1,
                         child: Container(),
