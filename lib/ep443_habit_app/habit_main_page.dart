@@ -28,7 +28,7 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
       print("_tabController.index:  ${_tabController.index}");
     });
     _animationController = AnimationController(vsync: this, duration: Duration(milliseconds: 500));
-    
+    _animation = Tween(begin: 1.0, end: 0).animate(_animationController);
 //    _pageController.addListener(() {
 ////      print(_pageController.page);
 //    });
