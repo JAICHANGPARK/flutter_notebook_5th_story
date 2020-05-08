@@ -157,18 +157,36 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                       ),
                       Expanded(
                         flex: 8,
-                        child: Placeholder(),
+                        child: TabBarView(
+                          controller: _tabController,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all()
+                              ),
+                            )
+                          ],
+                        ),
                       ),
+                      Divider(thickness: 2,
+                        color: Colors.black,),
                       Expanded(
                         flex: 2,
                         child: Container(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16
+                          ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("Add a new habit"),
+                              Text("Add a new habit",style: TextStyle(
+                                fontSize: 19,
+
+                              ),),
                               IconButton(
                                 icon: Icon(Icons.add),
                                 onPressed: (){},
+                                iconSize: 38,
                               )
                             ],
                           ),
