@@ -12,11 +12,14 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
   TabController _tabController;
   Animation<double> _animation;
   AnimationController _animationController;
+
   void _listener() {
     print(_pageController.page.toString());
   }
-  Color bgColor = Colors.red[300];
+
+  Color bgColor = Colors.red[600];
   int pageIndex = 0;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -25,26 +28,42 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
       vsync: this,
       length: 7,
     )..addListener(() {
-      print("_tabController.indexIsChanging: ${_tabController.indexIsChanging}");
-      print("_tabController.index:  ${_tabController.index}");
-      _animationController.forward();
-    });
-    _animationController = AnimationController(vsync: this, duration: Duration(milliseconds: 500));
-    _animation = Tween(begin: 1.0, end: 0.0).animate(_animationController);
-
-    _animationController..addStatusListener((status) {
-      if(status == AnimationStatus.completed){
-        switch(_tabController.index){
-          case 0:
-            bgColor = Colors.red[600];}
-        setState(() {
-          _animationController.reset();
-        });
-      }
-    })..addListener(() {
-      setState(() {
+        print("_tabController.indexIsChanging: ${_tabController.indexIsChanging}");
+        print("_tabController.index:  ${_tabController.index}");
+        _animationController.forward();
       });
-    });
+    _animationController = AnimationController(vsync: this, duration: Duration(milliseconds: 150));
+    _animation = Tween(begin: 1.0, end: 0.2).animate(_animationController);
+
+    _animationController
+      ..addStatusListener((status) {
+        if (status == AnimationStatus.completed) {
+          switch (_tabController.index) {
+            case 0:
+              bgColor = Colors.red[600];
+              break;
+            case 1:
+              bgColor = Colors.green[600];
+              break;
+            case 2:
+              bgColor = Colors.blue[600];
+              break;
+            case 3:
+              bgColor = Colors.pink[600];
+              break;
+            case 4:
+              bgColor = Colors.orange[600];
+              break;
+
+          }
+          setState(() {
+            _animationController.reverse();
+          });
+        }
+      })
+      ..addListener(() {
+        setState(() {});
+      });
 //    _pageController.addListener(() {
 ////      print(_pageController.page);
 //    });
@@ -146,13 +165,10 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                       Expanded(
                         flex: 1,
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 16
-                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [Text("Your week"),
-                              Text("Edit")],
+                            children: [Text("Your week"), Text("Edit")],
                           ),
                         ),
                       ),
