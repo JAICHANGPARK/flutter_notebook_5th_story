@@ -54,7 +54,6 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
             case 4:
               bgColor = Colors.orange[600];
               break;
-
           }
           setState(() {
             _animationController.reverse();
