@@ -220,6 +220,7 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                       Padding(
                         padding: const EdgeInsets.only(left: 16),
                         child: Divider(
+                          height: 0,
                           thickness: 2,
                           color: Colors.black,
                         ),
