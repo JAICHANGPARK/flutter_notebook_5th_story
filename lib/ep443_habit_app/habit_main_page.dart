@@ -174,9 +174,11 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                           ),
                         ),
                       ),
+                      Divider(thickness: 2,
+                      color: Colors.black,),
                       Expanded(
                         flex: 1,
-                        child: Placeholder(),
+                        child: Container(),
                       )
                     ],
                   ),
