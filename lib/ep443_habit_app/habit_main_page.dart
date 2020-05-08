@@ -193,6 +193,7 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                         child: Divider(
                           thickness: 2,
                           color: Colors.black,
+                          height: 0,
                         ),
                       ),
                       Expanded(
