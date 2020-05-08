@@ -124,8 +124,15 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                     children: [
                       Expanded(
                         flex: 1,
-                        child: Row(
-                          children: [Text("Your week"), Text("Edit")],
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 16
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [Text("Your week"),
+                              Text("Edit")],
+                          ),
                         ),
                       ),
                       Expanded(
