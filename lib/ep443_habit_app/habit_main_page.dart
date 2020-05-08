@@ -15,7 +15,8 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
   void _listener() {
     print(_pageController.page.toString());
   }
-
+  Color bgColor = Colors.red[300];
+  int pageIndex = 0;
   @override
   void initState() {
     // TODO: implement initState
@@ -28,12 +29,14 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
       print("_tabController.index:  ${_tabController.index}");
       _animationController.forward();
     });
-    _animationController = AnimationController(vsync: this, duration: Duration(milliseconds: 3000));
+    _animationController = AnimationController(vsync: this, duration: Duration(milliseconds: 500));
     _animation = Tween(begin: 1.0, end: 0.0).animate(_animationController);
 
     _animationController..addStatusListener((status) {
-      print(_animation.value);
       if(status == AnimationStatus.completed){
+        switch(_tabController.index){
+          case 0:
+            bgColor = Colors.red[600];}
         setState(() {
           _animationController.reset();
         });
@@ -137,7 +140,7 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
             Expanded(
                 flex: 10,
                 child: Container(
-                  decoration: BoxDecoration(color: Colors.red[600].withOpacity(_animation.value), border: Border.all()),
+                  decoration: BoxDecoration(color: bgColor.withOpacity(_animation.value), border: Border.all()),
                   child: Column(
                     children: [
                       Expanded(
