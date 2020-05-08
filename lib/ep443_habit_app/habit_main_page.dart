@@ -10,7 +10,8 @@ class HabitMainPage extends StatefulWidget {
 class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateMixin {
   PageController _pageController = PageController();
   TabController _tabController;
-
+  Animation<double> _animation;
+  AnimationController _animationController;
   void _listener() {
     print(_pageController.page.toString());
   }
@@ -18,12 +19,16 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
   @override
   void initState() {
     // TODO: implement initState
-
     super.initState();
     _tabController = TabController(
       vsync: this,
       length: 7,
-    );
+    )..addListener(() {
+      print("_tabController.indexIsChanging: ${_tabController.indexIsChanging}");
+      print("_tabController.index:  ${_tabController.index}");
+    });
+    _animationController = AnimationController(vsync: this, duration: Duration(milliseconds: 500));
+    
 //    _pageController.addListener(() {
 ////      print(_pageController.page);
 //    });
