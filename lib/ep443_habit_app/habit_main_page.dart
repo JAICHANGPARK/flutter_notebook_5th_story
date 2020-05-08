@@ -164,6 +164,7 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                           controller: _tabController,
                           children: [
                             Container(
+                              margin: EdgeInsets.only(left: 16),
                               decoration: BoxDecoration(border: Border.all()),
                             ),
                             Container(
