@@ -36,7 +36,7 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
         print("_tabController.index:  ${_tabController.index}");
         _animationController.forward();
       });
-    _animationController = AnimationController(vsync: this, duration: Duration(milliseconds: 150));
+    _animationController = AnimationController(vsync: this, duration: Duration(milliseconds: 100));
     _animation = Tween(begin: 1.0, end: 0.2).animate(_animationController);
 
     _animationController
@@ -324,10 +324,220 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                               Container(
                                 margin: EdgeInsets.only(left: 16),
                                 decoration: BoxDecoration(border: Border.all()),
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                      flex: 2,
+                                      child: Container(
+                                        decoration: BoxDecoration(border: Border.all(), color: Colors.white),
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 0,
+                                              right: 0,
+                                              top: 0,
+                                              bottom: 0,
+                                              child: RotatedBox(
+                                                quarterTurns: -1,
+                                                child: Slider(
+                                                  onChanged: (v){
+                                                    setState(() {
+                                                      _valueSlider = v;
+                                                    });
+                                                  },
+                                                  value: _valueSlider,
+                                                  min: 0.0,
+                                                  max: 100.0,
+
+                                                ),
+                                              ),
+//                                            child: Transform(
+//                                              alignment: Alignment.center,
+//                                              transform: Matrix4.identity()..rotateZ(90 * pi / 180),
+//                                              child: Slider(
+//                                                min: 0.0,
+//                                                max: 100.0,
+//                                                onChanged: (double value) {
+//                                                setState(() {
+//                                                  _valueSlider = value;
+//                                                });
+//                                              }, value: _valueSlider,
+//
+//                                              ),
+//                                            ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      flex: 8,
+                                      child: Column(
+                                        children: [
+                                          Expanded(
+                                            flex: 2,
+                                            child: Row(
+                                              children: [
+                                                Expanded(
+                                                  flex: 2,
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                        border: Border.all(), color: Colors.white.withOpacity(0.7)),
+                                                    child: Center(
+                                                      child: Text(
+                                                        "No 2",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                                Expanded(
+                                                  flex: 8,
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                        border: Border.all(), color: Colors.white.withOpacity(0.4)),
+                                                    child: Center(
+                                                      child: Text(
+                                                        "DURATION : 60 MINS",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                          Expanded(
+                                            flex: 8,
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(12.0),
+                                              child: Align(
+                                                alignment: Alignment.bottomLeft,
+                                                child: Text(
+                                                  "Study Flutter",
+                                                  style: GoogleFonts.montserrat(fontSize: 20, color: Colors.white),
+                                                ),
+                                              ),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                               Container(
                                 margin: EdgeInsets.only(left: 16),
                                 decoration: BoxDecoration(border: Border.all()),
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                      flex: 2,
+                                      child: Container(
+                                        decoration: BoxDecoration(border: Border.all(), color: Colors.white),
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 0,
+                                              right: 0,
+                                              top: 0,
+                                              bottom: 0,
+                                              child: RotatedBox(
+                                                quarterTurns: -1,
+                                                child: Slider(
+                                                  onChanged: (v){
+                                                    setState(() {
+                                                      _valueSlider = v;
+                                                    });
+                                                  },
+                                                  value: _valueSlider,
+                                                  min: 0.0,
+                                                  max: 100.0,
+
+                                                ),
+                                              ),
+//                                            child: Transform(
+//                                              alignment: Alignment.center,
+//                                              transform: Matrix4.identity()..rotateZ(90 * pi / 180),
+//                                              child: Slider(
+//                                                min: 0.0,
+//                                                max: 100.0,
+//                                                onChanged: (double value) {
+//                                                setState(() {
+//                                                  _valueSlider = value;
+//                                                });
+//                                              }, value: _valueSlider,
+//
+//                                              ),
+//                                            ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    Expanded(
+                                      flex: 8,
+                                      child: Column(
+                                        children: [
+                                          Expanded(
+                                            flex: 2,
+                                            child: Row(
+                                              children: [
+                                                Expanded(
+                                                  flex: 2,
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                        border: Border.all(), color: Colors.white.withOpacity(0.7)),
+                                                    child: Center(
+                                                      child: Text(
+                                                        "No 1",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                                Expanded(
+                                                  flex: 8,
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                        border: Border.all(), color: Colors.white.withOpacity(0.4)),
+                                                    child: Center(
+                                                      child: Text(
+                                                        "DURATION : 60 MINS",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                          Expanded(
+                                            flex: 8,
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(12.0),
+                                              child: Align(
+                                                alignment: Alignment.bottomLeft,
+                                                child: Text(
+                                                  "Study Flutter",
+                                                  style: GoogleFonts.montserrat(fontSize: 20, color: Colors.white),
+                                                ),
+                                              ),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                               Container(
                                 margin: EdgeInsets.only(left: 16),
