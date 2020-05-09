@@ -214,20 +214,33 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                             right: 0,
                                             top: 0,
                                             bottom: 0,
-                                            child: Transform(
-                                              alignment: Alignment.center,
-                                              transform: Matrix4.identity()..rotateZ(90 * pi / 180),
+                                            child: RotatedBox(
+                                              quarterTurns: -1,
                                               child: Slider(
+                                                onChanged: (v){
+                                                  setState(() {
+                                                    _valueSlider = v;
+                                                  });
+                                                },
+                                                value: _valueSlider,
                                                 min: 0.0,
                                                 max: 100.0,
-                                                onChanged: (double value) {
-                                                setState(() {
-                                                  _valueSlider = value;
-                                                });
-                                              }, value: _valueSlider,
-
                                               ),
                                             ),
+//                                            child: Transform(
+//                                              alignment: Alignment.center,
+//                                              transform: Matrix4.identity()..rotateZ(90 * pi / 180),
+//                                              child: Slider(
+//                                                min: 0.0,
+//                                                max: 100.0,
+//                                                onChanged: (double value) {
+//                                                setState(() {
+//                                                  _valueSlider = value;
+//                                                });
+//                                              }, value: _valueSlider,
+//
+//                                              ),
+//                                            ),
                                           ),
                                         ],
                                       ),
