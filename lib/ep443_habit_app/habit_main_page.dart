@@ -207,16 +207,29 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                     flex: 2,
                                     child: Container(
                                       decoration: BoxDecoration(border: Border.all(), color: Colors.white),
-                                      child: Transform(
-                                        alignment: FractionalOffset.center,
-                                        transform: Matrix4.identity()..rotateZ(90 * pi / 180),
-                                        child: Slider(onChanged: (double value) {
-                                          setState(() {
-                                            _valueSlider = value;
-                                          });
-                                        }, value: _valueSlider,
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            left: 0,
+                                            right: 0,
+                                            top: 0,
+                                            bottom: 0,
+                                            child: Transform(
+                                              alignment: FractionalOffset.center,
+                                              transform: Matrix4.identity()..rotateZ(90 * pi / 180),
+                                              child: Slider(
+                                                min: 0.0,
+                                                max: 100.0,
+                                                onChanged: (double value) {
+                                                setState(() {
+                                                  _valueSlider = value;
+                                                });
+                                              }, value: _valueSlider,
 
-                                        ),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ),
