@@ -22,6 +22,8 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
   Color bgColor = Colors.red[600];
   int pageIndex = 0;
 
+  var _valueSlider = 0.0;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -208,6 +210,7 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                       child: Transform(
                                         alignment: FractionalOffset.center,
                                         transform: Matrix4.identity()..rotateZ(90 * pi / 180),
+                                        child: Slider(),
                                       ),
                                     ),
                                   ),
