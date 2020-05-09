@@ -204,14 +204,10 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                   Expanded(
                                     flex: 2,
                                     child: Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(),
-                                        color: Colors.white
-                                      ),
+                                      decoration: BoxDecoration(border: Border.all(), color: Colors.white),
                                       child: Transform(
                                         alignment: FractionalOffset.center,
-                                        transform: Matrix4.identity()..rotateZ(
-                                          90 * pi / 180),
+                                        transform: Matrix4.identity()..rotateZ(90 * pi / 180),
                                       ),
                                     ),
                                   ),
@@ -226,8 +222,8 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                               Expanded(
                                                 flex: 2,
                                                 child: Container(
-                                                  decoration: BoxDecoration(border: Border.all(),
-                                                  color: Colors.white.withOpacity(0.7)),
+                                                  decoration: BoxDecoration(
+                                                      border: Border.all(), color: Colors.white.withOpacity(0.7)),
                                                   child: Center(
                                                     child: Text(
                                                       "No 1",
@@ -242,9 +238,7 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                                 flex: 8,
                                                 child: Container(
                                                   decoration: BoxDecoration(
-                                                    border: Border.all(),
-                                                      color: Colors.white.withOpacity(0.4)
-                                                  ),
+                                                      border: Border.all(), color: Colors.white.withOpacity(0.4)),
                                                   child: Center(
                                                     child: Text(
                                                       "DURATION : 60 MINS",
