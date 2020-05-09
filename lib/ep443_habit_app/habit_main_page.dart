@@ -85,7 +85,9 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
       data: ThemeData(
         sliderTheme: SliderThemeData(
           trackHeight: 1,
-          inactiveTrackColor: Colors.black
+          inactiveTrackColor: Colors.black,
+          activeTrackColor: Colors.black,
+
         )
       ),
       child: Scaffold(
