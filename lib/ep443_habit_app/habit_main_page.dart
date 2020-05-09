@@ -176,9 +176,10 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                         child: TabBar(
                           controller: _tabController,
                           isScrollable: false,
-
                           tabs: [
-                            Tab(text: "Mon",),
+                            Tab(
+                              text: "Mon",
+                            ),
                             Tab(text: "Mon"),
                             Tab(text: "Mon"),
                             Tab(text: "Mon"),
@@ -213,25 +214,30 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                               Expanded(
                                                 flex: 2,
                                                 child: Container(
-                                                  decoration: BoxDecoration(
-                                                    border: Border.all()
-                                                  ),
+                                                  decoration: BoxDecoration(border: Border.all()),
                                                   child: Center(
-                                                    child: Text("No 1",style: TextStyle(
-                                                      color: Colors.white,
-                                                    ),),
+                                                    child: Text(
+                                                      "No 1",
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                      ),
+                                                    ),
                                                   ),
                                                 ),
                                               ),
                                               Expanded(
                                                 flex: 8,
                                                 child: Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: BoxDecoration(
+                                                    border: Border.all(),
+                                                  ),
                                                   child: Center(
-                                                    child: Text("DURATION : 60 MINS",style:
-                                                      TextStyle(
+                                                    child: Text(
+                                                      "DURATION : 60 MINS",
+                                                      style: TextStyle(
                                                         color: Colors.white,
-                                                      ),),
+                                                      ),
+                                                    ),
                                                   ),
                                                 ),
                                               )
@@ -244,10 +250,10 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                             padding: const EdgeInsets.all(12.0),
                                             child: Align(
                                               alignment: Alignment.bottomLeft,
-                                              child: Text("Study Flutter",style: GoogleFonts.montserrat(
-                                                fontSize: 20,
-                                                color: Colors.white
-                                              ),),
+                                              child: Text(
+                                                "Study Flutter",
+                                                style: GoogleFonts.montserrat(fontSize: 20, color: Colors.white),
+                                              ),
                                             ),
                                           ),
                                         )
