@@ -88,9 +88,10 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
           inactiveTrackColor: Colors.black,
           activeTrackColor: Colors.black,
           thumbShape: RoundSliderThumbShape(
-            enabledThumbRadius: 24
-          )
-
+            enabledThumbRadius: 24,
+            elevation: 3
+          ),
+          thumbColor: Colors.white,
         )
       ),
       child: Scaffold(
