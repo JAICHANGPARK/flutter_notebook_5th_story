@@ -209,6 +209,16 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                             Container(
                               margin: EdgeInsets.only(left: 16),
                               decoration: BoxDecoration(border: Border.all()),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: Placeholder(),
+                                  ),
+                                  Expanded(
+                                    
+                                  )
+                                ],
+                              ),
                             ),
                             Container(
                               margin: EdgeInsets.only(left: 16),
