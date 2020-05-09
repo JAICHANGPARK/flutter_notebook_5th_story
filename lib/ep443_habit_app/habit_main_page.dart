@@ -212,7 +212,16 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                             children: [
                                               Expanded(
                                                 flex: 2,
-                                                child: Placeholder(),
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    border: Border.all()
+                                                  ),
+                                                  child: Center(
+                                                    child: Text("No 1",style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),),
+                                                  ),
+                                                ),
                                               ),
                                               Expanded(
                                                 flex: 8,
