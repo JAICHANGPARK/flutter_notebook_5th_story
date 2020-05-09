@@ -215,7 +215,7 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                             top: 0,
                                             bottom: 0,
                                             child: Transform(
-                                              alignment: FractionalOffset.center,
+                                              alignment: Alignment.center,
                                               transform: Matrix4.identity()..rotateZ(90 * pi / 180),
                                               child: Slider(
                                                 min: 0.0,
