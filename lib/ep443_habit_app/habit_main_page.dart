@@ -176,8 +176,9 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                         child: TabBar(
                           controller: _tabController,
                           isScrollable: false,
+
                           tabs: [
-                            Tab(text: "Mon"),
+                            Tab(text: "Mon",),
                             Tab(text: "Mon"),
                             Tab(text: "Mon"),
                             Tab(text: "Mon"),
@@ -222,7 +223,16 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                         ),
                                         Expanded(
                                           flex: 8,
-                                          child: Placeholder(),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(12.0),
+                                            child: Align(
+                                              alignment: Alignment.bottomLeft,
+                                              child: Text("Study Flutter",style: GoogleFonts.montserrat(
+                                                fontSize: 20,
+                                                color: Colors.white
+                                              ),),
+                                            ),
+                                          ),
                                         )
                                       ],
                                     ),
