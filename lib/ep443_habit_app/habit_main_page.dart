@@ -225,7 +225,15 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                               ),
                                               Expanded(
                                                 flex: 8,
-                                                child: Placeholder(),
+                                                child: Container(
+                                                  decoration: BoxDecoration(),
+                                                  child: Center(
+                                                    child: Text("DURATION : 60 MINS",style:
+                                                      TextStyle(
+                                                        color: Colors.white,
+                                                      ),),
+                                                  ),
+                                                ),
                                               )
                                             ],
                                           ),
