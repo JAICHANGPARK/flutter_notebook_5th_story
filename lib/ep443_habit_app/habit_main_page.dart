@@ -232,6 +232,21 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                               child: RotatedBox(
                                                 quarterTurns: -1,
                                                 child: Slider(
+                                                  onChangeStart: (v){
+                                                    print("v: $v , onChangeStart");
+                                                  },
+                                                  onChangeEnd: (v){
+                                                    if(v == 100.0){
+                                                      setState(() {
+                                                        _thumbColor = Colors.black;
+                                                      });
+                                                    }else if(v < 100){
+                                                      setState(() {
+                                                        _thumbColor = Colors.white;
+                                                      });
+                                                    }
+                                                    print("v: $v , onChangeEnd");
+                                                  },
                                                   onChanged: (v){
                                                     setState(() {
                                                       _valueSlider = v;
