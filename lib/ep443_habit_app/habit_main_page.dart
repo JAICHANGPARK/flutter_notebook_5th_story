@@ -23,6 +23,7 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
   int pageIndex = 0;
 
   var _valueSlider = 0.0;
+  Color _thumbColor = Colors.white;
 
   @override
   void initState() {
@@ -91,7 +92,7 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
             enabledThumbRadius: 24,
             elevation: 3
           ),
-          thumbColor: Colors.white,
+          thumbColor: _thumbColor,
         )
       ),
       child: Scaffold(
