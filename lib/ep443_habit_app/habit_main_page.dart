@@ -177,27 +177,13 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                           controller: _tabController,
                           isScrollable: false,
                           tabs: [
-                            Tab(
-                              text: "Mon",
-                            ),
-                            Tab(
-                              text: "Mon",
-                            ),
-                            Tab(
-                              text: "Mon",
-                            ),
-                            Tab(
-                              text: "Mon",
-                            ),
-                            Tab(
-                              text: "Mon",
-                            ),
-                            Tab(
-                              text: "Mon",
-                            ),
-                            Tab(
-                              text: "Sun",
-                            )
+                            Tab(text: "Mon"),
+                            Tab(text: "Mon"),
+                            Tab(text: "Mon"),
+                            Tab(text: "Mon"),
+                            Tab(text: "Mon"),
+                            Tab(text: "Mon"),
+                            Tab(text: "Sun")
                           ],
                         ),
                       ),
