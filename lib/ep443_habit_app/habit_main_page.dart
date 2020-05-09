@@ -214,7 +214,8 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                               Expanded(
                                                 flex: 2,
                                                 child: Container(
-                                                  decoration: BoxDecoration(border: Border.all()),
+                                                  decoration: BoxDecoration(border: Border.all(),
+                                                  color: Colors.white.withOpacity(0.7)),
                                                   child: Center(
                                                     child: Text(
                                                       "No 1",
