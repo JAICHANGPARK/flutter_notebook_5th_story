@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -205,6 +207,11 @@ class _HabitMainPageState extends State<HabitMainPage> with TickerProviderStateM
                                       decoration: BoxDecoration(
                                         border: Border.all(),
                                         color: Colors.white
+                                      ),
+                                      child: Transform(
+                                        alignment: FractionalOffset.center,
+                                        transform: Matrix4.identity()..rotateZ(
+                                          90 * pi / 180),
                                       ),
                                     ),
                                   ),
