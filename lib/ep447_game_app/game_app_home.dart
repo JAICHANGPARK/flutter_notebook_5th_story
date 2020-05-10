@@ -17,7 +17,11 @@ class _GameAppHOmeState extends State<GameAppHome> {
             right: 0,
             child: Container(
               height: 140,
-              color: Colors.grey,
+              decoration: BoxDecoration(
+                color: Colors.grey[200],
+              ),
+
+              child: Column(),
             ),
           ),
           Positioned(
@@ -33,8 +37,10 @@ class _GameAppHOmeState extends State<GameAppHome> {
             bottom: 0,
             child: Container(
               height: 120,
-              decoration: BoxDecoration(),
-              color: Colors.red,
+              decoration: BoxDecoration(
+                color: Colors.red,
+              ),
+
             ),
           )
 
