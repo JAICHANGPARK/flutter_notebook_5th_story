@@ -6,6 +6,12 @@ class GameAppHome extends StatefulWidget {
 }
 
 class _GameAppHOmeState extends State<GameAppHome> {
+  int _tabIndex = 0;
+
+
+  Widget buildTabWidget(){
+
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,23 +49,43 @@ class _GameAppHOmeState extends State<GameAppHome> {
                       children: [
                         IconButton(
                           icon: Icon(Icons.bookmark_border),
-                          onPressed: (){},
+                          onPressed: (){
+                            setState(() {
+                              _tabIndex = 0;
+                            });
+                          },
                         ),
                         IconButton(
                           icon: Icon(Icons.gamepad),
-                          onPressed: (){},
+                          onPressed: (){
+                            setState(() {
+                              _tabIndex = 1;
+                            });
+                          },
                         ),
                         IconButton(
                           icon: Icon(Icons.videogame_asset),
-                          onPressed: (){},
+                          onPressed: (){
+                            setState(() {
+                              _tabIndex = 2;
+                            });
+                          },
                         ),
                         IconButton(
                           icon: Icon(Icons.gesture),
-                          onPressed: (){},
+                          onPressed: (){
+                            setState(() {
+                              _tabIndex = 3;
+                            });
+                          },
                         ),
                         IconButton(
                           icon: Icon(Icons.apps),
-                          onPressed: (){},
+                          onPressed: (){
+                            setState(() {
+                              _tabIndex = 4;
+                            });
+                          },
                         ),
 
                       ],
