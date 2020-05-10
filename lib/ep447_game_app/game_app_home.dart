@@ -5,8 +5,26 @@ class GameAppHome extends StatefulWidget {
   _GameAppHOmeState createState() => _GameAppHOmeState();
 }
 
-class _GameAppHOmeState extends State<GameAppHome> {
+class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin{
+  AnimationController _animationController;
+  Animation<double> _animation;
   int _tabIndex = 0;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    _animationController = AnimationController(vsync: this, duration: Duration(milliseconds: 100));
+    _animation = Tween(begin: -0.2, end: 0.2).animate(_animationController);
+    _animationController..addListener(() {
+      setState(() {
+      });
+    });
+
+    
+
+  }
 
   @override
   Widget build(BuildContext context) {
