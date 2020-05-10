@@ -19,9 +19,26 @@ class _GameAppHOmeState extends State<GameAppHome> {
               height: 140,
               decoration: BoxDecoration(
                 color: Colors.grey[200],
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(24)
+                )
               ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      IconButton(
+                        icon: Icon(Icons.search),
+                        onPressed: (){},
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.shopping_basket), onPressed: () {  },
+                      )
+                    ],
+                  )
 
-              child: Column(),
+                ],
+              ),
             ),
           ),
           Positioned(
