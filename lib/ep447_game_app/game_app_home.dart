@@ -9,7 +9,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
   AnimationController _animationController;
   Animation<double> _animation;
   int _tabIndex = 0;
-
+  double angle = 0.0;
   @override
   void initState() {
     // TODO: implement initState
@@ -19,10 +19,25 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
     _animation = Tween(begin: -0.2, end: 0.2).animate(_animationController);
     _animationController
       ..addListener(() {
-        setState(() {});
+        setState(() {
+          angle = _animation.value;
+
+        });
       });
+    _animationController..addStatusListener((status) {
+      if(status == AnimationStatus.completed){
+        _animationController.reverse();
+        angle = 0.0;
+      }
+    });
   }
 
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    _animationController.dispose();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
