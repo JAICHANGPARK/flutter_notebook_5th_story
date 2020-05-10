@@ -8,6 +8,20 @@ class GameAppHome extends StatefulWidget {
 class _GameAppHOmeState extends State<GameAppHome> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: Container(
+              height: 140,
+            ),
+          )
+
+        ],
+      ),
+    );
   }
 }
