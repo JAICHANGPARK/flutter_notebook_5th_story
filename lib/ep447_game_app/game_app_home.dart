@@ -64,7 +64,15 @@ class _GameAppHOmeState extends State<GameAppHome> {
                             ),
                             child: Column(
                               children: [
-                                
+                                Icon(Icons.bookmark_border),
+                                Container(
+                                  height: 8,
+                                  width: 8,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle
+                                  ),
+                                )
                               ],
                             ),
 
