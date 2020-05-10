@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'ep443_habit_app/ep443_habit_app.dart';
+import 'ep447_game_app/main_page.dart';
 
 void main(){
-  runApp(HabitApp());
+  runApp(GameApp());
 }
