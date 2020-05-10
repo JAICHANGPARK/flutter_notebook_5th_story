@@ -27,8 +27,10 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
     _animationController..addStatusListener((status) {
       if(status == AnimationStatus.completed){
         _animationController.reverse();
-        angle = 0.0;
       }
+      setState(() {
+        angle = 0.0;
+      });
     });
   }
 
@@ -92,7 +94,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Transform.rotate(
-                                        angle: _animation.value,
+                                        angle: angle,
                                         child: Icon(
                                           Icons.bookmark_border,
                                           color: Colors.white,
