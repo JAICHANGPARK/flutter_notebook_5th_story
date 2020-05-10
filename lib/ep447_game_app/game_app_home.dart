@@ -28,7 +28,14 @@ class _GameAppHOmeState extends State<GameAppHome> {
             child: Placeholder(),
           ),
           Positioned(
-
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Container(
+              height: 120,
+              decoration: BoxDecoration(),
+              color: Colors.red,
+            ),
           )
 
         ],
@@ -36,3 +43,29 @@ class _GameAppHOmeState extends State<GameAppHome> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
