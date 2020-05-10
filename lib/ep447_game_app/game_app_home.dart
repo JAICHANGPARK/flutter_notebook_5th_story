@@ -36,30 +36,34 @@ class _GameAppHOmeState extends State<GameAppHome> {
                       )
                     ],
                   ),
-                  Row(
-                    children: [
-                      IconButton(
-                        icon: Icon(Icons.bookmark_border),
-                        onPressed: (){},
-                      ),
-                      IconButton(
-                        icon: Icon(Icons.bookmark_border),
-                        onPressed: (){},
-                      ),
-                      IconButton(
-                        icon: Icon(Icons.bookmark_border),
-                        onPressed: (){},
-                      ),
-                      IconButton(
-                        icon: Icon(Icons.bookmark_border),
-                        onPressed: (){},
-                      ),
-                      IconButton(
-                        icon: Icon(Icons.bookmark_border),
-                        onPressed: (){},
-                      ),
-                      
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        IconButton(
+                          icon: Icon(Icons.bookmark_border),
+                          onPressed: (){},
+                        ),
+                        IconButton(
+                          icon: Icon(Icons.gamepad),
+                          onPressed: (){},
+                        ),
+                        IconButton(
+                          icon: Icon(Icons.videogame_asset),
+                          onPressed: (){},
+                        ),
+                        IconButton(
+                          icon: Icon(Icons.gesture),
+                          onPressed: (){},
+                        ),
+                        IconButton(
+                          icon: Icon(Icons.apps),
+                          onPressed: (){},
+                        ),
+
+                      ],
+                    ),
                   )
                 ],
               ),
