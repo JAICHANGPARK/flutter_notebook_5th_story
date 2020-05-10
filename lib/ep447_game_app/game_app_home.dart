@@ -18,25 +18,22 @@ class _GameAppHOmeState extends State<GameAppHome> {
             child: Container(
               height: 140,
               decoration: BoxDecoration(
-                color: Colors.grey[200],
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(24)
-                )
-              ),
+                  color: Colors.grey[200], borderRadius: BorderRadius.only(bottomLeft: Radius.circular(24))),
               child: Column(
                 children: [
                   Row(
                     children: [
+                      Spacer(),
                       IconButton(
                         icon: Icon(Icons.search),
-                        onPressed: (){},
+                        onPressed: () {},
                       ),
                       IconButton(
-                        icon: Icon(Icons.shopping_basket), onPressed: () {  },
+                        icon: Icon(Icons.shopping_basket),
+                        onPressed: () {},
                       )
                     ],
                   )
-
                 ],
               ),
             ),
@@ -57,38 +54,10 @@ class _GameAppHOmeState extends State<GameAppHome> {
               decoration: BoxDecoration(
                 color: Colors.red,
               ),
-
             ),
           )
-
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
