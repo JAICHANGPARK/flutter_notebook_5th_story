@@ -8,7 +8,6 @@ class GameAppHome extends StatefulWidget {
 class _GameAppHOmeState extends State<GameAppHome> {
   int _tabIndex = 0;
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,47 +45,46 @@ class _GameAppHOmeState extends State<GameAppHome> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          _tabIndex == 0 ? Container(
-                            height: 72,
-                            width: 48,
-                            decoration: BoxDecoration(
-                              color: Colors.red,
-                              borderRadius:BorderRadius.circular(24),
-                              gradient: LinearGradient(
-                                colors: [
-                                  Colors.red[200],
-                                  Colors.red[400],
-                                  Colors.red,
-                                ],
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter
-                              )
-                            ),
-                            child: Column(
-                              children: [
-                                Icon(Icons.bookmark_border),
-                                Container(
-                                  height: 8,
-                                  width: 8,
+                          _tabIndex == 0
+                              ? Container(
+                                  height: 72,
+                                  width: 48,
                                   decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    shape: BoxShape.circle
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(24),
+                                      gradient: LinearGradient(colors: [
+                                        Colors.red[200],
+                                        Colors.red[400],
+                                        Colors.red,
+                                      ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(
+                                        Icons.bookmark_border,
+                                        color: Colors.white,
+                                        size: 32,
+                                      ),
+                                      Container(
+                                        height: 4,
+                                        width: 4,
+                                        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                                      )
+                                    ],
                                   ),
                                 )
-                              ],
-                            ),
-
-                          ):IconButton(
-                            icon: Icon(Icons.bookmark_border),
-                            onPressed: (){
-                              setState(() {
-                                _tabIndex = 0;
-                              });
-                            },
-                          ),
+                              : IconButton(
+                                  icon: Icon(Icons.bookmark_border),
+                                  onPressed: () {
+                                    setState(() {
+                                      _tabIndex = 0;
+                                    });
+                                  },
+                                ),
                           IconButton(
                             icon: Icon(Icons.gamepad),
-                            onPressed: (){
+                            onPressed: () {
                               setState(() {
                                 _tabIndex = 1;
                               });
@@ -94,7 +92,7 @@ class _GameAppHOmeState extends State<GameAppHome> {
                           ),
                           IconButton(
                             icon: Icon(Icons.videogame_asset),
-                            onPressed: (){
+                            onPressed: () {
                               setState(() {
                                 _tabIndex = 2;
                               });
@@ -102,7 +100,7 @@ class _GameAppHOmeState extends State<GameAppHome> {
                           ),
                           IconButton(
                             icon: Icon(Icons.gesture),
-                            onPressed: (){
+                            onPressed: () {
                               setState(() {
                                 _tabIndex = 3;
                               });
@@ -110,13 +108,12 @@ class _GameAppHOmeState extends State<GameAppHome> {
                           ),
                           IconButton(
                             icon: Icon(Icons.apps),
-                            onPressed: (){
+                            onPressed: () {
                               setState(() {
                                 _tabIndex = 4;
                               });
                             },
                           ),
-
                         ],
                       ),
                     ),
