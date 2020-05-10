@@ -8,7 +8,7 @@ class GameAppHome extends StatefulWidget {
 class _GameAppHOmeState extends State<GameAppHome> {
   int _tabIndex = 0;
 
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,57 +41,76 @@ class _GameAppHOmeState extends State<GameAppHome> {
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        _tabIndex == 0 ? Container(
-                          height: 80,
-                          width: 48,
-                          decoration: BoxDecoration(
-                            color: Colors.red,
-                          ),
-                        ):IconButton(
-                          icon: Icon(Icons.bookmark_border),
-                          onPressed: (){
-                            setState(() {
-                              _tabIndex = 0;
-                            });
-                          },
-                        ),
-                        IconButton(
-                          icon: Icon(Icons.gamepad),
-                          onPressed: (){
-                            setState(() {
-                              _tabIndex = 1;
-                            });
-                          },
-                        ),
-                        IconButton(
-                          icon: Icon(Icons.videogame_asset),
-                          onPressed: (){
-                            setState(() {
-                              _tabIndex = 2;
-                            });
-                          },
-                        ),
-                        IconButton(
-                          icon: Icon(Icons.gesture),
-                          onPressed: (){
-                            setState(() {
-                              _tabIndex = 3;
-                            });
-                          },
-                        ),
-                        IconButton(
-                          icon: Icon(Icons.apps),
-                          onPressed: (){
-                            setState(() {
-                              _tabIndex = 4;
-                            });
-                          },
-                        ),
+                    child: Container(
+                      height: 80,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          _tabIndex == 0 ? Container(
+                            height: 72,
+                            width: 48,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius:BorderRadius.circular(24),
+                              gradient: LinearGradient(
+                                colors: [
+                                  Colors.red[200],
+                                  Colors.red[400],
+                                  Colors.red,
+                                ],
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter
+                              )
+                            ),
+                            child: Column(
+                              children: [
+                                
+                              ],
+                            ),
 
-                      ],
+                          ):IconButton(
+                            icon: Icon(Icons.bookmark_border),
+                            onPressed: (){
+                              setState(() {
+                                _tabIndex = 0;
+                              });
+                            },
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.gamepad),
+                            onPressed: (){
+                              setState(() {
+                                _tabIndex = 1;
+                              });
+                            },
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.videogame_asset),
+                            onPressed: (){
+                              setState(() {
+                                _tabIndex = 2;
+                              });
+                            },
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.gesture),
+                            onPressed: (){
+                              setState(() {
+                                _tabIndex = 3;
+                              });
+                            },
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.apps),
+                            onPressed: (){
+                              setState(() {
+                                _tabIndex = 4;
+                              });
+                            },
+                          ),
+
+                        ],
+                      ),
                     ),
                   )
                 ],
