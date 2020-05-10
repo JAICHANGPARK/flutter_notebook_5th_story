@@ -8,10 +8,7 @@ class GameAppHome extends StatefulWidget {
 class _GameAppHOmeState extends State<GameAppHome> {
   int _tabIndex = 0;
 
-
-  Widget buildTabWidget(){
-
-  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +44,13 @@ class _GameAppHOmeState extends State<GameAppHome> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        IconButton(
+                        _tabIndex == 0 ? Container(
+                          height: 80,
+                          width: 48,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                          ),
+                        ):IconButton(
                           icon: Icon(Icons.bookmark_border),
                           onPressed: (){
                             setState(() {
