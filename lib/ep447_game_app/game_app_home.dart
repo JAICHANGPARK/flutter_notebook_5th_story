@@ -12,7 +12,7 @@ class _GameAppHOmeState extends State<GameAppHome> {
       body: Stack(
         children: [
           Positioned(
-            top: 0,
+            top: 24,
             left: 0,
             right: 0,
             child: Container(
