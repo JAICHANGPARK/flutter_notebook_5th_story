@@ -17,7 +17,18 @@ class _GameAppHOmeState extends State<GameAppHome> {
             right: 0,
             child: Container(
               height: 140,
+              color: Colors.grey,
             ),
+          ),
+          Positioned(
+            top: 150,
+            left: 0,
+            right: 0,
+            bottom: 120,
+            child: Placeholder(),
+          ),
+          Positioned(
+
           )
 
         ],
