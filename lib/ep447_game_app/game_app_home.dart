@@ -35,6 +35,31 @@ class _GameAppHOmeState extends State<GameAppHome> {
                         iconSize: 18,
                       )
                     ],
+                  ),
+                  Row(
+                    children: [
+                      IconButton(
+                        icon: Icon(Icons.bookmark_border),
+                        onPressed: (){},
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.bookmark_border),
+                        onPressed: (){},
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.bookmark_border),
+                        onPressed: (){},
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.bookmark_border),
+                        onPressed: (){},
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.bookmark_border),
+                        onPressed: (){},
+                      ),
+                      
+                    ],
                   )
                 ],
               ),
