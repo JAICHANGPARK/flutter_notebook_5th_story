@@ -27,10 +27,12 @@ class _GameAppHOmeState extends State<GameAppHome> {
                       IconButton(
                         icon: Icon(Icons.search),
                         onPressed: () {},
+                        iconSize: 18,
                       ),
                       IconButton(
                         icon: Icon(Icons.shopping_basket),
                         onPressed: () {},
+                        iconSize: 18,
                       )
                     ],
                   )
