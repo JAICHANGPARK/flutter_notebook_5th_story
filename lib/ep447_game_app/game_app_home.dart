@@ -299,6 +299,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
             right: 0,
             bottom: 120,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
                   flex: 2,
