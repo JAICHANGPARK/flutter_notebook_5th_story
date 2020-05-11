@@ -343,7 +343,14 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                               itemCount: 5,
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index){
-                            return Container();
+                            return Container(
+                              width: 180,
+                              margin: EdgeInsets.all(16),
+                              decoration: BoxDecoration(
+                                color: Colors.pink,
+
+                              ),
+                            );
                           }),
                         ),
                       )
