@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class GameAppHome extends StatefulWidget {
   @override
@@ -301,7 +302,14 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
               children: [
                 Expanded(
                   flex: 2,
-                  child: Placeholder(),
+                  child: Column(
+                    children: [
+                      Text("Recently popular"),
+                      Text("TOP GAMES", style: GoogleFonts.roboto(
+                        fontWeight: FontWeight.bold
+                      ),)
+                    ],
+                  ),
                 ),
                 Expanded(
                   flex: 8,
