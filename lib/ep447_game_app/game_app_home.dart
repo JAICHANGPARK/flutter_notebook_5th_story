@@ -139,7 +139,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                       Transform.rotate(
                                         angle: angle,
                                         child: Icon(
-                                          Icons.bookmark_border,
+                                          Icons.gamepad,
                                           color: Colors.white,
                                           size: 32,
                                         ),
