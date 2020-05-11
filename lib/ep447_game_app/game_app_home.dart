@@ -159,124 +159,124 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                 ),
                           _tabIndex == 2
                               ? Container(
-                            height: 72,
-                            width: 48,
-                            decoration: BoxDecoration(
-                                color: Colors.red,
-                                borderRadius: BorderRadius.circular(24),
-                                gradient: LinearGradient(colors: [
-                                  Colors.red[200],
-                                  Colors.red[400],
-                                  Colors.red,
-                                ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Transform.rotate(
-                                  angle: angle,
-                                  child: Icon(
-                                    Icons.videogame_asset,
-                                    color: Colors.white,
-                                    size: 32,
+                                  height: 72,
+                                  width: 48,
+                                  decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(24),
+                                      gradient: LinearGradient(colors: [
+                                        Colors.red[200],
+                                        Colors.red[400],
+                                        Colors.red,
+                                      ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Transform.rotate(
+                                        angle: angle,
+                                        child: Icon(
+                                          Icons.videogame_asset,
+                                          color: Colors.white,
+                                          size: 32,
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 4,
+                                        width: 4,
+                                        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                                      )
+                                    ],
                                   ),
-                                ),
-                                Container(
-                                  height: 4,
-                                  width: 4,
-                                  decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
                                 )
-                              ],
-                            ),
-                          )
                               : IconButton(
-                            icon: Icon(Icons.videogame_asset),
-                            onPressed: () {
-                              setState(() {
-                                _tabIndex = 2;
-                              });
-                            },
-                          ),
+                                  icon: Icon(Icons.videogame_asset),
+                                  onPressed: () {
+                                    setState(() {
+                                      _tabIndex = 2;
+                                    });
+                                  },
+                                ),
                           _tabIndex == 3
                               ? Container(
-                            height: 72,
-                            width: 48,
-                            decoration: BoxDecoration(
-                                color: Colors.red,
-                                borderRadius: BorderRadius.circular(24),
-                                gradient: LinearGradient(colors: [
-                                  Colors.red[200],
-                                  Colors.red[400],
-                                  Colors.red,
-                                ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Transform.rotate(
-                                  angle: angle,
-                                  child: Icon(
-                                    Icons.gesture,
-                                    color: Colors.white,
-                                    size: 32,
+                                  height: 72,
+                                  width: 48,
+                                  decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(24),
+                                      gradient: LinearGradient(colors: [
+                                        Colors.red[200],
+                                        Colors.red[400],
+                                        Colors.red,
+                                      ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Transform.rotate(
+                                        angle: angle,
+                                        child: Icon(
+                                          Icons.gesture,
+                                          color: Colors.white,
+                                          size: 32,
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 4,
+                                        width: 4,
+                                        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                                      )
+                                    ],
                                   ),
-                                ),
-                                Container(
-                                  height: 4,
-                                  width: 4,
-                                  decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
                                 )
-                              ],
-                            ),
-                          )
-                              :IconButton(
-                            icon: Icon(Icons.gesture),
-                            onPressed: () {
-                              setState(() {
-                                _tabIndex = 3;
-                              });
-                            },
-                          ),
+                              : IconButton(
+                                  icon: Icon(Icons.gesture),
+                                  onPressed: () {
+                                    setState(() {
+                                      _tabIndex = 3;
+                                    });
+                                  },
+                                ),
                           _tabIndex == 4
                               ? Container(
-                            height: 72,
-                            width: 48,
-                            decoration: BoxDecoration(
-                                color: Colors.red,
-                                borderRadius: BorderRadius.circular(24),
-                                gradient: LinearGradient(colors: [
-                                  Colors.red[200],
-                                  Colors.red[400],
-                                  Colors.red,
-                                ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Transform.rotate(
-                                  angle: angle,
-                                  child: Icon(
-                                    Icons.apps,
-                                    color: Colors.white,
-                                    size: 32,
+                                  height: 72,
+                                  width: 48,
+                                  decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(24),
+                                      gradient: LinearGradient(colors: [
+                                        Colors.red[200],
+                                        Colors.red[400],
+                                        Colors.red,
+                                      ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Transform.rotate(
+                                        angle: angle,
+                                        child: Icon(
+                                          Icons.apps,
+                                          color: Colors.white,
+                                          size: 32,
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 4,
+                                        width: 4,
+                                        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                                      )
+                                    ],
                                   ),
-                                ),
-                                Container(
-                                  height: 4,
-                                  width: 4,
-                                  decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
                                 )
-                              ],
-                            ),
-                          )
                               : IconButton(
-                            icon: Icon(Icons.apps),
-                            onPressed: () {
-                              setState(() {
-                                _tabIndex = 4;
-                              });
-                            },
-                          ),
+                                  icon: Icon(Icons.apps),
+                                  onPressed: () {
+                                    setState(() {
+                                      _tabIndex = 4;
+                                    });
+                                  },
+                                ),
                         ],
                       ),
                     ),
