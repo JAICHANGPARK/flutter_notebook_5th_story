@@ -294,7 +294,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
             ),
           ),
           Positioned(
-            top: 160,
+            top: 178,
             left: 0,
             right: 0,
             bottom: 120,
@@ -303,21 +303,24 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
               children: [
                 Expanded(
                   flex: 2,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Recently popular",style: TextStyle(
-                        fontSize: 12
-                      ),),
-                      Text("TOP GAMES", style: GoogleFonts.roboto(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 26
-                      ),)
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Recently popular",style: TextStyle(
+                          fontSize: 12
+                        ),),
+                        Text("TOP GAMES", style: GoogleFonts.roboto(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 26
+                        ),)
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
-                  flex: 8,
+                  flex: 10,
                   child: Stack(
                     children: [
                       Positioned(
@@ -331,11 +334,14 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                       ),
                       Positioned(
                         top: 0,
-                        left: 0,
+                        left: 100,
                         bottom: 0,
+                        right: 0,
                         child: Container(
                           width: 84,
-                          child: Placeholder(),
+                          child: ListView.builder(itemBuilder: (context, index){
+                            return Container();
+                          }),
                         ),
                       )
                     ],
