@@ -303,10 +303,14 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                 Expanded(
                   flex: 2,
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Recently popular"),
+                      Text("Recently popular",style: TextStyle(
+                        fontSize: 12
+                      ),),
                       Text("TOP GAMES", style: GoogleFonts.roboto(
-                        fontWeight: FontWeight.bold
+                        fontWeight: FontWeight.bold,
+                        fontSize: 26
                       ),)
                     ],
                   ),
