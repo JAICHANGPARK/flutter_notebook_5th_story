@@ -10,6 +10,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
   Animation<double> _animation;
   int _tabIndex = 0;
   double angle = 0.0;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -21,17 +22,17 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
       ..addListener(() {
         setState(() {
           angle = _animation.value;
-
         });
       });
-    _animationController..addStatusListener((status) {
-      if(status == AnimationStatus.completed){
-        _animationController.reverse();
-      }
-      setState(() {
-        angle = 0.0;
+    _animationController
+      ..addStatusListener((status) {
+        if (status == AnimationStatus.completed) {
+          _animationController.reverse();
+        }
+        setState(() {
+          angle = 0.0;
+        });
       });
-    });
   }
 
   @override
@@ -40,6 +41,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
     super.dispose();
     _animationController.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -118,43 +120,43 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                     });
                                   },
                                 ),
-                          _tabIndex == 1 ?
-                          Container(
-                            height: 72,
-                            width: 48,
-                            decoration: BoxDecoration(
-                                color: Colors.red,
-                                borderRadius: BorderRadius.circular(24),
-                                gradient: LinearGradient(colors: [
-                                  Colors.red[200],
-                                  Colors.red[400],
-                                  Colors.red,
-                                ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Icon(
-                                  Icons.gamepad,
-                                  color: Colors.white,
-                                  size: 32,
-                                ),
-                                Container(
-                                  height: 4,
-                                  width: 4,
-                                  decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                          _tabIndex == 1
+                              ? Container(
+                                  height: 72,
+                                  width: 48,
+                                  decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(24),
+                                      gradient: LinearGradient(colors: [
+                                        Colors.red[200],
+                                        Colors.red[400],
+                                        Colors.red,
+                                      ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(
+                                        Icons.gamepad,
+                                        color: Colors.white,
+                                        size: 32,
+                                      ),
+                                      Container(
+                                        height: 4,
+                                        width: 4,
+                                        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                                      )
+                                    ],
+                                  ),
                                 )
-                              ],
-                            ),
-                          )
-                              :IconButton(
-                            icon: Icon(Icons.gamepad),
-                            onPressed: () {
-                              setState(() {
-                                _tabIndex = 1;
-                              });
-                            },
-                          ),
+                              : IconButton(
+                                  icon: Icon(Icons.gamepad),
+                                  onPressed: () {
+                                    setState(() {
+                                      _tabIndex = 1;
+                                    });
+                                  },
+                                ),
                           IconButton(
                             icon: Icon(Icons.videogame_asset),
                             onPressed: () {
