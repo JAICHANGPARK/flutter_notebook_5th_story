@@ -196,6 +196,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                               : IconButton(
                                   icon: Icon(Icons.videogame_asset),
                                   onPressed: () {
+                                    _animationController.forward();
                                     setState(() {
                                       _tabIndex = 2;
                                     });
@@ -236,6 +237,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                               : IconButton(
                                   icon: Icon(Icons.gesture),
                                   onPressed: () {
+                                    _animationController.forward();
                                     setState(() {
                                       _tabIndex = 3;
                                     });
