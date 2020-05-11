@@ -317,7 +317,28 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                 ),
                 Expanded(
                   flex: 8,
-                  child: Placeholder(),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        child: Container(
+                          width: 84,
+                          child: Placeholder(),
+                        ),
+                      ),
+                      Positioned(
+                        top: 0,
+                        left: 0,
+                        bottom: 0,
+                        child: Container(
+                          width: 84,
+                          child: Placeholder(),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
