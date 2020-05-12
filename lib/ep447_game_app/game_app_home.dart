@@ -351,10 +351,11 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                   children: [
                                     Row(
                                       children: [
-                                        
+                                        Icon(Icons.ac_unit, size: 12,),
                                         Text("Global distribution"),
                                       ],
                                     ),
+                                    SizedBox(height: 8,),
                                     Container(height: 4,width: 4,
                                     decoration: BoxDecoration(
                                       color: Colors.black
