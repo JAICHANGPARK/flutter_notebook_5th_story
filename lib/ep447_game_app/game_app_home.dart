@@ -11,6 +11,15 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
   Animation<double> _animation;
   int _tabIndex = 0;
   double angle = 0.0;
+  List<String> userImage = [
+    "https://cdn.pixabay.com/photo/2017/08/05/12/08/hare-2583031__340.png",
+    "https://cdn.pixabay.com/photo/2017/01/31/20/32/cartoon-2027047__340.png",
+    "https://cdn.pixabay.com/photo/2020/04/26/12/14/white-tumor-5094960__340.jpg",
+    "https://cdn.pixabay.com/photo/2017/01/24/11/05/hahn-2005105__340.png",
+    "https://cdn.pixabay.com/photo/2017/12/31/13/57/funny-3052397__340.jpg",
+
+  ];
+
 
   @override
   void initState() {
