@@ -347,8 +347,14 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                               mainAxisAlignment:MainAxisAlignment.spaceEvenly,
                               children: [
                                 Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("Global distribution"),
+                                    Row(
+                                      children: [
+                                        
+                                        Text("Global distribution"),
+                                      ],
+                                    ),
                                     Container(height: 4,width: 4,
                                     decoration: BoxDecoration(
                                       color: Colors.black
