@@ -395,7 +395,8 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                             width: 64,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: 
+                                image: NetworkImage(userImage[index]),
+                                fit: BoxFit.cover
                               )
                             ),
                           );
