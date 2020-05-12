@@ -378,7 +378,6 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                       ),)
                                   ],
                                 ),
-                                Text("Multi-language")
                               ],
                             ),
                           ),
