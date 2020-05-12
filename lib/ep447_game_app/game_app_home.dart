@@ -377,14 +377,13 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                     flex: 2,
                   ),
                   Expanded(
-
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
-                      return Container(
-                        width: 64,
-                      );
-                    }),
+                          return Container(
+                            width: 64,
+                          );
+                        }),
                     flex: 10,
                   )
                 ],
