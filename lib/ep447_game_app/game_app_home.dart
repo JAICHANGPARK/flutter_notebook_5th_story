@@ -308,13 +308,14 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Recently popular",style: TextStyle(
-                          fontSize: 12
-                        ),),
-                        Text("TOP GAMES", style: GoogleFonts.roboto(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 26
-                        ),)
+                        Text(
+                          "Recently popular",
+                          style: TextStyle(fontSize: 12),
+                        ),
+                        Text(
+                          "TOP GAMES",
+                          style: GoogleFonts.roboto(fontWeight: FontWeight.bold, fontSize: 26),
+                        )
                       ],
                     ),
                   ),
@@ -342,16 +343,15 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                           child: ListView.builder(
                               itemCount: 5,
                               scrollDirection: Axis.horizontal,
-                              itemBuilder: (context, index){
-                            return Container(
-                              width: 240,
-                              margin: EdgeInsets.all(16),
-                              decoration: BoxDecoration(
-                                color: Colors.pink,
-
-                              ),
-                            );
-                          }),
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 240,
+                                  margin: EdgeInsets.all(16),
+                                  decoration: BoxDecoration(
+                                    color: Colors.pink,
+                                  ),
+                                );
+                              }),
                         ),
                       )
                     ],
