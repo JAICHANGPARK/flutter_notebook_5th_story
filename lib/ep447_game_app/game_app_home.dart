@@ -381,7 +381,12 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
-                    child: Text("POPULAR ANOTHER"),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("POPULAR ANOTHER",style: TextStyle(
+                        fontWeight: 
+                      ),),
+                    ),
                     flex: 2,
                   ),
                   Expanded(
@@ -397,11 +402,12 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                               image: DecorationImage(
                                 image: NetworkImage(userImage[index]),
                                 fit: BoxFit.cover
-                              )
+                              ),
+                              borderRadius: BorderRadius.circular(16),
                             ),
                           );
                         }),
-                    flex: 10,
+                    flex: 6,
                   )
                 ],
               ),
