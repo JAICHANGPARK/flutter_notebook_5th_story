@@ -375,9 +375,6 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
             bottom: 0,
             child: Container(
               height: 120,
-              decoration: BoxDecoration(
-                color: Colors.red,
-              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -393,6 +390,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                         itemBuilder: (context, index) {
                           return Container(
                             width: 64,
+                            margin: EdgeInsets.symmetric(vertical: 16, horizontal: 8),
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: NetworkImage(userImage[index]),
