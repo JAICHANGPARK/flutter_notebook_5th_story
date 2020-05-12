@@ -362,6 +362,22 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                     ),)
                                   ],
                                 ),
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Icon(Icons.ac_unit, size: 12,),
+                                        Text("Multi-language"),
+                                      ],
+                                    ),
+                                    SizedBox(height: 8,),
+                                    Container(height: 4,width: 4,
+                                      decoration: BoxDecoration(
+                                          color: Colors.black
+                                      ),)
+                                  ],
+                                ),
                                 Text("Multi-language")
                               ],
                             ),
