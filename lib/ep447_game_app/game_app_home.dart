@@ -373,6 +373,9 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(child: Text("POPULAR ANOTHER")),
+                  Expanded(child: ListView.builder(itemBuilder: (context, index){
+                    return Container(width: 64,);
+                  }),)
 
                 ],
               ),
