@@ -342,7 +342,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                         child: Container(
                           width: 84,
                           child: RotatedBox(
-                            quarterTurns: 1,
+                            quarterTurns: -1,
                             child: Row(
                               children: [
                                 Text("Global distribution"),
