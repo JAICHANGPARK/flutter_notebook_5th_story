@@ -369,6 +369,11 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
               decoration: BoxDecoration(
                 color: Colors.red,
               ),
+              child: Column(
+                children: [
+                  
+                ],
+              ),
             ),
           )
         ],
