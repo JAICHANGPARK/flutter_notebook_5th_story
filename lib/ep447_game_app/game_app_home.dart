@@ -384,7 +384,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text("POPULAR ANOTHER",style: TextStyle(
-                        fontWeight: 
+                        fontWeight: FontWeight.bold
                       ),),
                     ),
                     flex: 2,
