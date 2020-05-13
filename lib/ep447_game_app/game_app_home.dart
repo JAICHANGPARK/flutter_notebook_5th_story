@@ -392,6 +392,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                         child: Container(
                           width: 84,
                           child: ListView.builder(
+                            controller: _scrollController,
                               itemCount: 5,
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
