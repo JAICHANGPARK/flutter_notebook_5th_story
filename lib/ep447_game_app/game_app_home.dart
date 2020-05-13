@@ -449,7 +449,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                     right: 0,
                                     bottom: 0,
                                     child: Container(
-                                      height: 80,
+                                      height: 52,
                                       width: 120,
                                       decoration: BoxDecoration(
                                         color: Colors.orange.withOpacity(0.6),
