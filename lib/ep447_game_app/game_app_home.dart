@@ -414,12 +414,16 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                     borderRadius: BorderRadius.circular(16),
                                     boxShadow: [
                                       BoxShadow(
-                                          color: Colors.deepOrange,
-                                          offset: Offset(4,4)
+                                          color: Colors.deepOrange[100],
+                                          offset: Offset(4,4),
+                                        spreadRadius: 2,
+                                        blurRadius: 4
                                       ),
                                       BoxShadow(
-                                        color: Colors.blue,
-                                        offset: Offset(-4,4)
+                                        color: Colors.blue[100],
+                                        offset: Offset(-4,4),
+                                          spreadRadius: 2,
+                                          blurRadius: 4
                                       ),
 
                                     ]
