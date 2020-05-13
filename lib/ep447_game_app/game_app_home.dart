@@ -47,6 +47,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
       });
   }
 
+  ScrollController _scrollController = ScrollController();
   @override
   void dispose() {
     // TODO: implement dispose
