@@ -7,6 +7,7 @@ class GameAppHome extends StatefulWidget {
 }
 
 class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin {
+  ScrollController _scrollController = ScrollController();
   AnimationController _animationController;
   Animation<double> _animation;
   int _tabIndex = 0;
@@ -47,7 +48,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
       });
   }
 
-  ScrollController _scrollController = ScrollController();
+
   @override
   void dispose() {
     // TODO: implement dispose
