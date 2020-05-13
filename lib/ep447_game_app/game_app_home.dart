@@ -466,8 +466,9 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                           bottomRight: Radius.circular(16),
                                         )
                                       ),
+                                      child: Center(child: Text("\$116.99",style: ,)),
                                     ),
-                                  )
+                                  ),
                                   
                                 ],
                               ),
