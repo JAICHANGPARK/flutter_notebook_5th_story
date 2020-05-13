@@ -393,7 +393,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                       ),
                       Positioned(
                         top: 0,
-                        left: 100,
+                        left: 84,
                         bottom: 0,
                         right: 0,
                         child: Container(
@@ -403,12 +403,13 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                               controller: _pageController,
                               itemCount: 2,
                               itemBuilder: (context, index){
-                            return Container(
-                                  width: 240,
-                                  margin: EdgeInsets.all(16),
+                            return AnimatedContainer(
+                                  width: 260,
+                                  margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
                                   decoration: BoxDecoration(
                                     color: Colors.pink,
-                                  ),
+                                    borderRadius: BorderRadius.circular(16)
+                                  ), duration: Duration(milliseconds: 500),
                                 );
                           }),
 //                          child: ListView.builder(
