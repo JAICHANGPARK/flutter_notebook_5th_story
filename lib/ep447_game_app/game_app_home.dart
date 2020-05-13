@@ -449,12 +449,21 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                     right: 0,
                                     bottom: 0,
                                     child: Container(
-                                      height: 52,
+                                      height: 64,
                                       width: 120,
                                       decoration: BoxDecoration(
-                                        color: Colors.orange.withOpacity(0.6),
+                                        color: Colors.orange,
+                                        gradient: LinearGradient(
+                                          colors: [
+                                            Colors.deepOrange[300],
+                                            Colors.deepOrange,
+                                          ],
+                                          begin: Alignment.topCenter,
+                                          end: Alignment.bottomCenter,
+                                        ),
                                         borderRadius: BorderRadius.only(
-
+                                          topLeft: Radius.circular(48),
+                                          bottomRight: Radius.circular(16),
                                         )
                                       ),
                                     ),
