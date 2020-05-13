@@ -454,7 +454,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                       decoration: BoxDecoration(
                                         color: Colors.orange.withOpacity(0.6),
                                         borderRadius: BorderRadius.only(
-                                          
+
                                         )
                                       ),
                                     ),
