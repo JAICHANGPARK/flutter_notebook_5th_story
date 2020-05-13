@@ -58,9 +58,17 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
 //    });
     _pageController.addListener(() {
       print(_pageController.page);
-      if(_pageController.page == 1){
-        _edgeInsetsGeometry = Ed
+      print("_pageController.position.maxScrollExtent : ${_pageController.position.maxScrollExtent}");
+      if(_pageController.page != 1.0 || _pageController.page != 0.0){
+        _edgeInsetsGeometry = EdgeInsets.only(right: 16, bottom: 32, top: 32,);
       }
+      if(_pageController.page == 1.0 ||_pageController.page == 0.0 ){
+        _edgeInsetsGeometry = EdgeInsets.only(right: 16, bottom: 16, top: 16,);
+      }
+
+      setState(() {
+
+      });
     });
   }
 
@@ -406,114 +414,107 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                         left: 84,
                         bottom: 0,
                         right: 0,
-                        child: Container(
-                          width: 84,
-                          child: PageView.builder(
-                            scrollDirection: Axis.horizontal,
-                              controller: _pageController,
-                              itemCount: 2,
-                              itemBuilder: (context, index){
-                            return AnimatedContainer(
-                                  width: 260,
-                                  margin: _edgeInsetsGeometry,
-                                  decoration: BoxDecoration(
-                                    color: Colors.red,
-                                    borderRadius: BorderRadius.circular(16),
-                                    boxShadow: [
+                        child: IndexedStack(
+                          children: [
 
-                                      BoxShadow(
-                                          color: Colors.deepOrange[100],
-                                          offset: Offset(4,4),
-                                        spreadRadius: 2,
-                                        blurRadius: 4
-                                      ),
-                                      BoxShadow(
-                                        color: Colors.blue[100],
-                                        offset: Offset(-4,4),
+                          ],
+                         Container(
+                            child: PageView.builder(
+                              onPageChanged: (i){
+                                print("onPageChanged : $i");
+                              },
+                              scrollDirection: Axis.horizontal,
+                                controller: _pageController,
+                                itemCount: 2,
+                                itemBuilder: (context, index){
+                              return AnimatedContainer(
+                                    width: 260,
+                                    margin: _edgeInsetsGeometry,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(16),
+                                      boxShadow: [
+                                        BoxShadow(
+                                            color: Colors.deepOrange[100],
+                                            offset: Offset(4,4),
                                           spreadRadius: 2,
                                           blurRadius: 4
-                                      ),
-
-                                    ]
-                                  ), duration: Duration(milliseconds: 500),
-                              child: Stack(
-                                children: [
-                                  Positioned(
-                                    left: 0,
-                                    right: 0,
-                                    bottom: 0,
-                                    child: Container(
-                                      height: 120,
-                                      padding: EdgeInsets.all(24),
-
-                                      decoration: BoxDecoration(
-                                        color: Colors.blue.withOpacity(.7),
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(48),
-                                          bottomLeft: Radius.circular(16),
-                                          bottomRight: Radius.circular(16),
                                         ),
-                                      ),
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text("Pokemon", style: TextStyle(
-                                            fontSize: 18,
-                                            color: Colors.white,
-                                          ),),
-                                          Text("sword & shield", style: TextStyle(
-                                            color: Colors.white,
-                                          ),)
-                                        ],
-                                      ),
+                                        BoxShadow(
+                                          color: Colors.blue[100],
+                                          offset: Offset(-4,4),
+                                            spreadRadius: 2,
+                                            blurRadius: 4
+                                        ),
+                                      ]
                                     ),
-                                  ),
-                                  Positioned(
-                                    right: 0,
-                                    bottom: 0,
-                                    child: Container(
-                                      height: 64,
-                                      width: 120,
-                                      decoration: BoxDecoration(
-                                        color: Colors.orange,
-                                        gradient: LinearGradient(
-                                          colors: [
-                                            Colors.deepOrange[300],
-                                            Colors.deepOrange,
+                                duration: Duration(milliseconds: 100),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 0,
+                                      right: 0,
+                                      bottom: 0,
+                                      child: Container(
+                                        height: 120,
+                                        padding: EdgeInsets.all(24),
+                                        decoration: BoxDecoration(
+                                          color: Colors.blue.withOpacity(.7),
+                                          borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(48),
+                                            bottomLeft: Radius.circular(16),
+                                            bottomRight: Radius.circular(16),
+                                          ),
+                                        ),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text("Pokemon", style: TextStyle(
+                                              fontSize: 18,
+                                              color: Colors.white,
+                                            ),),
+                                            Text("sword & shield", style: TextStyle(
+                                              color: Colors.white,
+                                            ),)
                                           ],
-                                          begin: Alignment.topCenter,
-                                          end: Alignment.bottomCenter,
                                         ),
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(48),
-                                          bottomRight: Radius.circular(16),
-                                        )
                                       ),
-                                      child: Center(child: Text("\$116.99",style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20
-
-                                      ),)),
                                     ),
-                                  ),
-                                  
-                                ],
-                              ),
-                                );
-                          }),
-//                          child: ListView.builder(
-//                            controller: _scrollController,
-//                              itemCount: 5,
-//                              scrollDirection: Axis.horizontal,
-//                              itemBuilder: (context, index) {
-//                                return Container(
-//                                  width: 240,
-//                                  margin: EdgeInsets.all(16),
-//                                  decoration: BoxDecoration(
-//                                    color: Colors.pink,
-//                                  ),
-//                                );
-//                              }),
+                                    Positioned(
+                                      right: 0,
+                                      bottom: 0,
+                                      child: Container(
+                                        height: 64,
+                                        width: 120,
+                                        decoration: BoxDecoration(
+                                          color: Colors.orange,
+                                          gradient: LinearGradient(
+                                            colors: [
+                                              Colors.deepOrange[300],
+                                              Colors.deepOrange,
+                                            ],
+                                            begin: Alignment.topCenter,
+                                            end: Alignment.bottomCenter,
+                                          ),
+                                          borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(48),
+                                            bottomRight: Radius.circular(16),
+                                          )
+                                        ),
+                                        child: Center(child: Text("\$116.99",style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20
+
+                                        ),)),
+                                      ),
+                                    ),
+
+                                  ],
+                                ),
+                                  );
+                            }),
+
+                          ),
                         ),
                       )
                     ],
