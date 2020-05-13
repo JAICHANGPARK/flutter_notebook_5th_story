@@ -410,7 +410,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                   width: 260,
                                   margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
                                   decoration: BoxDecoration(
-                                    color: Colors.pink,
+                                    color: Colors.red,
                                     borderRadius: BorderRadius.circular(16)
                                   ), duration: Duration(milliseconds: 500),
                               child: Stack(
@@ -421,8 +421,22 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                     bottom: 0,
                                     child: Container(
                                       height: 120,
+                                      padding: EdgeInsets.all(16),
+
                                       decoration: BoxDecoration(
-                                        color: Colors.blue.withOpacity(.4)
+                                        color: Colors.blue.withOpacity(.7),
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(48),
+                                          bottomLeft: Radius.circular(16),
+                                          bottomRight: Radius.circular(16),
+                                        ),
+                                      ),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text("Pokemon"),
+                                          Text("sword & shield")
+                                        ],
                                       ),
                                     ),
                                   )
