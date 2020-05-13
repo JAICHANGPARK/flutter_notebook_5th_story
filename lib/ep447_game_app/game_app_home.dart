@@ -8,6 +8,7 @@ class GameAppHome extends StatefulWidget {
 
 class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin {
   ScrollController _scrollController = ScrollController();
+  PageController _pageController = PageController(viewportFraction: 0.8);
   AnimationController _animationController;
   Animation<double> _animation;
   int _tabIndex = 0;
@@ -397,6 +398,19 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                         right: 0,
                         child: Container(
                           width: 84,
+                          child: PageView.builder(
+                            scrollDirection: Axis.horizontal,
+                              controller: _pageController,
+                              itemCount: 2,
+                              itemBuilder: (context, index){
+                            return Container(
+                                  width: 240,
+                                  margin: EdgeInsets.all(16),
+                                  decoration: BoxDecoration(
+                                    color: Colors.pink,
+                                  ),
+                                );
+                          }),
 //                          child: ListView.builder(
 //                            controller: _scrollController,
 //                              itemCount: 5,
