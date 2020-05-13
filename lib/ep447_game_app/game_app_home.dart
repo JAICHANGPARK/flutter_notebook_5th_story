@@ -415,6 +415,17 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                   ), duration: Duration(milliseconds: 500),
                               child: Stack(
                                 children: [
+                                  Positioned(
+                                    left: 0,
+                                    right: 0,
+                                    bottom: 0,
+                                    child: Container(
+                                      height: 120,
+                                      decoration: BoxDecoration(
+                                        color: Colors.blue.withOpacity(.4)
+                                      ),
+                                    ),
+                                  )
                                   
                                 ],
                               ),
