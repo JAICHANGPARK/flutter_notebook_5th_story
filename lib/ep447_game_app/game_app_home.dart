@@ -413,6 +413,11 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                     color: Colors.pink,
                                     borderRadius: BorderRadius.circular(16)
                                   ), duration: Duration(milliseconds: 500),
+                              child: Stack(
+                                children: [
+                                  
+                                ],
+                              ),
                                 );
                           }),
 //                          child: ListView.builder(
