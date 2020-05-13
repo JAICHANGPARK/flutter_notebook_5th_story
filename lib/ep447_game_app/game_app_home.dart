@@ -468,6 +468,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                       ),
                                       child: Center(child: Text("\$116.99",style: TextStyle(
                                         color: Colors.white,
+                                        fontSize: 20
 
                                       ),)),
                                     ),
