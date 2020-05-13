@@ -49,9 +49,9 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
       });
 
 
-    _scrollController..addListener(() {
-      print(_scrollController.offset);
-    });
+//    _scrollController..addListener(() {
+//      print(_scrollController.offset);
+//    });
   }
 
 
