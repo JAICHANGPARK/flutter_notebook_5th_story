@@ -421,7 +421,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                     bottom: 0,
                                     child: Container(
                                       height: 120,
-                                      padding: EdgeInsets.all(16),
+                                      padding: EdgeInsets.all(24),
 
                                       decoration: BoxDecoration(
                                         color: Colors.blue.withOpacity(.7),
@@ -442,6 +442,20 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                             color: Colors.white,
                                           ),)
                                         ],
+                                      ),
+                                    ),
+                                  ),
+                                  Positioned(
+                                    right: 0,
+                                    bottom: 0,
+                                    child: Container(
+                                      height: 80,
+                                      width: 120,
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange.withOpacity(0.6),
+                                        borderRadius: BorderRadius.only(
+                                          
+                                        )
                                       ),
                                     ),
                                   )
