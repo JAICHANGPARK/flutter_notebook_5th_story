@@ -23,7 +23,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
     "https://cdn.pixabay.com/photo/2017/12/31/13/57/funny-3052397__340.jpg",
 
   ];
-
+  EdgeInsetsGeometry _edgeInsetsGeometry = EdgeInsets.only(right: 16, bottom: 16, top: 16);
 
   @override
   void initState() {
@@ -408,7 +408,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                               itemBuilder: (context, index){
                             return AnimatedContainer(
                                   width: 260,
-                                  margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
+                                  margin: _edgeInsetsGeometry,
                                   decoration: BoxDecoration(
                                     color: Colors.red,
                                     borderRadius: BorderRadius.circular(16),
