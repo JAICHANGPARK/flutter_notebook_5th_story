@@ -411,7 +411,18 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                   margin: EdgeInsets.only(right: 16, bottom: 16, top: 16),
                                   decoration: BoxDecoration(
                                     color: Colors.red,
-                                    borderRadius: BorderRadius.circular(16)
+                                    borderRadius: BorderRadius.circular(16),
+                                    boxShadow: [
+                                      BoxShadow(
+                                          color: Colors.deepOrange,
+                                          offset: Offset(4,4)
+                                      ),
+                                      BoxShadow(
+                                        color: Colors.blue,
+                                        offset: Offset(-4,4)
+                                      ),
+
+                                    ]
                                   ), duration: Duration(milliseconds: 500),
                               child: Stack(
                                 children: [
