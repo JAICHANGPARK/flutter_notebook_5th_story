@@ -434,8 +434,13 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Pokemon"),
-                                          Text("sword & shield")
+                                          Text("Pokemon", style: TextStyle(
+                                            fontSize: 18,
+                                            color: Colors.white,
+                                          ),),
+                                          Text("sword & shield", style: TextStyle(
+                                            color: Colors.white,
+                                          ),)
                                         ],
                                       ),
                                     ),
