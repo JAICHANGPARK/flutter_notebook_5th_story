@@ -13,6 +13,10 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
   Animation<double> _animation;
   int _tabIndex = 0;
   double angle = 0.0;
+
+
+  EdgeInsetsGeometry _edgeInsetsGeometry = EdgeInsets.only(right: 16, bottom: 16, top: 16);
+
   List<String> userImage = [
     "https://cdn.pixabay.com/photo/2017/01/24/11/05/hahn-2005105__340.png",
     "https://cdn.pixabay.com/photo/2017/12/31/13/57/funny-3052397__340.jpg",
@@ -23,7 +27,7 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
     "https://cdn.pixabay.com/photo/2017/12/31/13/57/funny-3052397__340.jpg",
 
   ];
-  EdgeInsetsGeometry _edgeInsetsGeometry = EdgeInsets.only(right: 16, bottom: 16, top: 16);
+
 
   @override
   void initState() {
@@ -54,6 +58,9 @@ class _GameAppHOmeState extends State<GameAppHome> with TickerProviderStateMixin
 //    });
     _pageController.addListener(() {
       print(_pageController.page);
+      if(_pageController.page == 1){
+        _edgeInsetsGeometry = Ed
+      }
     });
   }
 
